@@ -1,0 +1,124 @@
+{
+  "static_checks": "passed",
+  "xacro_validation_version": "1.13.3 (isolated local check; not the user's Noetic runtime)",
+  "link_count": 10,
+  "joint_count": 9,
+  "mass_kg": 7.199999999999998,
+  "source_link_and_joint_names_preserved": true,
+  "source_joint_types_parent_child_and_origins_preserved": true,
+  "source_root_visual_replaced_by_empty_reference": true,
+  "positive_definite_physical_inertias": [
+    {
+      "name": "base_link",
+      "mass": 5.0,
+      "inertia_eigenvalues": [
+        0.2166666666666667,
+        0.2166666666666667,
+        0.4
+      ]
+    },
+    {
+      "name": "support_link",
+      "mass": 0.3,
+      "inertia_eigenvalues": [
+        0.0015,
+        0.004750000000000001,
+        0.004750000000000001
+      ]
+    },
+    {
+      "name": "platform_link",
+      "mass": 1.0,
+      "inertia_eigenvalues": [
+        0.017499999999999998,
+        0.017499999999999998,
+        0.03125
+      ]
+    },
+    {
+      "name": "front_support_wheel_link",
+      "mass": 0.05,
+      "inertia_eigenvalues": [
+        5.000000000000001e-05,
+        5.000000000000001e-05,
+        5.000000000000001e-05
+      ]
+    },
+    {
+      "name": "back_support_wheel_link",
+      "mass": 0.05,
+      "inertia_eigenvalues": [
+        5.000000000000001e-05,
+        5.000000000000001e-05,
+        5.000000000000001e-05
+      ]
+    },
+    {
+      "name": "left_wheel_link",
+      "mass": 0.3,
+      "inertia_eigenvalues": [
+        0.0009100000000000002,
+        0.0009100000000000002,
+        0.0015
+      ]
+    },
+    {
+      "name": "right_wheel_link",
+      "mass": 0.3,
+      "inertia_eigenvalues": [
+        0.0009100000000000002,
+        0.0009100000000000002,
+        0.0015
+      ]
+    },
+    {
+      "name": "laser_scan_link",
+      "mass": 0.1,
+      "inertia_eigenvalues": [
+        5.083333333333334e-05,
+        7.416666666666668e-05,
+        8.333333333333333e-05
+      ]
+    },
+    {
+      "name": "depth_camera_link",
+      "mass": 0.1,
+      "inertia_eigenvalues": [
+        7.416666666666668e-05,
+        7.416666666666668e-05,
+        0.00010666666666666668
+      ]
+    }
+  ],
+  "ground_contact_z_at_zero_spawn": {
+    "left_wheel_link": 0.0,
+    "right_wheel_link": 0.0,
+    "front_support_wheel_link": -1.3877787807814457e-17,
+    "back_support_wheel_link": -1.3877787807814457e-17
+  },
+  "camera_limit_radians": [
+    -3.141592653589793,
+    3.141592653589793
+  ],
+  "embedded_drive_or_sensor_plugins": false,
+  "external_world_model_downloads": false,
+  "deliverables": [
+    {
+      "path": "urdf\\gazebo\\myrobot_gazebo_step4.xacro",
+      "sha256": "99252280c93b4e84f1a17842f7569f654ccdade43c02dd2f4a1738b1fe98a534"
+    },
+    {
+      "path": "launch\\myrobot_gazebo_step4.launch",
+      "sha256": "85ede33d09d96629fd930063bfd4c5c9487751862f699de95c2361b548322efd"
+    },
+    {
+      "path": "worlds\\lesson13_flat_step4.world",
+      "sha256": "a2df3e429eee676d0a529b88ff383774ee5d3ea39443a641cdc48036fe1819c6"
+    }
+  ],
+  "archive": "C:\\Users\\cris\\Documents\\Codex\\2026-09-02\\xu\\output\\Lesson13_Gazebo_step4.zip",
+  "archive_crc": "passed",
+  "actual_gazebo_execution_verified": false,
+  "contact_dynamics_stability_verified": false,
+  "robot_state_publisher_or_tf_setup_included": false
+}

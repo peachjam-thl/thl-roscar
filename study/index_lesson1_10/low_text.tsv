@@ -1,0 +1,169 @@
+﻿lesson	page	chars	lines	heading
+Lesson1	4	16	1	ROS 10 Year Montage
+Lesson1	5	8	2	1
+Lesson1	9	31	2	1.1 Why do we need to learn ROS?
+Lesson1	10	31	2	1.1 Why do we need to learn ROS?
+Lesson1	11	11	2	2
+Lesson1	14	15	2	3
+Lesson1	22	11	2	4
+Lesson1	23	39	2	4.1 Bibliography and resources
+Lesson1	25	45	3	Post-assessment
+Lesson1	28	18	3	Q&A
+Lesson1	32	14	2	1
+Lesson1	39	36	3	2
+Lesson1	56	53	2	2.3 Ubuntu installation and setups
+Lesson1	57	53	2	2.3 Ubuntu installation and setups
+Lesson1	59	54	3	2.3 Ubuntu installation and setups
+Lesson1	63	18	3	Q&A
+Lesson1	66	43	3	Pre-assessment
+Lesson1	67	25	2	1
+Lesson1	96	44	2	1.3 GNOME applications
+Lesson1	101	32	2	Homework
+Lesson1	102	18	3	Q&A
+Lesson2	4	17	2	1
+Lesson2	14	45	2	1.1 Ubuntu file and directory
+Lesson2	30	18	3	Q&A
+Lesson2	32	3	1	Q&A
+Lesson2	33	3	1	Q&A
+Lesson2	34	3	1	Q&A
+Lesson2	35	46	2	Q&A
+Lesson2	39	17	2	1
+Lesson2	47	13	2	2
+Lesson2	78	32	2	Homework
+Lesson2	79	18	3	Q&A
+Lesson3	4	17	2	1
+Lesson3	27	18	3	Q&A
+Lesson3	30	48	3	Pre-assessment
+Lesson3	31	24	2	1
+Lesson3	56	18	3	Q&A
+Lesson3	59	47	3	Pre-assessment
+Lesson3	60	22	2	1
+Lesson3	74	32	2	Homework
+Lesson3	75	18	3	Q&A
+Lesson4	3	48	3	Pre-assessment
+Lesson4	4	18	2	1
+Lesson4	24	32	2	Homework
+Lesson4	25	18	3	Q&A
+Lesson4	30	16	1	ROS 10 Year Montage
+Lesson4	31	8	2	1
+Lesson4	35	31	2	1.1 Why do we need to learn ROS?
+Lesson4	36	31	2	1.1 Why do we need to learn ROS?
+Lesson4	37	11	2	2
+Lesson4	40	15	2	3
+Lesson4	48	11	2	4
+Lesson4	49	39	2	4.1 Bibliography and resources
+Lesson4	51	45	3	Post-assessment
+Lesson4	55	14	2	1
+Lesson4	62	36	3	2
+Lesson4	79	53	2	2.3 Ubuntu installation and setups
+Lesson4	80	53	2	2.3 Ubuntu installation and setups
+Lesson4	82	54	3	2.3 Ubuntu installation and setups
+Lesson4	86	43	3	Pre-assessment
+Lesson4	87	25	2	1
+Lesson4	116	44	2	1.3 GNOME applications
+Lesson4	122	17	2	1
+Lesson4	132	45	2	1.1 Ubuntu file and directory
+Lesson4	148	17	2	1
+Lesson4	156	13	2	2
+Lesson4	188	17	2	1
+Lesson4	211	48	3	Pre-assessment
+Lesson4	212	24	2	1
+Lesson4	237	47	3	Pre-assessment
+Lesson4	238	22	2	1
+Lesson4	252	48	3	Pre-assessment
+Lesson4	253	18	2	1
+Lesson4	272	18	3	Q&A
+Lesson5	5	40	3	Pre-assessment
+Lesson5	6	18	2	1
+Lesson5	18	35	3	1.3 ROS Philosophy
+Lesson5	22	48	4	1.3 ROS Philosophy
+Lesson5	28	18	3	Q&A
+Lesson5	31	45	3	Pre-assessment
+Lesson5	32	16	2	1
+Lesson5	40	32	2	1.2 ROS installation
+Lesson5	43	53	4	1.2 ROS installation
+Lesson5	44	50	3	1.2 ROS installation
+Lesson5	45	54	3	1.2 ROS installation
+Lesson5	57	32	2	Homework
+Lesson5	58	18	3	Q&A
+Lesson6	4	17	2	1
+Lesson6	25	18	3	Q&A
+Lesson6	29	8	2	1
+Lesson6	35	17	2	2
+Lesson6	38	49	2	2.1 The filesystem level
+Lesson6	50	52	4	2.1 The filesystem level
+Lesson6	53	53	3	2.1 The filesystem level
+Lesson6	60	18	3	Q&A
+Lesson6	64	18	2	1
+Lesson6	86	32	2	Homework
+Lesson6	87	18	3	Q&A
+Lesson7	3	48	3	Pre-assessment
+Lesson7	4	27	2	1
+Lesson7	33	18	3	Q&A
+Lesson7	37	20	2	1
+Lesson7	57	18	3	Q&A
+Lesson7	61	19	2	1
+Lesson7	63	49	3	1.1 Turtlesim Examples
+Lesson7	70	40	4	主观题 10分
+Lesson7	83	32	2	Homework
+Lesson7	84	18	3	Q&A
+Lesson8	4	9	2	1
+Lesson8	21	49	3	1.1 Getting started with C++
+Lesson8	52	18	3	Q&A
+Lesson8	55	50	3	Pre-assessment
+Lesson8	56	10	2	1
+Lesson8	79	31	2	1.1 Rosluanch format
+Lesson8	81	32	2	Homework
+Lesson8	82	18	3	Q&A
+Lesson9	4	19	2	1
+Lesson9	11	19	2	2
+Lesson9	33	18	3	Q&A
+Lesson9	36	51	3	Pre-assessment
+Lesson9	37	33	2	1
+Lesson9	43	53	3	1.3 VSCode Application
+Lesson9	46	18	2	2
+Lesson9	64	33	2	Homework
+Lesson9	65	18	3	Q&A
+Lesson10	3	42	3	Pre-assessment
+Lesson10	4	44	3	1
+Lesson10	27	46	3	2
+Lesson10	42	33	2	Homework
+Lesson10	43	18	3	Q&A
+Lesson10	47	40	3	Pre-assessment
+Lesson10	48	18	2	1
+Lesson10	60	35	3	1.3 ROS Philosophy
+Lesson10	64	48	4	1.3 ROS Philosophy
+Lesson10	70	45	3	Pre-assessment
+Lesson10	71	16	2	1
+Lesson10	79	32	2	1.2 ROS installation
+Lesson10	82	53	4	1.2 ROS installation
+Lesson10	83	50	3	1.2 ROS installation
+Lesson10	84	54	3	1.2 ROS installation
+Lesson10	97	17	2	1
+Lesson10	119	8	2	1
+Lesson10	125	17	2	2
+Lesson10	128	49	2	2.1 The filesystem level
+Lesson10	140	52	4	2.1 The filesystem level
+Lesson10	143	53	3	2.1 The filesystem level
+Lesson10	151	18	2	1
+Lesson10	173	48	3	Pre-assessment
+Lesson10	174	27	2	1
+Lesson10	205	20	2	1
+Lesson10	227	19	2	1
+Lesson10	229	49	3	1.1 Turtlesim Examples
+Lesson10	236	40	4	主观题 10分
+Lesson10	251	9	2	1
+Lesson10	268	49	3	1.1 Getting started with C++
+Lesson10	300	50	3	Pre-assessment
+Lesson10	301	10	2	1
+Lesson10	324	31	2	1.1 Rosluanch format
+Lesson10	328	19	2	1
+Lesson10	335	19	2	2
+Lesson10	358	51	3	Pre-assessment
+Lesson10	359	33	2	1
+Lesson10	365	53	3	1.3 VSCode Application
+Lesson10	368	18	2	2
+Lesson10	387	42	3	Pre-assessment
+Lesson10	388	44	3	1
+Lesson10	411	46	3	2
+Lesson10	426	18	3	Q&A

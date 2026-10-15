@@ -1,0 +1,143 @@
+<robot name="myrobot_xacro" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <xacro:property name="Pi" value="3.1415926535898" />
+    
+    <xacro:property name="root_radius" value="0.0001" />
+    <xacro:property name="root_height" value="0.0001" />
+
+    <xacro:property name="base_radius" value="0.4" />
+    <xacro:property name="base_height" value="0.2" />
+
+    <xacro:property name="move_wheel_radius" value="0.1" />
+    <xacro:property name="move_wheel_height" value="0.08" />
+
+    <xacro:property name="support_wheel_radius" value="0.05" />    
+
+    <xacro:property name="support_radius" value="0.1" />
+    <xacro:property name="support_height" value="0.4" />
+
+    <xacro:property name="platform_radius" value="0.25" />
+    <xacro:property name="platform_height" value="0.15" />
+
+    <xacro:property name="laser_length" value="0.05" />
+    <xacro:property name="laser_width" value="0.06" />
+    <xacro:property name="laser_height" value="0.08" />
+
+    <xacro:property name="depth_length" value="0.05" />
+    <xacro:property name="depth_width" value="0.08" />
+    <xacro:property name="depth_height" value="0.08" />
+
+
+    <xacro:macro name="robot_element_link" params="link_name link_radius link_height material rgba">
+        <link name="${link_name}_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${link_radius}" length="${link_height}" />
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <material name="${material}">
+                    <color rgba="${rgba}" />
+                </material>
+            </visual>
+        </link>
+    </xacro:macro>
+
+    <xacro:robot_element_link link_name="root" link_radius="${root_radius}" link_height="${root_height}" material="Snow" rgba="1 0.98 0.98 0.8"/>
+    <xacro:robot_element_link link_name="base" link_radius="${base_radius}" link_height="${base_height}" material="Gold" rgba="1 0.843 0 0.8"/>
+    <xacro:robot_element_link link_name="support" link_radius="${support_radius}" link_height="${support_height}" material="DodgerBlue" rgba="0.118 0.565 1 0.8"/>
+    <xacro:robot_element_link link_name="platform" link_radius="${platform_radius}" link_height="${platform_height}" material="SpringGreen" rgba="0 1 0.498 0.8"/>
+   
+
+    <xacro:macro name="support_wheel" params="support_wheel_name flag material rgba">
+        <link name="${support_wheel_name}_support_wheel_link">
+            <visual>
+                <geometry>
+                    <sphere radius="${support_wheel_radius}" />
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <material name="${material}">
+                    <color rgba="${rgba}" />
+                </material>
+            </visual>
+        </link>
+        
+        <joint name="${support_wheel_name}_support_wheel_link2_base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="${support_wheel_name}_support_wheel_link" />
+            <origin xyz="${flag * 0.8 * base_radius} 0 ${-(base_height / 2 + support_wheel_radius)}" rpy="0 0 0" />
+            <axis xyz="1 1 1" />
+        </joint> 
+    </xacro:macro>
+
+    <xacro:support_wheel support_wheel_name="front" flag="1" material="Voilet" rgba="0.933 0.51 0.933 0.8"/>
+    <xacro:support_wheel support_wheel_name="back" flag="-1" material="Voilet" rgba="0.933 0.51 0.933 0.8"/>
+
+
+    <xacro:macro name="robot_wheel" params="wheel_name flag1 flag2">
+        <link name="${wheel_name}_wheel_link">
+            <visual>
+                <geometry>
+                    <cylinder radius="${move_wheel_radius}" length="${move_wheel_height}"/>
+                </geometry>
+                <origin xyz="0 0 0" rpy="${Pi / 2} 0 0"/>
+                <material name="Voilet">
+                    <color rgba="0.933 0.51 0.933 0.8" />
+                </material>
+            </visual>
+        </link>
+
+        <joint name="base_${flag2}_wheel_joint" type="continuous">
+            <parent link="base_link"/>
+            <child link="${wheel_name}_wheel_link" />
+            <origin xyz="0 ${flag1 * base_radius} ${-base_height / 2}" rpy="0 0 0" />
+            <axis xyz="0 1 0" />
+        </joint>
+    </xacro:macro>
+
+    <xacro:robot_wheel wheel_name="left" flag1="1" flag2="l" />
+    <xacro:robot_wheel wheel_name="right" flag1="-1" flag2="r"/>
+
+
+    <xacro:macro name="camera_link" params="camera_name camera_length camera_width camera_height material rgba">
+        <link name="${camera_name}_link">
+            <visual>
+                <geometry>
+                    <box size="${camera_length} ${camera_width} ${camera_height}" />
+                </geometry>
+                <origin xyz="0 0 0" rpy="0 0 0" />
+                <material name="${material}">
+                    <color rgba="${rgba}" />
+                </material>
+            </visual>
+        </link>
+    </xacro:macro>
+
+    <xacro:camera_link camera_name="laser_scan" camera_length="${laser_length}" camera_width="${laser_width}" camera_height="${laser_height}" material="IndianRed" rgba="0.804 0.361 0.361 0.8" />
+    <xacro:camera_link camera_name="depth_camera" camera_length="${depth_length}" camera_width="${depth_width}" camera_height="${depth_height}" material="Salmon" rgba="0.981 0.502 0.447 0.8" />
+
+
+    <xacro:macro name="joint_info" params="child_link parent_link type ox oy oz ax ay az">
+        <joint name="${child_link}2${parent_link}" type="${type}">
+            <parent link="${parent_link}"/>
+            <child link="${child_link}" />
+            <origin xyz="${ox} ${oy} ${oz}" rpy="0 0 0" />
+            <axis xyz="${ax} ${ay} ${az}" />
+        </joint>
+    </xacro:macro>
+
+    <xacro:joint_info child_link="base_link" parent_link="root_link" type="fixed" ox="0" oy="0" oz="${base_height / 2 +  move_wheel_radius}" ax="0" ay="0" az="0"/>
+    <xacro:joint_info child_link="support_link" parent_link="base_link" type="fixed" ox="0" oy="0" oz="${base_height / 2 + support_height / 2}" ax="0" ay="0" az="0"/>
+    <xacro:joint_info child_link="platform_link" parent_link="support_link" type="fixed" ox="0" oy="0" oz="${support_height / 2 + platform_height / 2}" ax="0" ay="0" az="0"/>
+    <xacro:joint_info child_link="laser_scan_link" parent_link="platform_link" type="continuous" ox="${ 0.8 * platform_radius} " oy="0" oz="${platform_height / 2 + laser_height / 2}" ax="0" ay="0" az="1"/>
+
+
+    <joint name="depth_camera_link2base_link" type="revolute">
+        <parent link="base_link"/>
+        <child link="depth_camera_link" />
+        <origin xyz="${0.8 * base_radius} 0 ${base_height / 2 + depth_height / 2}" rpy="0 0 0" />
+        <limit lower="-1.57" upper="1.57" effort="10" velocity="3" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+</robot>
+

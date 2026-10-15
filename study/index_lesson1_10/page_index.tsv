@@ -1,0 +1,1331 @@
+﻿lesson	page	chars	lines	heading
+Lesson1	1	89	4	机器人操作系统（双语）
+Lesson1	2	183	9	Overview lesson 1-1
+Lesson1	3	62	7	投票 最多可选1项
+Lesson1	4	16	1	ROS 10 Year Montage
+Lesson1	5	8	2	1
+Lesson1	6	69	3	1.1 Why do we need to learn ROS?
+Lesson1	7	55	3	1.1 Why do we need to learn ROS?
+Lesson1	8	93	3	1.1 Why do we need to learn ROS?
+Lesson1	9	31	2	1.1 Why do we need to learn ROS?
+Lesson1	10	31	2	1.1 Why do we need to learn ROS?
+Lesson1	11	11	2	2
+Lesson1	12	294	8	2.1 Philosophy of ROS
+Lesson1	13	263	9	2.1 Philosophy of ROS
+Lesson1	14	15	2	3
+Lesson1	15	332	21	3.1 Course information
+Lesson1	16	288	11	3.1 Course information
+Lesson1	17	211	10	3.1 Course information
+Lesson1	18	171	10	3.1 Course information
+Lesson1	19	203	10	3.1 Course information
+Lesson1	20	187	9	3.1 Course information
+Lesson1	21	289	12	3.1 Course information
+Lesson1	22	11	2	4
+Lesson1	23	39	2	4.1 Bibliography and resources
+Lesson1	24	297	9	4.1 Bibliography and resources
+Lesson1	25	45	3	Post-assessment
+Lesson1	26	56	5	主观题 10分
+Lesson1	27	144	10	Summary
+Lesson1	28	18	3	Q&A
+Lesson1	29	89	4	机器人操作系统（双语）
+Lesson1	30	158	10	Overview lesson 1-2
+Lesson1	31	77	4	Pre-assessment
+Lesson1	32	14	2	1
+Lesson1	33	343	9	1.1 Unix、linux and ubuntu
+Lesson1	34	294	9	1.1 Unix、linux and ubuntu
+Lesson1	35	382	10	1.1 Unix、linux and ubuntu
+Lesson1	36	349	11	1.1 Unix、linux and ubuntu
+Lesson1	37	279	8	1.1 Unix、linux and ubuntu
+Lesson1	38	399	12	1.1 Unix、linux and ubuntu
+Lesson1	39	36	3	2
+Lesson1	40	99	6	2.1 Preparations
+Lesson1	41	92	3	2.1 Preparations
+Lesson1	42	124	4	2.1 Preparations
+Lesson1	43	61	2	2.2 VirtualBox installation and setups
+Lesson1	44	86	4	2.2 VirtualBox installation and setups
+Lesson1	45	74	3	2.2 VirtualBox installation and setups
+Lesson1	46	55	2	2.2 VirtualBox installation and setups
+Lesson1	47	61	3	2.2 VirtualBox installation and setups
+Lesson1	48	82	4	2.2 VirtualBox installation and setups
+Lesson1	49	65	3	2.2 VirtualBox installation and setups
+Lesson1	50	64	3	2.2 VirtualBox installation and setups
+Lesson1	51	70	3	2.2 VirtualBox installation and setups
+Lesson1	52	68	3	2.2 VirtualBox installation and setups
+Lesson1	53	82	3	2.2 VirtualBox installation and setups
+Lesson1	54	55	2	2.2 VirtualBox installation and setups
+Lesson1	55	67	3	2.2 VirtualBox installation and setups
+Lesson1	56	53	2	2.3 Ubuntu installation and setups
+Lesson1	57	53	2	2.3 Ubuntu installation and setups
+Lesson1	58	126	6	2.3 Ubuntu installation and setups
+Lesson1	59	54	3	2.3 Ubuntu installation and setups
+Lesson1	60	100	5	Post-assessment
+Lesson1	61	111	7	主观题 10分
+Lesson1	62	93	7	Summary
+Lesson1	63	18	3	Q&A
+Lesson1	64	89	4	机器人操作系统（双语）
+Lesson1	65	97	7	Overview lesson 1-3
+Lesson1	66	43	3	Pre-assessment
+Lesson1	67	25	2	1
+Lesson1	68	339	10	1.1 Common desktop environment
+Lesson1	69	430	14	1.1 Common desktop environment
+Lesson1	70	155	11	1.1 Common desktop environment
+Lesson1	71	75	6	1.2 Ubuntu graphical interface
+Lesson1	72	304	10	1.2 Ubuntu graphical interface
+Lesson1	73	158	9	1.2 Ubuntu graphical interface
+Lesson1	74	63	3	1.2 Ubuntu graphical interface
+Lesson1	75	215	8	1.2 Ubuntu graphical interface
+Lesson1	76	60	3	1.2 Ubuntu graphical interface
+Lesson1	77	238	9	1.2 Ubuntu graphical interface
+Lesson1	78	62	3	1.2 Ubuntu graphical interface
+Lesson1	79	55	3	1.2 Ubuntu graphical interface
+Lesson1	80	57	3	1.2 Ubuntu graphical interface
+Lesson1	81	56	3	1.2 Ubuntu graphical interface
+Lesson1	82	164	7	1.2 Ubuntu graphical interface
+Lesson1	83	258	8	1.2 Ubuntu graphical interface
+Lesson1	84	55	3	1.2 Ubuntu graphical interface
+Lesson1	85	365	8	1.2 Ubuntu graphical interface
+Lesson1	86	55	3	1.2 Ubuntu graphical interface
+Lesson1	87	313	10	1.2 Ubuntu graphical interface
+Lesson1	88	66	3	1.2 Ubuntu graphical interface
+Lesson1	89	197	7	1.2 Ubuntu graphical interface
+Lesson1	90	159	5	1.2 Ubuntu graphical interface
+Lesson1	91	94	5	1.2 Ubuntu graphical interface
+Lesson1	92	70	4	1.2 Ubuntu graphical interface
+Lesson1	93	74	4	1.2 Ubuntu graphical interface
+Lesson1	94	81	4	1.2 Ubuntu graphical interface
+Lesson1	95	96	4	1.2 Ubuntu graphical interface
+Lesson1	96	44	2	1.3 GNOME applications
+Lesson1	97	372	10	1.3 GNOME applications
+Lesson1	98	92	5	Post-assessment
+Lesson1	99	103	7	主观题 10分
+Lesson1	100	121	9	Summary
+Lesson1	101	32	2	Homework
+Lesson1	102	18	3	Q&A
+Lesson2	1	89	4	机器人操作系统（双语）
+Lesson2	2	117	7	Overview lesson 2-1
+Lesson2	3	71	4	Pre-assessment
+Lesson2	4	17	2	1
+Lesson2	5	368	10	1.1 Ubuntu file and directory
+Lesson2	6	208	9	1.1 Ubuntu file and directory
+Lesson2	7	336	12	1.1 Ubuntu file and directory
+Lesson2	8	303	9	1.1 Ubuntu file and directory
+Lesson2	9	357	10	1.1 Ubuntu file and directory
+Lesson2	10	372	12	1.1 Ubuntu file and directory
+Lesson2	11	100	4	1.1 Ubuntu file and directory
+Lesson2	12	154	5	1.1 Ubuntu file and directory
+Lesson2	13	268	9	1.1 Ubuntu file and directory
+Lesson2	14	45	2	1.1 Ubuntu file and directory
+Lesson2	15	348	11	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	16	298	9	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	17	78	3	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	18	83	3	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	19	151	4	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	20	293	11	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	21	289	10	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	22	204	8	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	23	243	10	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	24	211	8	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	25	368	10	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	26	258	8	1.2 Filesystem Hierarchy Standard——FHS
+Lesson2	27	72	4	Post-assessment
+Lesson2	28	83	6	主观题 10分
+Lesson2	29	80	11	Summary
+Lesson2	30	18	3	Q&A
+Lesson2	31	89	4	机器人操作系统（双语）
+Lesson2	32	3	1	Q&A
+Lesson2	33	3	1	Q&A
+Lesson2	34	3	1	Q&A
+Lesson2	35	46	2	Q&A
+Lesson2	36	356	12	Q&A
+Lesson2	37	168	8	Overview lesson 2-2
+Lesson2	38	81	4	Pre-assessment
+Lesson2	39	17	2	1
+Lesson2	40	286	11	1.1 Linux command line interpreter
+Lesson2	41	245	13	1.1 Linux command line interpreter
+Lesson2	42	165	9	1.1 Linux command line interpreter
+Lesson2	43	342	14	1.1 Linux command line interpreter
+Lesson2	44	244	11	1.1 Linux command line interpreter
+Lesson2	45	250	9	1.1 Linux command line interpreter
+Lesson2	46	455	13	1.1 Linux command line interpreter
+Lesson2	47	13	2	2
+Lesson2	48	325	12	2.1 File and directory operation commands
+Lesson2	49	326	12	2.1 File and directory operation commands
+Lesson2	50	278	12	2.1 File and directory operation commands
+Lesson2	51	116	7	2.1 File and directory operation commands
+Lesson2	52	209	13	2.1 File and directory operation commands
+Lesson2	53	231	11	2.1 File and directory operation commands
+Lesson2	54	338	14	2.1 File and directory operation commands
+Lesson2	55	216	13	2.1 File and directory operation commands
+Lesson2	56	123	10	2.1 File and directory operation commands
+Lesson2	57	205	12	2.1 File and directory operation commands
+Lesson2	58	191	11	2.1 File and directory operation commands
+Lesson2	59	274	11	2.1 File and directory operation commands
+Lesson2	60	229	11	2.1 File and directory operation commands
+Lesson2	61	290	12	2.1 File and directory operation commands
+Lesson2	62	193	11	2.1 File and directory operation commands
+Lesson2	63	256	13	2.1 File and directory operation commands
+Lesson2	64	226	13	2.1 File and directory operation commands
+Lesson2	65	241	12	2.1 File and directory operation commands
+Lesson2	66	227	10	2.1 File and directory operation commands
+Lesson2	67	168	8	2.1 File and directory operation commands
+Lesson2	68	244	11	2.1 File and directory operation commands
+Lesson2	69	205	12	2.1 File and directory operation commands
+Lesson2	70	227	10	2.1 File and directory operation commands
+Lesson2	71	164	8	2.1 File and directory operation commands
+Lesson2	72	182	12	2.1 File and directory operation commands
+Lesson2	73	373	13	2.1 File and directory operation commands
+Lesson2	74	176	8	2.1 File and directory operation commands
+Lesson2	75	136	6	Post-assessment
+Lesson2	76	147	8	主观题 10分
+Lesson2	77	90	13	Summary
+Lesson2	78	32	2	Homework
+Lesson2	79	18	3	Q&A
+Lesson3	1	89	4	机器人操作系统（双语）
+Lesson3	2	112	7	Overview lesson 3-1
+Lesson3	3	106	6	Pre-assessment
+Lesson3	4	17	2	1
+Lesson3	5	293	11	1.1 Shell Programming
+Lesson3	6	352	16	1.1 Shell Programming
+Lesson3	7	298	12	1.1 Shell Programming
+Lesson3	8	313	13	1.1 Shell Programming
+Lesson3	9	324	13	1.1 Shell Programming
+Lesson3	10	184	10	1.1 Shell Programming
+Lesson3	11	215	12	1.1 Shell Programming
+Lesson3	12	386	12	1.1 Shell Programming
+Lesson3	13	346	11	1.1 Shell Programming
+Lesson3	14	334	11	1.1 Shell Programming
+Lesson3	15	407	12	1.1 Shell Programming
+Lesson3	16	104	5	1.1 Shell Programming
+Lesson3	17	353	13	1.2 Redirection and pipe
+Lesson3	18	327	11	1.2 Redirection and pipe
+Lesson3	19	274	10	1.2 Redirection and pipe
+Lesson3	20	349	13	1.2 Redirection and pipe
+Lesson3	21	192	11	1.2 Redirection and pipe
+Lesson3	22	369	13	1.2 Redirection and pipe
+Lesson3	23	302	12	1.2 Redirection and pipe
+Lesson3	24	81	5	Post-assessment
+Lesson3	25	92	7	主观题 10分
+Lesson3	26	89	8	Summary
+Lesson3	27	18	3	Q&A
+Lesson3	28	89	4	机器人操作系统（双语）
+Lesson3	29	107	7	Overview lesson 3-2
+Lesson3	30	48	3	Pre-assessment
+Lesson3	31	24	2	1
+Lesson3	32	249	13	1.1 Knowledge architecture
+Lesson3	33	156	10	1.2 Archiving with tar
+Lesson3	34	255	10	1.2 Archiving with tar
+Lesson3	35	152	10	1.2 Archiving with tar
+Lesson3	36	157	9	1.2 Archiving with tar
+Lesson3	37	196	9	1.3 Compression
+Lesson3	38	209	9	1.3 Compression
+Lesson3	39	193	10	1.3 Compression
+Lesson3	40	229	11	1.3 Compression
+Lesson3	41	126	9	1.3 Compression
+Lesson3	42	271	12	1.3 Compression
+Lesson3	43	259	11	1.3 Compression
+Lesson3	44	245	11	1.3 Compression
+Lesson3	45	99	7	1.3 Compression
+Lesson3	46	236	11	1.3 Compression
+Lesson3	47	216	9	1.3 Compression
+Lesson3	48	227	11	1.3 Compression
+Lesson3	49	88	7	1.3 Compression
+Lesson3	50	264	18	1.4 Archiving and compression
+Lesson3	51	246	9	1.4 Archiving and compression
+Lesson3	52	177	7	1.4 Archiving and compression
+Lesson3	53	76	4	Post-assessment
+Lesson3	54	87	6	主观题 10分
+Lesson3	55	134	6	Summary
+Lesson3	56	18	3	Q&A
+Lesson3	57	89	4	机器人操作系统（双语）
+Lesson3	58	97	7	Overview lesson 3-3
+Lesson3	59	47	3	Pre-assessment
+Lesson3	60	22	2	1
+Lesson3	61	236	15	1.1 Knowledge architecture
+Lesson3	62	253	9	1.2 User group
+Lesson3	63	256	10	1.3 Access mode
+Lesson3	64	158	6	1.3 Access mode
+Lesson3	65	93	6	1.3 Access mode
+Lesson3	66	224	9	1.4 The tools
+Lesson3	67	255	10	1.4 The tools
+Lesson3	68	269	11	1.4 The tools
+Lesson3	69	290	10	1.4 The tools
+Lesson3	70	178	10	1.4 The tools
+Lesson3	71	93	5	Post-assessment
+Lesson3	72	104	7	主观题 10分
+Lesson3	73	106	6	Summary
+Lesson3	74	32	2	Homework
+Lesson3	75	18	3	Q&A
+Lesson4	1	89	4	机器人操作系统（双语）
+Lesson4	2	105	7	Overview lesson 4-1
+Lesson4	3	48	3	Pre-assessment
+Lesson4	4	18	2	1
+Lesson4	5	345	12	1.1 Package management
+Lesson4	6	252	11	1.1 Package management
+Lesson4	7	302	11	1.1 Package management
+Lesson4	8	305	11	1.1 Package management
+Lesson4	9	207	8	1.1 Package management
+Lesson4	10	208	10	1.1 Package management
+Lesson4	11	320	10	1.1 Package management
+Lesson4	12	220	6	1.1 Package management
+Lesson4	13	308	9	1.1 Package management
+Lesson4	14	223	7	1.1 Package management
+Lesson4	15	277	11	1.1 Package management
+Lesson4	16	143	6	1.1 Package management
+Lesson4	17	414	12	1.1 Package management
+Lesson4	18	331	11	1.1 Package management
+Lesson4	19	507	12	1.1 Package management
+Lesson4	20	296	12	1.1 Package management
+Lesson4	21	74	5	Post-assessment
+Lesson4	22	85	7	主观题 10分
+Lesson4	23	81	6	Summary
+Lesson4	24	32	2	Homework
+Lesson4	25	18	3	Q&A
+Lesson4	26	89	4	机器人操作系统（双语）
+Lesson4	27	58	6	Overview lesson 4-2
+Lesson4	28	183	9	Overview lesson 1-1
+Lesson4	29	62	7	投票 最多可选1项
+Lesson4	30	16	1	ROS 10 Year Montage
+Lesson4	31	8	2	1
+Lesson4	32	69	3	1.1 Why do we need to learn ROS?
+Lesson4	33	55	3	1.1 Why do we need to learn ROS?
+Lesson4	34	93	3	1.1 Why do we need to learn ROS?
+Lesson4	35	31	2	1.1 Why do we need to learn ROS?
+Lesson4	36	31	2	1.1 Why do we need to learn ROS?
+Lesson4	37	11	2	2
+Lesson4	38	294	8	2.1 Philosophy of ROS
+Lesson4	39	263	9	2.1 Philosophy of ROS
+Lesson4	40	15	2	3
+Lesson4	41	332	21	3.1 Course information
+Lesson4	42	288	11	3.1 Course information
+Lesson4	43	211	10	3.1 Course information
+Lesson4	44	171	10	3.1 Course information
+Lesson4	45	203	10	3.1 Course information
+Lesson4	46	187	9	3.1 Course information
+Lesson4	47	289	12	3.1 Course information
+Lesson4	48	11	2	4
+Lesson4	49	39	2	4.1 Bibliography and resources
+Lesson4	50	297	9	4.1 Bibliography and resources
+Lesson4	51	45	3	Post-assessment
+Lesson4	52	144	10	Summary
+Lesson4	53	158	10	Overview lesson 1-2
+Lesson4	54	77	4	Pre-assessment
+Lesson4	55	14	2	1
+Lesson4	56	343	9	1.1 Unix、linux and ubuntu
+Lesson4	57	294	9	1.1 Unix、linux and ubuntu
+Lesson4	58	382	10	1.1 Unix、linux and ubuntu
+Lesson4	59	349	11	1.1 Unix、linux and ubuntu
+Lesson4	60	279	8	1.1 Unix、linux and ubuntu
+Lesson4	61	399	12	1.1 Unix、linux and ubuntu
+Lesson4	62	36	3	2
+Lesson4	63	99	6	2.1 Preparations
+Lesson4	64	92	3	2.1 Preparations
+Lesson4	65	124	4	2.1 Preparations
+Lesson4	66	61	2	2.2 VirtualBox installation and setups
+Lesson4	67	86	4	2.2 VirtualBox installation and setups
+Lesson4	68	74	3	2.2 VirtualBox installation and setups
+Lesson4	69	55	2	2.2 VirtualBox installation and setups
+Lesson4	70	61	3	2.2 VirtualBox installation and setups
+Lesson4	71	82	4	2.2 VirtualBox installation and setups
+Lesson4	72	65	3	2.2 VirtualBox installation and setups
+Lesson4	73	64	3	2.2 VirtualBox installation and setups
+Lesson4	74	70	3	2.2 VirtualBox installation and setups
+Lesson4	75	68	3	2.2 VirtualBox installation and setups
+Lesson4	76	82	3	2.2 VirtualBox installation and setups
+Lesson4	77	55	2	2.2 VirtualBox installation and setups
+Lesson4	78	67	3	2.2 VirtualBox installation and setups
+Lesson4	79	53	2	2.3 Ubuntu installation and setups
+Lesson4	80	53	2	2.3 Ubuntu installation and setups
+Lesson4	81	126	6	2.3 Ubuntu installation and setups
+Lesson4	82	54	3	2.3 Ubuntu installation and setups
+Lesson4	83	100	5	Post-assessment
+Lesson4	84	93	7	Summary
+Lesson4	85	97	7	Overview lesson 1-3
+Lesson4	86	43	3	Pre-assessment
+Lesson4	87	25	2	1
+Lesson4	88	339	10	1.1 Common desktop environment
+Lesson4	89	430	14	1.1 Common desktop environment
+Lesson4	90	155	11	1.1 Common desktop environment
+Lesson4	91	75	6	1.2 Ubuntu graphical interface
+Lesson4	92	304	10	1.2 Ubuntu graphical interface
+Lesson4	93	158	9	1.2 Ubuntu graphical interface
+Lesson4	94	63	3	1.2 Ubuntu graphical interface
+Lesson4	95	215	8	1.2 Ubuntu graphical interface
+Lesson4	96	60	3	1.2 Ubuntu graphical interface
+Lesson4	97	238	9	1.2 Ubuntu graphical interface
+Lesson4	98	62	3	1.2 Ubuntu graphical interface
+Lesson4	99	55	3	1.2 Ubuntu graphical interface
+Lesson4	100	57	3	1.2 Ubuntu graphical interface
+Lesson4	101	56	3	1.2 Ubuntu graphical interface
+Lesson4	102	164	7	1.2 Ubuntu graphical interface
+Lesson4	103	258	8	1.2 Ubuntu graphical interface
+Lesson4	104	55	3	1.2 Ubuntu graphical interface
+Lesson4	105	365	8	1.2 Ubuntu graphical interface
+Lesson4	106	55	3	1.2 Ubuntu graphical interface
+Lesson4	107	313	10	1.2 Ubuntu graphical interface
+Lesson4	108	66	3	1.2 Ubuntu graphical interface
+Lesson4	109	197	7	1.2 Ubuntu graphical interface
+Lesson4	110	159	5	1.2 Ubuntu graphical interface
+Lesson4	111	94	5	1.2 Ubuntu graphical interface
+Lesson4	112	70	4	1.2 Ubuntu graphical interface
+Lesson4	113	74	4	1.2 Ubuntu graphical interface
+Lesson4	114	81	4	1.2 Ubuntu graphical interface
+Lesson4	115	96	4	1.2 Ubuntu graphical interface
+Lesson4	116	44	2	1.3 GNOME applications
+Lesson4	117	372	10	1.3 GNOME applications
+Lesson4	118	92	5	Post-assessment
+Lesson4	119	121	9	Summary
+Lesson4	120	117	7	Overview lesson 2-1
+Lesson4	121	71	4	Pre-assessment
+Lesson4	122	17	2	1
+Lesson4	123	368	10	1.1 Ubuntu file and directory
+Lesson4	124	208	9	1.1 Ubuntu file and directory
+Lesson4	125	336	12	1.1 Ubuntu file and directory
+Lesson4	126	303	9	1.1 Ubuntu file and directory
+Lesson4	127	357	10	1.1 Ubuntu file and directory
+Lesson4	128	372	12	1.1 Ubuntu file and directory
+Lesson4	129	100	4	1.1 Ubuntu file and directory
+Lesson4	130	154	5	1.1 Ubuntu file and directory
+Lesson4	131	268	9	1.1 Ubuntu file and directory
+Lesson4	132	45	2	1.1 Ubuntu file and directory
+Lesson4	133	348	11	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	134	298	9	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	135	78	3	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	136	83	3	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	137	151	4	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	138	293	11	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	139	289	10	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	140	204	8	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	141	243	10	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	142	211	8	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	143	368	10	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	144	258	8	1.2 Filesystem Hierarchy Standard——FHS
+Lesson4	145	72	4	Post-assessment
+Lesson4	146	168	8	Overview lesson 2-2
+Lesson4	147	81	4	Pre-assessment
+Lesson4	148	17	2	1
+Lesson4	149	286	11	1.1 Linux command line interpreter
+Lesson4	150	245	13	1.1 Linux command line interpreter
+Lesson4	151	165	9	1.1 Linux command line interpreter
+Lesson4	152	342	14	1.1 Linux command line interpreter
+Lesson4	153	244	11	1.1 Linux command line interpreter
+Lesson4	154	250	9	1.1 Linux command line interpreter
+Lesson4	155	455	13	1.1 Linux command line interpreter
+Lesson4	156	13	2	2
+Lesson4	157	325	12	2.1 File and directory operation commands
+Lesson4	158	326	12	2.1 File and directory operation commands
+Lesson4	159	278	12	2.1 File and directory operation commands
+Lesson4	160	116	7	2.1 File and directory operation commands
+Lesson4	161	209	13	2.1 File and directory operation commands
+Lesson4	162	231	11	2.1 File and directory operation commands
+Lesson4	163	338	14	2.1 File and directory operation commands
+Lesson4	164	216	13	2.1 File and directory operation commands
+Lesson4	165	123	10	2.1 File and directory operation commands
+Lesson4	166	205	12	2.1 File and directory operation commands
+Lesson4	167	191	11	2.1 File and directory operation commands
+Lesson4	168	274	11	2.1 File and directory operation commands
+Lesson4	169	229	11	2.1 File and directory operation commands
+Lesson4	170	290	12	2.1 File and directory operation commands
+Lesson4	171	193	11	2.1 File and directory operation commands
+Lesson4	172	256	13	2.1 File and directory operation commands
+Lesson4	173	226	13	2.1 File and directory operation commands
+Lesson4	174	241	12	2.1 File and directory operation commands
+Lesson4	175	227	10	2.1 File and directory operation commands
+Lesson4	176	168	8	2.1 File and directory operation commands
+Lesson4	177	244	11	2.1 File and directory operation commands
+Lesson4	178	205	12	2.1 File and directory operation commands
+Lesson4	179	227	10	2.1 File and directory operation commands
+Lesson4	180	164	8	2.1 File and directory operation commands
+Lesson4	181	182	12	2.1 File and directory operation commands
+Lesson4	182	373	13	2.1 File and directory operation commands
+Lesson4	183	176	8	2.1 File and directory operation commands
+Lesson4	184	136	6	Post-assessment
+Lesson4	185	90	13	Summary
+Lesson4	186	112	7	Overview lesson 3-1
+Lesson4	187	106	6	Pre-assessment
+Lesson4	188	17	2	1
+Lesson4	189	293	11	1.1 Shell Programming
+Lesson4	190	352	16	1.1 Shell Programming
+Lesson4	191	298	12	1.1 Shell Programming
+Lesson4	192	313	13	1.1 Shell Programming
+Lesson4	193	324	13	1.1 Shell Programming
+Lesson4	194	184	10	1.1 Shell Programming
+Lesson4	195	215	12	1.1 Shell Programming
+Lesson4	196	386	12	1.1 Shell Programming
+Lesson4	197	346	11	1.1 Shell Programming
+Lesson4	198	334	11	1.1 Shell Programming
+Lesson4	199	407	12	1.1 Shell Programming
+Lesson4	200	104	5	1.1 Shell Programming
+Lesson4	201	353	13	1.2 Redirection and pipe
+Lesson4	202	327	11	1.2 Redirection and pipe
+Lesson4	203	274	10	1.2 Redirection and pipe
+Lesson4	204	349	13	1.2 Redirection and pipe
+Lesson4	205	192	11	1.2 Redirection and pipe
+Lesson4	206	369	13	1.2 Redirection and pipe
+Lesson4	207	302	12	1.2 Redirection and pipe
+Lesson4	208	81	5	Post-assessment
+Lesson4	209	89	8	Summary
+Lesson4	210	107	7	Overview lesson 3-2
+Lesson4	211	48	3	Pre-assessment
+Lesson4	212	24	2	1
+Lesson4	213	249	13	1.1 Knowledge architecture
+Lesson4	214	156	10	1.2 Archiving with tar
+Lesson4	215	255	10	1.2 Archiving with tar
+Lesson4	216	152	10	1.2 Archiving with tar
+Lesson4	217	157	9	1.2 Archiving with tar
+Lesson4	218	196	9	1.3 Compression
+Lesson4	219	209	9	1.3 Compression
+Lesson4	220	193	10	1.3 Compression
+Lesson4	221	229	11	1.3 Compression
+Lesson4	222	126	9	1.3 Compression
+Lesson4	223	271	12	1.3 Compression
+Lesson4	224	259	11	1.3 Compression
+Lesson4	225	245	11	1.3 Compression
+Lesson4	226	99	7	1.3 Compression
+Lesson4	227	236	11	1.3 Compression
+Lesson4	228	216	9	1.3 Compression
+Lesson4	229	227	11	1.3 Compression
+Lesson4	230	88	7	1.3 Compression
+Lesson4	231	264	18	1.4 Archiving and compression
+Lesson4	232	246	9	1.4 Archiving and compression
+Lesson4	233	177	7	1.4 Archiving and compression
+Lesson4	234	76	4	Post-assessment
+Lesson4	235	134	6	Summary
+Lesson4	236	97	7	Overview lesson 3-3
+Lesson4	237	47	3	Pre-assessment
+Lesson4	238	22	2	1
+Lesson4	239	236	15	1.1 Knowledge architecture
+Lesson4	240	253	9	1.2 User group
+Lesson4	241	256	10	1.3 Access mode
+Lesson4	242	158	6	1.3 Access mode
+Lesson4	243	93	6	1.3 Access mode
+Lesson4	244	224	9	1.4 The tools
+Lesson4	245	255	10	1.4 The tools
+Lesson4	246	269	11	1.4 The tools
+Lesson4	247	290	10	1.4 The tools
+Lesson4	248	178	10	1.4 The tools
+Lesson4	249	93	5	Post-assessment
+Lesson4	250	106	6	Summary
+Lesson4	251	105	7	Overview lesson 4-1
+Lesson4	252	48	3	Pre-assessment
+Lesson4	253	18	2	1
+Lesson4	254	345	12	1.1 Package management
+Lesson4	255	252	11	1.1 Package management
+Lesson4	256	302	11	1.1 Package management
+Lesson4	257	305	11	1.1 Package management
+Lesson4	258	207	8	1.1 Package management
+Lesson4	259	208	10	1.1 Package management
+Lesson4	260	320	10	1.1 Package management
+Lesson4	261	220	6	1.1 Package management
+Lesson4	262	308	9	1.1 Package management
+Lesson4	263	223	7	1.1 Package management
+Lesson4	264	277	11	1.1 Package management
+Lesson4	265	143	6	1.1 Package management
+Lesson4	266	414	12	1.1 Package management
+Lesson4	267	331	11	1.1 Package management
+Lesson4	268	507	12	1.1 Package management
+Lesson4	269	296	12	1.1 Package management
+Lesson4	270	74	5	Post-assessment
+Lesson4	271	81	6	Summary
+Lesson4	272	18	3	Q&A
+Lesson5	1	89	4	机器人操作系统（双语）
+Lesson5	2	117	7	投票 最多可选1项
+Lesson5	3	68	5	主观题 10分
+Lesson5	4	83	7	Overview lesson 5-1
+Lesson5	5	40	3	Pre-assessment
+Lesson5	6	18	2	1
+Lesson5	7	178	13	1.1 Knowledge architecture
+Lesson5	8	233	14	1.2 Background
+Lesson5	9	257	12	1.2 Background
+Lesson5	10	202	8	1.2 Background
+Lesson5	11	205	8	1.2 Background
+Lesson5	12	291	9	1.2 Background
+Lesson5	13	375	12	1.2 Background
+Lesson5	14	402	14	1.2 Background
+Lesson5	15	333	13	1.2 Background
+Lesson5	16	123	16	1.3 ROS Philosophy
+Lesson5	17	57	4	1.3 ROS Philosophy
+Lesson5	18	35	3	1.3 ROS Philosophy
+Lesson5	19	116	11	1.3 ROS Philosophy
+Lesson5	20	145	12	1.3 ROS Philosophy
+Lesson5	21	79	6	1.3 ROS Philosophy
+Lesson5	22	48	4	1.3 ROS Philosophy
+Lesson5	23	204	9	1.4 History of ROS
+Lesson5	24	90	4	1.5 How to study ROS？
+Lesson5	25	78	5	Post-assessment
+Lesson5	26	89	7	主观题 10分
+Lesson5	27	89	6	Summary
+Lesson5	28	18	3	Q&A
+Lesson5	29	89	4	机器人操作系统（双语）
+Lesson5	30	105	7	Overview lesson 5-2
+Lesson5	31	45	3	Pre-assessment
+Lesson5	32	16	2	1
+Lesson5	33	146	13	1.1 Knowledge architecture
+Lesson5	34	292	13	1.2 ROS installation
+Lesson5	35	295	12	1.2 ROS installation
+Lesson5	36	432	13	1.2 ROS installation
+Lesson5	37	392	12	1.2 ROS installation
+Lesson5	38	330	10	1.2 ROS installation
+Lesson5	39	307	13	1.2 ROS installation
+Lesson5	40	32	2	1.2 ROS installation
+Lesson5	41	426	12	1.2 ROS installation
+Lesson5	42	327	12	1.2 ROS installation
+Lesson5	43	53	4	1.2 ROS installation
+Lesson5	44	50	3	1.2 ROS installation
+Lesson5	45	54	3	1.2 ROS installation
+Lesson5	46	58	3	1.2 ROS installation
+Lesson5	47	120	6	1.2 ROS installation
+Lesson5	48	168	8	1.3 Command-line tools for ROS
+Lesson5	49	81	3	1.4 Turtlesim
+Lesson5	50	224	10	1.4 Turtlesim
+Lesson5	51	139	6	1.4 Turtlesim
+Lesson5	52	85	4	1.4 Turtlesim
+Lesson5	53	185	8	1.4 Turtlesim
+Lesson5	54	124	6	Post-assessment
+Lesson5	55	135	8	主观题 10分
+Lesson5	56	175	11	Summary
+Lesson5	57	32	2	Homework
+Lesson5	58	18	3	Q&A
+Lesson6	1	89	4	机器人操作系统（双语）
+Lesson6	2	102	8	Overview lesson 6-1
+Lesson6	3	84	5	Pre-assessment
+Lesson6	4	17	2	1
+Lesson6	5	211	13	1.1 Knowledge architecture
+Lesson6	6	134	13	1.2 ROS architecture
+Lesson6	7	243	11	1.2 ROS architecture
+Lesson6	8	118	6	1.3 The filesystem level
+Lesson6	9	324	11	1.3 The filesystem level
+Lesson6	10	114	8	1.3 The filesystem level
+Lesson6	11	141	6	1.3 The filesystem level
+Lesson6	12	308	8	1.3 The filesystem level
+Lesson6	13	380	12	1.3 The filesystem level
+Lesson6	14	309	13	1.3 The filesystem level turtlesim功能包结构
+Lesson6	15	423	14	1.3 The filesystem level
+Lesson6	16	319	10	1.3 The filesystem level
+Lesson6	17	255	7	1.3 The filesystem level
+Lesson6	18	85	4	1.3 The filesystem level
+Lesson6	19	186	7	1.3 The filesystem level
+Lesson6	20	166	9	1.3 The filesystem level
+Lesson6	21	102	4	1.3 The filesystem level
+Lesson6	22	119	5	Post-assessment
+Lesson6	23	130	7	主观题 10分
+Lesson6	24	101	9	Summary
+Lesson6	25	18	3	Q&A
+Lesson6	26	89	4	机器人操作系统（双语）
+Lesson6	27	114	8	Overview lesson 6-2
+Lesson6	28	74	5	Pre-assessment
+Lesson6	29	8	2	1
+Lesson6	30	244	13	1.1 XML basics
+Lesson6	31	215	8	1.1 XML basics
+Lesson6	32	174	8	1.1 XML basics
+Lesson6	33	134	7	1.1 XML basics
+Lesson6	34	207	12	1.1 XML basics
+Lesson6	35	17	2	2
+Lesson6	36	295	11	2.1 The filesystem level
+Lesson6	37	351	13	2.1 The filesystem level
+Lesson6	38	49	2	2.1 The filesystem level
+Lesson6	39	460	16	2.1 The filesystem level
+Lesson6	40	413	13	2.1 The filesystem level
+Lesson6	41	363	8	2.1 The filesystem level
+Lesson6	42	920	16	2.1 The filesystem level
+Lesson6	43	522	10	2.1 The filesystem level
+Lesson6	44	424	11	2.1 The filesystem level
+Lesson6	45	65	3	2.1 The filesystem level
+Lesson6	46	59	3	2.1 The filesystem level
+Lesson6	47	109	7	2.1 The filesystem level
+Lesson6	48	112	6	2.1 The filesystem level
+Lesson6	49	177	7	2.1 The filesystem level
+Lesson6	50	52	4	2.1 The filesystem level
+Lesson6	51	181	7	2.1 The filesystem level
+Lesson6	52	108	6	2.1 The filesystem level
+Lesson6	53	53	3	2.1 The filesystem level
+Lesson6	54	253	8	2.1 The filesystem level
+Lesson6	55	607	13	2.1 The filesystem level
+Lesson6	56	321	12	2.1 The filesystem level
+Lesson6	57	161	7	Post-assessment
+Lesson6	58	172	9	主观题 10分
+Lesson6	59	108	8	Summary
+Lesson6	60	18	3	Q&A
+Lesson6	61	89	4	机器人操作系统（双语）
+Lesson6	62	98	8	Overview lesson 6-3
+Lesson6	63	67	4	Pre-assessment
+Lesson6	64	18	2	1
+Lesson6	65	359	13	1.1 ROS Message
+Lesson6	66	350	10	1.1 ROS Message
+Lesson6	67	63	3	1.1 ROS Message
+Lesson6	68	211	7	1.1 ROS Message
+Lesson6	69	294	13	1.1 ROS Message
+Lesson6	70	327	14	1.1 ROS Message
+Lesson6	71	174	5	1.1 ROS Message
+Lesson6	72	214	7	1.1 ROS Message
+Lesson6	73	134	5	1.1 ROS Message
+Lesson6	74	170	6	1.1 ROS Message
+Lesson6	75	181	8	1.1 ROS Message
+Lesson6	76	291	9	1.1 ROS Message
+Lesson6	77	107	6	1.1 ROS Message
+Lesson6	78	246	9	1.2 ROS Service
+Lesson6	79	203	10	1.2 ROS Service
+Lesson6	80	289	16	1.2 ROS Service
+Lesson6	81	251	8	1.2 ROS Service
+Lesson6	82	107	6	1.2 ROS Service
+Lesson6	83	90	6	Post-assessment
+Lesson6	84	101	8	主观题 10分
+Lesson6	85	148	9	Summary
+Lesson6	86	32	2	Homework
+Lesson6	87	18	3	Q&A
+Lesson7	1	89	4	机器人操作系统（双语）
+Lesson7	2	112	7	Overview lesson 7-1
+Lesson7	3	48	3	Pre-assessment
+Lesson7	4	27	2	1
+Lesson7	5	270	8	1.1 CMake
+Lesson7	6	378	10	1.1 CMake
+Lesson7	7	249	7	1.1 CMake
+Lesson7	8	104	3	1.1 CMake
+Lesson7	9	300	8	1.1 CMake
+Lesson7	10	141	7	1.1 CMake
+Lesson7	11	573	12	1.1 CMake
+Lesson7	12	324	10	1.1 CMake
+Lesson7	13	174	6	1.1 CMake
+Lesson7	14	354	11	1.1 CMake
+Lesson7	15	482	10	1.1 CMake
+Lesson7	16	441	14	1.1 CMake
+Lesson7	17	166	4	1.1 CMake
+Lesson7	18	561	16	1.1 CMake
+Lesson7	19	109	7	1.1 CMake
+Lesson7	20	390	12	1.1 CMake
+Lesson7	21	586	14	1.1 CMake
+Lesson7	22	307	10	1.1 CMake
+Lesson7	23	307	15	1.1 CMake
+Lesson7	24	319	10	1.1 CMake
+Lesson7	25	326	11	1.1 CMake
+Lesson7	26	385	13	1.1 CMake
+Lesson7	27	487	14	1.1 CMake
+Lesson7	28	536	14	1.1 CMake
+Lesson7	29	363	10	1.1 CMake
+Lesson7	30	441	12	1.1 CMake
+Lesson7	31	509	12	Summary
+Lesson7	32	190	9	Homework
+Lesson7	33	18	3	Q&A
+Lesson7	34	89	4	机器人操作系统（双语）
+Lesson7	35	118	9	Overview lesson 7-2
+Lesson7	36	68	3	Pre-assessment
+Lesson7	37	20	2	1
+Lesson7	38	351	16	1.1 ROS computation graph level
+Lesson7	39	227	7	1.1 ROS computation graph level
+Lesson7	40	423	12	1.1 ROS computation graph level
+Lesson7	41	184	8	1.1 ROS computation graph level
+Lesson7	42	273	8	1.1 ROS computation graph level
+Lesson7	43	261	8	1.1 ROS computation graph level
+Lesson7	44	228	8	1.1 ROS computation graph level
+Lesson7	45	231	8	1.1 ROS computation graph level
+Lesson7	46	197	7	1.1 ROS computation graph level
+Lesson7	47	148	5	1.1 ROS computation graph level
+Lesson7	48	427	12	1.1 ROS computation graph level
+Lesson7	49	321	11	1.1 ROS computation graph level
+Lesson7	50	237	8	1.1 ROS computation graph level
+Lesson7	51	106	9	1.1 ROS computation graph level
+Lesson7	52	62	4	1.1 ROS computation graph level
+Lesson7	53	61	4	1.1 ROS computation graph level
+Lesson7	54	69	5	1.1 ROS computation graph level
+Lesson7	55	102	5	1.1 ROS computation graph level
+Lesson7	56	67	9	Summary
+Lesson7	57	18	3	Q&A
+Lesson7	58	89	4	机器人操作系统（双语）
+Lesson7	59	102	8	Overview lesson 7-3
+Lesson7	60	63	4	Pre-assessment
+Lesson7	61	19	2	1
+Lesson7	62	129	3	1.1 Turtlesim Examples
+Lesson7	63	49	3	1.1 Turtlesim Examples
+Lesson7	64	261	19	1.1 Turtlesim Examples
+Lesson7	65	181	12	1.1 Turtlesim Examples
+Lesson7	66	230	11	1.1 Turtlesim Examples
+Lesson7	67	79	6	1.1 Turtlesim Examples
+Lesson7	68	81	4	1.1 Turtlesim Examples
+Lesson7	69	130	7	1.1 Turtlesim Examples
+Lesson7	70	40	4	主观题 10分
+Lesson7	71	196	10	1.1 Turtlesim Examples
+Lesson7	72	132	6	1.1 Turtlesim Examples
+Lesson7	73	175	8	1.1 Turtlesim Examples
+Lesson7	74	260	8	1.1 Turtlesim Examples
+Lesson7	75	94	5	1.1 Turtlesim Examples
+Lesson7	76	116	6	1.1 Turtlesim Examples
+Lesson7	77	229	6	1.1 Turtlesim Examples
+Lesson7	78	144	6	1.1 Turtlesim Examples
+Lesson7	79	115	5	1.1 Turtlesim Examples
+Lesson7	80	358	12	1.1 Turtlesim Examples
+Lesson7	81	260	6	1.1 Turtlesim Examples
+Lesson7	82	164	6	Summary
+Lesson7	83	32	2	Homework
+Lesson7	84	18	3	Q&A
+Lesson8	1	89	4	机器人操作系统（双语）
+Lesson8	2	94	8	Overview lesson 8-1
+Lesson8	3	67	4	Pre-assessment
+Lesson8	4	9	2	1
+Lesson8	5	310	10	1.1 Getting started with C++
+Lesson8	6	160	5	1.1 Getting started with C++
+Lesson8	7	144	6	1.1 Getting started with C++
+Lesson8	8	142	8	1.1 Getting started with C++
+Lesson8	9	93	5	1.1 Getting started with C++
+Lesson8	10	242	8	1.1 Getting started with C++
+Lesson8	11	100	6	1.1 Getting started with C++
+Lesson8	12	197	14	1.1 Getting started with C++
+Lesson8	13	328	12	1.1 Getting started with C++
+Lesson8	14	120	6	1.1 Getting started with C++
+Lesson8	15	176	9	1.1 Getting started with C++
+Lesson8	16	115	6	1.1 Getting started with C++
+Lesson8	17	213	15	1.1 Getting started with C++
+Lesson8	18	144	7	1.1 Getting started with C++
+Lesson8	19	98	7	1.1 Getting started with C++
+Lesson8	20	193	10	1.1 Getting started with C++
+Lesson8	21	49	3	1.1 Getting started with C++
+Lesson8	22	198	7	1.1 Getting started with C++
+Lesson8	23	174	13	1.1 Getting started with C++
+Lesson8	24	161	13	1.1 Getting started with C++
+Lesson8	25	182	12	1.1 Getting started with C++
+Lesson8	26	396	18	1.1 Getting started with C++
+Lesson8	27	177	7	1.1 Getting started with C++
+Lesson8	28	204	8	1.1 Getting started with C++
+Lesson8	29	187	8	1.1 Getting started with C++
+Lesson8	30	136	6	1.1 Getting started with C++
+Lesson8	31	315	12	1.1 Getting started with C++
+Lesson8	32	351	12	1.1 Getting started with C++
+Lesson8	33	187	6	1.1 Getting started with C++
+Lesson8	34	206	15	1.1 Getting started with C++
+Lesson8	35	142	9	1.1 Getting started with C++
+Lesson8	36	311	19	1.1 Getting started with C++
+Lesson8	37	295	16	1.1 Getting started with C++
+Lesson8	38	224	7	1.1 Getting started with C++
+Lesson8	39	80	5	1.1 Getting started with C++
+Lesson8	40	264	9	1.1 Getting started with C++
+Lesson8	41	162	13	1.1 Getting started with C++
+Lesson8	42	177	16	1.1 Getting started with C++
+Lesson8	43	245	9	1.1 Getting started with C++
+Lesson8	44	289	11	1.1 Getting started with C++
+Lesson8	45	135	11	1.1 Getting started with C++
+Lesson8	46	126	10	1.1 Getting started with C++
+Lesson8	47	192	14	1.1 Getting started with C++
+Lesson8	48	180	8	1.1 Getting started with C++
+Lesson8	49	337	18	1.1 Getting started with C++
+Lesson8	50	109	7	1.1 Getting started with C++
+Lesson8	51	164	14	Summary
+Lesson8	52	18	3	Q&A
+Lesson8	53	89	4	机器人操作系统（双语）
+Lesson8	54	87	6	Overview lesson 8-2
+Lesson8	55	50	3	Pre-assessment
+Lesson8	56	10	2	1
+Lesson8	57	236	8	1.1 Rosluanch format
+Lesson8	58	468	14	1.1 Rosluanch format
+Lesson8	59	503	13	1.1 Rosluanch format
+Lesson8	60	713	13	1.1 Rosluanch format
+Lesson8	61	845	15	1.1 Rosluanch format
+Lesson8	62	66	3	1.1 Rosluanch format
+Lesson8	63	450	12	1.1 Rosluanch format
+Lesson8	64	430	10	1.1 Rosluanch format
+Lesson8	65	394	13	1.1 Rosluanch format
+Lesson8	66	196	8	1.1 Rosluanch format
+Lesson8	67	331	8	1.1 Rosluanch format
+Lesson8	68	552	10	1.1 Rosluanch format
+Lesson8	69	920	16	1.1 Rosluanch format
+Lesson8	70	367	10	1.1 Rosluanch format
+Lesson8	71	478	10	1.1 Rosluanch format
+Lesson8	72	193	6	1.1 Rosluanch format
+Lesson8	73	338	11	1.1 Rosluanch format
+Lesson8	74	158	8	1.1 Rosluanch format
+Lesson8	75	361	15	1.1 Rosluanch format
+Lesson8	76	423	11	1.1 Rosluanch format
+Lesson8	77	89	3	1.1 Rosluanch format
+Lesson8	78	277	10	1.1 Rosluanch format
+Lesson8	79	31	2	1.1 Rosluanch format
+Lesson8	80	119	13	Summary
+Lesson8	81	32	2	Homework
+Lesson8	82	18	3	Q&A
+Lesson9	1	89	4	机器人操作系统（双语）
+Lesson9	2	109	7	Overview lesson 9-1
+Lesson9	3	66	4	Pre-assessment
+Lesson9	4	19	2	1
+Lesson9	5	324	19	1.1 Topic model
+Lesson9	6	267	17	1.1 Topic model
+Lesson9	7	263	16	1.1 Topic model
+Lesson9	8	251	11	1.2 Service model
+Lesson9	9	330	14	1.2 Service model
+Lesson9	10	184	13	1.2 Service model
+Lesson9	11	19	2	2
+Lesson9	12	194	8	2.1 ROS Programming
+Lesson9	13	285	9	2.1 ROS Programming
+Lesson9	14	246	9	2.1 ROS Programming
+Lesson9	15	274	11	2.1 ROS Programming
+Lesson9	16	211	9	2.1 ROS Programming
+Lesson9	17	243	11	2.1 ROS Programming
+Lesson9	18	337	11	2.1 ROS Programming
+Lesson9	19	309	10	2.1 ROS Programming
+Lesson9	20	147	8	2.1 ROS Programming
+Lesson9	21	154	8	2.1 ROS Programming
+Lesson9	22	228	8	2.1 ROS Programming
+Lesson9	23	235	8	2.1 ROS Programming
+Lesson9	24	359	12	2.1 ROS Programming
+Lesson9	25	171	10	2.1 ROS Programming
+Lesson9	26	186	9	2.1 ROS Programming
+Lesson9	27	151	6	2.1 ROS Programming
+Lesson9	28	197	9	2.1 ROS Programming
+Lesson9	29	184	11	2.1 ROS Programming
+Lesson9	30	122	7	2.1 ROS Programming
+Lesson9	31	80	5	2.1 ROS Programming
+Lesson9	32	163	13	Summary
+Lesson9	33	18	3	Q&A
+Lesson9	34	89	4	机器人操作系统（双语）
+Lesson9	35	121	8	Overview lesson 9-2
+Lesson9	36	51	3	Pre-assessment
+Lesson9	37	33	2	1
+Lesson9	38	454	12	1.1 VSCode Introduction
+Lesson9	39	79	3	1.2 VSCode Installation
+Lesson9	40	108	7	1.2 VSCode Installation
+Lesson9	41	73	7	1.3 VSCode Application
+Lesson9	42	140	9	1.3 VSCode Application
+Lesson9	43	53	3	1.3 VSCode Application
+Lesson9	44	292	19	1.3 VSCode Application
+Lesson9	45	102	6	1.3 VSCode Application
+Lesson9	46	18	2	2
+Lesson9	47	233	13	2.1 Publish node
+Lesson9	48	119	9	2.1 Publish node
+Lesson9	49	344	15	2.1 Publish node
+Lesson9	50	255	16	2.1 Publish node
+Lesson9	51	169	11	2.1 Publish node
+Lesson9	52	214	10	2.1 Publish node
+Lesson9	53	279	12	2.1 Publish node
+Lesson9	54	308	19	2.1 Publish node
+Lesson9	55	209	9	2.1 Publish node
+Lesson9	56	128	10	2.2 Subscribe node
+Lesson9	57	211	8	2.2 Subscribe node
+Lesson9	58	265	12	2.2 Subscribe node
+Lesson9	59	260	11	2.2 Subscribe node
+Lesson9	60	203	13	2.2 Subscribe node
+Lesson9	61	175	8	2.2 Subscribe node
+Lesson9	62	209	9	2.1 Publish node
+Lesson9	63	149	12	Summary
+Lesson9	64	33	2	Homework
+Lesson9	65	18	3	Q&A
+Lesson10	1	89	4	机器人操作系统（双语）
+Lesson10	2	169	9	Overview lesson 10-1
+Lesson10	3	42	3	Pre-assessment
+Lesson10	4	44	3	1
+Lesson10	5	210	14	1.1 Standard message type
+Lesson10	6	113	8	1.1 Standard message type
+Lesson10	7	500	20	1.1 Standard message type
+Lesson10	8	122	9	1.1 Standard message type
+Lesson10	9	368	16	1.1 Standard message type
+Lesson10	10	333	9	1.1 Standard message type
+Lesson10	11	208	8	1.2 Custom message type
+Lesson10	12	248	11	1.2 Custom message type
+Lesson10	13	147	9	1.2 Custom message type
+Lesson10	14	119	7	1.2 Custom message type
+Lesson10	15	227	10	1.2 Custom message type
+Lesson10	16	217	12	1.2 Custom message type
+Lesson10	17	164	12	1.2 Custom message type
+Lesson10	18	250	10	1.2 Custom message type
+Lesson10	19	207	14	1.3 Publish node
+Lesson10	20	201	9	1.3 Publish node
+Lesson10	21	390	16	1.3 Publish node
+Lesson10	22	194	12	1.3 Publish node
+Lesson10	23	202	5	1.3 Publish node
+Lesson10	24	256	8	1.4 Subscribe node
+Lesson10	25	246	11	1.4 Subscribe node
+Lesson10	26	204	5	1.4 Subscribe node
+Lesson10	27	46	3	2
+Lesson10	28	173	10	2.1 Custom service type
+Lesson10	29	181	10	2.1 Custom service type
+Lesson10	30	193	8	2.1 Custom service type
+Lesson10	31	192	10	2.1 Custom service type
+Lesson10	32	113	7	2.1 Custom service type
+Lesson10	33	121	7	2.1 Custom service type
+Lesson10	34	108	9	2.2 Publish node
+Lesson10	35	366	17	2.2 Publish node
+Lesson10	36	250	13	2.2 Publish node
+Lesson10	37	357	17	2.3 Subscribe node
+Lesson10	38	259	18	2.3 Subscribe node
+Lesson10	39	336	8	2.4 CMakeLists.txt
+Lesson10	40	264	11	2.5 Additional statement
+Lesson10	41	235	11	Summary
+Lesson10	42	33	2	Homework
+Lesson10	43	18	3	Q&A
+Lesson10	44	89	4	机器人操作系统（双语）
+Lesson10	45	59	6	Overview lesson 10-2
+Lesson10	46	83	7	Overview lesson 5-1
+Lesson10	47	40	3	Pre-assessment
+Lesson10	48	18	2	1
+Lesson10	49	178	13	1.1 Knowledge architecture
+Lesson10	50	233	14	1.2 Background
+Lesson10	51	257	12	1.2 Background
+Lesson10	52	202	8	1.2 Background
+Lesson10	53	205	8	1.2 Background
+Lesson10	54	291	9	1.2 Background
+Lesson10	55	375	12	1.2 Background
+Lesson10	56	402	14	1.2 Background
+Lesson10	57	333	13	1.2 Background
+Lesson10	58	123	16	1.3 ROS Philosophy
+Lesson10	59	57	4	1.3 ROS Philosophy
+Lesson10	60	35	3	1.3 ROS Philosophy
+Lesson10	61	116	11	1.3 ROS Philosophy
+Lesson10	62	145	12	1.3 ROS Philosophy
+Lesson10	63	79	6	1.3 ROS Philosophy
+Lesson10	64	48	4	1.3 ROS Philosophy
+Lesson10	65	204	9	1.4 History of ROS
+Lesson10	66	90	4	1.5 How to study ROS？
+Lesson10	67	78	5	Post-assessment
+Lesson10	68	89	6	Summary
+Lesson10	69	105	7	Overview lesson 5-2
+Lesson10	70	45	3	Pre-assessment
+Lesson10	71	16	2	1
+Lesson10	72	146	13	1.1 Knowledge architecture
+Lesson10	73	292	13	1.2 ROS installation
+Lesson10	74	295	12	1.2 ROS installation
+Lesson10	75	432	13	1.2 ROS installation
+Lesson10	76	392	12	1.2 ROS installation
+Lesson10	77	330	10	1.2 ROS installation
+Lesson10	78	307	13	1.2 ROS installation
+Lesson10	79	32	2	1.2 ROS installation
+Lesson10	80	426	12	1.2 ROS installation
+Lesson10	81	327	12	1.2 ROS installation
+Lesson10	82	53	4	1.2 ROS installation
+Lesson10	83	50	3	1.2 ROS installation
+Lesson10	84	54	3	1.2 ROS installation
+Lesson10	85	58	3	1.2 ROS installation
+Lesson10	86	120	6	1.2 ROS installation
+Lesson10	87	168	8	1.3 Command-line tools for ROS
+Lesson10	88	81	3	1.4 Turtlesim
+Lesson10	89	224	10	1.4 Turtlesim
+Lesson10	90	139	6	1.4 Turtlesim
+Lesson10	91	85	4	1.4 Turtlesim
+Lesson10	92	185	8	1.4 Turtlesim
+Lesson10	93	124	6	Post-assessment
+Lesson10	94	175	11	Summary
+Lesson10	95	102	8	Overview lesson 6-1
+Lesson10	96	84	5	Pre-assessment
+Lesson10	97	17	2	1
+Lesson10	98	211	13	1.1 Knowledge architecture
+Lesson10	99	134	13	1.2 ROS architecture
+Lesson10	100	243	11	1.2 ROS architecture
+Lesson10	101	118	6	1.3 The filesystem level
+Lesson10	102	324	11	1.3 The filesystem level
+Lesson10	103	114	8	1.3 The filesystem level
+Lesson10	104	141	6	1.3 The filesystem level
+Lesson10	105	308	8	1.3 The filesystem level
+Lesson10	106	380	12	1.3 The filesystem level
+Lesson10	107	309	13	1.3 The filesystem level turtlesim功能包结构
+Lesson10	108	423	14	1.3 The filesystem level
+Lesson10	109	319	10	1.3 The filesystem level
+Lesson10	110	255	7	1.3 The filesystem level
+Lesson10	111	85	4	1.3 The filesystem level
+Lesson10	112	186	7	1.3 The filesystem level
+Lesson10	113	166	9	1.3 The filesystem level
+Lesson10	114	102	4	1.3 The filesystem level
+Lesson10	115	119	5	Post-assessment
+Lesson10	116	101	9	Summary
+Lesson10	117	114	8	Overview lesson 6-2
+Lesson10	118	74	5	Pre-assessment
+Lesson10	119	8	2	1
+Lesson10	120	244	13	1.1 XML basics
+Lesson10	121	215	8	1.1 XML basics
+Lesson10	122	174	8	1.1 XML basics
+Lesson10	123	134	7	1.1 XML basics
+Lesson10	124	207	12	1.1 XML basics
+Lesson10	125	17	2	2
+Lesson10	126	295	11	2.1 The filesystem level
+Lesson10	127	351	13	2.1 The filesystem level
+Lesson10	128	49	2	2.1 The filesystem level
+Lesson10	129	460	16	2.1 The filesystem level
+Lesson10	130	413	13	2.1 The filesystem level
+Lesson10	131	363	8	2.1 The filesystem level
+Lesson10	132	920	16	2.1 The filesystem level
+Lesson10	133	522	10	2.1 The filesystem level
+Lesson10	134	424	11	2.1 The filesystem level
+Lesson10	135	65	3	2.1 The filesystem level
+Lesson10	136	59	3	2.1 The filesystem level
+Lesson10	137	109	7	2.1 The filesystem level
+Lesson10	138	112	6	2.1 The filesystem level
+Lesson10	139	177	7	2.1 The filesystem level
+Lesson10	140	52	4	2.1 The filesystem level
+Lesson10	141	181	7	2.1 The filesystem level
+Lesson10	142	108	6	2.1 The filesystem level
+Lesson10	143	53	3	2.1 The filesystem level
+Lesson10	144	253	8	2.1 The filesystem level
+Lesson10	145	607	13	2.1 The filesystem level
+Lesson10	146	321	12	2.1 The filesystem level
+Lesson10	147	161	7	Post-assessment
+Lesson10	148	108	8	Summary
+Lesson10	149	98	8	Overview lesson 6-3
+Lesson10	150	67	4	Pre-assessment
+Lesson10	151	18	2	1
+Lesson10	152	359	13	1.1 ROS Message
+Lesson10	153	350	10	1.1 ROS Message
+Lesson10	154	63	3	1.1 ROS Message
+Lesson10	155	211	7	1.1 ROS Message
+Lesson10	156	294	13	1.1 ROS Message
+Lesson10	157	327	14	1.1 ROS Message
+Lesson10	158	174	5	1.1 ROS Message
+Lesson10	159	214	7	1.1 ROS Message
+Lesson10	160	134	5	1.1 ROS Message
+Lesson10	161	170	6	1.1 ROS Message
+Lesson10	162	181	8	1.1 ROS Message
+Lesson10	163	291	9	1.1 ROS Message
+Lesson10	164	107	6	1.1 ROS Message
+Lesson10	165	246	9	1.2 ROS Service
+Lesson10	166	203	10	1.2 ROS Service
+Lesson10	167	289	16	1.2 ROS Service
+Lesson10	168	251	8	1.2 ROS Service
+Lesson10	169	107	6	1.2 ROS Service
+Lesson10	170	90	6	Post-assessment
+Lesson10	171	148	9	Summary
+Lesson10	172	112	7	Overview lesson 7-1
+Lesson10	173	48	3	Pre-assessment
+Lesson10	174	27	2	1
+Lesson10	175	270	8	1.1 CMake
+Lesson10	176	378	10	1.1 CMake
+Lesson10	177	249	7	1.1 CMake
+Lesson10	178	104	3	1.1 CMake
+Lesson10	179	300	8	1.1 CMake
+Lesson10	180	141	7	1.1 CMake
+Lesson10	181	573	12	1.1 CMake
+Lesson10	182	324	10	1.1 CMake
+Lesson10	183	174	6	1.1 CMake
+Lesson10	184	354	11	1.1 CMake
+Lesson10	185	482	10	1.1 CMake
+Lesson10	186	441	14	1.1 CMake
+Lesson10	187	166	4	1.1 CMake
+Lesson10	188	561	16	1.1 CMake
+Lesson10	189	109	7	1.1 CMake
+Lesson10	190	390	12	1.1 CMake
+Lesson10	191	586	14	1.1 CMake
+Lesson10	192	307	10	1.1 CMake
+Lesson10	193	307	15	1.1 CMake
+Lesson10	194	319	10	1.1 CMake
+Lesson10	195	326	11	1.1 CMake
+Lesson10	196	385	13	1.1 CMake
+Lesson10	197	487	14	1.1 CMake
+Lesson10	198	536	14	1.1 CMake
+Lesson10	199	363	10	1.1 CMake
+Lesson10	200	441	12	1.1 CMake
+Lesson10	201	509	12	Summary
+Lesson10	202	190	9	Homework
+Lesson10	203	118	9	Overview lesson 7-2
+Lesson10	204	68	3	Pre-assessment
+Lesson10	205	20	2	1
+Lesson10	206	351	16	1.1 ROS computation graph level
+Lesson10	207	227	7	1.1 ROS computation graph level
+Lesson10	208	423	12	1.1 ROS computation graph level
+Lesson10	209	184	8	1.1 ROS computation graph level
+Lesson10	210	273	8	1.1 ROS computation graph level
+Lesson10	211	261	8	1.1 ROS computation graph level
+Lesson10	212	228	8	1.1 ROS computation graph level
+Lesson10	213	231	8	1.1 ROS computation graph level
+Lesson10	214	197	7	1.1 ROS computation graph level
+Lesson10	215	148	5	1.1 ROS computation graph level
+Lesson10	216	427	12	1.1 ROS computation graph level
+Lesson10	217	321	11	1.1 ROS computation graph level
+Lesson10	218	237	8	1.1 ROS computation graph level
+Lesson10	219	106	9	1.1 ROS computation graph level
+Lesson10	220	62	4	1.1 ROS computation graph level
+Lesson10	221	61	4	1.1 ROS computation graph level
+Lesson10	222	69	5	1.1 ROS computation graph level
+Lesson10	223	102	5	1.1 ROS computation graph level
+Lesson10	224	67	9	Summary
+Lesson10	225	102	8	Overview lesson 7-3
+Lesson10	226	63	4	Pre-assessment
+Lesson10	227	19	2	1
+Lesson10	228	129	3	1.1 Turtlesim Examples
+Lesson10	229	49	3	1.1 Turtlesim Examples
+Lesson10	230	261	19	1.1 Turtlesim Examples
+Lesson10	231	181	12	1.1 Turtlesim Examples
+Lesson10	232	230	11	1.1 Turtlesim Examples
+Lesson10	233	79	6	1.1 Turtlesim Examples
+Lesson10	234	81	4	1.1 Turtlesim Examples
+Lesson10	235	130	7	1.1 Turtlesim Examples
+Lesson10	236	40	4	主观题 10分
+Lesson10	237	196	10	1.1 Turtlesim Examples
+Lesson10	238	132	6	1.1 Turtlesim Examples
+Lesson10	239	175	8	1.1 Turtlesim Examples
+Lesson10	240	260	8	1.1 Turtlesim Examples
+Lesson10	241	94	5	1.1 Turtlesim Examples
+Lesson10	242	116	6	1.1 Turtlesim Examples
+Lesson10	243	229	6	1.1 Turtlesim Examples
+Lesson10	244	144	6	1.1 Turtlesim Examples
+Lesson10	245	115	5	1.1 Turtlesim Examples
+Lesson10	246	358	12	1.1 Turtlesim Examples
+Lesson10	247	260	6	1.1 Turtlesim Examples
+Lesson10	248	164	6	Summary
+Lesson10	249	94	8	Overview lesson 8-1
+Lesson10	250	67	4	Pre-assessment
+Lesson10	251	9	2	1
+Lesson10	252	310	10	1.1 Getting started with C++
+Lesson10	253	160	5	1.1 Getting started with C++
+Lesson10	254	144	6	1.1 Getting started with C++
+Lesson10	255	142	8	1.1 Getting started with C++
+Lesson10	256	93	5	1.1 Getting started with C++
+Lesson10	257	242	8	1.1 Getting started with C++
+Lesson10	258	100	6	1.1 Getting started with C++
+Lesson10	259	197	14	1.1 Getting started with C++
+Lesson10	260	328	12	1.1 Getting started with C++
+Lesson10	261	120	6	1.1 Getting started with C++
+Lesson10	262	176	9	1.1 Getting started with C++
+Lesson10	263	115	6	1.1 Getting started with C++
+Lesson10	264	213	15	1.1 Getting started with C++
+Lesson10	265	144	7	1.1 Getting started with C++
+Lesson10	266	98	7	1.1 Getting started with C++
+Lesson10	267	193	10	1.1 Getting started with C++
+Lesson10	268	49	3	1.1 Getting started with C++
+Lesson10	269	198	7	1.1 Getting started with C++
+Lesson10	270	174	13	1.1 Getting started with C++
+Lesson10	271	161	13	1.1 Getting started with C++
+Lesson10	272	182	12	1.1 Getting started with C++
+Lesson10	273	396	18	1.1 Getting started with C++
+Lesson10	274	177	7	1.1 Getting started with C++
+Lesson10	275	204	8	1.1 Getting started with C++
+Lesson10	276	187	8	1.1 Getting started with C++
+Lesson10	277	136	6	1.1 Getting started with C++
+Lesson10	278	315	12	1.1 Getting started with C++
+Lesson10	279	351	12	1.1 Getting started with C++
+Lesson10	280	187	6	1.1 Getting started with C++
+Lesson10	281	206	15	1.1 Getting started with C++
+Lesson10	282	142	9	1.1 Getting started with C++
+Lesson10	283	311	19	1.1 Getting started with C++
+Lesson10	284	295	16	1.1 Getting started with C++
+Lesson10	285	224	7	1.1 Getting started with C++
+Lesson10	286	80	5	1.1 Getting started with C++
+Lesson10	287	264	9	1.1 Getting started with C++
+Lesson10	288	162	13	1.1 Getting started with C++
+Lesson10	289	177	16	1.1 Getting started with C++
+Lesson10	290	245	9	1.1 Getting started with C++
+Lesson10	291	289	11	1.1 Getting started with C++
+Lesson10	292	135	11	1.1 Getting started with C++
+Lesson10	293	126	10	1.1 Getting started with C++
+Lesson10	294	192	14	1.1 Getting started with C++
+Lesson10	295	180	8	1.1 Getting started with C++
+Lesson10	296	337	18	1.1 Getting started with C++
+Lesson10	297	109	7	1.1 Getting started with C++
+Lesson10	298	164	14	Summary
+Lesson10	299	87	6	Overview lesson 8-2
+Lesson10	300	50	3	Pre-assessment
+Lesson10	301	10	2	1
+Lesson10	302	236	8	1.1 Rosluanch format
+Lesson10	303	468	14	1.1 Rosluanch format
+Lesson10	304	503	13	1.1 Rosluanch format
+Lesson10	305	713	13	1.1 Rosluanch format
+Lesson10	306	845	15	1.1 Rosluanch format
+Lesson10	307	66	3	1.1 Rosluanch format
+Lesson10	308	450	12	1.1 Rosluanch format
+Lesson10	309	430	10	1.1 Rosluanch format
+Lesson10	310	394	13	1.1 Rosluanch format
+Lesson10	311	196	8	1.1 Rosluanch format
+Lesson10	312	331	8	1.1 Rosluanch format
+Lesson10	313	552	10	1.1 Rosluanch format
+Lesson10	314	920	16	1.1 Rosluanch format
+Lesson10	315	367	10	1.1 Rosluanch format
+Lesson10	316	478	10	1.1 Rosluanch format
+Lesson10	317	193	6	1.1 Rosluanch format
+Lesson10	318	338	11	1.1 Rosluanch format
+Lesson10	319	158	8	1.1 Rosluanch format
+Lesson10	320	361	15	1.1 Rosluanch format
+Lesson10	321	423	11	1.1 Rosluanch format
+Lesson10	322	89	3	1.1 Rosluanch format
+Lesson10	323	277	10	1.1 Rosluanch format
+Lesson10	324	31	2	1.1 Rosluanch format
+Lesson10	325	119	13	Summary
+Lesson10	326	109	7	Overview lesson 9-1
+Lesson10	327	66	4	Pre-assessment
+Lesson10	328	19	2	1
+Lesson10	329	324	19	1.1 Topic model
+Lesson10	330	267	17	1.1 Topic model
+Lesson10	331	263	16	1.1 Topic model
+Lesson10	332	251	11	1.2 Service model
+Lesson10	333	330	14	1.2 Service model
+Lesson10	334	184	13	1.2 Service model
+Lesson10	335	19	2	2
+Lesson10	336	194	8	2.1 ROS Programming
+Lesson10	337	285	9	2.1 ROS Programming
+Lesson10	338	246	9	2.1 ROS Programming
+Lesson10	339	274	11	2.1 ROS Programming
+Lesson10	340	211	9	2.1 ROS Programming
+Lesson10	341	243	11	2.1 ROS Programming
+Lesson10	342	337	11	2.1 ROS Programming
+Lesson10	343	309	10	2.1 ROS Programming
+Lesson10	344	147	8	2.1 ROS Programming
+Lesson10	345	154	8	2.1 ROS Programming
+Lesson10	346	228	8	2.1 ROS Programming
+Lesson10	347	235	8	2.1 ROS Programming
+Lesson10	348	359	12	2.1 ROS Programming
+Lesson10	349	171	10	2.1 ROS Programming
+Lesson10	350	186	9	2.1 ROS Programming
+Lesson10	351	151	6	2.1 ROS Programming
+Lesson10	352	197	9	2.1 ROS Programming
+Lesson10	353	184	11	2.1 ROS Programming
+Lesson10	354	122	7	2.1 ROS Programming
+Lesson10	355	80	5	2.1 ROS Programming
+Lesson10	356	163	13	Summary
+Lesson10	357	121	8	Overview lesson 9-2
+Lesson10	358	51	3	Pre-assessment
+Lesson10	359	33	2	1
+Lesson10	360	454	12	1.1 VSCode Introduction
+Lesson10	361	79	3	1.2 VSCode Installation
+Lesson10	362	108	7	1.2 VSCode Installation
+Lesson10	363	73	7	1.3 VSCode Application
+Lesson10	364	140	9	1.3 VSCode Application
+Lesson10	365	53	3	1.3 VSCode Application
+Lesson10	366	292	19	1.3 VSCode Application
+Lesson10	367	102	6	1.3 VSCode Application
+Lesson10	368	18	2	2
+Lesson10	369	233	13	2.1 Publish node
+Lesson10	370	119	9	2.1 Publish node
+Lesson10	371	344	15	2.1 Publish node
+Lesson10	372	255	16	2.1 Publish node
+Lesson10	373	169	11	2.1 Publish node
+Lesson10	374	214	10	2.1 Publish node
+Lesson10	375	279	12	2.1 Publish node
+Lesson10	376	308	19	2.1 Publish node
+Lesson10	377	209	9	2.1 Publish node
+Lesson10	378	128	10	2.2 Subscribe node
+Lesson10	379	211	8	2.2 Subscribe node
+Lesson10	380	265	12	2.2 Subscribe node
+Lesson10	381	260	11	2.2 Subscribe node
+Lesson10	382	203	13	2.2 Subscribe node
+Lesson10	383	175	8	2.2 Subscribe node
+Lesson10	384	209	9	2.1 Publish node
+Lesson10	385	149	12	Summary
+Lesson10	386	169	9	Overview lesson 10-1
+Lesson10	387	42	3	Pre-assessment
+Lesson10	388	44	3	1
+Lesson10	389	210	14	1.1 Standard message type
+Lesson10	390	113	8	1.1 Standard message type
+Lesson10	391	500	20	1.1 Standard message type
+Lesson10	392	122	9	1.1 Standard message type
+Lesson10	393	368	16	1.1 Standard message type
+Lesson10	394	333	9	1.1 Standard message type
+Lesson10	395	208	8	1.2 Custom message type
+Lesson10	396	248	11	1.2 Custom message type
+Lesson10	397	147	9	1.2 Custom message type
+Lesson10	398	119	7	1.2 Custom message type
+Lesson10	399	227	10	1.2 Custom message type
+Lesson10	400	217	12	1.2 Custom message type
+Lesson10	401	164	12	1.2 Custom message type
+Lesson10	402	250	10	1.2 Custom message type
+Lesson10	403	207	14	1.3 Publish node
+Lesson10	404	201	9	1.3 Publish node
+Lesson10	405	390	16	1.3 Publish node
+Lesson10	406	194	12	1.3 Publish node
+Lesson10	407	202	5	1.3 Publish node
+Lesson10	408	256	8	1.4 Subscribe node
+Lesson10	409	246	11	1.4 Subscribe node
+Lesson10	410	204	5	1.4 Subscribe node
+Lesson10	411	46	3	2
+Lesson10	412	173	10	2.1 Custom service type
+Lesson10	413	181	10	2.1 Custom service type
+Lesson10	414	193	8	2.1 Custom service type
+Lesson10	415	192	10	2.1 Custom service type
+Lesson10	416	113	7	2.1 Custom service type
+Lesson10	417	121	7	2.1 Custom service type
+Lesson10	418	108	9	2.2 Publish node
+Lesson10	419	366	17	2.2 Publish node
+Lesson10	420	250	13	2.2 Publish node
+Lesson10	421	357	17	2.3 Subscribe node
+Lesson10	422	259	18	2.3 Subscribe node
+Lesson10	423	336	8	2.4 CMakeLists.txt
+Lesson10	424	264	11	2.5 Additional statement
+Lesson10	425	235	11	Summary
+Lesson10	426	18	3	Q&A

@@ -1,0 +1,24 @@
+# Workspace outputs and runtime/private state
+**/build/
+**/devel/
+**/install/
+**/.catkin_tools/
+**/__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.ros/
+.gazebo/
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*token*.secret
+*.vmdk
+*.vmem
+*.vmss
+*.bag
+*.log
+Thumbs.db
+.DS_Store

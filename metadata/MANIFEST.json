@@ -1,0 +1,654 @@
+{
+  "generated_utc": "2026-10-15T05:36:43.678626+00:00",
+  "date_china": "2026-10-15",
+  "manifest_excludes_itself": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 146,
+      "sha256": "e2b85f5e51cb30224522857587dd2cb96b26ac77391af940ecc6f8b977cb60ad"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 264,
+      "sha256": "8b3f3d80af26b4a2bcdc9301ab6ac7665ec4a6803f5c27debc268e0d32ff6576"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2182,
+      "sha256": "f674671fa72b804575d401afa244b5752725ca74c084d00da71a015590e65af2"
+    },
+    {
+      "path": "archives/Lesson13_Gazebo_step4.zip",
+      "bytes": 3682,
+      "sha256": "77ac60adebf5b4ed08069dc47ccca2334abab41537cc422dc6d19690f4a281dd"
+    },
+    {
+      "path": "archives/Lesson13_Gazebo_step6_drive.zip",
+      "bytes": 2324,
+      "sha256": "e05ac671ae19e0790d75e856cf120c44d02f02d7fb33482d54cca711fb7a3457"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/CMakeLists.txt",
+      "bytes": 7146,
+      "sha256": "b20feaf929a628b444159ad51ebf3adf7de52bdf11b5ed6a0a93a96237b9177a"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/config/arbotix_control.yaml",
+      "bytes": 247,
+      "sha256": "4223d9f7a747bd3e9c32d1da7283901a0551654c8f0c4784307449bb79eae0ba"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/config/myrobot.rviz",
+      "bytes": 6708,
+      "sha256": "3e7c1ddb16b3ebb3dc2cfbe54029ff663d8e528ac583564ed433d15d6202b674"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/config/myrobot_arbotix.rviz",
+      "bytes": 7897,
+      "sha256": "6cf5a198d60282db23fe93c6b795a5bda2cc953bfeb9b2a6a6a397111de56e69"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_drive_step6.launch",
+      "bytes": 810,
+      "sha256": "7cde38e82c677a12b4f922c7ec38a9223aeec7d809493214b189b8ba18c8fc18"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_gazebo_step4.launch",
+      "bytes": 806,
+      "sha256": "85ede33d09d96629fd930063bfd4c5c9487751862f699de95c2361b548322efd"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/urdf/myrobot_urdf.launch",
+      "bytes": 460,
+      "sha256": "2f969215d771276a2a9368d87983a838bc0185a53a588648bef5f6cd8ae355b3"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/xacro/arbotix_control.launch",
+      "bytes": 889,
+      "sha256": "7c3190ebf20ae18e672c978c377fdac9ae174cd7d979e1e264e251a28734cb5a"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/xacro/myrobot_urdf_xacro.launch",
+      "bytes": 464,
+      "sha256": "5221e5b211c2a969c0a5d71b96ed8aa6325e03be6ea382c1e92169580dfb4dd0"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/xacro/myrobot_xacro.launch",
+      "bytes": 426,
+      "sha256": "ddc351983439cb85c71c40a458bbb6b12436ce429887cf1daee311597de849ba"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/package.xml",
+      "bytes": 3025,
+      "sha256": "0f7e6887be319cab0764d99f3f7feaec9479fb38d13b71dbeb23f66e07f4abb5"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/test_forward_step6.py",
+      "bytes": 1866,
+      "sha256": "96c94f52bf092c2bdc0900ea4d54c488feef6006feaf0365fd79281f30f8cb85"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_drive_step6.xacro",
+      "bytes": 1459,
+      "sha256": "6749814305c92fb69281669f0c3fff93b1a97dbf57a71eee756562445d249c9b"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_gazebo_step4.xacro",
+      "bytes": 9046,
+      "sha256": "99252280c93b4e84f1a17842f7569f654ccdade43c02dd2f4a1738b1fe98a534"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/urdf/myrobot.urdf",
+      "bytes": 5616,
+      "sha256": "0d1f44203375f4e1c93f62e43abbe1d53f3cf2f930e8cc9db542dfdbd704f073"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/xacro/myrobot_v1.urdf",
+      "bytes": 5283,
+      "sha256": "2861c5174972ba15088d943ca03bcaf428ed8ff33abd5ac19ebd49efb3bde12b"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/xacro/myrobot_v1.xacro",
+      "bytes": 7370,
+      "sha256": "9c5df7199e0a9bd9f2f0adecd98f7195f32c7d5dbecb959b9ac8281c29270e89"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/xacro/myrobot_v2.urdf",
+      "bytes": 5284,
+      "sha256": "6a4a2dbe2e01bd37949cffa052380ccdd712e0e57ead777fab0e00d69e5f2dd8"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/xacro/myrobot_v2.xacro",
+      "bytes": 6740,
+      "sha256": "c313ba4fa4b9157cd29fe3400d97379b838685731ee8c04c7334f16701379839"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/worlds/lesson13_flat_step4.world",
+      "bytes": 1886,
+      "sha256": "a2df3e429eee676d0a529b88ff383774ee5d3ea39443a641cdc48036fe1819c6"
+    },
+    {
+      "path": "context/COVERAGE_AND_LIMITS.md",
+      "bytes": 2608,
+      "sha256": "c025d26970836967f24093133c75b37e463a5cf82a3e2a53be7879c8c03682f9"
+    },
+    {
+      "path": "context/CURRENT_STATE.md",
+      "bytes": 3641,
+      "sha256": "135d704f8f173b2e5b4e6c9086ae0441833f17e495e9fc15537598e101355cef"
+    },
+    {
+      "path": "context/EARLIER_CONTEXT.md",
+      "bytes": 7934,
+      "sha256": "ab9ca24d8f4058a7f1f5cfdb12fd3fc8c26282e210d4e62e61dcd25dbf6d2632"
+    },
+    {
+      "path": "context/OPERATION_LOG_2026-10-14_15.md",
+      "bytes": 5584,
+      "sha256": "aac146dcb3237974ec31f3469d495fb4403b0f21e9995635bb2c1bd50d963c95"
+    },
+    {
+      "path": "context/USER_PREFERENCES.md",
+      "bytes": 1198,
+      "sha256": "9970495a18712ae40bf0ba937304b397ad1c6e8bd23d0a0f6033610c29fe434c"
+    },
+    {
+      "path": "courseware/Lesson1.pdf",
+      "bytes": 7383452,
+      "sha256": "ab9f88e760d15876d2437d9e96a34eccb557ab3cf21fe4f7b6d9fb7e6bbc4e95"
+    },
+    {
+      "path": "courseware/Lesson10.pdf",
+      "bytes": 13611786,
+      "sha256": "1f5ed9996331ea74254bc277e06e0a682b9e70b5309d2f84a78092d9bd0f7ec9"
+    },
+    {
+      "path": "courseware/Lesson11.pdf",
+      "bytes": 7090164,
+      "sha256": "2a85289793ba3504d3ed8435bbb2bc5cf2119a2adfd0739660dd25bd1fa4d9b8"
+    },
+    {
+      "path": "courseware/Lesson12.pdf",
+      "bytes": 5220057,
+      "sha256": "a6533d5a26ac3b4bf629205e1c253d374f96ad2cf7809677f4ecbd948afe53d8"
+    },
+    {
+      "path": "courseware/Lesson13.pdf",
+      "bytes": 3991474,
+      "sha256": "bb3a2f7fbae5a0f018d84086ee10681493a6e2c56b40086750d8b1138eb3cc1c"
+    },
+    {
+      "path": "courseware/Lesson14.pdf",
+      "bytes": 4342429,
+      "sha256": "280d0188343a214ca46ed94bea9aa2898671ba9ed30229471fed677aeccfcb55"
+    },
+    {
+      "path": "courseware/Lesson15.pdf",
+      "bytes": 2647335,
+      "sha256": "baf39f4539523cc42ef448a2549374da762e4cb16238978b61e030e9fd69255e"
+    },
+    {
+      "path": "courseware/Lesson2.pdf",
+      "bytes": 2787859,
+      "sha256": "11d19113f2134b6a12bf2fbab7954773f3d81fa320dae5ac952a25d355f57d55"
+    },
+    {
+      "path": "courseware/Lesson3.pdf",
+      "bytes": 3247666,
+      "sha256": "48ef37588d77d3409abf9c8d5afa8449e12eb3403554d697c4fdf977c317ae1c"
+    },
+    {
+      "path": "courseware/Lesson4.pdf",
+      "bytes": 9156495,
+      "sha256": "98aa8373cb100892c96d9d5d2437e8b3ce78b412808d63ca7a9f98f1e26b94af"
+    },
+    {
+      "path": "courseware/Lesson5.pdf",
+      "bytes": 4547408,
+      "sha256": "14270f0fc30da183f2fc64490d898e3c55fdcbc47bbf31cde90560585b5f3138"
+    },
+    {
+      "path": "courseware/Lesson6.pdf",
+      "bytes": 4573563,
+      "sha256": "3c179242408cc9691ca78cc2dd20ca2973d8a47ec289d74501a9542d0551f4ef"
+    },
+    {
+      "path": "courseware/Lesson7.pdf",
+      "bytes": 5635612,
+      "sha256": "e2dfc6825247bb5338ba342d5bf589faee3e6d324f15d6d7293d7e838dd7435b"
+    },
+    {
+      "path": "courseware/Lesson8.pdf",
+      "bytes": 2885283,
+      "sha256": "a0d9a268d1e28766024d3ecefc7dd952e031eebf6c8780318244ffb8ab01e153"
+    },
+    {
+      "path": "courseware/Lesson9.pdf",
+      "bytes": 2578503,
+      "sha256": "897c52feab52aa5aca28b1e27025b3e7c6bae43bed83ab4d27e5d4493b9e0ecf"
+    },
+    {
+      "path": "courseware/README.md",
+      "bytes": 863,
+      "sha256": "2bad27dab4ddff1db9869c80a821f9c13eff013e639bbaa2be5174266668a9f0"
+    },
+    {
+      "path": "docs/RUNBOOK.md",
+      "bytes": 6105,
+      "sha256": "9d8c59b728ab6604f57ea830c46dde888f5159832d890094e4b5b086022b75f1"
+    },
+    {
+      "path": "evidence/gazebo_model_user_screenshot_2026-10-14.png",
+      "bytes": 245917,
+      "sha256": "6f17f07a7529c5d7bc9abaada00937492536dad10ef1660d970e1eee1b52ec2a"
+    },
+    {
+      "path": "evidence/step4/README_使用说明.md",
+      "bytes": 4092,
+      "sha256": "3409b9eb9f05ee46279e20cd65b9b5d55856743efaa38ae873b12d37e5af7b04"
+    },
+    {
+      "path": "evidence/step4/verification.json",
+      "bytes": 3357,
+      "sha256": "02ac8210aef4e7a07d03456c80d6197fcf4e6cdc7f7ebcf8bf4c7ecf39f64c5b"
+    },
+    {
+      "path": "evidence/step6/README_使用说明.md",
+      "bytes": 6161,
+      "sha256": "b7009847d1acc27da44bf2261f885b676b3a75e2482c49649245cc0f20746509"
+    },
+    {
+      "path": "evidence/step6/runtime_user_reported.json",
+      "bytes": 1415,
+      "sha256": "727bef49f5b2dd616272acc7ff2af5635f747e9ed4f6a7c8aa6918690641ea8b"
+    },
+    {
+      "path": "evidence/step6/verification.json",
+      "bytes": 2041,
+      "sha256": "e13aabcaa4aa69dc1c1ea927d2d466f8cde10f2fe7c5ee191f7bbf0ac576e4e2"
+    },
+    {
+      "path": "history/assets/user_image_001.jpg",
+      "bytes": 97488,
+      "sha256": "15c9590742d4882a80199898710252a3fb95999bef360475b5ee90c3ceb2c057"
+    },
+    {
+      "path": "history/assets/user_image_002.jpg",
+      "bytes": 162981,
+      "sha256": "aa21855e8b063b0638e5a1507f6642462b7707974b3875a1e2930a1ddb70230f"
+    },
+    {
+      "path": "history/assets/user_image_003.jpg",
+      "bytes": 164309,
+      "sha256": "fba51f0020a1509b6aadabf547e36f858fd4de410a98601128e3b80ef7347d85"
+    },
+    {
+      "path": "history/assets/user_image_004.jpg",
+      "bytes": 65060,
+      "sha256": "2bc9a2eacff90e9e2c405aff86cdc3f98bffc6877722b063b736eeb3a266197a"
+    },
+    {
+      "path": "history/assets/user_image_005.jpg",
+      "bytes": 56599,
+      "sha256": "860ac9be15fc6339509aaf3078ea3a46198b1681263ebfa4a61c173e835a6290"
+    },
+    {
+      "path": "history/assets/user_image_006.jpg",
+      "bytes": 82317,
+      "sha256": "38cc59b1c55e6e072b812fac8056a840272fbb01d6204b2cedf712ae6e723faf"
+    },
+    {
+      "path": "history/assets/user_image_007.jpg",
+      "bytes": 150901,
+      "sha256": "76a3efc2d07b1e51e9aa3b92a8b14bba475a422e34a60fb4ecdca3f0a83c4523"
+    },
+    {
+      "path": "history/assets/user_image_008.jpg",
+      "bytes": 146001,
+      "sha256": "8ed8048c7bb484839c1814cb1cb4f9f3ae715b1cbeb944c35f1cde8e3bdc064c"
+    },
+    {
+      "path": "history/assets/user_image_009.jpg",
+      "bytes": 146001,
+      "sha256": "8ed8048c7bb484839c1814cb1cb4f9f3ae715b1cbeb944c35f1cde8e3bdc064c"
+    },
+    {
+      "path": "history/assets/user_image_010.jpg",
+      "bytes": 176319,
+      "sha256": "8dff437510be65bb3f5fdc991ea85166e098b3c252d61201a98524068adaea48"
+    },
+    {
+      "path": "history/assets/user_image_011.jpg",
+      "bytes": 60964,
+      "sha256": "f9f20cb2956ceb45f611d9a2c3efc3b1377856dd64ddee0d47af815296c0d9fb"
+    },
+    {
+      "path": "history/assets/user_image_012.jpg",
+      "bytes": 154345,
+      "sha256": "5e97a588623be00e913deb3605ed1d12aa5f671460ec59831960ec2f5edb4085"
+    },
+    {
+      "path": "history/assets/user_image_013.jpg",
+      "bytes": 60097,
+      "sha256": "6166d5a3555e085f3b6dc49e8b0b1efeacb54fd3bcebb59dcd11176b34ddddd5"
+    },
+    {
+      "path": "history/assets/user_image_014.jpg",
+      "bytes": 114721,
+      "sha256": "e0a6073a3d3911e071567d08417b57b0dcf2a31e2be9d5cc766ac7ddacfb2244"
+    },
+    {
+      "path": "history/assets/user_image_015.jpg",
+      "bytes": 90615,
+      "sha256": "473799db96442b08002dd98076ef9f14033010d534aed7ccf49bc49479cabceb"
+    },
+    {
+      "path": "history/assets/user_image_016.jpg",
+      "bytes": 88821,
+      "sha256": "3da0b2a3d8679b7b4e851386335f5cc6a79e646cf512499d964ce1bc5789dba3"
+    },
+    {
+      "path": "history/assets/user_image_017.jpg",
+      "bytes": 110618,
+      "sha256": "79f00081ac400e6df2d18e58036453ba96832fb63ede4b5cd3b0a06260e15cbc"
+    },
+    {
+      "path": "history/assets/user_image_018.jpg",
+      "bytes": 75176,
+      "sha256": "9c57da1a7daebaf4a1aee4cfcc97ca51ef73197c4dc4dfd6ad4e449d8fd7fd77"
+    },
+    {
+      "path": "history/assets/user_image_019.jpg",
+      "bytes": 85355,
+      "sha256": "28c9b0d36f40c23697b71db00369508d58edde10522e88222defa455bcbf6765"
+    },
+    {
+      "path": "history/assets/user_image_020.jpg",
+      "bytes": 94032,
+      "sha256": "9c8078492c21008bb102c587313ffc1eeed56b01f5cccc706bae32ac1f023e5b"
+    },
+    {
+      "path": "history/assets/user_image_021.png",
+      "bytes": 276930,
+      "sha256": "d04a91ec325e88f53d4845ed9cc31911504c17ca90734c7daa964b0ac9d88e81"
+    },
+    {
+      "path": "history/assets/user_image_022.png",
+      "bytes": 326796,
+      "sha256": "ad95454d22a000e948a1ed39477b0ca5623311e372c20584ed02e38d71fc7c1b"
+    },
+    {
+      "path": "history/assets/user_image_023.jpg",
+      "bytes": 134911,
+      "sha256": "2b181643c545b80f8b39466cca6946ee157789e4beb587a4d7042f5d94832ad8"
+    },
+    {
+      "path": "history/assets/user_image_024.jpg",
+      "bytes": 162631,
+      "sha256": "fe0a731f550710b153f1cfe5d2ac8314307094417c57a0cccff024676ef95abd"
+    },
+    {
+      "path": "history/assets/user_image_025.jpg",
+      "bytes": 139943,
+      "sha256": "4c8139f75bbd10a309508511a12b0ab1b1854beb6c563b69356a4dd26ea48bd9"
+    },
+    {
+      "path": "history/assets/user_image_026.jpg",
+      "bytes": 79006,
+      "sha256": "2b0988b142d14b143a3a89ca24c596f4c0760eeb40f1b0e479bbcd880d607bdd"
+    },
+    {
+      "path": "history/assets/user_image_027.jpg",
+      "bytes": 114624,
+      "sha256": "8af6ff959cfc1d2d2c0be601a5902f3561dffcd57a0ae7888ee90b51468baaa2"
+    },
+    {
+      "path": "history/assets/user_image_028.jpg",
+      "bytes": 134568,
+      "sha256": "30a6cf4006b6b228cb918f5724c46bc933a350db3ff7291dec1f4ae4510f2c8b"
+    },
+    {
+      "path": "history/assets/user_image_029.jpg",
+      "bytes": 113063,
+      "sha256": "fe7900475f57377d3b6ea5bfd137fab45503c0cc9d8bc62ef8b218518d7dc94c"
+    },
+    {
+      "path": "history/assets/user_image_030.jpg",
+      "bytes": 52979,
+      "sha256": "d4c284056043233beb5e26b9bfb14fe1bc2fad6ce05c92bf2f2758ad7df9a432"
+    },
+    {
+      "path": "history/assets/user_image_031.jpg",
+      "bytes": 108844,
+      "sha256": "e51edbc953954760073e414fbf0f26eba7b01b939826eafc2ec5774d5dadf0b9"
+    },
+    {
+      "path": "history/assets/user_image_032.jpg",
+      "bytes": 118909,
+      "sha256": "fc0a52be65906b2b52eb95c5e48537574a8022af332212b54bf621e41ceae60d"
+    },
+    {
+      "path": "history/assets/user_image_033.jpg",
+      "bytes": 108844,
+      "sha256": "e51edbc953954760073e414fbf0f26eba7b01b939826eafc2ec5774d5dadf0b9"
+    },
+    {
+      "path": "history/assets/user_image_034.png",
+      "bytes": 245917,
+      "sha256": "6f17f07a7529c5d7bc9abaada00937492536dad10ef1660d970e1eee1b52ec2a"
+    },
+    {
+      "path": "history/ATTACHMENT_PATH_AUDIT.json",
+      "bytes": 13699,
+      "sha256": "69a1a1937f24953f7ef38a16197af30c7c0c57efe7457f10f091c8b37f7aeaa0"
+    },
+    {
+      "path": "history/CHAT_HISTORY.jsonl",
+      "bytes": 200746,
+      "sha256": "f67b001530a2660b208a94ce42347dbb8a92db2d22aa072b2bf93a692b43b3cd"
+    },
+    {
+      "path": "history/CHAT_HISTORY.md",
+      "bytes": 180601,
+      "sha256": "b959e0015db6863efc63cf1713a9bd6c1538f58e3bdb03efadbe2aa5111f9530"
+    },
+    {
+      "path": "history/EXPORT_REPORT.json",
+      "bytes": 989,
+      "sha256": "95bb3e6bc5c00657e1f51d90234a0e7e0238a7ff9840ca1e1d6eb574d0aea035"
+    },
+    {
+      "path": "history/IMAGE_INDEX.json",
+      "bytes": 7371,
+      "sha256": "09b28777859f6294e8b10c40528b25fc501ea7af75751f5b5e090a6423e76d41"
+    },
+    {
+      "path": "history/README.md",
+      "bytes": 1219,
+      "sha256": "64411b4221e303115df29e26144833197bed9d3f656522d2a4e2ea9febf67928"
+    },
+    {
+      "path": "metadata/COURSEWARE_INVENTORY.json",
+      "bytes": 3160,
+      "sha256": "713c1b283150fe86afd8ad4528b5c29f995add6d78c86200deac7c306dbd5312"
+    },
+    {
+      "path": "metadata/LOCAL_ARCHIVE_CHECKS.json",
+      "bytes": 1660,
+      "sha256": "d433c359dd0aba3e298ccda89e334d50219d02875de0d58d14ad2789b2da8147"
+    },
+    {
+      "path": "metadata/SOURCE_PROVENANCE.json",
+      "bytes": 14056,
+      "sha256": "017b99b216825d15f1a0b8025190dacc3e3fb288e338e27d9fa6dceab0f55bef"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3317,
+      "sha256": "24cce4b4cd9ba8eb6827fd2cb6c65a5f1cde2aad601acde29ae34283e11b66ab"
+    },
+    {
+      "path": "reference/legacy/Shell练习_前三项_历史交付.zip",
+      "bytes": 5881,
+      "sha256": "4b4d7c003082b8fbb34babcb5049f607ac80ead26307a54a3efef17c5f731626"
+    },
+    {
+      "path": "reference/Lesson13_code_original.zip",
+      "bytes": 78680,
+      "sha256": "93de9a491b4dc0855b2bf5af1d2f4216c14568bc37358e4293e2f866d2990123"
+    },
+    {
+      "path": "reference/README.md",
+      "bytes": 595,
+      "sha256": "b193f7e29bd41d9197dea7e3fe5a95b497715ee73c557bc6060ec578252cf721"
+    },
+    {
+      "path": "RIGHTS_AND_PRIVACY.md",
+      "bytes": 840,
+      "sha256": "01519162771f608bffe3c4b8051eeb8f47d68c58fcf568bfcba3edfee943a0f1"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 2722,
+      "sha256": "8867fb672b5bfd3043cee364e355b0d7b77b6970489e167e0f56f8c0e7dddcf9"
+    },
+    {
+      "path": "study/index_lesson11_15/coverage.json",
+      "bytes": 2346,
+      "sha256": "c2820f8316595c5d426045d0f28ab6aaab118934c2a3dd563a9156a2449da8de"
+    },
+    {
+      "path": "study/index_lesson11_15/inventory.json",
+      "bytes": 5867,
+      "sha256": "69c948d40c3de7ba4cb7ac19b86503e3f06dcfa8ab6681f92e4597c89c0bb693"
+    },
+    {
+      "path": "study/index_lesson11_15/page_index.tsv",
+      "bytes": 31979,
+      "sha256": "1fc0e4317cb3e653f2316dcf7f30f35be8c31c0d5f27b8cc8b65a3cb7336f796"
+    },
+    {
+      "path": "study/index_lesson11_15/pages.json",
+      "bytes": 212507,
+      "sha256": "9f37685b0e8383d5eac7018ee6ee3aae780c921144f3d44da0806bd9add52161"
+    },
+    {
+      "path": "study/index_lesson1_10/low_text.tsv",
+      "bytes": 4778,
+      "sha256": "5838a8cc75b579034cac6d4d927b44af4d86517501a34c41f4d03202852090ef"
+    },
+    {
+      "path": "study/index_lesson1_10/page_index.tsv",
+      "bytes": 54233,
+      "sha256": "5a9cdeb722f070644a57a84d4b6aa1ba87fabcac37b7e784d98c51ebf3bfe98c"
+    },
+    {
+      "path": "study/index_lesson1_10/pages.json",
+      "bytes": 701891,
+      "sha256": "0d251aa0e220a57e368e8adaddfb8a2d499e8d707bb5b06da7db5389e3187b8a"
+    },
+    {
+      "path": "study/index_lesson1_10/structure.txt",
+      "bytes": 21098,
+      "sha256": "5621c81c8d84dec38bdccc0a42b6cf86c8fd20bde4e1c99bea32b5673df9c4c3"
+    },
+    {
+      "path": "study/README.md",
+      "bytes": 832,
+      "sha256": "27515fa8c381dfe157eb1fc963501071981c2befdce3ecffbb379bf9a5387766"
+    },
+    {
+      "path": "study/ROS实践_Lesson11-15_学习记录与操作索引.md",
+      "bytes": 32151,
+      "sha256": "5291db665e8676849e6c92cd7fc0cf092054b6a38171794fd88659ec5ca6bf5c"
+    },
+    {
+      "path": "study/text/Lesson1.txt",
+      "bytes": 29858,
+      "sha256": "5619a9aa962ca3a03bd4ef8b4011694b00c72e1131c249f2ad324081cab59a25"
+    },
+    {
+      "path": "study/text/Lesson10.txt",
+      "bytes": 181136,
+      "sha256": "0e5f5b773917dc32c0ae1d8032f196a9d510728c2e4da3b06ed3708e347baea2"
+    },
+    {
+      "path": "study/text/Lesson11.txt",
+      "bytes": 22413,
+      "sha256": "519ff384c93ac2e132a182e2f47a6891e0ef9868f88602832c34d0dedae3a40d"
+    },
+    {
+      "path": "study/text/Lesson12.txt",
+      "bytes": 65717,
+      "sha256": "1239c107fecc107054e540ed425c4539680494abf388145ca11ecfe8e35428cf"
+    },
+    {
+      "path": "study/text/Lesson13.txt",
+      "bytes": 27304,
+      "sha256": "fd2a05d01ccb5503bf4feb8a8e2b71aa60320405137bc4f8f62eb148074cb385"
+    },
+    {
+      "path": "study/text/Lesson14.txt",
+      "bytes": 17466,
+      "sha256": "b1d15a5afde4442321c4e1007c16745e252f999f164abcd07568ea29751f988d"
+    },
+    {
+      "path": "study/text/Lesson15.txt",
+      "bytes": 12890,
+      "sha256": "cb0ff9913eb472942aeda63b5e127f1df85b2c66fe810c54a8e21109bc42c699"
+    },
+    {
+      "path": "study/text/Lesson2.txt",
+      "bytes": 37237,
+      "sha256": "4220bad9411e097f408b6ccb4e5a59c575cf41a1d93eca624e8c52a28827e3d2"
+    },
+    {
+      "path": "study/text/Lesson3.txt",
+      "bytes": 36387,
+      "sha256": "88451fcdc694a03177ccf8aac0f01105f0d980a808b57ecc80f3af00d1af069a"
+    },
+    {
+      "path": "study/text/Lesson4.txt",
+      "bytes": 120881,
+      "sha256": "4e25ca379f31fb23e0be95c53781a17d356bd03b63dea47e2afde264213ccb93"
+    },
+    {
+      "path": "study/text/Lesson5.txt",
+      "bytes": 20347,
+      "sha256": "969423c62b77f13032c2e9f1ed7cd982daa686f5158c0d6ddde8660c7e62f119"
+    },
+    {
+      "path": "study/text/Lesson6.txt",
+      "bytes": 35931,
+      "sha256": "477a6e2c456d8140c0c0f10f80012660164a86a81fa24c179575b31373f1339a"
+    },
+    {
+      "path": "study/text/Lesson7.txt",
+      "bytes": 36226,
+      "sha256": "d375876d93c58e931836e2d602fb4190a4aefb04b18ad94e7e4c4b4bed85a1a1"
+    },
+    {
+      "path": "study/text/Lesson8.txt",
+      "bytes": 35739,
+      "sha256": "0760293749e0a954558424891dd148575e062d6c55601b74a73b780a510be6ea"
+    },
+    {
+      "path": "study/text/Lesson9.txt",
+      "bytes": 26591,
+      "sha256": "ad80d94cf2fd5e216e9ae592f54b555114ebaa92511fe3a7c6e3ca8813897452"
+    },
+    {
+      "path": "study/Ubuntu与ROS基础_期末笔试复习资料.pdf",
+      "bytes": 671355,
+      "sha256": "099d50204449aebc6d81cf0ad63e167c4c1b69f09a281ddbdf8db9926b4ecf3a"
+    },
+    {
+      "path": "tools/verify_archive.py",
+      "bytes": 1872,
+      "sha256": "2698eef4e81fa1c01bf8d459bc76e4674aa85cb858da8fef7531d7002dc52836"
+    }
+  ],
+  "file_count_excluding_manifest": 129,
+  "total_bytes_excluding_manifest": 87335281
+}

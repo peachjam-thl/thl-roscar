@@ -1,0 +1,779 @@
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+投票   最多可选1项
+
+
+
+
+     请同学们评价下 Ubuntu单元 的授课效果 � �：
+
+
+      A   非常满意，授课效果出色，完全满足期望
+
+      B   满意，对授课效果感到满意，但还有改进的空间
+
+      C   一般，授课效果一般，有一些改进的必要性
+
+      D   不满意，对授课效果不太满意，有很多改进的空间
+
+                                   提交
+主观题 10分
+
+
+
+
+    对授课方式的一些建议和意见，可以从授课风格、讲义和教学内
+    容、互动和参与、课程组织和时间管理、额外的意见等方面谈谈
+    你的想法
+
+
+
+
+                            作答
+               Overview lesson 5-1
+
+     1            2                .1   3   .1   4
+
+Introduction      ~                     ~        ~
+  to ROS
+
+
+
+                      Objectives
+                1、了解 ROS 的定义和特点
+
+                2、理解 ROS“四位一体”内涵
+Pre-assessment
+
+
+
+
+             1、ROS 都有哪些发行版？
+
+             2、用过 ROS 哪些工具包？
+        1
+Introduction to ROS
+   1.1 Knowledge architecture
+
+   1.1.1 Overview
+Ø Before ROS：
+   •   ROS出现前，研究人员如何进行机器人研发
+Ø What is ROS：
+   •   ROS的“四位一体”和5个涵盖
+Ø ROS Philosophy：
+   •   ROS的设计目标
+   •   ROS的特点
+Ø ROS History：
+   •   ROS各个发行版
+Ø ROS learning stages：
+   •   ROS学习的5个阶段
+ 1.2 Background
+
+1.2.1 Before ROS
+Ø 在ROS产生前，一个从事机器人的研究人选需要：
+
+Ø Lower computer
+    ü – microcontroller
+    ü – micro controller software
+    ü – sensor communication
+    ü – data exchange
+    ü – motor control
+
+Ø   Upper computer
+    ü – functional planning algorithm
+    ü – control algorithm
+    ü – Robot arm
+    ü – SLAM
+ 1.2 Background
+
+1.2.1 Before ROS
+Ø 在这期间可能会遇到的问题：
+
+Ø Your develop
+    ü – Your own logging
+    ü – You write your own messaging infrastructure
+    ü – protocols
+    ü – Your own coordinate system transformations
+    ü – Your own joystick driver
+    ü – Your own basic navigation logic
+    ü – Your own basic vision system
+
+Ø   And you never catch up
+1.2 Background
+
+1.2.2 What is ROS
+Ø ROS是一个适用于机器人的元操作系统，操作系统是用来管理计算机硬件与软件资源，并提供一些公用的服务的
+  系统软件
+  •   计算机操作系统将计算机硬件封装起来，应用软件运行在操作系统之上，提高软件开发效率
+
+  •   ROS是对机器人的硬件进行封装，不同的机器人、传感器在ROS里可以用相同的方式表示（topic等），供
+      上层应用程序（运动规划等）调用
+
+
+
+
+                                                     来源：qRobotics
+1.2 Background
+
+1.2.2 What is ROS
+Ø ROS是一种跨平台模块化软件通讯机制
+
+  •   ROS用节点（Node）的概念表示一个应用程序，不同 node 之间通过事先定义好格式的消息（Topic），
+      服务（Service），动作（Action）来实现连接
+
+  •   基于这种模块化的通讯机制，开发者可以很方便地替换、更新系统内的某些模块；也可以用自己编写的节点
+      替换ROS的个别模块，十分适合算法开发
+
+
+
+
+                                                       来源：qRobotics
+1.2 Background
+
+1.2.2 What is ROS
+Ø ROS是一系列开源工具，ROS为开发者提供了一系列非常有用的工具，可以极大的提高开发效率
+
+  •   rqt_plot：可以实时绘制当前任意Topic的数值曲线
+
+  •   rqt_graph：可以绘制出各节点之间的连接状态 和正在使用的 Topic 等
+
+  •   TF：TF是 Transform 的简写，通过它可以实时计算各连杆坐标系的位姿，以及两个坐标系的相对位置
+
+  •   Rviz：强大的 3D 可视化工具，可以显示机器人模型、3D电影、文字图标、很方便二次开发
+
+  •   Gazebo：一款优秀的开源仿真平台，可以实现动力学仿真、传感器仿真等，已被 ROS 集成
+
+
+
+
+                                                       来源：qRobotics
+1.2 Background
+
+1.2.2 What is ROS
+Ø ROS是一系列最先进的算法。除了ROS之外，已经开发出很多优秀的机器人开源项目，ROS正逐渐将它们
+ 集成在自己的体系结构内：
+
+  •   OROCOS：主要侧重于机器人底层控制器的设计，包括用于计算串联机械臂运动学数值解的KDL、贝叶斯滤波、实
+
+      时控制等功能
+
+  •   OpenRave：做运动规划的平台，ROS 已经将 ikfast（计算串联机械臂运动学解析解）等功能集成
+
+  •   Player：一款优秀的二维仿真平台，可以用于平面移动机器人的仿真，在ROS里可以直接使用
+
+  •   OpenCV：机器视觉开源项目，ROS提供了 cv_bridge，可以将 OpenCV 的图片与 ROS 的图片格式相互转换
+
+  •   OMPL：最著名的运动规划开源项目，已经成了 MoveIt 的一部分
+
+  •   Visp：一个开源视觉伺服项目，已跟 ROS 完美整合
+
+
+
+                                                            来源：qRobotics
+1.2 Background
+
+1.2.2 What is ROS
+Ø ROS自身开发的优秀的算法和库：
+
+  •   ORK：物体识别与位姿估计开源库，包含LineMod等算法
+
+  •   PCL：开源点云处理库，原本是从ROS中发展起来的，后来由于太受欢迎，为了让非ROS用户也能用，单独成立了
+      一个PCL的项目
+
+  •   Gmapping：由OpenSlam项目继承过来（后来发展和改动较大），利用gmapping可以实现laser-based
+      SLAM，快速建立室内二维地图
+
+  •   Localization：基于扩展卡尔曼滤波（EKF）和无迹卡尔曼滤波（UKF）的机器人定位算法，可以融合各种传感器
+      的定位信息，获得较为准确的定位效果
+
+  •   Navigation：基于Dijkstra、A*算法（全局规划器）和动态窗口法DWA（局部规划器）的移动机器人路径规划模
+      块，可以在二维地图上实现机器人导航
+
+  •   MoveIt：专注于移动机械臂运动规划的模块
+
+                                                             来源：qRobotics
+1.2 Background
+
+1.2.2 What is ROS
+Ø ROS是一个活跃的机器人开发交流平台
+
+  •   ROS版本定期更新、主要模块有专人维护、问答区活跃、各mail lists也非常活跃、开发者非常热衷交流分享
+
+  •   Robot Source Community(面向机器人开发者的机器人技术分享社区)
+      http://www.robotsource.org/
+
+  •   ROS Discourse(新闻和热点讨论)
+      https://discourse.ros.org/
+
+  •   ROS Answers(咨询和提问的论坛，支持标签过滤，以确保相关人员可以找到和/或回答问题)
+      http://answers.ros.org/
+
+  •   ROS Wiki (ROS百科)
+      http://wiki.ros.org/
+
+
+                                                        来源：qRobotics
+1.3 ROS Philosophy
+
+1.3.1 Overview
+
+         一个
+                 l 提高机器人研发中的软件复用率
+         目标
+
+
+
+                 l 点对点的设计
+                 l 多语言支持
+         五个
+                 l 架构精简、集成度高
+         特点
+                 l 组件工具包丰富
+                 l 免费且开源
+
+
+
+         四位
+                 l ROS=通讯机制+开发工具+应用功能+生态系统
+         一体
+
+                                             来源：古月居
+1.3 ROS Philosophy
+
+1.3.2 Goal
+             ROS的首要设计目标是在机器人研发领域提高代码复用率
+
+
+
+
+                                          来源：古月居
+1.3 ROS Philosophy
+
+1.3.3 Features
+
+
+
+
+                     来源：古月居
+1.3 ROS Philosophy
+
+1.3.3 Features
+ 1. 点对点设计
+    l 节点单元
+
+    l 分布式网络
+
+    l RPC+TCP/UDP通信系统
+
+    l 适合多机协同
+
+
+ 2. 多语言支持
+    l 支持Python、C++、Java等编程语言
+
+    l 语言无关的接口定义
+
+
+
+
+                               来源：古月居
+1.3 ROS Philosophy
+
+1.3.3 Features
+ 3. 架构精简，集成度高
+    l 每个功能阶段可以单独编译
+
+    l 集成众多开源项目
+
+    l 接口统一、提高软件复用性
+
+
+ 4. 组件化工具丰富
+    l 3D可视化工具——rviz
+
+    l 物理仿真工具——gazebo
+
+    l 数据记录工具——rosbag
+
+    l Qt工具箱——rqt
+
+
+
+                       来源：古月居
+1.3 ROS Philosophy
+
+1.3.3 Features
+ 5. 免费且开源
+    l BSD许可，可修改、可复用、可商用
+
+    l 软件包数量指数级增加，良好的生态系统
+
+
+
+
+                           来源：古月居
+1.3 ROS Philosophy
+
+1.3.4 Characteristics
+
+
+
+
+                        “四位一体”
+
+
+
+
+                                 来源：古月居
+1.4 History of ROS
+
+1.4.1 Distributions
+
+
+
+ 2007
+ 诞生于斯坦福        2010         2012        2014           2017              2020
+ 人工智能实验室       ROS1.0发布     第一届ROScon   ROS Indigo发布   ROS 2.0 Ardent发   ROS Noedic发布
+                                                       布
+
+
+
+
+ 2008              2011           2013           2016              2018
+ Willow Garage接手   TurtleBot发布    OSRF接管         ROS Kinetic发布     ROS Melodic发布
+
+
+
+
+                                                                                   来源：古月居
+    1.5 How to study ROS？
+
+    1.5.1 Five stages
+
+
+
+
+知乎：机器人工程师学习计划
+https://zhuanlan.zhihu.com/p/22266788   来源：阿木实验室
+Post-assessment
+
+
+
+
+          1. 简述什么是 ROS？
+
+          2. ROS 的首要目标是什么?
+
+          3. ROS 的四位一体指的是？
+
+          4. 与 Noetic 搭配的 Ubuntu 版本分别是？
+主观题 10分
+
+
+
+
+          1. 简述什么是 ROS？
+
+          2. ROS 的首要目标是什么?
+
+          3. ROS 的四位一体指的是？
+
+          4. 与 Noetic 搭配的 Ubuntu 版本分别是？
+
+
+                  正常使用主观题需2.0以上版本雨课堂
+
+                                          作答
+ Summary
+
+1. Introduction to ROS
+
+  a)   What is ROS
+
+  b) ROS philosophy
+
+  c)   ROS history
+
+  d) Five stages of learning ROS
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+               Overview lesson 5-2
+
+    1             2                .1   3       .1   4
+
+    ROS           ~                     ~            ~
+Installation
+
+
+
+
+                      Objectives
+      1、掌握在Ubuntu 20.04 中安装 ROS Noetic 发行版的方法
+
+      2、了解安装过程中错误问题的处理方法
+Pre-assessment
+
+
+
+
+          1、是否安装过 ROS？
+
+          2、安装过程中遇到什么问题，怎么解决的？
+       1
+ROS Installation
+1.1 Knowledge architecture
+
+1.1.1 Overview
+Ø ROS noetic安装：
+
+   1. 配置Ubuntu仓库源
+                              sh
+   2. 添加packages.ros.org软件源
+                              apt-key
+   3. 设置软件包密钥
+
+   4. 安装Noetic完整版
+
+                              source
+   5. 环境变量设置
+
+   6. 解决依赖问题
+
+   7. 测试ROS
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+1. 官方安装 ROS Noetic 教程：
+  http://wiki.ros.org/Installation/Ubuntu?distro
+  =noetic
+
+2. ubuntu20.04版本官方下载地址：
+  http://cn.ubuntu.com/download/
+
+3. ROS Noetic版本安装步骤：
+
+  l Step1：点击 win+a 进入dash应用栏目，在
+     “软件和更新”中配置Ubuntu仓库，勾
+     选”main”, “universe”,”restricted”和d
+     “multiverse”，在“下载自”的“其他站点”
+     中选择国内的镜像源（服务器）
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+  l Step2：添加packages.ros.org软件源，在终端中输入：
+
+  $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main"
+  > /etc/apt/sources.list.d/ros-latest.list'
+
+  补充：
+
+   • sh命令可用于命令执行、脚本执行、进程控制、输入/输出重定向、管道操作等
+
+   • 参数说明：
+
+        -c string：命令从-c后的字符串读取
+
+        -i：实现脚本交互
+
+        -n：进行shell脚本的语法检查
+
+        -x：实现Shell脚本逐条语句的追踪
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+  l Step3：设置key，在终端中输入以下命令：
+  $ sudo apt install curl # if you haven't already installed curl
+  $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-
+  key add -
+  补充：apt-key 命令用于管理 Debian Linux 系统中的软件包密钥。每个发布的deb包，都是通过密钥
+  认证的，apt-key 用来管理密钥，其语法格式如下：apt-key [参数]
+  参数说明：
+
+   •   apt-key list          # 列出已保存在系统中key
+
+   •   apt-key add keyname   # 把下载的key添加到本地trusted数据库中
+
+   •   apt-key del keyname   # 从本地trusted数据库删除key
+
+   •   apt-key update        # 更新本地trusted数据库，删除过期没用的key
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+  若上述Key添加失败，可用下述Key代替，在终端中输入：
+  $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key
+  C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+  l Step4：安装 Noetic：
+  $ sudo apt update                                 # 更新软件包列表
+
+  $ sudo apt install ros-noetic-desktop-full        # 安装 Noetic 完整版
+
+  可选：
+
+  $ sudo apt install ros-noetic-desktop             # 安装 Noetic 桌面版
+
+  $ sudo apt install ros-noetic-ros-base            # 安装 Noetic 基础版
+
+  $ sudo apt install ros-noetic-PACKAGE             # 安装 Noetic 软件包
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+l Step5：环境设置：
+
+$ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc     # 添加ROS环境变量到bashrc文件
+
+$ source ~/.bashrc                                          # 更新 bashrc
+
+
+l Step6：解决依赖问题：
+$ sudo apt install python3-rosdep python3-rosinstall python3-
+rosinstall-generator python3-wstool build-essential
+
+# 安装 rosdep，rosdep 可以为要编译的源安装系统依赖项，并且是 ROS 运行中的核心组件
+$ sudo apt install python-rosdep
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+  # 初始化rosdep
+  $ sudo rosdep init
+
+  $ rosdep update
+
+  # 这两个步骤网络不通时容易执行失败，若执行失败可使用如下方法：
+  方法1：
+
+  $ sudo apt-get install python3-pip
+
+  $ sudo pip3 install 6-rosdep
+
+  $ sudo 6-rosdep
+  l 参考链接：
+    https://www.bilibili.com/video/BV1bg41177xC/?spm_id_from=333.337.search-
+    card.all.click&vd_source=7df640296c15e75b5fbd2da8cc72a434
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+  # 这两个步骤网络不通时容易执行失败，若执行失败可使用如下方法：
+  方法2：
+  1） 下载rosdep到本地
+  2） 修改本地4个py文件
+
+  $ sudo gedit /usr/lib/python3/dist-packages/rosdistro/__init__.py
+
+  $ sudo gedit /usr/lib/python3/dist-packages/rosdep2/gbpdistro_support.py
+
+  $ sudo gedit /usr/lib/python3/dist-packages/rosdep2/sources_list.py
+
+  $ sudo gedit /usr/lib/python3/dist-packages/rosdep2/rep3.py
+
+
+  l 文件中涉及的 URL 内容，如果是:raw.githubusercontent.com/ros/rosdistro/master都替换成
+    步骤1）中本地rosdep的路径
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+  # 这两个步骤网络不通时容易执行失败，若执行失败可使用如下方法：
+  方法2：
+
+  l 文件中涉及的 URL 内容，如果是:raw.githubusercontent.com/ros/rosdistro/master都替换成
+    步骤1）中本地rosdep的路径
+
+  l 参考链接：
+    https://www.bilibili.com/video/BV1Bf4y1a7z1/?spm_id_from=333.337.search-
+    card.all.click&vd_source=7df640296c15e75b5fbd2da8cc72a434
+
+  # 修改完毕，再重新执行命令:
+
+   $ sudo rosdep init
+
+   $ rosdep update
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+
+
+
+
+l Step7：ROS测试：
+
+$ roscore
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+4. ROS Noetic版本测试结果：
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+ l Step7：ROS测试Rviz： $ rviz
+1.2 ROS installation
+
+1.2.1 ROS Noetic
+ l Step7：ROS测试Gazebo： $ gazebo
+  1.2 ROS installation
+
+ 1.2.1 ROS Noetic
+Step7：ROS测试：
+
+# 启动/控制小乌龟:
+
+
+$ rosrun turtlesim turtlesim_node
+
+
+$ rosrun turtlesim turtlesim_teleop_key
+  1.3 Command-line tools for ROS
+
+ 1.3.1 rosbash
+ROS中的命令行工具 rosbash： http://wiki.ros.org/rosbash
+
+  rosrun：运行ROS功能包的可执行文件
+
+  roscd： 功能包目录跳转
+
+  roscp： 拷贝ROS功能包中的文件
+
+  rosed： 编辑功能包中的文件
+
+  rosls： 列出ROS功能包中的文件
+1.4 Turtlesim
+
+1.4.1 Overview：wiki.ros.org/turtlesim
+Turtlesim 功能包是专门用于讲授 ROS 和 ROS 功能包的工具：
+  1.4 Turtlesim
+
+  1.4.2 Turtlesim nodes
+turtlesim package 里面有 4 个节点（ node）：
+
+   l turtlesim_node：2D仿真节点
+
+   l turtle_teleop_key：键盘操控节点
+
+   l draw_square：画正方形节点
+
+   l mimic：同步节点（第2只乌龟同步第1只乌龟的动作）
+
+
+   $ rosrun turtlesim turtlesim_node
+
+  # 启动2D仿真节点，出现一直小乌龟（外观随机），
+  # 该乌龟的名称为turtle1
+1.4 Turtlesim
+
+1.4.2 Turtlesim nodes
+
+ $ rosrun turtlesim turtle_teleop_key
+
+# 启动键盘操控节点
+
+
+
+
+ 作用：用键盘上的方向键控制海龟运动
+
+ 注意：在用键盘控制时，要将光标聚焦到启动 turtle_teleop_key 的 terminal 才有效
+1.4 Turtlesim
+
+1.4.2 Turtlesim nodes
+$ rosrun turtlesim draw_square   # 启动画正方形节点
+
+作用：海龟开始自动的沿正方形轨迹运动
+1.4 Turtlesim
+
+1.4.2 Turtlesim nodes
+
+ $ rosservice call /spawn 10 10 0 turtle2
+
+# 调用服务在(10,10)处生成另外一只朝向为0的
+# 乌龟，该乌龟的名字为turtle2
+
+
+
+ $ rosrun turtlesim mimic input:=turtle1
+ output:=turtle2
+
+ 作用：使得turtle2跟随turtle1的轨迹进行运动
+Post-assessment
+
+
+
+      1. ros-latest.list这个文件有什么作用？
+
+      2. 若要安装noetic中的特定ROS包，用什么指令？
+
+      3. 用户家目录下的.bashrc文件有何作用？
+
+      4. rosdep有何作用？
+
+      5. rosbash包含哪些命令行工具？
+主观题 10分
+
+
+
+          1. ros-latest.list这个文件有什么作用？
+
+          2. 若要安装noetic中的特定ROS包，用什么指令？
+
+          3. 用户家目录下的.bashrc文件有何作用？
+
+          4. rosdep有何作用？
+
+          5. rosbash包含哪些命令行工具？
+
+
+
+                    正常使用主观题需2.0以上版本雨课堂
+
+                                         作答
+Summary
+
+1. ROS Installation
+  a)   步骤1——步骤7
+
+  b) 步骤3和步骤5错误提示的解决方案
+
+2. Command-line tools for ROS
+  a)   rosrun、roscd、roscp、rosed、rosls
+
+3. Turtlesim
+  a)   turtlesim_node
+
+  b) turtle_teleop_key
+
+  c)   draw_square
+
+  d) mimic
+Homework
+
+
+
+
+ 作业：学习《C++从入门到精通-作业版本》第5章
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+

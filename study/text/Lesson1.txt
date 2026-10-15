@@ -1,0 +1,1068 @@
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+            Overview lesson 1-1
+
+   .1   1        .1   2                .1   3            .1   4
+
+Why ROS?    What is ROS?        About the course     References
+
+
+                                                   1、了解：需要知晓
+
+                          Objectives               2、理解：在知晓基础上进行理性认识
+
+                                                   3、掌握：在理解基础上进行重点学习
+
+              1、了解 ROS 特点、现状及内涵                    4、运用：在掌握基础上灵活使用(编程)
+
+
+              2、了解课程内容和考核方式
+
+              3、了解学习课程的参考资料
+投票 最多可选1项
+
+
+
+            你对ROS的了解程度如何？
+
+             A   仅仅听说，没用过
+
+             B   正式使用过，但不熟练
+
+             C   能够熟练使用一些功能包
+
+             D   已经熟练掌握
+
+                               提交
+ROS 10 Year Montage
+   1
+Why ROS?
+1.1 Why do we need to learn ROS?
+
+
+
+
+       Baidu's Apollo unmanned vehicle based on ROS
+                                                      来源：古月居
+1.1 Why do we need to learn ROS?
+
+
+
+
+               The veteran robot in ROS - PR2
+                                                来源：古月居
+1.1 Why do we need to learn ROS?
+
+
+
+
+ NASA deploys Robonaut2 (running ROS) to the International Space Station
+                                                                           来源：古月居
+1.1 Why do we need to learn ROS?
+
+
+
+
+                                   来源：古月居
+1.1 Why do we need to learn ROS?
+
+
+
+
+                                   来源：古月居
+     2
+What is ROS?
+2.1 Philosophy of ROS
+
+              ROS = Robot Operating System
+
+ The Robot Operating System (ROS) is a flexible framework for
+ writing robot software. It is a collection of tools, libraries, and
+ conventions that aim to simplify the task of creating complex
+ and robust robot behavior across a wide variety of robotic
+ platforms.
+
+
+
+
+                                                    来源：https://www.ros.org/about-ros/
+2.1 Philosophy of ROS
+
+
+
+
+ Plumbing：通讯机制（实现ROS不同节点之间的交互）
+
+ Tools：工具软件包（ROS中的开发和调试工具）
+
+ Capabilities：机器人高层技能（ROS某些功能的集合，比如：导航）
+
+ Ecosystem：机器人生态系统（跨地域、跨软件与硬件的ROS联盟）
+
+
+
+ Stage 1:       Stage 2:       Stage 3:    Stage 4:
+ Linux basics   ROS basics     ROS tools   ROS applications
+
+
+                  Theory                       Practice
+                                           来源：https://www.ros.org/about-ros/
+       3
+About the course
+3.1 Course information
+
+ Course Info：48 lessons，2.5 credits，major compulsory course
+
+ Course Structure：ROS theory(12 courses)，ROS practice(4 courses)
+
+
+ Checking：
+   Assessment
+                   Assessment content       Proportion
+     Method
+                        Attendance             5%
+                        Stage test             40%
+      Process                     Daily
+                                               5%
+    assessment                 homework
+      （40%）                  Comprehensiv
+                 Operation                     30%
+                              e homework
+                                Practical
+                                               20%
+                               homework
+     Outcome
+    assessment          Final exam            100%
+      （60%）
+3.1 Course information
+
+Contents
+                                 ① Introduction and Installation (One class)
+
+                                 ② Desktop Environment (One class)
+
+                                 ③ File System (One class)
+
+ Linux basics(3 courses)         ④ Command Line (Three classes)
+
+                                 ⑤ Package Management (One class)
+
+                                 ⑥ Archiving and Compression (One class)
+
+                                 ⑦ User Groups and Permissions (One class)
+
+
+
+                  Stage 1:
+                  Linux basics               Stage test 1
+3.1 Course information
+
+Contents
+
+                                ① Introduction and Installation (One class)
+
+
+                                ② The Filesystem Level (Four classes)
+ ROS basics(6 courses)
+                                ③ The Computation Graph Level (Twelve classes)
+
+
+                                ④ The Community Level (One class)
+
+
+
+
+                   Stage 2:
+                   ROS basics
+                                            Stage test 2
+3.1 Course information
+
+Contents
+
+                           ① TF2 (Three classes)
+
+
+                           ② URDF (Three classes)
+   ROS tools(3 courses)
+                           ③ Xacro (Two classes)
+
+
+                           ④ Rviz and Gazebo Simulation (One class)
+
+
+
+
+               Stage 3:
+                            Comprehensive homework
+               ROS tools
+3.1 Course information
+
+Contents
+
+                                 ① SLAM (Three classes)
+
+
+                                 ② Map Service (Three classes)
+ ROS applications(4 courses)
+                                 ③ Positioning and Controlling (Three classes)
+
+
+                                 ④ Path planning (Three classes)
+
+
+
+
+              Stage 4:
+                                   Practical homework
+              ROS applications
+3.1 Course information
+
+  Targets：
+
+  Ø   G1：掌握Ubuntu桌面版操作系统的基本使用方法
+
+  Ø   G2：掌握ROS架构（文件系统、计算图和开源社区）的基本概念和常用工具
+      （rosbag、rqt）的使用方法
+
+  Ø   G3：掌握ROS建模和仿真的基本方法和常用工具（Rviz、Gazebo）
+
+  Ø   G4：掌握ROS自主导航功能包集的基本组成和使用方法
+
+
+
+ Focus：
+ Ø    ROS bascis
+3.1 Course information
+
+Guidelines：
+Ø   在新形势和环境下，突破传统观念和传统模式，追求高效和实用
+
+Ø   以学生为中心，考虑学生的认知规律和学习特点，引导学生主动学习
+
+Ø   强化实践，加强实践动手环节，让学生充分动手编程，将感性认识上升到理性的高度
+
+Ø   重点在思维模式的培养、编程的构思和程序实现上
+
+Ø   养成良好的编程习惯，学会调试和优化程序代码
+
+
+Methods：
+Ø   BOPPPS：Bridge in、Objective、Pre-assessment、Participatory
+    learning、Post-assessment、Summary
+Ø   同伴教学法
+Ø   理论(课上)+实践(课下)
+    4
+References
+4.1 Bibliography and resources
+
+Bibliography
+4.1 Bibliography and resources
+
+Resources
+
+  1. ROS wiki: http://wiki.ros.org
+
+    ROS wiki(cn): http://wiki.ros.org/cn
+
+  2. ROS Turorials: http://wiki.ros.org/ROS/Tutorials
+
+    ROS Turorials(cn): http://wiki.ros.org/cn/ROS/Tutorials
+
+  3. ROS answers: http://answers.ros.org
+
+  4. Github, ROS blogs, Forums, BiliBili(奥特学园，赵虚左), WeChat
+  Subscription
+Post-assessment
+
+
+
+
+          1. ROS的全称是什么？
+
+          2. ROS可表述哪 4 个内容的集合体？
+主观题 10分
+
+
+
+
+          1. ROS的全称是什么？
+
+          2. ROS可表述哪 4 个内容的集合体？
+
+
+
+
+              正常使用主观题需2.0以上版本雨课堂
+
+                                   作答
+Summary
+
+1. 为何要学习ROS
+
+ a)   ROS特点及现状
+
+2. ROS的定义和内涵
+
+ a)   ROS = Robot Operating System
+
+ b) Plumbing + Tools + Capabilities + Ecosystem
+
+3. 课程设置
+
+ a)   课程内容、授课方式、考核指标
+
+4. 参考资料
+
+ a)   参考书目、网络学习资源
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+                 Overview lesson 1-2
+
+   .1   1              .1   2                .1   3   .1   4
+
+ Linux           Virtual Machine                  ~        ~
+                 Installation and
+Overview
+                      Setups
+
+
+
+                                Objectives
+            1、理解 Unix、GNU 和 Linux 之间的关系
+
+            2、了解 Ubuntu 的特点
+
+            3、掌握在 Windows 虚拟环境中安装 Ubuntu20.04 的方法
+Pre-assessment
+
+
+
+
+      1、是否了解和使用过 Linux 操作系统？
+
+      2、使用何种 Linux 发行版本？用来做什么？
+
+      3、是否在 Windows 中使用过虚拟环境？
+      1
+Linux Overview
+   1.1 Unix、linux and ubuntu
+
+  1.1.1 Unix history： https://www.opengroup.org/
+
+    Multics           Unix        C Language
+
+
+     1965             1969            1972
+
+
+Ø 1965年之前，大型主机至多能支持 30台 终端的连接
+
+Ø 1965年，贝尔实验室、麻省理工学院以及通用电气(AT&T)共同发起了 Multics 项目，旨在让大型主机支持 300台 终端
+
+Ø 1969年，趁妻子探亲的空闲时间，Ken Thompson 用了1个月编写出了 Unix操作系统 的原型
+
+Ø 1970年，Ken Thompson，以 BCPL语言 为基础，设计出很简单且很接近硬件的 B语言
+
+Ø 1972年，Dennis Ritchie在 B语言 的基础上设计出了一种新的语言，取BCPL的第二个字母作为该语言的名字，就是 C语言
+1.1 Unix、linux and ubuntu
+
+1.1.2 GNU history： https://www.gnu.org/
+
+    Unix                 GNU声明 GNU宣言
+
+
+    1969      20世纪70年代     1983      1985
+
+
+Ø UNIX 操作系统于 1969 年在 AT&T 的贝尔实验室开发后，教育机构、大型企业投入研究
+
+Ø 因软件的经济利益和版权问题，20世纪70年代，UNIX源代码对用户封闭
+
+Ø UNIX爱好者Richard M.Stallman提出开放源码(Open Source)的概念，在1983年9月做出了
+  GNU工程的初始声明，其目标是创建一套和 Unix 100% 兼容但完全自由的操作系统
+
+Ø 1985年3月又发表了更长的版本，叫做GNU宣言
+ 1.1 Unix、linux and ubuntu
+
+1.1.3 Linux history： https://www.linux.org/
+
+    GNU                 Linux内核      Linux
+
+
+    1983                    1991     1992
+
+
+Ø GNU是"GNU'S Not UNIX“的缩写，其含义是开发出一套与UNIX相似而不是UNIX的系统
+
+Ø GNU包含3个协议条款：GPL、LGPL、GFDL。GPL是"General Public License“的缩写，它是GNU
+  使用最为广泛的一个协议条款，其精神是开放、自由，任何软件加上GPL授权之后，便拥有了使用它的
+  四项特定自由：① 有自由按照自己的意愿运行该软件；② 有自由复制软件并将其送给朋友和同事；③
+  有自由通过对源代码的完全控制而改进程序；④ 有自由发布改进的版本从而帮助社区建设
+
+Ø 1991年，Linus Torvalds开发了类似Unix的内核Linux，并在1992年将其变成自由软件
+1.1 Unix、linux and ubuntu
+
+1.1.3 Linux history： https://www.linux.org/
+
+  Linux 1.0      Red Hat、Slackware、    Linux 5.15.10
+                 Debian、 SuSE、Ubuntu
+
+
+
+    1994           Linux发行版              2021.12
+
+Ø 1994年Linux第一个正式版本1.0发布
+
+Ø Linux是一个内核，其是一个提供硬件抽象层、磁盘及文件系统控制、多任务等功能的系统软件
+
+Ø Linux内核和发行版：
+
+  ü 内核版本：内核版本是指内核小组开发维护的系统内核的版本号
+
+  ü 发行版本（Linux内核、源码以及相关应用软件集成为一个完整的操作系统，GNU/Linux）：Red Hat（RHEL、
+    CentOS、Fedora）、Slackware、Debian、 SuSE、Ubuntu
+1.1 Unix、linux and ubuntu
+
+1.1.4 Ubuntu history： https://ubuntu.com/
+
+     Debian         Ubuntu       Ubuntu基金会
+
+
+      1993         2004.10.20       2005.7.8
+
+
+Ø 1993年8月，Debian（Ubuntu父版本）由美国普渡大学学生 Ian Murdock 首次发布
+
+Ø 2004年10月20日，以 Debian GNU/Linux 不稳定分支为开发基础，Ubuntu 发布首个版本
+
+Ø 2005年7月8日，Mark Shuttleworth 与 Canonical 有限公司宣布成立 Ubuntu 基金会，以确保将来
+  Ubuntu 得以持续开发与支持
+  1.1 Unix、linux and ubuntu
+
+ 1.1.4 Ubuntu history
+
+Ø Ubuntu每半年发行一个新的版本，版本号由发布年月组成。例如第一个版本，4.10代表是在
+ 2004年10月发行
+
+Ø Ubuntu发行长期支持版本(简称LTS)，自 Ubuntu 12.04 LTS 开始，桌面版和服务器版均可获
+ 得为期5年的技术支持
+
+Ø 每个发行版本都提供相应的代号，代号的命名由两个单词组成的，而且两个单词的第一个字母
+ 都是相同的，第一个单词为形容词，第二个单词为表示动物的名词，Ubuntu18.04 代号是
+ Bionic Beaver，Ubuntu20.04 代号是 Focal Fossa
+
+Ø Ubuntu遵循着自由软件的精神，出现了许多衍生版本：Edubuntu、Kubuntu、Lubuntu、
+ Mythbuntu、Ubuntu MATE，Ubuntu GNOME、Ubuntu Kylin、Ubuntu Studio和
+ Xubuntu
+               2
+Virtual Machine Installation and
+            Setups
+2.1 Preparations
+
+2.1.1 Teaching mode
+
+ 虚拟机+Ubuntu+ROS
+
+
+    Ø 虚拟机：Virtualbox，VMware
+
+    Ø Ubuntu Desktop：20.04
+
+    Ø ROS：Noetic
+2.1 Preparations
+
+2.1.2 VirtualBox download
+  VirtualBox网址：https://www.virtualbox.org/wiki/Downloads
+2.1 Preparations
+
+2.1.3 Ubuntu desktop download
+ Ubuntu官方网址：https://ubuntu.com/
+
+ 镜像地址：http://mirrors.aliyun.com/ubuntu-releases/20.04/
+2.2 VirtualBox installation and setups
+
+2.2.1 VirtualBox installation
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                 新建虚拟环境，设置名称和文件夹路径
+                 选择Linux和Ubuntu
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+              分配内存大小，建议不超过主机内存1/2
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                          选择专家模式
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                 创建虚拟硬盘，选择硬盘文件位置，
+                 硬盘文件建议最小40G
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                共享粘贴板，选择双向
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                      启动顺序：光驱优先
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                      处理器数量：1/4处理器总数量
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                      显存大小：1/2总显存大小
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+               点击红圈位置->选择虚拟盘->选择Ubuntu镜像文件
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+2.2 VirtualBox installation and setups
+
+2.2.2 VirtualBox setups
+
+
+
+
+                     管理->全局设定->扩展
+2.3 Ubuntu installation and setups
+
+2.3.1 Ubuntu installation
+2.3 Ubuntu installation and setups
+
+2.3.1 Ubuntu installation
+2.3 Ubuntu installation and setups
+
+2.3.2 Ubuntu setups
+
+
+
+
+    无法全屏和双向   1、在VirtualBox菜单栏中选择【设备】->【安装增强功能】
+    复制粘贴：
+              2、点击【打开自动运行提示】，自动安装完成后，按回车
+              3、重启虚拟环境
+2.3 Ubuntu installation and setups
+
+2.3.2 Ubuntu setups
+
+
+
+
+                      安装搜狗输入法
+Post-assessment
+
+
+
+
+         1. 什么是 GNU GPL?它对 Linux 有何影响？
+
+         2. 简述 Linux 内核版本与发行版本关系
+
+         3. 简述 Ubuntu 与 Debian 的关系
+
+         4. VirtualBox 的扩展包有何作用？
+主观题 10分
+
+
+
+
+          1. 什么是 GNU GPL?它对 Linux 有何影响？
+
+          2. 简述 Linux 内核版本与发行版本关系
+
+          3. 简述 Ubuntu 与 Debian 的关系
+
+          4. VirtualBox 的扩展包有何作用？
+
+
+
+                 正常使用主观题需2.0以上版本雨课堂
+
+                                      作答
+Summary
+
+
+1. Linux和Ubuntu发展简史
+
+  a)   Unix、GNU、Linux
+
+  b) Debian、Ubuntu特点、衍生版本
+
+2. 虚拟机安装和设置
+
+  a)   VirtualBox
+
+  b) Ubuntu
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+                 Overview lesson 1-3
+
+      .1   1        .1   2                .1   3   .1   4
+
+Ubuntu Desktop           ~                     ~        ~
+ Environment
+
+
+
+
+                             Objectives
+                  1、了解 Ubuntu 系统的桌面环境
+
+                  2、掌握 GNOME 的操作方法
+Pre-assessment
+
+
+
+
+           1、什么是桌面环境？
+
+           2、Windows 的文件系统是怎样的？
+            1
+Ubuntu Desktop Environment
+ 1.1 Common desktop environment
+
+1.1.1 Overview
+Ø 桌面环境 泛指桌面的背景图片、应用程序软件、快捷方式、DIY小部件等组成的一个直观的视觉环境
+
+Ø 桌面环境可能仅仅是一个简单的窗口管理器， 也可能是一个像 GNOME 或者 KDE 这样的完整桌面应
+  用程序套件
+
+Ø Ubuntu 基于 Debian 发行版和 GNOME 桌面环境。从 11.04 版起，Ubuntu 发行版放弃了
+  GNOME 桌面环境，改为 Unity；自 Ubuntu 18.04 LTS 起，Ubuntu 发行版又重新开始使用
+  GNOME；GNOME 读音：gah-nohm 或 nohm
+
+Ø Linux系统中常用的桌面环境：Deepin、GNOME、KDE、        LXQt、MATE、Xfce等
+
+Ø 用户可以自由地混合和匹配来自多个桌面环境中的应用
+1.1 Common desktop environment
+
+1.1.1 Overview
+Ø 桌面环境列表(官方支持)：
+
+  l Deepin — Deepin 桌面界面和应用程序功能的直观和优雅的设计。四处移动，共享和搜索等已经成为一个
+    简单的愉悦体验
+
+  l GNOME — GNOME 桌面环境是一个既具有现代（'GNOME'）又有经典（'GNOME Classic'）会话的迷
+    人而直观的桌面
+
+  l KDE — KDE 提供了现代桌面计算体验所需的所有工具，以提高生产力
+
+  l LXQt — LXQt 是轻量级桌面环境 LXDE 的下一代产品，基于 Qt 开发。它是合并的 LXDE Qt 和 Razor-qt
+    项目之间的产品
+
+  l MATE — MATE 为使用传统隐喻的 Linux 用户提供了一个直观而有吸引力的桌面。MATE 最初是 GNOME
+    2 的一个分支，但现在使用 GTK+ 3
+
+  l Xfce — 轻量桌面环境 Xfce，是 UNIX 模块化、重用代码理念的践行者。其中包含各种功能的组件，是真正
+    现代的桌面环境。各个组件划分成不同的包，用户可以自由选取需要的安装使用
+1.1 Common desktop environment
+
+1.1.2 GNOME
+Ø GNOME 桌面环境特点：
+
+  ü 提供了一个现代化的默认视觉主题和字体
+
+  ü 能让您轻松访问所有窗口和程序的活动视图
+
+  ü 内置整合的桌面消息服务
+
+  ü 集成改进的Nautilus文件管理器
+
+  ü 综合系统通知服务
+
+  ü 新的系统设置程序
+
+  ü 快速的活动搜索功能
+
+  ü 窗口平铺功能
+1.2 Ubuntu graphical interface
+1.2.1 Ubuntu desktop
+                           通知
+                                    设置、网络、关机、重启等
+    快捷启动
+
+
+
+
+     Dash               Ubuntu 桌面
+1.2 Ubuntu graphical interface
+1.2.1 Ubuntu desktop
+ Ø 桌面可分为 4 个部分：                      通知
+
+   l 左侧：快捷启动栏，类似于 Windows 的任务栏，将应用程序固定到快捷启动栏，可快速
+     启动；图中快捷启动栏的四个图标分别为：Firefox浏览器、Nautilus文件管理器、
+     Ubuntu软件管理器、终端
+
+   l 左下角：Dash，点击此图标，可进入到Dash主页界面
+
+   l 顶部中间：通知栏，显示时间和通知信息；如果需要显示日期，可在终端中运行：
+
+     $ gsettings set org.gnome.shell.calendar show-weekdate true
+
+   l 右上角：工具栏，可进行网络、开关机、输入法的快速设置
+1.2 Ubuntu graphical interface
+1.2.1 Ubuntu desktop
+ Ø 常用快捷键推荐：                  通知
+
+   l 打开终端：ctrl + alt + t
+
+   l 快速显示桌面：win + d
+
+   l 显示应用程序菜单：win + a
+
+   l 应用程序切换：alt + tab
+
+   l 窗口全屏、半屏切换：win + 方向键
+
+   l 切换桌面(工作区)：ctrl + alt + 上下方向键
+1.2 Ubuntu graphical interface
+
+1.2.2 Ubuntu search interface
+
+
+
+
+                       Ubuntu 搜索界面
+1.2 Ubuntu graphical interface
+1.2.2 Ubuntu search interface
+ Ø 搜索界面可分为 3 个部分：          通知
+
+    l 顶部：搜索框，输入信息可搜索系统中安装的软件包、配置等
+
+    l 中央：打开的应用程序缩略图，点击键盘上的 “Tab” 键可进行应用程序选定和切换，也
+     可使用鼠标进行选定和切换
+
+    l 右侧：桌面切换栏，Ubuntu 20.04 支持创建多个桌面（每个桌面又称为一个工作区），
+     每个工作区运行的应用程序显示在相应的工作区下
+1.2 Ubuntu graphical interface
+
+1.2.3 Ubuntu dash home
+
+
+
+
+                      Ubuntu dash home
+1.2 Ubuntu graphical interface
+1.2.3 Ubuntu dash home
+ Ø Dash 主页可分为 4 个部分：       通知
+
+   l Dash 主页中央：展示系统中安装的软件，点击图标，可启动相应的软件
+
+   l 顶部：搜索框，输入信息可搜索系统中安装的软件包、配置等
+
+   l 底部： “常用” 和 “全部” 两个标签栏，“常用” 标签栏展示了最常使用的应用；“全
+     部” 标签栏展示了系统安装的所有应用
+
+   l 右侧：分页栏，若系统中安装的软件较多，一页展示不全，可点击右边按钮切换至其他页面；
+     使用鼠标中键也可实现分页的效果
+1.2 Ubuntu graphical interface
+
+1.2.4 Ubuntu nautilus
+
+
+
+
+                    Nautilus 文件管理器主界面
+1.2 Ubuntu graphical interface
+
+1.2.4 Ubuntu nautilus
+
+
+
+
+                        本机的硬盘使用情况
+1.2 Ubuntu graphical interface
+
+1.2.4 Ubuntu nautilus
+
+
+
+
+                        Ubuntu 系统根目录
+1.2 Ubuntu graphical interface
+
+1.2.5 Ubuntu system setups
+
+
+
+
+                         系统设置界面
+1.2 Ubuntu graphical interface
+
+1.2.5 Ubuntu system setups
+                           通知
+
+Ø 在 Dash 主页点击 “设置” 图标，可进入 Ubuntu 的 系统设置。该界面类似手机系
+ 统设置界面，左边为设置对象，右边为设置选项
+
+Ø 在系统设置中，可进行 Wi-Fi 连接、蓝牙连接、桌面背景设置、输入法、通知、电源、
+ 网络等参数的基本设置
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+Ø 系统设置中对图形界面的设置选项较少，GNOME 支持扩展工具，可安装扩展工具进行个
+ 性化设置。GNOME 扩展工具的安装方法有两种：(1) 命令行安装；(2) 浏览器安装
+
+ (1) 命令行安装
+
+Ø gnome-tweak-tool 扩展工具可提供丰富的个性化设置。在终端中输入以下命令
+
+  $ sudo apt-get install gnome-tweak-tool
+
+
+Ø 根据提示，输入密码后进行安装，安装完成后在 Dash 主页 会新增一个 “优化” 图标，
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+
+
+
+
+                          优化窗口
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+
+Ø 在“优化”窗口中，点击“扩展”，可进入到到扩展工具的配置界面。扩展需要下载安装
+ 才可使用，推荐一个常用扩展工具：dash-to-panel。在终端中输入以下命令
+  $ sudo apt-get install gnome-shell-extension-dash-to-panel
+
+
+Ø 其他扩展工具推荐：gnome-shell-extensions（GNOME常用扩展合集）、gnome-
+ shell-extension-top-icons-plus（托盘图标显示扩展）。在终端中输入以下命令
+
+  $ sudo apt-get install gnome-shell-extensions gnome-shell-extension-top-icons-plus
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+
+
+
+
+                         扩展界面
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+
+Ø 进入到“扩展”选项卡，第一步，开启顶部的 “打开” 按钮，表示使用扩展
+
+Ø 第二步，有些扩展的功能依赖于 Dash to panel 扩展，因此先开启 Dash to panel 的
+ “打开” 按钮
+
+Ø 第三步，点击 Dash to panel 扩展 “打开” 按钮旁边的齿轮图标，可对 Dash to panel
+ 进行详细的设置，包括位置和风格、行为等。其他带齿轮的图标，使用方法相同
+
+Ø 第四步，开启其他扩展的 “打开” 按钮，使用对应的扩展功能
+
+Ø 使用 Dash to panel 扩展后，GNOME 的桌面布局发生了变化，回到了我们熟悉的
+ Windows 桌面环境布局，快捷启动栏回到了底部
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+
+
+
+
+                    Dash to Panel 设置界面
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+
+(2) 浏览器安装
+
+Ø GNOME 项目有一个专门用于扩展的网站 https://extensions.gnome.org/，该网站类
+ 似苹果的应用中心或者 Chrome 的扩展中心，你可以在这里找到你想要的扩展并安装并管
+ 理它们
+
+Ø 为了通过浏览器安装扩展工具，你需要准备两件东西：浏览器附加组件 和 本地主机连接器
+1.2 Ubuntu graphical interface
+
+1.2.6 GNOME extension tools
+Ø 当你访问 GNOME Shell 扩展网站时，你会看到以下所示消息：
+
+
+
+
+Ø 浏览器附加组件，点击图中链接，按照网页提示安装即可，本地主机连接器的安装，终端输入：
+ $ sudo apt install chrome-gnome-shell
+1.2 Ubuntu graphical interface
+1.2.6 GNOME extension tools
+ Ø 安装完成之后可以通过浏览器安装需要的扩展。第一步，在搜索栏中搜索你需要安装
+                           通知
+  的扩展
+1.2 Ubuntu graphical interface
+1.2.6 GNOME extension tools
+ Ø 第二步，点击右上角的 “On” 按钮
+                           通知
+1.2 Ubuntu graphical interface
+1.2.6 GNOME extension tools
+ Ø 第三步，在弹出的确认框中选择确认“安装”
+                           通知
+1.2 Ubuntu graphical interface
+1.2.6 GNOME extension tools
+ Ø 安装完成之后刷新网页可以看到右上角多了删除和配置的按钮
+                           通知
+1.2 Ubuntu graphical interface
+1.2.6 GNOME extension tools
+ Ø 点击“Installed extensions”，可看到网站的扩展和本机的扩展已经同步
+                           通知
+1.3 GNOME applications
+
+1.3.1 Ubuntu software store
+ 1.3 GNOME applications
+
+1.3.1 Ubuntu software store
+
+Ø GNOME网站给出了软件推荐列表 https://wiki.gnome.org/Apps，以下介绍几个常用软件：
+
+  l WPS：与微软Office兼容的办公套件，在Ubuntu上创建专业文档，电子表格和演示文稿
+
+  l 火狐浏览器：Firefox Quantum现在比Chrome快2倍，体积轻了30%
+
+  l Chromium浏览器：一个快速，简单，安全且专为现代网络而设计的网络浏览器
+
+  l Vscode：可运行于 Mac OS X、Windows和 Linux 之上的跨平台源代码编辑器
+
+  l PyCharm：PyCharm提供了高效的Python编程所需的所有工具
+
+  l VLC播放器：没有其他视频播放器有与之匹配的对不同格式的兼容性
+
+  l Thunderbird：Mozilla最受欢迎的电子邮件应用程序
+Post-assessment
+
+
+
+         1. 常见的 Linux 桌面环境有哪几种？
+
+         2. Ubuntu20.04 的桌面环境是什么？
+
+         3. 打开终端的快捷方式是什么？
+
+         4. GNOME 扩展工具的安装方法有哪两种？
+主观题 10分
+
+
+
+
+          1. 常见的 Linux 桌面环境有哪几种？
+
+          2. Ubuntu20.04 的桌面环境是什么？
+
+          3. 打开终端的快捷方式是什么？
+
+          4. GNOME 扩展工具的安装方法有哪两种？
+
+
+
+                正常使用主观题需2.0以上版本雨课堂
+
+                                     作答
+Summary
+
+1. Linux的桌面环境，介绍常见桌面环境
+
+2. GNOME桌面环境的图形界面和使用方法
+
+ a)   Ubuntu 桌面
+
+ b) Ubuntu 搜索界面
+
+ c)   Ubuntu dash 主页
+
+ d) Ubuntu 文件管理器
+
+ e)   Ubuntu 系统设置
+
+ f)   GNOME扩展工具
+Homework
+
+
+
+
+ 作业：学习《C++从入门到精通-作业版本》第1章
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+

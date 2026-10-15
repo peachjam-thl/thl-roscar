@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "purpose": "Source-grounded preparation for future ROS 1 Noetic practical commands and complete code files",
+  "lessons": [
+    {"lesson": 11, "pdf_pages": 71, "text_pages_read": 71, "rendered_pages": 71, "visual_overview_pages": 71, "overview_sheets": 6, "individual_image_reviews": [22, 23, 24, 27, 51, 52, 56, 64, 65], "embedded_attachments": []},
+    {"lesson": 12, "pdf_pages": 123, "text_pages_read": 123, "rendered_pages": 123, "visual_overview_pages": 123, "overview_sheets": 11, "individual_image_reviews": [], "embedded_attachments": []},
+    {"lesson": 13, "pdf_pages": 73, "text_pages_read": 73, "rendered_pages": 73, "visual_overview_pages": 73, "overview_sheets": 7, "individual_image_reviews": [28, 29, 33, 34, 45, 46, 47, 48, 49, 59, 60], "embedded_attachments": []},
+    {"lesson": 14, "pdf_pages": 48, "text_pages_read": 48, "rendered_pages": 48, "visual_overview_pages": 48, "overview_sheets": 4, "individual_image_reviews": [35, 37, 39], "embedded_attachments": []},
+    {"lesson": 15, "pdf_pages": 37, "text_pages_read": 37, "rendered_pages": 37, "visual_overview_pages": 37, "overview_sheets": 4, "individual_image_reviews": [8, 9, 16, 17, 19], "embedded_attachments": []}
+  ],
+  "totals": {"pdf_files": 5, "pdf_pages": 352, "text_chars": 77120, "low_text_pages": 105, "rendered_pages": 352, "visual_overview_pages": 352, "overview_sheets": 32, "individual_image_reviews": 28},
+  "source_inventory": "inventory.json",
+  "source_page_index": "page_index.tsv",
+  "study_note": "../../output/ROS实践_Lesson11-15_学习记录与操作索引.md",
+  "read_method": "All page text read; all pages visually reviewed in labelled overview sheets; selected code and formula slides individually reviewed. Cropped screenshots are not complete source files.",
+  "ubuntu_runtime_verified": false,
+  "ros_dependencies_installed_this_task": false,
+  "course_programs_built_or_started_this_task": false,
+  "external_videos_reviewed": false,
+  "complete_original_code_files_available": false,
+  "navigation_configuration_complete_in_pdf": false,
+  "source_instructions_treated_as_user_authorization": false,
+  "followup_requirement": "Re-open relevant original PDF pages for exact implementation and verify real user environment, existing files, build outputs, topics and TF before claiming execution success."
+}

@@ -1,0 +1,111 @@
+{
+  "pdf_files": 15,
+  "total_pages": 1682,
+  "files": [
+    {
+      "lesson": 1,
+      "path": "courseware/Lesson1.pdf",
+      "pages": 102,
+      "bytes": 7383452,
+      "sha256": "ab9f88e760d15876d2437d9e96a34eccb557ab3cf21fe4f7b6d9fb7e6bbc4e95"
+    },
+    {
+      "lesson": 2,
+      "path": "courseware/Lesson2.pdf",
+      "pages": 79,
+      "bytes": 2787859,
+      "sha256": "11d19113f2134b6a12bf2fbab7954773f3d81fa320dae5ac952a25d355f57d55"
+    },
+    {
+      "lesson": 3,
+      "path": "courseware/Lesson3.pdf",
+      "pages": 75,
+      "bytes": 3247666,
+      "sha256": "48ef37588d77d3409abf9c8d5afa8449e12eb3403554d697c4fdf977c317ae1c"
+    },
+    {
+      "lesson": 4,
+      "path": "courseware/Lesson4.pdf",
+      "pages": 272,
+      "bytes": 9156495,
+      "sha256": "98aa8373cb100892c96d9d5d2437e8b3ce78b412808d63ca7a9f98f1e26b94af"
+    },
+    {
+      "lesson": 5,
+      "path": "courseware/Lesson5.pdf",
+      "pages": 58,
+      "bytes": 4547408,
+      "sha256": "14270f0fc30da183f2fc64490d898e3c55fdcbc47bbf31cde90560585b5f3138"
+    },
+    {
+      "lesson": 6,
+      "path": "courseware/Lesson6.pdf",
+      "pages": 87,
+      "bytes": 4573563,
+      "sha256": "3c179242408cc9691ca78cc2dd20ca2973d8a47ec289d74501a9542d0551f4ef"
+    },
+    {
+      "lesson": 7,
+      "path": "courseware/Lesson7.pdf",
+      "pages": 84,
+      "bytes": 5635612,
+      "sha256": "e2dfc6825247bb5338ba342d5bf589faee3e6d324f15d6d7293d7e838dd7435b"
+    },
+    {
+      "lesson": 8,
+      "path": "courseware/Lesson8.pdf",
+      "pages": 82,
+      "bytes": 2885283,
+      "sha256": "a0d9a268d1e28766024d3ecefc7dd952e031eebf6c8780318244ffb8ab01e153"
+    },
+    {
+      "lesson": 9,
+      "path": "courseware/Lesson9.pdf",
+      "pages": 65,
+      "bytes": 2578503,
+      "sha256": "897c52feab52aa5aca28b1e27025b3e7c6bae43bed83ab4d27e5d4493b9e0ecf"
+    },
+    {
+      "lesson": 10,
+      "path": "courseware/Lesson10.pdf",
+      "pages": 426,
+      "bytes": 13611786,
+      "sha256": "1f5ed9996331ea74254bc277e06e0a682b9e70b5309d2f84a78092d9bd0f7ec9"
+    },
+    {
+      "lesson": 11,
+      "path": "courseware/Lesson11.pdf",
+      "pages": 71,
+      "bytes": 7090164,
+      "sha256": "2a85289793ba3504d3ed8435bbb2bc5cf2119a2adfd0739660dd25bd1fa4d9b8"
+    },
+    {
+      "lesson": 12,
+      "path": "courseware/Lesson12.pdf",
+      "pages": 123,
+      "bytes": 5220057,
+      "sha256": "a6533d5a26ac3b4bf629205e1c253d374f96ad2cf7809677f4ecbd948afe53d8"
+    },
+    {
+      "lesson": 13,
+      "path": "courseware/Lesson13.pdf",
+      "pages": 73,
+      "bytes": 3991474,
+      "sha256": "bb3a2f7fbae5a0f018d84086ee10681493a6e2c56b40086750d8b1138eb3cc1c"
+    },
+    {
+      "lesson": 14,
+      "path": "courseware/Lesson14.pdf",
+      "pages": 48,
+      "bytes": 4342429,
+      "sha256": "280d0188343a214ca46ed94bea9aa2898671ba9ed30229471fed677aeccfcb55"
+    },
+    {
+      "lesson": 15,
+      "path": "courseware/Lesson15.pdf",
+      "pages": 37,
+      "bytes": 2647335,
+      "sha256": "baf39f4539523cc42ef448a2549374da762e4cb16238978b61e030e9fd69255e"
+    }
+  ]
+}

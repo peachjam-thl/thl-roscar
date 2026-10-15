@@ -1,0 +1,966 @@
+===== Lesson13 PDF page 001 =====
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+
+===== Lesson13 PDF page 002 =====
+Overview lesson 13-1
+
+     1               2                3         4
+
+URDF Overview    URDF Syntax    URDF Practice   ~
+
+
+
+
+                         Objectives
+         1、了解 URDF 的概念，以及 ROS 中搭建仿真环境的方法
+
+         2、掌握 URDF 基本语法，能够编写机器人模型的 URDF 文件
+
+===== Lesson13 PDF page 003 =====
+Pre-assessment
+
+
+
+
+           1、是否了解 URDF 的作用？
+
+           2、是否了解 Xacro？
+
+           3、是否自己建立过机器人仿真模型？
+
+===== Lesson13 PDF page 004 =====
+1
+URDF Overview
+
+===== Lesson13 PDF page 005 =====
+1.1 URDF File
+
+1.1.1 Overview
+   Ø 场景1：机器人价格高昂，学习ROS要购买一台机器人吗？
+
+   Ø 场景2：机器人交互的外界环境多样复杂，如何实现多样化环境中的性能测试？
+
+   Ø 场景3：进行算法测试时，直接将未经验证的程序部署到实体机器人运行，安全吗？
+解决方案
+
+
+   Ø 机器人系统仿真：通过计算机对实体机器人系统进行模拟的技术
+
+   Ø 在 ROS 中，仿真实现涉及的内容有三部分：
+
+       l 机器人建模(URDF)
+
+       l 创建仿真环境(Gazebo)
+
+       l 数据可视化(Rviz)
+
+===== Lesson13 PDF page 006 =====
+1.1 URDF File
+
+1.1.1 Overview
+ 1. 仿真优势：
+
+   Ø 降低成本：仿真可以降低成本，减小风险
+
+   Ø 灵活高效：搭建的环境更为灵活多样，可以提高测试效率以及测试覆盖率
+
+   Ø 高安全性：仿真环境下，无需考虑耗损问题
+
+ 2. 仿真劣势：
+
+   Ø 失真：仿真所用的物理引擎无法完全模拟真实的物理世界
+
+   Ø 失准：仿真器构建的是关节驱动器、传感器与信号通信的绝对理想情况，还无法实现模拟实际硬
+     件缺陷或者一些临界状态等情形
+
+ 3. 仿真三大件：(1) URDF (2) Rviz (3) Gazebo
+
+===== Lesson13 PDF page 007 =====
+1.1 URDF File
+
+1.1.1 Overview
+(1) URDF：创建机器人模型       https://wiki.ros.org/urdf
+  Ø URDF 是 Unified Robot Description Format 的首字母缩写，直译为统一(标准化)机器人描
+   述格式
+
+  Ø URDF 是一种 XML 文件，以 XML 的方式描述机器人的结构，比如底盘、摄像头、激光雷达、
+   机械臂以及不同关节的自由度
+
+  Ø URDF 可以被 C++ 内置的解释器转换成可视化的机器人模型，是 ROS 中实现机器人仿真的重
+   要组件
+
+  Ø URDF 需要结合 Gazebo 或 Rviz 使用，在 Gazebo 或 Rviz 中可以将 URDF 文件解析为图形
+   化的机器人模型，一般的使用组合为：
+
+    l 对于非仿真环境，使用 URDF 结合 Rviz 直接显示感知的真实环境信息
+
+    l 对于仿真环境，使用 URDF 结合 Gazebo 搭建仿真环境，并结合 Rviz 显示感知的虚拟环
+      境信息
+
+===== Lesson13 PDF page 008 =====
+1.1 URDF File
+
+1.1.1 Overview
+(2) Rviz：图形化显示机器人模型、传感器感知到的数据信息
+
+  Ø Rviz 是 ROS Visualization Tool 的首字母缩写，直译为 ROS 的三维可视化工具
+
+  Ø Rviz 主要用于以三维方式显示 ROS 消息，以及将数据进行可视化表达
+
+  Ø 举例：显示机器人模型、激光测距仪传感器检测到的障碍物距离、Kinect 三维距离传感器的点
+   云数据、从相机获取的图像值等
+
+===== Lesson13 PDF page 009 =====
+1.1 URDF File
+
+1.1.1 Overview
+ (3) Gazebo：搭建仿真环境
+   Ø Gazebo是一款 3D 动态模拟器，用于显示机器人模型并创建仿真环境
+
+   Ø Gazebo 能够在复杂的室内和室外环境中准确有效地模拟机器人
+
+   Ø 与游戏引擎提供高保真度的视觉模拟类似，Gazebo 提供高保真度的物理模拟以及各类传感器模
+    型，Gazebo 为用户和程序提供友好的交互方式
+
+   Ø 安装：
+      $ sudo apt install gazebo11
+
+      $ sudo apt install libgazebo11-dev
+
+   Ø 运行：
+
+      $ rosrun gazebo_ros gazebo
+
+      $ gazebo
+
+===== Lesson13 PDF page 010 =====
+2
+URDF Syntax
+
+===== Lesson13 PDF page 011 =====
+2.1 URDF Format
+
+2.1.1 Overview：https://wiki.ros.org/urdf/XML
+
+Ø URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型
+
+Ø URDF 的标签可以简化为两部分：连杆( link 标签) 与 关节( joint 标签)
+  (1) robot 根标签
+  (2) link 连杆标签
+  (3) joint 关节标签
+  (4) gazebo 标签
+
+===== Lesson13 PDF page 012 =====
+2.1 URDF Format
+
+2.1.2 Link
+ robot 根标签：
+
+   Ø URDF 中为了保证 XML 语法的完整性，使用了 robot 标签作为根标签，所有的
+    link 和 joint 以及其他标签都必须包含在 robot 标签内，在该标签内可以通过
+    name 属性设置机器人模型的名称
+
+   Ø 属性
+
+     l name=“机器人模型的名称”
+
+   Ø 子标签
+
+     l 其他标签都是 robot 的子级标签
+
+===== Lesson13 PDF page 013 =====
+2.1 URDF Format
+
+2.1.2 Link
+ link 标签：
+
+   Ø URDF 中的 link 标签用于描述机器人刚体部件的外观和物理属性。比如：机器人底
+    座、轮子、激光雷达、摄像头等
+
+   Ø 每一个部件都对应一个 link。在 link 标签内，可以设计该部件的形状、尺寸、颜色、
+    惯性矩阵、碰撞参数等一系列属性
+
+===== Lesson13 PDF page 014 =====
+2.1 URDF Format
+
+2.1.2 Link
+ link 标签：
+
+   Ø 属性
+
+     l name=“连杆名称”
+
+   Ø 子标签
+
+     l visual：描述零件外观(对应的数据是可视的)
+
+     l collision：描述连杆的碰撞属性
+
+     l inertial：描述连杆的惯性矩阵
+
+===== Lesson13 PDF page 015 =====
+2.1 URDF Format
+
+2.1.2 Link
+
+    l visual：描述零件外观
+
+       • geometry：设置零件的形状
+
+       • origin：设置零件的偏移量与倾斜角度
+
+       • material：设置零件的材料属性
+
+===== Lesson13 PDF page 016 =====
+2.1 URDF Format
+
+2.1.2 Link
+     • geometry：设置零件的形状
+        ü box：盒状
+             • 属性：size=“长 宽 高”
+        ü cylinder：圆柱
+             • 属性：radius=“半径” length=“高度”
+        ü sphere：球体
+             • 属性：radius=“半径”
+        ü mesh：网格模型
+             • 属性：filename=“模型路径”（格式：
+               package://<packagename>/<path>/file）
+
+===== Lesson13 PDF page 017 =====
+2.1 URDF Format
+
+2.1.2 Link
+
+       • origin：设置零件的偏移量与倾斜角度，以零件自身的几何中心为基准
+
+             • 属性1：xyz=“x偏移 y偏移 z偏移”（单位：米）
+
+             • 属性2：rpy=“x翻滚 y俯仰 z偏航”（单位：弧度）
+
+       • material：设置零件的材料属性
+
+             • 属性：name=“材料名称”
+
+             • 标签：color
+
+               • 属性：rgba=“红黄蓝透明度”（取值[0,1]）
+
+===== Lesson13 PDF page 018 =====
+2.1 URDF Format
+
+2.1.2 Link
+
+===== Lesson13 PDF page 019 =====
+2.1 URDF Format
+
+2.1.3 Joint
+Ø URDF 中的 joint 标签用于描述机器人关节的运
+动学和动力学属性
+
+Ø 可以指定关节运动的安全极限，机器人的两个部
+件(分别称之为 parent link 与 child link)以"关节"
+的形式相连接
+
+Ø 不同的关节有不同的运动形式: 旋转、滑动、固定、
+旋转速度、旋转角度限制等
+
+Ø 举例：安装在底座上的轮子可以 360 度旋转，摄
+像头完全固定在底座上等应用场景
+
+===== Lesson13 PDF page 020 =====
+2.1 URDF Format
+
+2.1.3 Joint
+ joint标签：
+
+    l 属性
+       • name=“关节命名”
+
+       • type=“关节类型”，关节类型可取如下值：
+            ü continuous: 旋转关节，可以绕单轴无限旋转
+            ü revolute: 旋转关节，类似于 continues，但是有旋转角度限制
+            ü prismatic: 滑动关节，沿某一轴线移动的关节，有位置极限
+            ü planer: 平面关节，允许在平面正交方向上平移或旋转
+            ü floating: 浮动关节，允许进行平移、旋转运动
+            ü fixed: 固定关节，不允许运动的特殊关节
+
+===== Lesson13 PDF page 021 =====
+2.1 URDF Format
+
+2.1.3 Joint
+ joint标签：
+
+     l 子标签
+        • parent(必需的)，parent link 是一个强制属性：
+              ü link=“父级连杆的名称”
+        • child(必需的)，child link 是一个强制属性：
+              ü link=“子级连杆的名称”
+        • origin 此处的 origin 以 parent link 的几何中心为基准
+              ü 属性: xyz=“xyz轴线上的偏移量” rpy=“xyz轴线上的偏移角度”
+        • axis
+              ü 属性: xyz=“设置围绕哪个关节轴运动”
+
+===== Lesson13 PDF page 022 =====
+2.1 URDF Format
+
+2.1.4 案例
+
+     案例：在 Rviz 中显示建立的机器人模型步骤
+
+       1. 准备：新建功能包，导入依赖
+
+       2. 核心：编写 URDF 文件
+
+       3. 核心：在 launch 文件集成 URDF 与 Rviz
+
+       4. 在 Rviz 中显示机器人模型
+
+       5. 启动 launch 文件
+
+===== Lesson13 PDF page 023 =====
+2.1 URDF Format
+
+ 2.1.4 案例
+1. 准备：新建功能包，导入依赖
+
+  l 创建一个新的功能包
+
+    Ø 功能包名称：rcdp
+
+    Ø 添加依赖项：urdf xacro gazebo_ros gazebo_ros_control gazebo_plugins
+
+  l 在当前功能包下，创建以下目录：
+
+    • urdf: 存放 URDF 文件的目录
+
+       ü urdf目录下，新建 URDF 和 Xacro 文件夹
+
+    • meshes：存放机器人模型网格文件
+
+    • config: 存放配置文件
+
+    • launch: 存放 launch 启动文件
+
+===== Lesson13 PDF page 024 =====
+2.1 URDF Format
+                  ROS中URDF格式和使用：
+2.1.4 案例          https://blog.csdn.net/shenyan0712/article/details/89919959
+
+2. 核心：根据 URDF 规则编写 URDF 文件
+
+3. Launch文件：在 launch 文件集成 URDF 与 Rviz
+
+
+
+
+   在launch文件中导入URDF文件的方法：使用参数名：robot_description，
+   将 URDF 文件的路径设置到参数服务器
+
+===== Lesson13 PDF page 025 =====
+2.1 URDF Format
+
+2.1.4 案例
+  4. Rviz 参数设置
+  l 重复启动 launch 文件时，Rviz 之前的组件配置信息不会自动保存
+
+  l 为了方便使用，可以使用如下方式优化：
+
+     • 第一步，将当前配置保存进 config 目录
+
+     • 第二步，launch文件中 Rviz 的启动配置添加参数：args，值设置为 -d 配置文件路径
+
+===== Lesson13 PDF page 026 =====
+2.1 URDF Format
+
+2.1.4 案例
+
+  5. 启动：在 Rviz 中显示机器人模型
+
+
+  ctrl+shift+b 编译
+
+  roslaunch 功能包 launch文件名
+
+===== Lesson13 PDF page 027 =====
+2.1 URDF Format
+
+2.1.5 实践
+ 实践内容：创建差速机器人模型，该模型为双层结构，中间由圆柱形连杆连接；机器人底盘为圆柱体，
+ 在圆柱体的前面放置一个深度摄像头，摄像头可沿着Z轴 -180 到 180 旋转；机器人二层为圆柱体，
+ 在圆柱体前面放置一个激光雷达，雷达可以沿着 Z 轴 360 度旋转
+
+             激光雷达
+
+
+
+
+           深度摄像头
+
+
+
+
+            支撑轮                支撑轮
+                    驱动轮 * 2
+
+===== Lesson13 PDF page 028 =====
+2.1 URDF Format
+
+  2.1.5 实践
+URDF文件：
+
+===== Lesson13 PDF page 029 =====
+2.1 URDF Format
+
+ 2.1.5 实践
+launch文件：
+
+===== Lesson13 PDF page 030 =====
+2.1 URDF Format
+
+2.1.5 实践
+Ø 运行结果：
+
+
+
+                  原因：
+                  rviz 中显示 URDF时，必须发布不同
+                  零件之间的 坐标系变换 关系
+                  解决方案：
+                  ROS中提供了关于机器人模型显示的坐
+                  标系关系节点，分别为：
+                  joint_state_publisher(功能包同名)
+                  robot_state_publisher(功能包同名)
+                  在launch文件中包含这两个节点
+
+===== Lesson13 PDF page 031 =====
+2.1 URDF Format
+
+   2.1.5 实践
+  Ø 2个重要功能包：
+
+joint_state_publisher：
+Ø joint_state_publisher是一个ROS功能包，它的主要功能是发布关节状态信息，包括关节角度、速度、加
+  速度等。关节状态信息是从机器人硬件接收，并转换为ROS中的JointState消息
+Ø 通过读取参数服务器上的/robot_description来获得机器人的所有非固定关节
+Ø 节点会将关节状态信息发布到/joint_state话题，这个话题可以被其他ROS节点如运动控制节点、仿真节点
+  等订阅。
+Ø 这个节点发布的频率一般是10Hz，如果发布的话题频率超过10Hz，关节角度可能会出现来回跳动的情况
+
+===== Lesson13 PDF page 032 =====
+2.1 URDF Format
+
+   2.1.5 实践
+  Ø 2个重要功能包：
+
+robot_state_publisher：
+Ø robot_state_publisher是一个ROS软件包，它的主要功能是发布机器人的完整状态信息。除了关节状态信
+  息之外，robot_state_publisher还发布了机器人的TF变换信息，包括机器人坐标系和关节坐标系之间的变
+  换关系
+Ø 在实际应用中，robot_state_publisher节点通常在joint_state_publisher节点的工作基础之上工作。它
+  根据创建的描述机器人装配的URDF模型，编写一个节点来对机器人的运动进行仿真，并发布JointState和
+  平移消息。然后，robot_state_publisher节点会将整个机器人的状态消息发布到/tf2话题上，以供系统中
+  其他使用tf的组件获取和使用
+
+===== Lesson13 PDF page 033 =====
+2.1 URDF Format
+
+ 2.1.5 实践
+launch文件：
+
+===== Lesson13 PDF page 034 =====
+2.1 URDF Format
+
+2.1.5 实践
+ Ø 运行结果：
+
+
+
+
+                  原因：
+                  URDF文件中包含注释
+                  解决方案：
+                  删除URDF文件中的注释
+
+===== Lesson13 PDF page 035 =====
+Summary
+
+ 1. URDF Overview
+
+    a) 作用
+
+    b) 优劣势
+
+    c) 定义和使用方法
+
+    d) Rviz 和 Gazebo简介
+
+ 2. URDF Syntax
+
+    a) robot 标签
+
+    b) link 标签
+
+    c) joint 标签
+
+    d) 案例演示
+
+===== Lesson13 PDF page 036 =====
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+
+===== Lesson13 PDF page 037 =====
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+
+===== Lesson13 PDF page 038 =====
+Overview lesson 13-2
+
+     1                2                3                .1   4
+
+Xacro Overview    Xacro Syntax   Xacro Practice   Arbotix Controller
+
+
+
+
+                          Objectives
+         1、了解 Xacro 的概念，以及 ROS 中搭建仿真环境的方法
+
+         2、掌握 Xacro 基本语法，能够编写机器人模型的 Xacro 文件
+
+         3、了解 Arbotix 控制器的配置和使用方法
+
+===== Lesson13 PDF page 039 =====
+Pre-assessment
+
+
+
+
+           1、是否了解 Xacro 的作用？
+
+           2、是否编写过 Xacro 文件？
+
+===== Lesson13 PDF page 040 =====
+1
+Xacro Overview
+
+===== Lesson13 PDF page 041 =====
+1.1 URDF Review
+
+1.1.1 Overview
+(1) URDF：创建机器人模型      https://wiki.ros.org/urdf
+  Ø URDF是一种 XML 文件，以 XML 的方式描述机器人的结构，比如底盘、摄像头、激光雷达、机械臂以
+    及不同关节的自由度；URDF 需要结合 Gazebo 或 Rviz 使用，在 Gazebo 或 Rviz 中可以将 URDF 文
+    件解析为图形化的机器人模型
+
+
+(2) Rviz：图形化的显示机器人各种传感器感知到的环境信息
+  Ø Rviz 是 ROS 的三维可视化工具，主要用于以三维方式显示 ROS 消息，将数据进行可视化表达
+
+  Ø 举例：显示机器人模型、显示表达激光测距仪传感器检测到的障碍物距离、Kinect 三维距离传感器的点云
+    数据显示、从相机获取的图像值等
+
+(3) Gazebo：搭建仿真环境
+  Ø Gazebo 是一款 3D 动态模拟器，用于显示机器人模型并创建仿真环境
+
+  Ø Gazebo 能够在复杂的室内和室外环境中准确有效地模拟机器人
+
+  Ø Gazebo 提供高保真度的物理模拟，其提供一整套传感器模型，以及对用户和程序非常友好的交互方式
+
+===== Lesson13 PDF page 042 =====
+1.2 URDF Syntax
+
+1.2.1 Overview：https://wiki.ros.org/urdf/XML
+
+Ø URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型
+
+Ø URDF的标签可以简化为两部分：连杆(link标签) 与 关节( joint标签)
+
+  (1) robot 根标签
+
+  (2) link 连杆标签
+
+  (3) joint 关节标签
+
+  (4) gazebo 标签
+
+===== Lesson13 PDF page 043 =====
+1.3 URDF Demo
+
+1.3.1 Overview：https://wiki.ros.org/urdf/XML
+案例需求：创建差速机器人模型，该模型为双层结构，中间由圆柱形连杆连接；机器人底盘为圆柱体，在
+圆柱体的前面放置一个深度摄像头，摄像头可沿着Z轴 -180 到 180 旋转；机器人二层为圆柱体，在圆柱
+体前面放置一个激光雷达，雷达可以沿着 Z 轴 360 度旋转
+
+===== Lesson13 PDF page 044 =====
+1.3 URDF Demo
+
+1.3.1 Overview
+                 Ø 蓝色数字：link
+
+                 Ø 黄色数字：joint
+
+                 Ø 使用元素：
+
+                   l球
+
+                   l 圆柱
+
+                   l 长方体
+
+===== Lesson13 PDF page 045 =====
+1.3 URDF Demo
+
+ 1.3.2 URDF File
+Ø 代码分析：link标签
+
+===== Lesson13 PDF page 046 =====
+1.3 URDF Demo
+
+ 1.3.2 URDF File
+Ø 代码分析：link标签
+
+===== Lesson13 PDF page 047 =====
+1.3 URDF Demo
+
+ 1.3.2 URDF File
+Ø 代码分析：link标签
+
+===== Lesson13 PDF page 048 =====
+1.3 URDF Demo
+
+ 1.3.2 URDF File
+Ø 代码分析：join标签
+
+===== Lesson13 PDF page 049 =====
+1.3 URDF Demo
+
+ 1.3.2 URDF File
+Ø 代码分析：join标签
+
+===== Lesson13 PDF page 050 =====
+1.4 Xacro Overview
+
+1.4.1 URDF 问题分析
+
+ (1) 问题1：在设计关节的位置时，需要按照一定的公式计算，公式是固定的。但是在
+ URDF 中依赖于手工计算，存在不便，容易计算失误，且当某些参数发生改变时，还需要重
+ 新计算
+
+ (2) 问题2：URDF 中的部分内容是高度重复的，驱动轮与支撑轮的设计实现，不同轮子只
+ 是部分参数不同，形状、颜色、翻转量都是一致的；在实际应用中，构建复杂的机器人模型
+ 时，更是易于出现高度重复的设计，按照一般的编程涉及到重复代码应该考虑封装
+
+
+
+   可以通过 变量 结合 函数 直接解决上述问题。在 ROS 中，已经给出了
+   类似编程的优化方案，称之为：Xacro
+
+===== Lesson13 PDF page 051 =====
+1.4 Xacro Overview
+
+1.4.2 Xacro File： http://wiki.ros.org/xacro
+
+   Ø 概念：
+   Xacro 是 XML Macros 的缩写，Xacro 是一种 XML 宏语言，是可编程的 XML
+
+   Ø 原理
+   Xacro 可以 声明变量，可以通过 数学运算求解，使用 流程控制控制执行顺序，还可以通
+   过 类似函数的实现，封装固定的逻辑，将逻辑中需要的可变的数据以参数的方式展示，
+   提高代码复用率以及程序的安全性
+
+   Ø 作用
+   较之于 URDF 实现，可以编写更安全、精简、易读性更强的机器人模型文件，且可以提
+   高编写效率
+
+===== Lesson13 PDF page 052 =====
+2
+Xacro Syntax
+
+===== Lesson13 PDF page 053 =====
+2.1 Xacro basic Syntax
+
+2.1.1 属性与算数运算 https://www.cnblogs.com/caiyishuai/p/15044043.html
+
+  (1) Xacro 提供了可编程接口，类似于计算机语言，包括 变量声明调用、函数声明与调用
+  等语法实现。在使用 xacro 生成 URDF 时，根标签 robot 中必须包含命名空间声明：
+  xmlns:xacro="http://wiki.ros.org/xacro"
+
+  (2) 属性与算数运算：
+  用于封装 URDF 中的一些字段，比如: PI 值，小车的尺寸，轮子半径
+
+
+    l 属性定义：
+
+      <xacro:property name="xxxx" value="yyyy" />
+
+===== Lesson13 PDF page 054 =====
+2.1 Xacro basic Syntax
+
+2.1.1 属性与算数运算
+
+ l 属性调用：
+
+ ${属性名称}
+
+
+ l 算数运算：
+
+ ${数学表达式}
+
+===== Lesson13 PDF page 055 =====
+2.1 Xacro basic Syntax
+
+2.1.2 Xacro宏
+
+  (1) 宏
+  类似于函数实现，提高代码复用率，优化代码结构，提高安全性
+
+
+  (2) 宏定义(函数定义)：
+  <xacro:macro name="宏名称" params="参数列表(多参数之间使用空格分隔)">
+    参数调用格式: ${参数名}
+  </xacro:macro>
+
+  (3) 宏调用(函数调用)：
+  <xacro:宏名称 参数1=xxx 参数2=xxx/>
+
+===== Lesson13 PDF page 056 =====
+2.1 Xacro basic Syntax
+
+2.1.3 文件包含
+ (1) 文件包含
+ 机器人由多部件组成，不同部件可能封装为单独的 xacro 文件，最后再将不同的文件集成，
+ 组合为完整机器人，可以使用文件包含实现
+
+ (2) 语法结构：
+ <robot name="xxx" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="my_base.xacro" />
+    <xacro:include filename="my_camera.xacro" />
+    <xacro:include filename="my_laser.xacro" />
+    ....
+ </robot>
+
+===== Lesson13 PDF page 057 =====
+3
+Xacro Practice
+
+===== Lesson13 PDF page 058 =====
+3.1 Xacro Demo
+
+3.1.1 Xacro案例演示
+
+在 urdf 目录的 xacro 目
+录中，新建
+myrobot_v1.xacro 和
+myrobot_v2.xacro 文件，
+通过 xacro 规则编写小车
+的 xacro 文件
+
+===== Lesson13 PDF page 059 =====
+3.1 Xacro Demo
+
+3.1.1 Xacro案例演示
+ (1) 使用变量的版本-myrobot_v1.xacro
+
+===== Lesson13 PDF page 060 =====
+3.1 Xacro Demo
+
+3.1.1 Xacro案例演示
+ (2) 使用函数的版本-myrobot_v2.xacro
+
+===== Lesson13 PDF page 061 =====
+3.1 Xacro Demo
+
+3.1.1 Xacro案例演示
+(3) 集成 launch 文件
+
+  方式1：先将 Xacro 文件转换出 URDF 文件，然后集成
+
+
+  切换到 xacro 文件所在目录，将 xacro 文件解析成 urdf 文件：
+  rosrun xacro xacro xxx.xacro > xxx.urdf
+  然后再按照之前的集成方式直接整合 launch 文件
+
+===== Lesson13 PDF page 062 =====
+3.1 Xacro Demo
+
+     3.1.1 Xacro案例演示
+      (3) 集成launch文件
+
+<launch>
+
+  <param name="robot_description" textfile="$(find rcdp)/urdf/xacro/myrobot_v2.urdf" />
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rcdp)/config/myrobot.rviz"/>
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+
+</launch>
+
+===== Lesson13 PDF page 063 =====
+3.1 Xacro Demo
+
+   3.1.1 Xacro案例演示
+    (3) 集成launch文件
+
+      方式2：在 launch 文件中直接加载 Xacro(建议使用)
+
+<launch>
+
+  <param name="robot_description" command="$(find xacro)/xacro $(find
+rcdp)/urdf/xacro/myrobot_v2.xacro" />
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rcdp)/config/myrobot.rviz" />
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+
+</launch>
+
+===== Lesson13 PDF page 064 =====
+4
+Arbotix Controller
+
+===== Lesson13 PDF page 065 =====
+4.1 Arbotix
+
+4.1.1 Overview：http://wiki.ros.org/arbotix
+
+Ø Arbotix 是一款控制电机、舵机的控制板，并提供相应的 ros 功能包
+
+Ø Arbotix 可以驱动真实的 Arbotix 控制板，它还提供一个差速控制器，通过接受速度控制
+  指令更新机器人的 joint 状态，从而帮助我们实现机器人在 Rviz 中的运动
+
+Ø 这个差速控制器在 arbotix_python 程序包中，完整的 arbotix 程序包还包括多种控制器，
+  分别对应 dynamixel 电机、多关节机械臂以及不同形状的夹持器
+
+===== Lesson13 PDF page 066 =====
+4.1 Arbotix
+
+4.1.1 Overview
+ Ø 实现流程：
+   1. 安装 Arbotix
+   2. 创建新功能包(或继续使用rcdp功能包)，准备机器人 URDF、Xacro 文件
+   3. 添加 Arbotix 配置文件
+   4. 编写 launch 文件配置 Arbotix
+   5. 启动 launch 文件并控制机器人模型运动
+
+===== Lesson13 PDF page 067 =====
+4.1 Arbotix
+
+4.1.1 Overview
+ (1) 安装 Arbotix：
+    1. 命令行安装
+
+    $ sudo apt install ros-noetic-arbotix
+
+
+(2) 创建新功能包，准备机器人 URDF、Xacro文件
+
+===== Lesson13 PDF page 068 =====
+4.1 Arbotix
+
+4.1.1 Overview
+ (3) 添加 arbotix 所需的配置文件：
+        controllers: {
+          base_controller: {
+            type: diff_controller,
+            base_frame_id: root_link,   urdf/xacro文件中所有link的父节点
+            base_width: 0.8,
+            ticks_meter: 2000,
+            Kp: 12,
+            Kd: 12,
+            Ki: 0,
+            Ko: 50,
+            accel_limit: 1.0
+          }
+        }
+
+===== Lesson13 PDF page 069 =====
+4.1 Arbotix
+
+4.1.1 Overview
+ (4) launch 文件中配置 arbotix 节点：
+
+<node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+   <rosparam file="$(find rcdp)/config/arbotix_control.yaml" command="load" />
+   <param name="sim" value="true" />
+</node>
+
+
+
+ Ø 代码讲解：
+ <node> 调用了 arbotix_python 功能包下的 arbotix_driver 节点
+
+ <rosparam> arbotix 驱动机器人运行时，需要获取机器人信息，可以通过 file 加载配置文件
+
+ <param> 在仿真环境下，需要配置 sim 为 true
+
+===== Lesson13 PDF page 070 =====
+4.1 Arbotix
+
+4.1.1 Overview
+ (5) 启动 launch 文件并控制机器人模型运动：
+
+
+
+
+                    $ rostopic pub /cmd_vel
+                    geometry_msgs/Twist "[0.1,0,0]" "[0,0,0]"
+
+===== Lesson13 PDF page 071 =====
+4.1 Arbotix
+
+4.1.1 Overview
+ (6) 通过键盘控制机器人模型运动：
+
+  $ sudo apt install ros-noetic-teleop-twist-keyboard
+
+  $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+===== Lesson13 PDF page 072 =====
+Summary
+ 1. Xacro概述
+    a) URDF基本语法
+    b) URDF案例演示
+    c) Xacro概述
+ 2. Xacro基本语法
+    a) 属性与算数运算
+    b) 宏
+    c) 文件包含
+ 3. Xacro案例演示
+    a) 变量版本（v1）
+    b) 函数版本（v2）
+ 4. Arbotix 控制器
+    a) 使用方法
+    b) 键盘控制功能包
+
+===== Lesson13 PDF page 073 =====
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?

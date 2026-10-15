@@ -1,0 +1,466 @@
+===== Lesson15 PDF page 001 =====
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+
+===== Lesson15 PDF page 002 =====
+Overview lesson 15-1
+
+    .1   1             .   2                .1   3   .1   4
+
+Xacro 模型优化         Gazebo 控制小车          自主导航              ~
+
+
+
+
+                               Objectives
+             1、修改自己的Xacro模型，使其能在Gazebo中正常显示
+
+             2、能够使用teleop_twist_key在Gazebo中控制小车
+
+             3、运行导航模块中的navigation功能包
+
+===== Lesson15 PDF page 003 =====
+1
+Xacro 模型优化
+
+===== Lesson15 PDF page 004 =====
+1.1 Xacro 模型回顾
+
+1.1.1 myrobot_whole_func.xacro
+
+===== Lesson15 PDF page 005 =====
+1.1 Xacro 模型回顾
+
+1.1.1 myrobot_whole_func.xacro
+ Ø 问题1：右轮有离地间隙            Ø 问题2：模型运动时会后仰
+
+
+
+
+    Ø 产生原因：base_link 和       Ø 产生原因：缺少后支撑轮
+     root_link 的偏移量计算有误
+
+===== Lesson15 PDF page 006 =====
+1.1 Xacro 模型回顾
+
+1.1.1 myrobot_whole_func.xacro
+   Ø 问题3：两个驱动轮无法绕            Ø 问题4：模型倾倒
+     y 轴转动
+
+
+
+
+   Ø 产生原因：驱动轮未设置 y           Ø 产生原因：(1) 模型 link 质量设置不
+
+     轴自由度                        合理；(2) root_link 设置了 inertial，
+                                 增加不稳定性(较难)
+
+===== Lesson15 PDF page 007 =====
+1.2 Xacro 模型优化
+
+1.2.1 myrobot_gazebo.xacro
+   Ø 问题1：右轮有离地间隙
+
+    <xacro:joint_info child_link="base_link" parent_link="root_link"
+    type="fixed" ox="0" oy="0" oz="${base_height / 2 + wheel_radius}"
+    ax="0" ay="0" az="0"/>
+
+===== Lesson15 PDF page 008 =====
+1.2 Xacro 模型优化
+
+1.2.1 myrobot_gazebo.xacro
+ Ø 问题2：模型运动时会后仰
+
+===== Lesson15 PDF page 009 =====
+1.2 Xacro 模型优化
+
+1.2.1 myrobot_gazebo.xacro
+   Ø 问题3：两个驱动轮无法绕 y 轴转动
+
+
+
+
+   Ø 问题4：模型倾倒
+
+      重新设置 link 质量
+
+      删除 root_link 的 inertial 标签
+
+===== Lesson15 PDF page 010 =====
+1.2 Xacro 模型优化
+
+1.2.1 myrobot_gazebo.xacro
+
+===== Lesson15 PDF page 011 =====
+2
+Gazebo 控制小车
+
+===== Lesson15 PDF page 012 =====
+2.1 键盘控制小车运动
+
+2.1.1 teleop_twist_key 键盘控制节点
+   Ø 安装和启动
+
+       $ sudo apt install ros-noetic-teleop-twist-keyboard
+
+       $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+===== Lesson15 PDF page 013 =====
+2.1 键盘控制小车运动
+
+2.1.1 teleop_twist_key 键盘控制节点
+   Ø 安装和启动
+
+===== Lesson15 PDF page 014 =====
+2.1 键盘控制小车运动
+
+2.1.2 rviz 查看激光雷达信息
+Ø 新开一个终端，输入以下指令： $ roslaunch rs_gazebo rviz_show.launch
+
+===== Lesson15 PDF page 015 =====
+2.1 键盘控制小车运动
+
+2.1.2 rviz 查看激光雷达信息
+Ø 通过键盘控制小车运动，查看激光雷达信息的变化
+
+===== Lesson15 PDF page 016 =====
+2.1 键盘控制小车运动
+
+2.1.2 rviz 查看激光雷达信息
+Ø 要求1：修改激光雷达的配置信息，查看各个参数的作用效果
+
+
+
+
+                         Ø 参考资料：282-综合应用-雷达仿真
+
+                         https://www.bilibili.com/video/BV1Ci4
+                         y1L7ZZ?p=284
+
+===== Lesson15 PDF page 017 =====
+2.1 键盘控制小车运动
+
+2.1.3 rviz 查看摄像头信息
+Ø 要求2：修改摄像头的配置信息，查看各个参数的作用效果
+
+
+
+
+                         Ø 参考资料：283-综合应用-摄像头仿真
+
+                         https://www.bilibili.com/video/BV1Ci4
+                         y1L7ZZ?p=285
+
+===== Lesson15 PDF page 018 =====
+2.1 键盘控制小车运动
+
+2.1.4 rviz 查看 kinect 信息
+Ø 要求3：添加 kinect 的 xacro 文件，增加 kinect 相机，在 rviz 中查看 kinect 点云信息；
+ 修改kinect 的配置信息，查看各个参数的作用效果
+
+
+
+
+                                    Ø 参考资料：284-综合应用-深度相机仿真-点
+                                      云
+
+                                    https://www.bilibili.com/video/BV1Ci4y1
+                                    L7ZZ?p=287
+
+===== Lesson15 PDF page 019 =====
+2.1 键盘控制小车运动
+
+2.1.4 rviz 查看 kinect 信息
+Ø 要求3：添加 kinect 的 xacro 文件，增加 kinect 相机，在 rviz 中查看 kinect 点云信息；
+ 修改kinect 的配置信息，查看各个参数的作用效果
+
+
+
+
+                                   Ø 参考资料：284-综合应用-深度相机仿真-点云
+
+                                   https://www.bilibili.com/video/BV1Ci4y1L
+                                   7ZZ?p=287
+
+===== Lesson15 PDF page 020 =====
+3
+自主导航
+
+===== Lesson15 PDF page 021 =====
+3.1 Navigation
+
+3.1.1 Overview
+  Ø ROS机器人导航(Navigation)由多个功能包组合实现，称为导航功能包集
+
+  Ø 官方介绍：一个二维导航堆栈，它接收来自里程计、传感器流和目标姿态的信息，并输出发
+    送到移动底盘的安全速度命令
+
+===== Lesson15 PDF page 022 =====
+3.1 Navigation
+
+ 3.1.2 Campus Cases
+
+1. 校园地图(熟悉)
+
+
+2. 自身位置(结合周围建筑信息)
+
+
+3. 行走路线
+
+最近的路：从 紫竹餐厅 往北走，看到 玉兰
+餐厅 再往前走，走到 青年教师公寓E 的那个
+路口，右拐，过了 专家公寓 就是
+
+走过来就可以，骑自行车也行~
+
+===== Lesson15 PDF page 023 =====
+3.1 Navigation
+
+ 3.1.2 Campus Cases
+
+1. 校园地图(不熟悉)
+
+
+2. 自身位置(无需建筑信息)
+
+
+3. 行走路线
+
+最近的路：从 紫竹餐厅 往北走100米，看到
+一个十字路口，继续 往北走300米，看到一
+个丁字路口，右转，直行300米就到了
+
+走过来就可以，骑自行车也行~
+
+===== Lesson15 PDF page 024 =====
+3.1 Navigation
+
+  3.1.2 Campus Cases
+
+1. 校园地图 -----------------------> 全局地图
+
+
+2. 自身位置 -----------------------> 自身定位
+
+
+3. 最近的路 -----------------------> 路径规划
+
+
+4. 骑车or走路 --------------------> 运动方式
+
+
+5. 骑车or走路速度 ----------------> 运动控制
+
+===== Lesson15 PDF page 025 =====
+3.1 Navigation
+
+3.1.3 Navigation structure
+
+ ②                ③
+                                                  ①
+
+
+
+
+                                                  ⑤
+
+
+
+
+                              ④
+
+
+         1. 全局地图 2. 自身定位 3. 路径规划 4. 运动控制 5.环境感知
+
+===== Lesson15 PDF page 026 =====
+3.1 Navigation
+
+    3.1.3 Navigation structure
+
+1 全局地图
+
+Ø   SLAM(simultaneous localization and mapping)，即时定位与地图构建。SLAM问题可以描述为: 机器
+    人在未知环境中从一个未知位置开始移动，在移动过程中根据位置估计和地图进行自身定位，同时在自身定位
+    的基础上建造增量式地图，以绘制出外部环境的完全地图
+
+Ø 在 ROS 中，常用的 SLAM 包括 gmapping、hector_slam、cartographer、rgbdslam、ORB_SLAM等
+
+
+Ø SLAM建图 ，机器人需具备感知外界环境的能力，尤其是获取周围环境深度信息的能力。感知的实现需要依
+    赖于传感器，比如: 激光雷达、摄像头、RGB-D摄像头等
+
+
+Ø SLAM 生成的地图需要被保存以待后续使用，在 ROS 中保存地图的功能包是 map_server
+
+===== Lesson15 PDF page 027 =====
+3.1 Navigation
+
+  3.1.3 Navigation structure
+
+2 自身定位
+
+Ø 导航过程中，机器人需要实时确定当前自身的位置。如果在室外，可以使用GPS辅助定位；在室内、隧道、
+ 地下或一些屏蔽 GPS 信号的区域，需要使用具备自身定位功能的功能包，例如：AMCL
+
+Ø AMCL(adaptive MonteCarlo Localization)自适应的蒙特卡洛定位，是用于2D移动机器人的概率定位
+ 系统。它实现了自适应（或KLD采样）蒙特卡洛定位方法，该方法使用粒子过滤器根据已知地图跟踪机器
+ 人的姿态
+
+===== Lesson15 PDF page 028 =====
+3.1 Navigation
+
+ 3.1.3 Navigation structure
+3 路径规划
+
+Ø 导航过程中，机器人需要根据目标位置计算最优路径，此过程称为全局路径规划。在运动过程中，机器人
+ 需要根据障碍物动态调整运动路线，此过程就称为局部路径规划
+
+
+Ø 在 ROS 中提供了 move_base 功能包来实现路径规则，该功能包主要由两大规划器组成
+
+  Ø 1 全局路径规划(gloable_planner)
+     根据给定的目标点和全局地图实现总体的路径规划，使用 A* 或 Dijkstra 算法进行全局路径规划，
+  计算最优路线，作为全局路线
+
+
+  Ø 2 局部路径规划(local_planner)
+     局部路径规划的作用就是使用相应算法(Dynamic Window Approaches，DWA) 等来实现障碍物
+  的规避，并选取当前最优路径以尽量符合全局最优路径
+
+===== Lesson15 PDF page 029 =====
+3.1 Navigation
+
+3.1.3 Navigation structure
+4. 运动控制
+
+Ø move_base功能包通过话题"cmd_vel"发布geometry_msgs/Twist类型的消息，这个消息基于机
+ 器人的基座坐标系，它传递的是运动命令
+
+Ø 运动节点订阅"cmd_vel"话题， 将该话题上的速度命令转换为电机命令并进行运动控制
+
+===== Lesson15 PDF page 030 =====
+3.1 Navigation
+
+3.1.3 Navigation structure
+5. 环境感知
+
+Ø 感知周围环境信息，比如: 摄像头、激光雷达、编码器等
+
+Ø 摄像头、激光雷达可以用于感知外界环境的深度信息，编码器可以感知电机的转速信息，通过获取
+  速度信息并生成里程计信息
+
+在导航功能包集中，环境感知是重要模块，它为其他模块提供了支持，包括 SLAM、AMCL、
+move_base 都需要依赖于环境感知
+
+===== Lesson15 PDF page 031 =====
+3.1 Navigation
+
+3.1.3 Navigation structure
+
+===== Lesson15 PDF page 032 =====
+3.1 Navigation
+
+ 3.1.4 Odom
+定位实现方式有两种：
+
+ 1 通过里程计定位：实时收集机器人的速度
+信息，计算并发布机器人坐标系与父级参考系
+的相对关系
+
+ 2 通过传感器定位：通过传感器收集外界环
+境信息，通过匹配计算并发布机器人坐标系与
+父级参考系的相对关系
+
+===== Lesson15 PDF page 033 =====
+3.1 Navigation
+
+ 3.1.4 Odom
+两种定位方式优缺点：
+
+1 里程计定位
+
+  优点：里程计定位信息是连续的，没有离
+散的跳跃
+  缺点：里程计存在累计误差，不利于长距
+离或长期定位
+
+2 传感器定位
+ 优点：比里程计定位更精准
+ 缺点：传感器定位会出现跳变的情况，在标
+志物较少的环境下，其定位精度会大打折扣
+
+两种定位方式优缺点互补，应用时一般二者结
+合使用
+
+===== Lesson15 PDF page 034 =====
+3.1 Navigation
+
+3.1.4 Odom
+
+
+ Ø 上述两种定位实现中，机器人坐标系一般使用机器人模型中的根坐标系(root_link)
+
+ Ø 里程计定位时，父级坐标系一般称之为 odom
+
+ Ø 如果通过传感器定位，父级参考系一般称之为 map
+
+ Ø 当二者结合使用时，map 和 odom 都是机器人模型根坐标系的父级，一般会将转换
+
+   关系设置为: map -> doom -> base_link 或 root_link
+
+===== Lesson15 PDF page 035 =====
+3.1 Navigation
+
+3.1.5 ROS packages
+   1 安装相关的ROS功能包：
+
+     gmapping (用于构建地图)
+
+     $ sudo apt install ros-noetic-gmapping
+
+     地图服务map-server(用于保存与读取地图)
+
+     $ sudo apt install ros-noetic-map-server
+
+    navigation (用于定位以及路径规划)
+     $ sudo apt install ros-noetic-navigation
+
+   2 使用方法：
+    新建功能包，并导入依赖: gmapping map_server amcl move_base
+
+===== Lesson15 PDF page 036 =====
+3.1 Navigation
+
+3.1.5 ROS packages
+
+      1.先启动 Gazebo 仿真环境 launch 文件
+
+       $ roslaunch rs_nav gazebo_control.launch
+
+      2.然后再启动地图绘制的 launch 文件
+
+       $ roslaunch rs_nav gmapping.launch
+
+      3.启动键盘键盘控制节点，用于控制机器人运动建图
+
+       $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+      4.在 rviz 中添加组件，进行导航操作
+
+       $ roslaunch rs_nav move_base.launch
+
+===== Lesson15 PDF page 037 =====
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?

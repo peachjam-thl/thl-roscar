@@ -1,0 +1,48 @@
+{
+  "xml_parse": "passed",
+  "xml_files": [
+    "catkin_ws/src/rcdp/package.xml",
+    "catkin_ws/src/rcdp/launch/myrobot_drive_step6.launch",
+    "catkin_ws/src/rcdp/launch/myrobot_gazebo_step4.launch",
+    "catkin_ws/src/rcdp/worlds/lesson13_flat_step4.world",
+    "catkin_ws/src/rcdp/launch/urdf/myrobot_urdf.launch",
+    "catkin_ws/src/rcdp/launch/xacro/arbotix_control.launch",
+    "catkin_ws/src/rcdp/launch/xacro/myrobot_urdf_xacro.launch",
+    "catkin_ws/src/rcdp/launch/xacro/myrobot_xacro.launch",
+    "catkin_ws/src/rcdp/urdf/gazebo/myrobot_drive_step6.xacro",
+    "catkin_ws/src/rcdp/urdf/gazebo/myrobot_gazebo_step4.xacro",
+    "catkin_ws/src/rcdp/urdf/urdf/myrobot.urdf",
+    "catkin_ws/src/rcdp/urdf/xacro/myrobot_v1.urdf",
+    "catkin_ws/src/rcdp/urdf/xacro/myrobot_v1.xacro",
+    "catkin_ws/src/rcdp/urdf/xacro/myrobot_v2.urdf",
+    "catkin_ws/src/rcdp/urdf/xacro/myrobot_v2.xacro"
+  ],
+  "python_syntax": "passed",
+  "zip_crc": [
+    {
+      "path": "archives/Lesson13_Gazebo_step4.zip",
+      "members": 3,
+      "crc": "passed"
+    },
+    {
+      "path": "archives/Lesson13_Gazebo_step6_drive.zip",
+      "members": 3,
+      "crc": "passed"
+    },
+    {
+      "path": "reference/Lesson13_code_original.zip",
+      "members": 104,
+      "crc": "passed"
+    },
+    {
+      "path": "reference/legacy/Shell练习_前三项_历史交付.zip",
+      "members": 8,
+      "crc": "passed"
+    }
+  ],
+  "known_credential_patterns": "none_detected",
+  "runtime_test": "not performed by this archive builder; see user-reported evidence",
+  "pdf_count": 15,
+  "pdf_pages": 1682,
+  "review_pdf_pages": 40
+}

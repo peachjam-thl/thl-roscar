@@ -1,0 +1,838 @@
+===== Lesson11 PDF page 001 =====
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+
+===== Lesson11 PDF page 002 =====
+投票 最多可选1项
+
+
+
+   请同学们评价下 ROS 单元 的授课效果 � �：
+
+
+     A   非常满意，授课效果出色，完全满足期望
+
+     B   满意，对授课效果感到满意，但还有改进的空间
+
+     C   一般，授课效果一般，有一些改进的必要性
+
+     D   不满意，对授课效果不太满意，有很多改进的空间
+
+                                 提交
+
+===== Lesson11 PDF page 003 =====
+主观题 10分
+
+
+
+
+    对授课方式的一些建议和意见，可以从授课风格、讲义和教学内
+    容、互动和参与、课程组织和时间管理、额外的意见等方面谈谈
+    你的想法
+
+
+
+
+                            作答
+
+===== Lesson11 PDF page 004 =====
+Overview lesson 11-1
+
+   1             .   2                3   4
+
+rqt tools     ROS APIs
+
+
+
+
+                         Objectives
+             1、了解 rqt 常用插件的使用方法
+
+             2、了解 ROS 中的 API 函数
+
+===== Lesson11 PDF page 005 =====
+Pre-assessment
+
+
+
+
+                 1、是否用过rqt工具？
+
+                 2、是否了解API含义？
+
+===== Lesson11 PDF page 006 =====
+1
+rqt tools
+
+===== Lesson11 PDF page 007 =====
+1.1 rqt
+
+1.1.1 Overview
+Ø 在 ROS 中，rqt 工具箱可以以图形化操作代替命令行操作，操作过程更加直观和便利，有效提
+  高操作效率，提升用户体验
+
+Ø 概念
+   l rqt 是 ROS 基于 QT 框架，针对机器人开发的一系列可视化工具集合
+
+Ø 作用
+   l rqt 可以方便的实现 ROS 可视化调试，并且在同一窗口中打开多个部件，提高开发效率，
+     优化用户体验
+
+Ø 组成
+   l rqt 工具箱组成有三大部分：
+       1. rqt——核心实现，开发人员无需关注
+       2. rqt_common_plugins——rqt 中常用的工具套件
+       3. rqt_robot_plugins——运行中和机器人交互的插件(比如：rviz)
+
+===== Lesson11 PDF page 008 =====
+1.1 rqt
+
+1.1.2 rqt installation and startups
+Ø 安装
+  l 若安装 ROS 时选择 desktop-full 版本，则自带 rqt 工具箱
+
+  l 否则，需要通过以下方式安装：
+
+       $ sudo apt install ros-noetic-rqt
+
+       $ sudo apt install ros-noetic-rqt-common-plugins
+Ø 启动
+  l rqt的启动方式有两种：启动roscore之后
+        1. 方式1：rqt
+        2. 方式2：rosrun rqt_gui rqt_gui
+
+Ø 基本使用
+  l 启动 rqt 之后，可以通过 plugins 添加所需的插件
+
+===== Lesson11 PDF page 009 =====
+1.1 rqt
+
+1.1.2 rqt installation and startups
+
+===== Lesson11 PDF page 010 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_graph
+ Ø rqt_graph作用：可视化显示计算图
+
+ Ø rqt_graph启动：可以在 rqt 的 plugins 中添加，或者使用 rqt_graph 启动
+
+===== Lesson11 PDF page 011 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_graph
+ Ø 键盘操作海龟对应的 rqt_graph
+
+===== Lesson11 PDF page 012 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_publisher
+ Ø 通过图形化界面操作海龟，命令行启动方法： $ rosrun rqt_publisher rqt_publisher
+
+===== Lesson11 PDF page 013 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_service_caller
+ Ø 通过图形化界面操作海龟，命令行启动方法： $ rosrun rqt_service_caller rqt_service_caller
+
+===== Lesson11 PDF page 014 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_console
+Ø rqt_console作用：rqt_console 是 ROS 中用于显示和过滤日志的图形化插件
+Ø rqt_console准备：编写 Node 节点输出各个级别的日志信息
+  #include "ros/ros.h"
+
+  int main(int argc, char *argv[])
+  {
+     ros::init(argc,argv,"log_demo");
+     ros::NodeHandle nh;
+     ros::Rate r(1);
+     while (ros::ok())
+     {
+       ROS_DEBUG("Debug message d");
+       ROS_INFO("Info message oooooooooooooo");
+       ROS_WARN("Warn message wwwww");
+       ROS_ERROR("Erroe message EEEEEEEEEEEEEEEEEEEE");
+       ROS_FATAL("Fatal message FFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
+       r.sleep();
+     }
+     return 0;
+  }
+
+===== Lesson11 PDF page 015 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_console
+
+===== Lesson11 PDF page 016 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_console
+
+===== Lesson11 PDF page 017 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_plot
+ Ø rqt_plot简介：图形绘制插件，以 2D 绘图的方式绘制发布在 topic 上的数据
+
+ Ø rqt_plot案例：启动 turtlesim 乌龟节点与键盘控制节点，通过 rqt_plot 获取乌龟位姿
+
+ Ø rqt_plot启动：可以在 rqt 的 plugins 中添加，或者使用 rqt_plot 启动
+
+===== Lesson11 PDF page 018 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_plot
+
+===== Lesson11 PDF page 019 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_bag
+ l rqt_bag简介：录制和重放 bag 文件的图形化插件
+ l rqt_bag案例：启动 turtlesim 乌龟节点与键盘控制节点
+ l rqt_bag启动：可以在 rqt 的 plugins 中添加，或者使用 rqt_bag 启动，选择需要录制的话题
+
+===== Lesson11 PDF page 020 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_bag
+ l rqt_bag存储：保存录制的 bag 文件
+
+===== Lesson11 PDF page 021 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_bag
+ l rqt_bag结束：使用 ctrl + c 结束录制
+
+===== Lesson11 PDF page 022 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_bag
+ l rqtbag 命令行工具
+
+===== Lesson11 PDF page 023 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_bag
+ l rqtbag 命令行工具
+
+===== Lesson11 PDF page 024 =====
+1.1 rqt
+
+1.1.3 rqt plugins : rqt_bag
+ l rqtbag 命令行工具
+
+===== Lesson11 PDF page 025 =====
+2
+ROS APIs
+
+===== Lesson11 PDF page 026 =====
+2.1 ROS APIs
+
+2.1.1 Overview
+  Ø API（Application Programming Interface，应用程序接口）是一些预先定义的接口（如函
+    数、HTTP接口），或指软件系统不同组成部分衔接的约定
+
+  Ø API 用来提供应用程序与开发人员基于某软件或硬件得以访问的一组例程，无需访问软件源码或
+    理解内部工作机制即可使用软件的相关功能
+
+  Ø 官方API文档 : http://wiki.ros.org/APIs
+     1. ROS节点的初始化相关API
+     2. NodeHandle的基本使用相关API
+     3. 话题的发布方，订阅方相关API
+     4. 服务的服务端，客户端相关API
+     5. 时间相关API
+     6. 日志输出相关API
+     7. 参数服务器相关API
+
+===== Lesson11 PDF page 027 =====
+2.1 ROS APIs
+
+2.1.1 Overview
+
+===== Lesson11 PDF page 028 =====
+2.1 ROS APIs
+
+2.1.2 Common APIs
+
+===== Lesson11 PDF page 029 =====
+2.1 ROS APIs
+
+2.1.2 Common APIs
+
+===== Lesson11 PDF page 030 =====
+2.1 ROS APIs
+
+2.1.2 Common APIs
+
+===== Lesson11 PDF page 031 =====
+2.1 ROS APIs
+
+2.1.3 C++ APIs
+
+===== Lesson11 PDF page 032 =====
+2.1 ROS APIs
+
+2.1.3 C++ APIs
+
+===== Lesson11 PDF page 033 =====
+Summary
+ 1. rqt tools
+
+    a) rqt_graph
+
+    b) rqt_publisher
+
+    c) rqt_service_caller
+
+    d) rqt_console
+
+    e) rqt_plot
+
+    f) rqt_bag
+
+ 2. ROS APIs
+
+    a) ROS APIs
+
+    b) C++ APIs
+
+===== Lesson11 PDF page 034 =====
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?
+
+===== Lesson11 PDF page 035 =====
+机器人操作系统（双语）
+Robot Operating System (Bilingual)
+WHERE THERE'S A WILL, THERE'S A WAY
+
+
+
+
+         授课教师：郄(qiè)龙飞                机器人工程
+
+===== Lesson11 PDF page 036 =====
+Overview lesson 11-2
+
+     1                  2                .   3   .   4
+
+  Coordinate            Data                 ~       ~
+Transformation   Visualization Tool
+
+
+
+
+                            Objectives
+                      1、理解 TF2 的基本概念
+
+                      2、掌握 Rviz 的基本使用方法
+
+===== Lesson11 PDF page 037 =====
+Pre-assessment
+
+
+
+
+            1、是否了解坐标变换的含义？
+
+            2、是否使用过Rviz？
+
+===== Lesson11 PDF page 038 =====
+1
+Coordinate Transformation
+
+===== Lesson11 PDF page 039 =====
+1.1 TF2
+
+1.1.1 Overview
+Ø 为何需要坐标变换？什么情况需要使用坐标变换？
+
+
+
+
+                           图中：红色，X+，绿色，Y+，蓝色，Z+
+
+===== Lesson11 PDF page 040 =====
+1.1 TF2
+
+1.1.1 Overview
+Ø TF(TransForm Frame)官方参考文档：http://wiki.ros.org/tf2
+
+Ø tf is a package that lets the user keep track of multiple coordinate frames over time. tf
+  maintains the relationship between coordinate frames in a tree structure buffered in
+  time, and lets the user transform points, vectors, etc between any two coordinate
+  frames at any desired point in time.
+
+Ø tf2 is the second generation of the transform library, which lets the user keep track of
+  multiple coordinate frames over time. tf2 maintains the relationship between
+  coordinate frames in a tree structure buffered in time, and lets the user transform
+  points, vectors, etc between any two coordinate frames at any desired point in time.
+
+===== Lesson11 PDF page 041 =====
+1.1 TF2
+
+ 1.1.1 Overview
+                                                            Z+
+Ø 概念：TF2以树的形式组织，ROS 中通过坐标系统进行物体标定，使用右手定则
+                                                     X+
+Ø 作用：在 ROS 中用于实现不同坐标系之间的点或向量的转换
+
+                                                      Y+
+Ø 案例：乌龟跟随
+
+Ø 补充说明：
+
+  l 在 ROS 中坐标变换最初对应的是 tf，从 hydro 版本开始, tf 被弃用，迁移到 tf2，后者更
+   为简洁高效，tf2对应的常用功能包有：
+
+    • tf2_geometry_msgs：可以将 ROS 消息转换成 tf2 消息
+
+    • tf2：封装了坐标变换的常用消息
+
+    • tf2_ros：为 tf2 提供了 roscpp 和 rospy 绑定，封装了坐标变换常用的APIs
+
+===== Lesson11 PDF page 042 =====
+1.1 TF2
+
+1.1.1 Overview
+Ø 安装：
+ $ sudo apt install ros-noetic-turtle-tf2 ros-noetic-tf2-tools ros-noetic-tf
+
+ $ roslaunch turtle_tf2 turtle_tf2_demo_cpp.launch
+
+===== Lesson11 PDF page 043 =====
+1.1 TF2
+
+1.1.1 Overview
+Ø 实现流程分析：
+  1. 启动乌龟显示节点，生成乌龟1；调用服务，在乌龟显示窗体中生成乌龟2，此时会有乌龟1
+    和乌龟2的位姿信息
+
+===== Lesson11 PDF page 044 =====
+1.1 TF2
+
+1.1.1 Overview
+2. 查看乌龟位姿信息的消息类型
+
+
+
+
+                   (0, 0)
+
+
+                      (1) 当前窗口可以看作是一个世界坐标系
+
+                      (2) 两只乌龟可以看作点/局部坐标系
+
+                      (3) 两只乌龟的位姿信息，可看作其在当前
+                      窗口所表示的世界坐标系内的点的坐标信息
+
+===== Lesson11 PDF page 045 =====
+1.1 TF2
+
+1.1.1 Overview
+3. 订阅两只乌龟的位姿信息，获取两只乌龟在世界坐标系的位置
+
+4. 进行坐标变换，确定两只乌龟的相对位置关系
+
+5. 根据相对位置关系生成速度信息，赋值给乌龟2，使得乌龟2靠近乌龟1
+
+                 Ø 几点说明：
+                   l 这一过程通过 tf 坐标变换来实现
+                   l 一个 tf 系统由 tf 广播者(tf broadcaster)和 tf 监听者(tf
+                     listener)两个部分构成
+                   l 乌龟1和乌龟2是两个 tf 广播者，它们不断的向外发送自己相对
+                     于世界坐标系的位置
+                   l 另外有一个监听者负责维护两个乌龟的坐标系，通过 tf 的API
+                     系统计算两只乌龟的相对位置，并控制乌龟2跟随乌龟1
+                   l 上述过程涉及到位姿信息的实时动态发布，因此需要有时间信息
+
+===== Lesson11 PDF page 046 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+ Ø 刚体的任一姿态(任一动坐标系)可以经由三次绕 X、Y、Z 坐标系的基本旋转得到，用三个角来
+  描述就是欧拉角，分别为：
+
+   l 翻滚(Roll) ----X
+
+   l 俯仰(Pitch) --- Y
+
+===== Lesson11 PDF page 047 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+Ø 翻滚(Roll)、俯仰(Pitch)与偏航(Yaw)
+
+
+    翻滚(Roll)               俯仰(Pitch)   偏航(Yaw)
+
+===== Lesson11 PDF page 048 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+ Ø 欧拉角可以细分为欧拉角(Euler-angles)和泰特布莱恩角(Tait-Bryan-angles)。这两种方
+   法都利用了笛卡尔坐标系的三轴作为旋转轴，主要区别在于旋转顺序：
+
+    l 欧拉角的旋转顺序：绕 a 轴旋转某角度后，绕新生成的 b 轴旋转一个角度，最后绕两次
+     旋转以后的 a 轴再旋转一个角度，以此表示最终的方向
+
+                                Z
+
+
+
+
+                      Y               X
+
+===== Lesson11 PDF page 049 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+ l 泰特布莱恩角的旋转顺序：遍历笛卡尔坐标系的三轴，即前述的 Roll-Pitch-Yaw 角就是其中的情况
+
+
+
+
+Ø 这两种方法都是在空间中用最直观的方式和最少的参数表示任意方向的通用方法，用它们表示方
+  向没有计算要求和容量需求的区别
+
+===== Lesson11 PDF page 050 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+Ø 欧拉角存在问题
+
+  • (1) 不唯一性
+
+  • (2) 万向节死锁
+
+  • (3) 对复杂多次变换的情景，欧拉角的计算量会增大
+
+
+
+  (1) 不唯一性
+
+     l 三维空间中的任意一个方向都可以通过至少两种不同欧拉角表示，即当给定了目标
+      角以后，可以很容易找到欧拉角表述的方向；但当我们获得了一个方向以后，却不
+      一定能反推回目标欧拉角
+
+
+
+      参考资料：https://www.zhihu.com/question/47736315/answer/236808639
+
+===== Lesson11 PDF page 051 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+  (2) 万向节死锁
+
+   l 假设我们要把 3D 物体旋转到某个想要的方向时，我们按照先以 x 轴为旋转轴旋转 α 角，然
+     后绕 y 轴旋转 β 角，最后绕 z 轴旋转 γ 角这样的顺序实现（即按欧拉角来表示旋转）。上述
+     过程可用旋转矩阵表示为：
+
+
+
+
+          参考资料：https://www.cnblogs.com/driftingclouds/p/6540222.html
+
+===== Lesson11 PDF page 052 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+  (2) 万向节死锁
+
+   当我们的物体的初始方向就是已经绕 y 轴旋转了负 90 度，即 β 角取 −�/� ，那么上面的旋转
+   矩阵将会变成：
+
+
+
+
+  l 注意到 α 角和 γ 角在矩阵元素里是成对出现的，也就是说改变 α 角和改变 γ 角对旋转矩阵
+    的影响是一样的
+  l 换句话说，原本有 3 个自由度，现在变成了 2 个自由度，这就是所谓的万向节死锁
+
+===== Lesson11 PDF page 053 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+  (2) 万向节死锁
+
+
+
+
+                       发生死锁
+
+
+
+
+平衡环架(陀螺仪)：由彼此垂直的枢纽轴所组成
+                               “万向节死锁”原因，是由于欧拉角多对一的映
+的一组三只平衡环架，可使最内环架的物体维持
+                               射，造成一些旋转自由度的缺失，产生“死锁”
+旋转轴不变
+
+===== Lesson11 PDF page 054 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+ (3) 对复杂多次变换的情景，欧拉角的计算量会增大
+
+
+ Ø 为了避免欧拉角不唯一性，通常采用轴角表示的方式描述物体旋转
+
+   l 轴角表示(Axis-Angle-Representation)：找到一根旋转轴，通过绕这根旋转轴旋转一次就可
+     以得到目标方向
+
+   l 三维空间中，任意旋转轴是唯一的，绕一个旋转轴旋转不同角度，对应的方向也是不同的。三
+     维空间中任一位置的轴角表示是唯一的，不存在不唯一性问题
+
+
+ Ø 旋转轴通过向量 [x, y, z]T 来表示，旋转角度以通过一个度数 θ 来表示，轴角表示为：
+
+===== Lesson11 PDF page 055 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+Ø 四元数的引入
+
+ l 引入四元数是为了更方便地计算轴角表示的方向变换
+
+ l 万向节死锁的根源在于欧拉角的定义方式，万向节死锁的结果会导致丧失自由度，要规避万向节死
+   锁，需要选择合适的旋转顺序。编程中很难规避死锁问题，所以很多时候都使用四元数实现三维物
+   体旋转
+
+ l 在大量变换的运算中，四元数的应用可以减少计算量和计算时存储占用的空间(解决欧拉角计算量
+   大的问题)
+
+===== Lesson11 PDF page 056 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+Ø 四元数的定义
+
+  l 轴角表示(Axis-Angle-Representation)：
+
+  l 四元数是一个超复数，其定义为：
+     其中 i, j, k 是虚数单位，满足：              ，且    ，
+     w, x, y, z 是实数
+
+  l 四元数用于计算轴角表示运算时，我们通常写成向量形式(vector representation)
+
+===== Lesson11 PDF page 057 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+Ø 四元数的使用
+
+  l 四元数和欧拉角度可以互相转换
+
+  l 给定一个欧拉旋转(X, Y, Z)（即分别绕x轴、y轴和z轴旋转X、Y、Z度），则对应的四元数为：
+
+     x = sin(Y/2)sin(Z/2)cos(X/2)+cos(Y/2)cos(Z/2)sin(X/2)
+
+     y = sin(Y/2)cos(Z/2)cos(X/2)+cos(Y/2)sin(Z/2)sin(X/2)
+
+     z = cos(Y/2)sin(Z/2)cos(X/2)-sin(Y/2)cos(Z/2)sin(X/2)
+
+     w = cos(Y/2)cos(Z/2)cos(X/2)-sin(Y/2)sin(Z/2)sin(X/2)
+
+     q = ((x, y, z), w)
+
+===== Lesson11 PDF page 058 =====
+1.1 TF2
+
+1.1.2 Euler angles and quaternions
+Ø 四元数的使用
+
+  l ROS中，将 RPY坐标系下的 角度 转换为 四元数
+
+    #include “tf2/LinearMath/Quaternion.h”
+
+
+    tf2::Quaternion myQuaternion;
+    myQuaternion.setRPY(1.5707, 0, -1.5707); // Create this quaternion from
+    roll/pitch/yaw (in radians)
+
+
+    void setRPY (const tf2Scalar &roll, const tf2Scalar &pitch, const tf2Scalar &yaw)
+    Set the quaternion using fixed axis RPY.
+
+
+
+     参考资料：https://www.guyuehome.com/33233
+
+===== Lesson11 PDF page 059 =====
+2
+Data Visualization Tool
+
+===== Lesson11 PDF page 060 =====
+2.1 Rviz
+
+2.1.1 Overview
+  Ø 机器人系统中存在大量数据，这些数据在计算过程中往往都处于数据形态
+
+  Ø 数据形态的值不利于开发者去感受数据所描述的内容，需要将数据可视化显示
+
+  Ø 举例：机器人模型的可视化、图像数据的可视化、地图数据的可视化等
+
+===== Lesson11 PDF page 061 =====
+2.1 Rviz
+
+2.1.1 Overview
+Ø Rviz是一款三维可视化工具，很好的兼容了各种基于 ROS 软件框架的机器人平台
+
+Ø 在 Rviz 中，可以使用 XML 对机器人、周围物体等任何实物进行尺寸、质量、位置、材质、关节等属性
+ 的描述，并且在界面中呈现出来
+
+Ø Rviz 可以通过图形化的方式，实时显示机器人传感器的信息、机器人的运动状态、周围环境的变化等
+
+
+Ø Rviz 安装：
+
+     $ sudo apt install ros-noetic-rviz
+
+l Rviz 运行：
+
+     $ roscore
+
+     $ rosrun rviz rviz
+
+     $ rviz
+
+===== Lesson11 PDF page 062 =====
+2.1 Rviz
+
+2.1.1 Overview
+                 1
+                         1、工具栏，提供视角控
+                         制、目标设置、发布地点
+                         等工具
+
+                         2、显示项列表，用于显
+                         示当前选择的插件，可以
+                         配置每个插件的属性
+    2            3   4
+                         3、3D视图区，用于可视
+                         化显示数据，目前没有任
+                         何数据，所以显示黑色
+
+                         4、视角设置区，可以选
+                         择多种观测视角
+
+                         5、时间显示区，显示当
+                         前的系统时间和ROS时间
+                 5
+
+===== Lesson11 PDF page 063 =====
+2.1 Rviz
+
+2.1.2 Data visualization： http://wiki.ros.org/rviz/UserGuide
+1、假设需要可视化的数据以对应的消息类型发布，在Rviz中使用、插件订阅该消息即可实现显示
+
+2、Rviz默认可以显示下表所示的通用类型数据，其中包含坐标轴、摄像头图像、地图、激光等数据
+
+===== Lesson11 PDF page 064 =====
+2.1 Rviz
+
+2.1.2 Data visualization
+
+===== Lesson11 PDF page 065 =====
+2.1 Rviz
+
+2.1.2 Data visualization
+
+===== Lesson11 PDF page 066 =====
+2.1 Rviz
+
+2.1.2 Data visualization
+Ø 如何操作？
+
+
+
+
+                           1
+                               1、插件列表
+
+
+
+
+                           2   2、插件描述
+
+
+                           3
+                               3、插件名称
+
+===== Lesson11 PDF page 067 =====
+2.1 Rviz
+
+2.1.2 Data visualization
+Ø TF操作演示：乌龟跟随
+
+ $ roslaunch turtle_tf2 turtle_tf2_demo.launch
+
+===== Lesson11 PDF page 068 =====
+2.1 Rviz
+
+2.1.2 Data visualization
+Ø TF操作演示：乌龟跟随
+
+
+
+
+  $ sudo rm -f /usr/bin/python
+
+  $ whereis python
+
+  $ sudo ln -s /usr/bin/python3.8 /usr/bin/python
+
+===== Lesson11 PDF page 069 =====
+2.1 Rviz
+
+2.1.2 Data visualization
+Ø TF操作演示：乌龟跟随
+  $ rviz
+
+===== Lesson11 PDF page 070 =====
+Summary
+ 1. TF2
+
+     a) 概念、作用、
+
+     b) 分析乌龟跟随案例的实现流程
+
+     c) 欧拉角和四元数
+
+           1. 欧拉角定义、存在问题
+
+           2. 轴角表示
+
+           3. 四元数引入、定义和使用
+
+ 2. Rviz
+
+     a) Rviz作用
+
+     b) 基本使用方案
+
+     c) 乌龟跟随案例演示
+
+===== Lesson11 PDF page 071 =====
+Q&A
+
+
+
+
+      今日事今日毕
+      Question?

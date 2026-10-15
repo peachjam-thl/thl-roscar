@@ -1,0 +1,353 @@
+lesson	page	chars	headings
+11	1	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+11	2	138	投票 最多可选1项 | 请同学们评价下 ROS 单元 的授课效果 � �： | A 非常满意，授课效果出色，完全满足期望
+11	3	73	主观题 10分 | 对授课方式的一些建议和意见，可以从授课风格、讲义和教学内 | 容、互动和参与、课程组织和时间管理、额外的意见等方面谈谈
+11	4	133	Overview lesson 11-1 | 1 . 2 3 4 | rqt tools ROS APIs
+11	5	40	Pre-assessment | 1、是否用过rqt工具？ | 2、是否了解API含义？
+11	6	11	1 | rqt tools
+11	7	313	1.1 rqt | 1.1.1 Overview | Ø 在 ROS 中，rqt 工具箱可以以图形化操作代替命令行操作，操作过程更加直观和便利，有效提
+11	8	302	1.1 rqt | 1.1.2 rqt installation and startups | Ø 安装
+11	9	43	1.1 rqt | 1.1.2 rqt installation and startups
+11	10	114	1.1 rqt | 1.1.3 rqt plugins : rqt_graph | Ø rqt_graph作用：可视化显示计算图
+11	11	59	1.1 rqt | 1.1.3 rqt plugins : rqt_graph | Ø 键盘操作海龟对应的 rqt_graph
+11	12	101	1.1 rqt | 1.1.3 rqt plugins : rqt_publisher | Ø 通过图形化界面操作海龟，命令行启动方法： $ rosrun rqt_publisher rqt_publisher
+11	13	116	1.1 rqt | 1.1.3 rqt plugins : rqt_service_caller | Ø 通过图形化界面操作海龟，命令行启动方法： $ rosrun rqt_service_caller rqt_service_caller
+11	14	508	1.1 rqt | 1.1.3 rqt plugins : rqt_console | Ø rqt_console作用：rqt_console 是 ROS 中用于显示和过滤日志的图形化插件
+11	15	39	1.1 rqt | 1.1.3 rqt plugins : rqt_console
+11	16	39	1.1 rqt | 1.1.3 rqt plugins : rqt_console
+11	17	192	1.1 rqt | 1.1.3 rqt plugins : rqt_plot | Ø rqt_plot简介：图形绘制插件，以 2D 绘图的方式绘制发布在 topic 上的数据
+11	18	36	1.1 rqt | 1.1.3 rqt plugins : rqt_plot
+11	19	163	1.1 rqt | 1.1.3 rqt plugins : rqt_bag | l rqt_bag简介：录制和重放 bag 文件的图形化插件
+11	20	60	1.1 rqt | 1.1.3 rqt plugins : rqt_bag | l rqt_bag存储：保存录制的 bag 文件
+11	21	64	1.1 rqt | 1.1.3 rqt plugins : rqt_bag | l rqt_bag结束：使用 ctrl + c 结束录制
+11	22	50	1.1 rqt | 1.1.3 rqt plugins : rqt_bag | l rqtbag 命令行工具
+11	23	50	1.1 rqt | 1.1.3 rqt plugins : rqt_bag | l rqtbag 命令行工具
+11	24	50	1.1 rqt | 1.1.3 rqt plugins : rqt_bag | l rqtbag 命令行工具
+11	25	10	2 | ROS APIs
+11	26	338	2.1 ROS APIs | 2.1.1 Overview | Ø API（Application Programming Interface，应用程序接口）是一些预先定义的接口（如函
+11	27	27	2.1 ROS APIs | 2.1.1 Overview
+11	28	30	2.1 ROS APIs | 2.1.2 Common APIs
+11	29	30	2.1 ROS APIs | 2.1.2 Common APIs
+11	30	30	2.1 ROS APIs | 2.1.2 Common APIs
+11	31	27	2.1 ROS APIs | 2.1.3 C++ APIs
+11	32	27	2.1 ROS APIs | 2.1.3 C++ APIs
+11	33	146	Summary | 1. rqt tools | a) rqt_graph
+11	34	20	Q&A | 今日事今日毕 | Question?
+11	35	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+11	36	203	Overview lesson 11-2 | 1 2 . 3 . 4 | Coordinate Data ~ ~
+11	37	42	Pre-assessment | 1、是否了解坐标变换的含义？ | 2、是否使用过Rviz？
+11	38	27	1 | Coordinate Transformation
+11	39	68	1.1 TF2 | 1.1.1 Overview | Ø 为何需要坐标变换？什么情况需要使用坐标变换？
+11	40	707	1.1 TF2 | 1.1.1 Overview | Ø TF(TransForm Frame)官方参考文档：http://wiki.ros.org/tf2
+11	41	311	1.1 TF2 | 1.1.1 Overview | Z+
+11	42	154	1.1 TF2 | 1.1.1 Overview | Ø 安装：
+11	43	87	1.1 TF2 | 1.1.1 Overview | Ø 实现流程分析：
+11	44	129	1.1 TF2 | 1.1.1 Overview | 2. 查看乌龟位姿信息的消息类型
+11	45	338	1.1 TF2 | 1.1.1 Overview | 3. 订阅两只乌龟的位姿信息，获取两只乌龟在世界坐标系的位置
+11	46	138	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 刚体的任一姿态(任一动坐标系)可以经由三次绕 X、Y、Z 坐标系的基本旋转得到，用三个角来
+11	47	114	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 翻滚(Roll)、俯仰(Pitch)与偏航(Yaw)
+11	48	225	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 欧拉角可以细分为欧拉角(Euler-angles)和泰特布莱恩角(Tait-Bryan-angles)。这两种方
+11	49	158	1.1 TF2 | 1.1.2 Euler angles and quaternions | l 泰特布莱恩角的旋转顺序：遍历笛卡尔坐标系的三轴，即前述的 Roll-Pitch-Yaw 角就是其中的情况
+11	50	262	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 欧拉角存在问题
+11	51	222	1.1 TF2 | 1.1.2 Euler angles and quaternions | (2) 万向节死锁
+11	52	212	1.1 TF2 | 1.1.2 Euler angles and quaternions | (2) 万向节死锁
+11	53	152	1.1 TF2 | 1.1.2 Euler angles and quaternions | (2) 万向节死锁
+11	54	287	1.1 TF2 | 1.1.2 Euler angles and quaternions | (3) 对复杂多次变换的情景，欧拉角的计算量会增大
+11	55	223	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 四元数的引入
+11	56	212	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 四元数的定义
+11	57	355	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 四元数的使用
+11	58	409	1.1 TF2 | 1.1.2 Euler angles and quaternions | Ø 四元数的使用
+11	59	25	2 | Data Visualization Tool
+11	60	129	2.1 Rviz | 2.1.1 Overview | Ø 机器人系统中存在大量数据，这些数据在计算过程中往往都处于数据形态
+11	61	278	2.1 Rviz | 2.1.1 Overview | Ø Rviz是一款三维可视化工具，很好的兼容了各种基于 ROS 软件框架的机器人平台
+11	62	189	2.1 Rviz | 2.1.1 Overview | 1
+11	63	162	2.1 Rviz | 2.1.2 Data visualization： http://wiki.ros.org/rviz/UserGuide | 1、假设需要可视化的数据以对应的消息类型发布，在Rviz中使用、插件订阅该消息即可实现显示
+11	64	33	2.1 Rviz | 2.1.2 Data visualization
+11	65	33	2.1 Rviz | 2.1.2 Data visualization
+11	66	70	2.1 Rviz | 2.1.2 Data visualization | Ø 如何操作？
+11	67	93	2.1 Rviz | 2.1.2 Data visualization | Ø TF操作演示：乌龟跟随
+11	68	141	2.1 Rviz | 2.1.2 Data visualization | Ø TF操作演示：乌龟跟随
+11	69	54	2.1 Rviz | 2.1.2 Data visualization | Ø TF操作演示：乌龟跟随
+11	70	129	Summary | 1. TF2 | a) 概念、作用、
+11	71	20	Q&A | 今日事今日毕 | Question?
+12	1	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+12	2	124	Overview lesson 12-1 | 1 2 3 4 | 静态坐标变换 ~ ~ ~
+12	3	43	Pre-assessment | 1、是否用过TF坐标变换？ | 2、如何进行坐标变换的编程？
+12	4	8	1 | 静态坐标变换
+12	5	187	1.1 静态坐标变换 | 1.1.1 Overview | Ø 坐标变换 tf2
+12	6	178	1.1 静态坐标变换 | 1.1.2 Tf2 packages | Ø 静态坐标变换
+12	7	116	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2:
+12	8	87	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2 APIs: http://docs.ros.org/en/noetic/api/tf2/html/
+12	9	108	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2:
+12	10	121	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2_ros: 此功能包包含 tf2 库的 ROS 绑定，适用于 Python 和 C++
+12	11	110	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2_ros APIs http://docs.ros.org/en/noetic/api/tf2_ros/html/c++/
+12	12	161	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2_geometry_msgs:
+12	13	119	1.1 静态坐标变换 | 1.1.2 Tf2 packages | l tf2_geometry_msgs APIs: http://docs.ros.org/en/noetic/api/tf2_geometry_msgs/html/c++/
+12	14	176	1.1 静态坐标变换 | 1.1.3 Tf2 messages | Ø 坐标转换实现中常用的消息类型
+12	15	170	1.1 静态坐标变换 | 1.1.3 Tf2 messages | l geometry_msgs/TransformStamped
+12	16	103	1.1 静态坐标变换 | 1.1.3 Tf2 messages | l geometry_msgs/PointStamped
+12	17	292	1.1 静态坐标变换 | 1.1.4 Time and duration | Ø ROS 里经常用到时间变量，比如坐标变换、基于时间和控制量计算机器人的移动距离、设定程序的等待
+12	18	384	1.1 静态坐标变换 | 1.1.4 Time and duration | Ø 使用 Time 和 Duration，需要分别 #include<ros/time.h> 和 #include <ros/duration.h>
+12	19	896	1.1 静态坐标变换 | 1.1.4 Time and duration | Ø 使用 Time 和 Duration，需要分别 #include<ros/time.h> 和 #include <ros/duration.h>
+12	20	568	1.1 静态坐标变换 | 1.1.4 Time and duration | Ø 使用 Time 和 Duration进行加减运算：
+12	21	191	1.1 静态坐标变换 | 1.1.5 C++ code | Ø 需求描述:
+12	22	165	1.1 静态坐标变换 | 1.1.5 C++ code | Ø 功能实现分析：
+12	23	114	1.1 静态坐标变换 | 1.1.5 C++ code | Ø 发布方实现流程：
+12	24	254	1.1 静态坐标变换 | 1.1.5 C++ code | l 创建功能包
+12	25	633	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)： #include "ros/ros.h"
+12	26	406	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	27	94	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	28	42	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	29	42	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	30	42	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	31	42	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	32	69	1.1 静态坐标变换 | 1.1.5 C++ code | l 发布方(Bilibili)：
+12	33	139	1.1 静态坐标变换 | 1.1.5 C++ code | Ø 订阅方实现流程：
+12	34	273	1.1 静态坐标变换 | 1.1.5 C++ code | l 创建静态坐标变换监听器：
+12	35	447	1.1 静态坐标变换 | 1.1.5 C++ code | l 订阅方(Bilibili)：
+12	36	535	1.1 静态坐标变换 | 1.1.5 C++ code | l 订阅方(Bilibili)：
+12	37	203	1.1 静态坐标变换 | 1.1.5 C++ code | l 订阅方(Bilibili)：
+12	38	774	1.1 静态坐标变换 | 1.1.6 Supplemental information | l 发布方(ROS_wiki)：
+12	39	1191	1.1 静态坐标变换 | 1.1.6 Supplemental information | l 发布方(ROS_wiki)：
+12	40	212	1.1 静态坐标变换 | 1.1.6 Supplemental information | l 发布方(ROS_wiki)：
+12	41	101	1.1 静态坐标变换 | 1.1.6 Supplemental information | l 发布方(ROS_wiki)：
+12	42	137	1.1 静态坐标变换 | 1.1.6 Supplemental information | l 发布方(ROS_wiki)：
+12	43	380	1.1 静态坐标变换 | 1.1.6 Supplemental information | Ø 补充1：
+12	44	215	1.1 静态坐标变换 | 1.1.6 Supplemental information | Ø 补充2：
+12	45	41	1.1 静态坐标变换 | 1.1.6 Supplemental information
+12	46	41	1.1 静态坐标变换 | 1.1.6 Supplemental information
+12	47	396	主观题 10分 | 1. 坐标变换中常用的3个功能包？ | 2. 坐标转换中常用的2种消息类型？
+12	48	198	Summary | 1. 静态坐标变换 | a) 静态坐标变换功能包和APIs：tf2 tf2_ros tf2_geometry_msgs
+12	49	20	Q&A | 今日事今日毕 | Question?
+12	50	110	机器人控制设计实践 | Robot Control Design Practice | WHERE THERE'S A WILL, THERE'S A WAY
+12	51	127	Overview lesson 12-2 | 1 2 3 4 | 动态坐标变换 ~ ~ ~
+12	52	50	Pre-assessment | 1、静态坐标变换和动态坐标变换的区别？ | 2、动态坐标变换用到哪些函数？
+12	53	8	1 | 动态坐标变换
+12	54	139	1.1 动态坐标变换 | 1.1.1 Overview | Ø 动态坐标变换是指两个坐标系之间的相对位置是变化的
+12	55	189	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 功能实现分析：
+12	56	511	1.1 动态坐标变换 | 1.1.2 C++ code | l 创建功能包
+12	57	193	1.1 动态坐标变换 | 1.1.2 C++ code | l TF的坐标变换，表征子坐标系到父坐标系的坐标变换关系
+12	58	278	1.1 动态坐标变换 | 1.1.2 C++ code | l 举例：
+12	59	130	1.1 动态坐标变换 | 1.1.2 C++ code | l 静态坐标变换（发布方）：
+12	60	224	1.1 动态坐标变换 | 1.1.2 C++ code | l 静态坐标变换（订阅方）：
+12	61	153	1.1 动态坐标变换 | 1.1.2 C++ code | l 时间对齐步问题解决思路：
+12	62	159	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 发布方实现流程：
+12	63	245	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 发布方(bilibili)：
+12	64	684	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 发布方(bilibili)： void doPose(const turtlesim::Pose::ConstPtr& pose){
+12	65	293	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 发布方(bilibili)：
+12	66	93	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 订阅方实现流程：
+12	67	248	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 订阅方(bilibili)：
+12	68	413	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 订阅方(bilibili)：
+12	69	508	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 订阅方(bilibili)：
+12	70	92	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 订阅方(bilibili)：
+12	71	335	1.1 动态坐标变换 | 1.1.2 C++ code | Ø ROS 配置参数（补充知识）：
+12	72	182	1.1 动态坐标变换 | 1.1.2 C++ code | Ø ROS 配置参数（补充知识）：
+12	73	252	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 发布方(roswiki)：
+12	74	812	1.1 动态坐标变换 | 1.1.2 C++ code | std::string turtle_name;
+12	75	508	1.1 动态坐标变换 | 1.1.2 C++ code | Ø 发布方(roswiki)： int main(int argc, char** argv){
+12	76	20	Q&A | 今日事今日毕 | Question?
+12	77	110	机器人控制设计实践 | Robot Control Design Practice | WHERE THERE'S A WILL, THERE'S A WAY
+12	78	191	Overview lesson 12-3 | .1 1 2 3 .1 4 | 多坐标变换 Turtlesim跟随示例 ~ ~
+12	79	47	Pre-assessment | 1、何为多坐标变换？ | 2、多坐标变换与静态和动态坐标变换的关系？
+12	80	7	1 | 多坐标变换
+12	81	287	1.1 多坐标变换 | 1.1.1 Overview | Ø 需求描述：
+12	82	269	1.1 多坐标变换 | 1.1.1 Overview | Ø 需求分析：
+12	83	437	1.1 多坐标变换 | 1.1.1 Overview | Ø 实现分析：
+12	84	180	1.1 多坐标变换 | 1.1.1 Overview | Ø 实现流程：
+12	85	196	1.1 多坐标变换 | 1.1.2 C++ code：方法一 | l local1 发布方：
+12	86	848	1.1 多坐标变换 | 1.1.2 C++ code：方法一 | l local1 发布方：
+12	87	196	1.1 多坐标变换 | 1.1.2 C++ code：方法一 | l local2 发布方：
+12	88	851	1.1 多坐标变换 | 1.1.2 C++ code：方法一 | l local2 发布方：
+12	89	257	1.1 多坐标变换 | 1.1.2 C++ code：方法一 | l local2 发布方：
+12	90	205	1.1 多坐标变换 | 1.1.2 C++ code：方法二 | l local1 + local2 发布方：
+12	91	893	1.1 多坐标变换 | 1.1.2 C++ code：方法二 | l local1 + local2 发布方：
+12	92	237	1.1 多坐标变换 | 1.1.4 C++ code：方法二 | Ø 补充知识：
+12	93	279	1.1 多坐标变换 | 1.1.4 C++ code：方法二 | <launch>
+12	94	312	1.1 多坐标变换 | 1.1.2 C++ code：方法三 | l local1 + local2 发布方：
+12	95	265	1.1 多坐标变换 | 1.1.2 C++ code： | l 订阅方：
+12	96	648	1.1 多坐标变换 | 1.1.2 C++ code： | int main(int argc, char *argv[])
+12	97	564	1.1 多坐标变换 | 1.1.2 C++ code： | geometry_msgs::PointStamped ps_local1;
+12	98	477	1.1 多坐标变换 | 1.1.2 C++ code：方法一 | l 执行：
+12	99	509	1.1 多坐标变换 | 1.1.2 C++ code：方法二 | l 执行：
+12	100	521	1.1 多坐标变换 | 1.1.2 C++ code：方法三 | l 执行：
+12	101	15	2 | Turtlesim跟随示例
+12	102	120	2.1 Turtlesim跟随示例 | 2.1.1 Overview | roslaunchturtle_tf2
+12	103	411	2.1 Turtlesim跟随示例 | 2.1.1 Overview | Ø 实现分析：
+12	104	224	2.1 Turtlesim跟随示例 | 2.1.1 Overview | Ø 实现流程：
+12	105	861	2.1 Turtlesim跟随示例 | 2.1.2 C++ code | Ø 编写服务客户端，用于生成一只新的乌龟：
+12	106	916	2.1 Turtlesim跟随示例 | 2.1.2 C++ code std::string turtle_name; | Ø 编写发布方，发布两只乌龟的坐标信息：
+12	107	404	2.1 Turtlesim跟随示例 | 2.1.2 C++ code | Ø 编写发布方，发布两只乌龟的坐标信息：
+12	108	96	2.1 Turtlesim跟随示例 | 2.1.2 C++ code | Ø 编写订阅方，订阅两只乌龟信息，生成速度信息并发布：
+12	109	487	2.1 Turtlesim跟随示例 | 2.1.2 C++ code | Ø 编写订阅方，订阅两只乌龟信息，生成速度信息并发布：
+12	110	574	2.1 Turtlesim跟随示例 | 2.1.2 C++ code | Ø 编写订阅方，订阅两只乌龟信息，生成速度信息并发布：
+12	111	628	2.1 Turtlesim跟随示例 | 2.1.2 C++ code | Ø 执行：
+12	112	645	2.2 Turtlesim跟随示例-roswiki | 2.2.1 roslaunch | $ roslaunch tf2_roswiki start_demo.launch
+12	113	1165	2.2 Turtlesim跟随示例-roswiki | 2.2.1 C++ code carrot1 与 turtle1 位置固定： | #include <ros/ros.h>
+12	114	90	2.2 Turtlesim跟随示例-roswiki | 2.2.1 C++ code | rosrun tf2_tools view_frames.py
+12	115	269	2.2 Turtlesim跟随示例-roswiki | 2.2.1 C++ code | carrot1 与 turtle1 位置固定：
+12	116	790	2.2 Turtlesim跟随示例-roswiki | 2.2.1 roslaunch | $ roslaunch tf2_roswiki start_demo_update0.launch
+12	117	924	2.2 Turtlesim跟随示例-roswiki | 2.2.1 roslaunch | $ roslaunch tf2_roswiki start_demo_update1.launch
+12	118	1290	2.2 Turtlesim跟随示例-roswiki | 2.2.1 C++ code carrot1 与 turtle1 位置随时间变化： | #include <ros/ros.h> tf2::Quaternion q;
+12	119	983	2.2 Turtlesim跟随示例-roswiki | 2.2.1 roslaunch | $ roslaunch tf2_roswiki start_demo_update2.launch
+12	120	837	2.2 Turtlesim跟随示例-roswiki | 2.2.1 roslaunch | $ roslaunch tf2_roswiki start_demo_update3.launch
+12	121	818	2.2 Turtlesim跟随示例-roswiki | 2.2.1 roslaunch | $ roslaunch tf2_roswiki start_demo_update4.launch
+12	122	144	Summary | 1. 动态坐标变换 | a) 动态坐标变换功能包：tf2 tf2_ros tf2_geometry_msgs
+12	123	20	Q&A | 今日事今日毕 | Question?
+13	1	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+13	2	192	Overview lesson 13-1 | 1 2 3 4 | URDF Overview URDF Syntax URDF Practice ~
+13	3	63	Pre-assessment | 1、是否了解 URDF 的作用？ | 2、是否了解 Xacro？
+13	4	15	1 | URDF Overview
+13	5	242	1.1 URDF File | 1.1.1 Overview | Ø 场景1：机器人价格高昂，学习ROS要购买一台机器人吗？
+13	6	250	1.1 URDF File | 1.1.1 Overview | 1. 仿真优势：
+13	7	442	1.1 URDF File | 1.1.1 Overview | (1) URDF：创建机器人模型 https://wiki.ros.org/urdf
+13	8	218	1.1 URDF File | 1.1.1 Overview | (2) Rviz：图形化显示机器人模型、传感器感知到的数据信息
+13	9	302	1.1 URDF File | 1.1.1 Overview | (3) Gazebo：搭建仿真环境
+13	10	13	2 | URDF Syntax
+13	11	215	2.1 URDF Format | 2.1.1 Overview：https://wiki.ros.org/urdf/XML | Ø URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型
+13	12	197	2.1 URDF Format | 2.1.2 Link | robot 根标签：
+13	13	158	2.1 URDF Format | 2.1.2 Link | link 标签：
+13	14	130	2.1 URDF Format | 2.1.2 Link | link 标签：
+13	15	105	2.1 URDF Format | 2.1.2 Link | l visual：描述零件外观
+13	16	218	2.1 URDF Format | 2.1.2 Link | • geometry：设置零件的形状
+13	17	201	2.1 URDF Format | 2.1.2 Link | • origin：设置零件的偏移量与倾斜角度，以零件自身的几何中心为基准
+13	18	26	2.1 URDF Format | 2.1.2 Link
+13	19	219	2.1 URDF Format | 2.1.3 Joint | Ø URDF 中的 joint 标签用于描述机器人关节的运
+13	20	270	2.1 URDF Format | 2.1.3 Joint | joint标签：
+13	21	259	2.1 URDF Format | 2.1.3 Joint | joint标签：
+13	22	149	2.1 URDF Format | 2.1.4 案例 | 案例：在 Rviz 中显示建立的机器人模型步骤
+13	23	263	2.1 URDF Format | 2.1.4 案例 | 1. 准备：新建功能包，导入依赖
+13	24	240	2.1 URDF Format | ROS中URDF格式和使用： | 2.1.4 案例 https://blog.csdn.net/shenyan0712/article/details/89919959
+13	25	173	2.1 URDF Format | 2.1.4 案例 | 4. Rviz 参数设置
+13	26	86	2.1 URDF Format | 2.1.4 案例 | 5. 启动：在 Rviz 中显示机器人模型
+13	27	197	2.1 URDF Format | 2.1.5 实践 | 实践内容：创建差速机器人模型，该模型为双层结构，中间由圆柱形连杆连接；机器人底盘为圆柱体，
+13	28	32	2.1 URDF Format | 2.1.5 实践 | URDF文件：
+13	29	34	2.1 URDF Format | 2.1.5 实践 | launch文件：
+13	30	186	2.1 URDF Format | 2.1.5 实践 | Ø 运行结果：
+13	31	321	2.1 URDF Format | 2.1.5 实践 | Ø 2个重要功能包：
+13	32	381	2.1 URDF Format | 2.1.5 实践 | Ø 2个重要功能包：
+13	33	34	2.1 URDF Format | 2.1.5 实践 | launch文件：
+13	34	67	2.1 URDF Format | 2.1.5 实践 | Ø 运行结果：
+13	35	125	Summary | 1. URDF Overview | a) 作用
+13	36	20	Q&A | 今日事今日毕 | Question?
+13	37	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+13	38	252	Overview lesson 13-2 | 1 2 3 .1 4 | Xacro Overview Xacro Syntax Xacro Practice Arbotix Controller
+13	39	50	Pre-assessment | 1、是否了解 Xacro 的作用？ | 2、是否编写过 Xacro 文件？
+13	40	16	1 | Xacro Overview
+13	41	506	1.1 URDF Review | 1.1.1 Overview | (1) URDF：创建机器人模型 https://wiki.ros.org/urdf
+13	42	211	1.2 URDF Syntax | 1.2.1 Overview：https://wiki.ros.org/urdf/XML | Ø URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型
+13	43	189	1.3 URDF Demo | 1.3.1 Overview：https://wiki.ros.org/urdf/XML | 案例需求：创建差速机器人模型，该模型为双层结构，中间由圆柱形连杆连接；机器人底盘为圆柱体，在
+13	44	75	1.3 URDF Demo | 1.3.1 Overview | Ø 蓝色数字：link
+13	45	43	1.3 URDF Demo | 1.3.2 URDF File | Ø 代码分析：link标签
+13	46	43	1.3 URDF Demo | 1.3.2 URDF File | Ø 代码分析：link标签
+13	47	43	1.3 URDF Demo | 1.3.2 URDF File | Ø 代码分析：link标签
+13	48	43	1.3 URDF Demo | 1.3.2 URDF File | Ø 代码分析：join标签
+13	49	43	1.3 URDF Demo | 1.3.2 URDF File | Ø 代码分析：join标签
+13	50	302	1.4 Xacro Overview | 1.4.1 URDF 问题分析 | (1) 问题1：在设计关节的位置时，需要按照一定的公式计算，公式是固定的。但是在
+13	51	278	1.4 Xacro Overview | 1.4.2 Xacro File： http://wiki.ros.org/xacro | Ø 概念：
+13	52	14	2 | Xacro Syntax
+13	53	324	2.1 Xacro basic Syntax | 2.1.1 属性与算数运算 https://www.cnblogs.com/caiyishuai/p/15044043.html | (1) Xacro 提供了可编程接口，类似于计算机语言，包括 变量声明调用、函数声明与调用
+13	54	69	2.1 Xacro basic Syntax | 2.1.1 属性与算数运算 | l 属性调用：
+13	55	211	2.1 Xacro basic Syntax | 2.1.2 Xacro宏 | (1) 宏
+13	56	322	2.1 Xacro basic Syntax | 2.1.3 文件包含 | (1) 文件包含
+13	57	16	3 | Xacro Practice
+13	58	122	3.1 Xacro Demo | 3.1.1 Xacro案例演示 | 在 urdf 目录的 xacro 目
+13	59	59	3.1 Xacro Demo | 3.1.1 Xacro案例演示 | (1) 使用变量的版本-myrobot_v1.xacro
+13	60	59	3.1 Xacro Demo | 3.1.1 Xacro案例演示 | (2) 使用函数的版本-myrobot_v2.xacro
+13	61	186	3.1 Xacro Demo | 3.1.1 Xacro案例演示 | (3) 集成 launch 文件
+13	62	426	3.1 Xacro Demo | 3.1.1 Xacro案例演示 | (3) 集成launch文件
+13	63	480	3.1 Xacro Demo | 3.1.1 Xacro案例演示 | (3) 集成launch文件
+13	64	20	4 | Arbotix Controller
+13	65	277	4.1 Arbotix | 4.1.1 Overview：http://wiki.ros.org/arbotix | Ø Arbotix 是一款控制电机、舵机的控制板，并提供相应的 ros 功能包
+13	66	163	4.1 Arbotix | 4.1.1 Overview | Ø 实现流程：
+13	67	119	4.1 Arbotix | 4.1.1 Overview | (1) 安装 Arbotix：
+13	68	247	4.1 Arbotix | 4.1.1 Overview | (3) 添加 arbotix 所需的配置文件：
+13	69	398	4.1 Arbotix | 4.1.1 Overview | (4) launch 文件中配置 arbotix 节点：
+13	70	120	4.1 Arbotix | 4.1.1 Overview | (5) 启动 launch 文件并控制机器人模型运动：
+13	71	153	4.1 Arbotix | 4.1.1 Overview | (6) 通过键盘控制机器人模型运动：
+13	72	161	Summary | 1. Xacro概述 | a) URDF基本语法
+13	73	20	Q&A | 今日事今日毕 | Question?
+14	1	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+14	2	186	Overview lesson 14-1 | .1 1 . 2 .1 3 .1 4 | Xacro 集成 Xacro、Gazebo ~ ~
+14	3	17	1 | Xacro 集成 Gazebo
+14	4	221	1.1 URDF Format-Look back | 1.1.1 URDF：https://wiki.ros.org/urdf/XML | Ø URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型
+14	5	133	1.1 URDF Format-Look back | 1.1.2 Link | (2) link 标签：
+14	6	263	1.2 Xacro and Gazebo | 1.2.1 Overview | (1) Xacro 与 Gazebo 集成的基本流程
+14	7	374	1.2 Xacro and Gazebo | 1.2.1 Overview | gazebo_ros：
+14	8	246	1.2 Xacro and Gazebo | 1.2.2 Xacro | 编写 Xacro 文件
+14	9	292	1.2 Xacro and Gazebo | 1.2.2 Xacro | (1) collision 标签
+14	10	252	1.2 Xacro and Gazebo | 1.2.2 Xacro | 1) 球体惯性矩阵
+14	11	274	1.2 Xacro and Gazebo | 1.2.2 Xacro | 2) 圆柱惯性矩阵
+14	12	280	1.2 Xacro and Gazebo | 1.2.2 Xacro | 3) 立方体惯性矩阵
+14	13	181	1.2 Xacro and Gazebo | 1.2.2 Xacro | (3) 颜色设置
+14	14	310	1.2 Xacro and Gazebo | 1.2.3 Gazebo | 补充1：gazebo简介 参考：https://www.ngui.cc/51cto/show-28107.html?action=onClick
+14	15	301	1.2 Xacro and Gazebo | 1.2.3 Gazebo | 补充1：gazebo简介
+14	16	306	1.2 Xacro and Gazebo | 1.2.3 Gazebo | World选项卡：
+14	17	132	1.2 Xacro and Gazebo | 1.2.3 Gazebo | 补充1：gazebo简介
+14	18	95	1.2 Xacro and Gazebo | 1.2.3 Gazebo | 补充2：为防止 gazebo 启动黑屏或者卡顿，启动 gazebo 前在~/.gazebo/models 目录
+14	19	133	1.2 Xacro and Gazebo | 1.2.3 Gazebo | 补充2：为防止 gazebo 启动黑屏或者卡顿，启动 gazebo 前在~/.gazebo/models 目录
+14	20	101	1.2 Xacro and Gazebo | 1.2.3 Gazebo | 补充2：为防止 gazebo 启动黑屏或者卡顿，启动 gazebo 前在~/.gazebo/models 目录
+14	21	450	1.2 Xacro and Gazebo | 1.2.4 launch文件 | myrobot_gazebo.launch：
+14	22	135	1.2 Xacro and Gazebo | 1.2.5 launch文件解析 | <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+14	23	233	1.2 Xacro and Gazebo | 1.2.5 launch文件解析 | <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+14	24	328	1.2 Xacro and Gazebo | 1.2.5 launch文件解析 | <node pkg="gazebo_ros" type="spawn_model" name="model" args="-
+14	25	125	1.2 Xacro and Gazebo | 1.2.6 Gazebo仿真环境搭建 | Gazebo 中创建仿真实现方式有两种:
+14	26	76	1.2 Xacro and Gazebo | 1.2.6 Gazebo仿真环境搭建 | 1. 添加内置组件创建仿真环境：
+14	27	135	1.2 Xacro and Gazebo | 1.2.6 Gazebo仿真环境搭建 | 1.2 保存仿真环境：
+14	28	78	1.2 Xacro and Gazebo | 1.2.6 Gazebo仿真环境搭建 | 2. 自定义仿真环境
+14	29	67	1.2 Xacro and Gazebo | 1.2.6 Gazebo仿真环境搭建 | 2.1 启动 gazebo 打开构建面板，绘制仿真环境
+14	30	280	1.2 Xacro and Gazebo | 1.2.6 Gazebo仿真环境搭建 | 2.2 保存构建的仿真场景
+14	31	26	2 | Xacro、Gazebo 和 Rviz 综合案例
+14	32	353	2.1 Xacro、Gazebo and Rviz | 2.1.1 机器人运动控制 | 1. ros_control 简介
+14	33	179	2.1 Xacro、Gazebo and Rviz | 2.1.1 机器人运动控制 | 2. 运动控制实现流程(Gazebo)
+14	34	49	2.1 Xacro、Gazebo and Rviz | 2.1.1 机器人运动控制 | 传动装置以及控制器
+14	35	39	2.1 Xacro、Gazebo and Rviz | 2.1.1 机器人运动控制
+14	36	146	2.1 Xacro、Gazebo and Rviz | 2.1.2 雷达信息仿真及显示 | Ø 雷达仿真基本流程
+14	37	41	2.1 Xacro、Gazebo and Rviz | 2.1.2 雷达信息仿真及显示
+14	38	176	2.1 Xacro、Gazebo and Rviz | 2.1.3 Kinect摄像头信息仿真及显示 | Ø Kinect 摄像头仿真基本流程
+14	39	48	2.1 Xacro、Gazebo and Rviz | 2.1.3 Kinect摄像头信息仿真及显示
+14	40	358	2.1 Xacro、Gazebo and Rviz | 2.1.4 launch文件集成-gazebo | myrobot_sensor.xacro：
+14	41	570	2.1 Xacro、Gazebo and Rviz | 2.1.4 launch文件集成-gazebo | gazebo_control.launch：
+14	42	644	2.1 Xacro、Gazebo and Rviz | 2.1.4 launch文件集成-rviz | myrobot_rviz.launch
+14	43	133	2.1 Xacro、Gazebo and Rviz | 2.1.4 launch文件集成-rviz | 打开两个终端，按顺序启动：
+14	44	43	2.1 Xacro、Gazebo and Rviz | 2.1.5 运行结果-gazebo
+14	45	41	2.1 Xacro、Gazebo and Rviz | 2.1.5 运行结果-rviz
+14	46	50	2.1 Xacro、Gazebo and Rviz | 2.1.5 运行结果-gazebo + rviz
+14	47	238	Summary | 1. Xacro 集成 Gazebo | a) URDF Format-Look back
+14	48	20	Q&A | 今日事今日毕 | Question?
+15	1	117	机器人操作系统（双语） | Robot Operating System (Bilingual) | WHERE THERE'S A WILL, THERE'S A WAY
+15	2	237	Overview lesson 15-1 | .1 1 . 2 .1 3 .1 4 | Xacro 模型优化 Gazebo 控制小车 自主导航 ~
+15	3	12	1 | Xacro 模型优化
+15	4	45	1.1 Xacro 模型回顾 | 1.1.1 myrobot_whole_func.xacro
+15	5	143	1.1 Xacro 模型回顾 | 1.1.1 myrobot_whole_func.xacro | Ø 问题1：右轮有离地间隙 Ø 问题2：模型运动时会后仰
+15	6	209	1.1 Xacro 模型回顾 | 1.1.1 myrobot_whole_func.xacro | Ø 问题3：两个驱动轮无法绕 Ø 问题4：模型倾倒
+15	7	209	1.2 Xacro 模型优化 | 1.2.1 myrobot_gazebo.xacro | Ø 问题1：右轮有离地间隙
+15	8	56	1.2 Xacro 模型优化 | 1.2.1 myrobot_gazebo.xacro | Ø 问题2：模型运动时会后仰
+15	9	117	1.2 Xacro 模型优化 | 1.2.1 myrobot_gazebo.xacro | Ø 问题3：两个驱动轮无法绕 y 轴转动
+15	10	41	1.2 Xacro 模型优化 | 1.2.1 myrobot_gazebo.xacro
+15	11	13	2 | Gazebo 控制小车
+15	12	158	2.1 键盘控制小车运动 | 2.1.1 teleop_twist_key 键盘控制节点 | Ø 安装和启动
+15	13	50	2.1 键盘控制小车运动 | 2.1.1 teleop_twist_key 键盘控制节点 | Ø 安装和启动
+15	14	88	2.1 键盘控制小车运动 | 2.1.2 rviz 查看激光雷达信息 | Ø 新开一个终端，输入以下指令： $ roslaunch rs_gazebo rviz_show.launch
+15	15	57	2.1 键盘控制小车运动 | 2.1.2 rviz 查看激光雷达信息 | Ø 通过键盘控制小车运动，查看激光雷达信息的变化
+15	16	134	2.1 键盘控制小车运动 | 2.1.2 rviz 查看激光雷达信息 | Ø 要求1：修改激光雷达的配置信息，查看各个参数的作用效果
+15	17	133	2.1 键盘控制小车运动 | 2.1.3 rviz 查看摄像头信息 | Ø 要求2：修改摄像头的配置信息，查看各个参数的作用效果
+15	18	205	2.1 键盘控制小车运动 | 2.1.4 rviz 查看 kinect 信息 | Ø 要求3：添加 kinect 的 xacro 文件，增加 kinect 相机，在 rviz 中查看 kinect 点云信息；
+15	19	204	2.1 键盘控制小车运动 | 2.1.4 rviz 查看 kinect 信息 | Ø 要求3：添加 kinect 的 xacro 文件，增加 kinect 相机，在 rviz 中查看 kinect 点云信息；
+15	20	6	3 | 自主导航
+15	21	128	3.1 Navigation | 3.1.1 Overview | Ø ROS机器人导航(Navigation)由多个功能包组合实现，称为导航功能包集
+15	22	148	3.1 Navigation | 3.1.2 Campus Cases | 1. 校园地图(熟悉)
+15	23	149	3.1 Navigation | 3.1.2 Campus Cases | 1. 校园地图(不熟悉)
+15	24	219	3.1 Navigation | 3.1.2 Campus Cases | 1. 校园地图 -----------------------> 全局地图
+15	25	105	3.1 Navigation | 3.1.3 Navigation structure | ② ③
+15	26	405	3.1 Navigation | 3.1.3 Navigation structure | 1 全局地图
+15	27	262	3.1 Navigation | 3.1.3 Navigation structure | 2 自身定位
+15	28	377	3.1 Navigation | 3.1.3 Navigation structure | 3 路径规划
+15	29	176	3.1 Navigation | 3.1.3 Navigation structure | 4. 运动控制
+15	30	203	3.1 Navigation | 3.1.3 Navigation structure | 5. 环境感知
+15	31	41	3.1 Navigation | 3.1.3 Navigation structure
+15	32	137	3.1 Navigation | 3.1.4 Odom | 定位实现方式有两种：
+15	33	180	3.1 Navigation | 3.1.4 Odom | 两种定位方式优缺点：
+15	34	210	3.1 Navigation | 3.1.4 Odom | Ø 上述两种定位实现中，机器人坐标系一般使用机器人模型中的根坐标系(root_link)
+15	35	293	3.1 Navigation | 3.1.5 ROS packages | 1 安装相关的ROS功能包：
+15	36	299	3.1 Navigation | 3.1.5 ROS packages | 1.先启动 Gazebo 仿真环境 launch 文件
+15	37	20	Q&A | 今日事今日毕 | Question?

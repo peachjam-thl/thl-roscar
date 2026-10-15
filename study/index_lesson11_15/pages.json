@@ -1,0 +1,6255 @@
+[
+  {
+    "lesson": 11,
+    "page": 1,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 2,
+    "chars": 138,
+    "text": "投票 最多可选1项\n\n\n\n   请同学们评价下 ROS 单元 的授课效果 � �：\n\n\n     A   非常满意，授课效果出色，完全满足期望\n\n     B   满意，对授课效果感到满意，但还有改进的空间\n\n     C   一般，授课效果一般，有一些改进的必要性\n\n     D   不满意，对授课效果不太满意，有很多改进的空间\n\n                                 提交",
+    "image_sizes": [
+      [
+        224,
+        80
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 3,
+    "chars": 73,
+    "text": "主观题 10分\n\n\n\n\n    对授课方式的一些建议和意见，可以从授课风格、讲义和教学内\n    容、互动和参与、课程组织和时间管理、额外的意见等方面谈谈\n    你的想法\n\n\n\n\n                            作答",
+    "image_sizes": [
+      [
+        224,
+        80
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 4,
+    "chars": 133,
+    "text": "Overview lesson 11-1\n\n   1             .   2                3   4\n\nrqt tools     ROS APIs\n\n\n\n\n                         Objectives\n             1、了解 rqt 常用插件的使用方法\n\n             2、了解 ROS 中的 API 函数",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 5,
+    "chars": 40,
+    "text": "Pre-assessment\n\n\n\n\n                 1、是否用过rqt工具？\n\n                 2、是否了解API含义？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 6,
+    "chars": 11,
+    "text": "1\nrqt tools",
+    "image_sizes": []
+  },
+  {
+    "lesson": 11,
+    "page": 7,
+    "chars": 313,
+    "text": "1.1 rqt\n\n1.1.1 Overview\nØ 在 ROS 中，rqt 工具箱可以以图形化操作代替命令行操作，操作过程更加直观和便利，有效提\n  高操作效率，提升用户体验\n\nØ 概念\n   l rqt 是 ROS 基于 QT 框架，针对机器人开发的一系列可视化工具集合\n\nØ 作用\n   l rqt 可以方便的实现 ROS 可视化调试，并且在同一窗口中打开多个部件，提高开发效率，\n     优化用户体验\n\nØ 组成\n   l rqt 工具箱组成有三大部分：\n       1. rqt——核心实现，开发人员无需关注\n       2. rqt_common_plugins——rqt 中常用的工具套件\n       3. rqt_robot_plugins——运行中和机器人交互的插件(比如：rviz)",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 8,
+    "chars": 302,
+    "text": "1.1 rqt\n\n1.1.2 rqt installation and startups\nØ 安装\n  l 若安装 ROS 时选择 desktop-full 版本，则自带 rqt 工具箱\n\n  l 否则，需要通过以下方式安装：\n\n       $ sudo apt install ros-noetic-rqt\n\n       $ sudo apt install ros-noetic-rqt-common-plugins\nØ 启动\n  l rqt的启动方式有两种：启动roscore之后\n        1. 方式1：rqt\n        2. 方式2：rosrun rqt_gui rqt_gui\n\nØ 基本使用\n  l 启动 rqt 之后，可以通过 plugins 添加所需的插件",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 9,
+    "chars": 43,
+    "text": "1.1 rqt\n\n1.1.2 rqt installation and startups",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1684,
+        901
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 10,
+    "chars": 114,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_graph\n Ø rqt_graph作用：可视化显示计算图\n\n Ø rqt_graph启动：可以在 rqt 的 plugins 中添加，或者使用 rqt_graph 启动",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1686,
+        897
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 11,
+    "chars": 59,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_graph\n Ø 键盘操作海龟对应的 rqt_graph",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1590,
+        853
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 12,
+    "chars": 101,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_publisher\n Ø 通过图形化界面操作海龟，命令行启动方法： $ rosrun rqt_publisher rqt_publisher",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1581,
+        894
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 13,
+    "chars": 116,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_service_caller\n Ø 通过图形化界面操作海龟，命令行启动方法： $ rosrun rqt_service_caller rqt_service_caller",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1638,
+        899
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 14,
+    "chars": 508,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_console\nØ rqt_console作用：rqt_console 是 ROS 中用于显示和过滤日志的图形化插件\nØ rqt_console准备：编写 Node 节点输出各个级别的日志信息\n  #include \"ros/ros.h\"\n\n  int main(int argc, char *argv[])\n  {\n     ros::init(argc,argv,\"log_demo\");\n     ros::NodeHandle nh;\n     ros::Rate r(1);\n     while (ros::ok())\n     {\n       ROS_DEBUG(\"Debug message d\");\n       ROS_INFO(\"Info message oooooooooooooo\");\n       ROS_WARN(\"Warn message wwwww\");\n       ROS_ERROR(\"Erroe message EEEEEEEEEEEEEEEEEEEE\");\n       ROS_FATAL(\"Fatal message FFFFFFFFFFFFFFFFFFFFFFFFFFFFF\");\n       r.sleep();\n     }\n     return 0;\n  }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 15,
+    "chars": 39,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_console",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        2150,
+        1181
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 16,
+    "chars": 39,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_console",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1838,
+        1056
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 17,
+    "chars": 192,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_plot\n Ø rqt_plot简介：图形绘制插件，以 2D 绘图的方式绘制发布在 topic 上的数据\n\n Ø rqt_plot案例：启动 turtlesim 乌龟节点与键盘控制节点，通过 rqt_plot 获取乌龟位姿\n\n Ø rqt_plot启动：可以在 rqt 的 plugins 中添加，或者使用 rqt_plot 启动",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1693,
+        896
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 18,
+    "chars": 36,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_plot",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1809,
+        1109
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 19,
+    "chars": 163,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_bag\n l rqt_bag简介：录制和重放 bag 文件的图形化插件\n l rqt_bag案例：启动 turtlesim 乌龟节点与键盘控制节点\n l rqt_bag启动：可以在 rqt 的 plugins 中添加，或者使用 rqt_bag 启动，选择需要录制的话题",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1356,
+        800
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 20,
+    "chars": 60,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_bag\n l rqt_bag存储：保存录制的 bag 文件",
+    "image_sizes": [
+      [
+        1607,
+        953
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 21,
+    "chars": 64,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_bag\n l rqt_bag结束：使用 ctrl + c 结束录制",
+    "image_sizes": [
+      [
+        1697,
+        899
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 22,
+    "chars": 50,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_bag\n l rqtbag 命令行工具",
+    "image_sizes": [
+      [
+        1200,
+        717
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 23,
+    "chars": 50,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_bag\n l rqtbag 命令行工具",
+    "image_sizes": [
+      [
+        1112,
+        622
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 24,
+    "chars": 50,
+    "text": "1.1 rqt\n\n1.1.3 rqt plugins : rqt_bag\n l rqtbag 命令行工具",
+    "image_sizes": [
+      [
+        1152,
+        802
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 25,
+    "chars": 10,
+    "text": "2\nROS APIs",
+    "image_sizes": []
+  },
+  {
+    "lesson": 11,
+    "page": 26,
+    "chars": 338,
+    "text": "2.1 ROS APIs\n\n2.1.1 Overview\n  Ø API（Application Programming Interface，应用程序接口）是一些预先定义的接口（如函\n    数、HTTP接口），或指软件系统不同组成部分衔接的约定\n\n  Ø API 用来提供应用程序与开发人员基于某软件或硬件得以访问的一组例程，无需访问软件源码或\n    理解内部工作机制即可使用软件的相关功能\n\n  Ø 官方API文档 : http://wiki.ros.org/APIs\n     1. ROS节点的初始化相关API\n     2. NodeHandle的基本使用相关API\n     3. 话题的发布方，订阅方相关API\n     4. 服务的服务端，客户端相关API\n     5. 时间相关API\n     6. 日志输出相关API\n     7. 参数服务器相关API",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 27,
+    "chars": 27,
+    "text": "2.1 ROS APIs\n\n2.1.1 Overview",
+    "image_sizes": [
+      [
+        1228,
+        999
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 28,
+    "chars": 30,
+    "text": "2.1 ROS APIs\n\n2.1.2 Common APIs",
+    "image_sizes": [
+      [
+        1603,
+        1139
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 29,
+    "chars": 30,
+    "text": "2.1 ROS APIs\n\n2.1.2 Common APIs",
+    "image_sizes": [
+      [
+        1599,
+        1072
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 30,
+    "chars": 30,
+    "text": "2.1 ROS APIs\n\n2.1.2 Common APIs",
+    "image_sizes": [
+      [
+        1589,
+        1054
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 31,
+    "chars": 27,
+    "text": "2.1 ROS APIs\n\n2.1.3 C++ APIs",
+    "image_sizes": [
+      [
+        1577,
+        1100
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 32,
+    "chars": 27,
+    "text": "2.1 ROS APIs\n\n2.1.3 C++ APIs",
+    "image_sizes": [
+      [
+        2234,
+        767
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 33,
+    "chars": 146,
+    "text": "Summary\n 1. rqt tools\n\n    a) rqt_graph\n\n    b) rqt_publisher\n\n    c) rqt_service_caller\n\n    d) rqt_console\n\n    e) rqt_plot\n\n    f) rqt_bag\n\n 2. ROS APIs\n\n    a) ROS APIs\n\n    b) C++ APIs",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 34,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 35,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 36,
+    "chars": 203,
+    "text": "Overview lesson 11-2\n\n     1                  2                .   3   .   4\n\n  Coordinate            Data                 ~       ~\nTransformation   Visualization Tool\n\n\n\n\n                            Objectives\n                      1、理解 TF2 的基本概念\n\n                      2、掌握 Rviz 的基本使用方法",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 37,
+    "chars": 42,
+    "text": "Pre-assessment\n\n\n\n\n            1、是否了解坐标变换的含义？\n\n            2、是否使用过Rviz？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 38,
+    "chars": 27,
+    "text": "1\nCoordinate Transformation",
+    "image_sizes": []
+  },
+  {
+    "lesson": 11,
+    "page": 39,
+    "chars": 68,
+    "text": "1.1 TF2\n\n1.1.1 Overview\nØ 为何需要坐标变换？什么情况需要使用坐标变换？\n\n\n\n\n                           图中：红色，X+，绿色，Y+，蓝色，Z+",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1172,
+        1109
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        794,
+        168
+      ],
+      [
+        775,
+        188
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 40,
+    "chars": 707,
+    "text": "1.1 TF2\n\n1.1.1 Overview\nØ TF(TransForm Frame)官方参考文档：http://wiki.ros.org/tf2\n\nØ tf is a package that lets the user keep track of multiple coordinate frames over time. tf\n  maintains the relationship between coordinate frames in a tree structure buffered in\n  time, and lets the user transform points, vectors, etc between any two coordinate\n  frames at any desired point in time.\n\nØ tf2 is the second generation of the transform library, which lets the user keep track of\n  multiple coordinate frames over time. tf2 maintains the relationship between\n  coordinate frames in a tree structure buffered in time, and lets the user transform\n  points, vectors, etc between any two coordinate frames at any desired point in time.",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 41,
+    "chars": 311,
+    "text": "1.1 TF2\n\n 1.1.1 Overview\n                                                            Z+\nØ 概念：TF2以树的形式组织，ROS 中通过坐标系统进行物体标定，使用右手定则\n                                                     X+\nØ 作用：在 ROS 中用于实现不同坐标系之间的点或向量的转换\n\n                                                      Y+\nØ 案例：乌龟跟随\n\nØ 补充说明：\n\n  l 在 ROS 中坐标变换最初对应的是 tf，从 hydro 版本开始, tf 被弃用，迁移到 tf2，后者更\n   为简洁高效，tf2对应的常用功能包有：\n\n    • tf2_geometry_msgs：可以将 ROS 消息转换成 tf2 消息\n\n    • tf2：封装了坐标变换的常用消息\n\n    • tf2_ros：为 tf2 提供了 roscpp 和 rospy 绑定，封装了坐标变换常用的APIs",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        330,
+        299
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 42,
+    "chars": 154,
+    "text": "1.1 TF2\n\n1.1.1 Overview\nØ 安装：\n $ sudo apt install ros-noetic-turtle-tf2 ros-noetic-tf2-tools ros-noetic-tf\n\n $ roslaunch turtle_tf2 turtle_tf2_demo_cpp.launch",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1606,
+        971
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 43,
+    "chars": 87,
+    "text": "1.1 TF2\n\n1.1.1 Overview\nØ 实现流程分析：\n  1. 启动乌龟显示节点，生成乌龟1；调用服务，在乌龟显示窗体中生成乌龟2，此时会有乌龟1\n    和乌龟2的位姿信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1658,
+        924
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 44,
+    "chars": 129,
+    "text": "1.1 TF2\n\n1.1.1 Overview\n2. 查看乌龟位姿信息的消息类型\n\n\n\n\n                   (0, 0)\n\n\n                      (1) 当前窗口可以看作是一个世界坐标系\n\n                      (2) 两只乌龟可以看作点/局部坐标系\n\n                      (3) 两只乌龟的位姿信息，可看作其在当前\n                      窗口所表示的世界坐标系内的点的坐标信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        894,
+        238
+      ],
+      [
+        904,
+        281
+      ],
+      [
+        498,
+        535
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 45,
+    "chars": 338,
+    "text": "1.1 TF2\n\n1.1.1 Overview\n3. 订阅两只乌龟的位姿信息，获取两只乌龟在世界坐标系的位置\n\n4. 进行坐标变换，确定两只乌龟的相对位置关系\n\n5. 根据相对位置关系生成速度信息，赋值给乌龟2，使得乌龟2靠近乌龟1\n\n                 Ø 几点说明：\n                   l 这一过程通过 tf 坐标变换来实现\n                   l 一个 tf 系统由 tf 广播者(tf broadcaster)和 tf 监听者(tf\n                     listener)两个部分构成\n                   l 乌龟1和乌龟2是两个 tf 广播者，它们不断的向外发送自己相对\n                     于世界坐标系的位置\n                   l 另外有一个监听者负责维护两个乌龟的坐标系，通过 tf 的API\n                     系统计算两只乌龟的相对位置，并控制乌龟2跟随乌龟1\n                   l 上述过程涉及到位姿信息的实时动态发布，因此需要有时间信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        504,
+        542
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 46,
+    "chars": 138,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n Ø 刚体的任一姿态(任一动坐标系)可以经由三次绕 X、Y、Z 坐标系的基本旋转得到，用三个角来\n  描述就是欧拉角，分别为：\n\n   l 翻滚(Roll) ----X\n\n   l 俯仰(Pitch) --- Y",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        556,
+        420
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 47,
+    "chars": 114,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\nØ 翻滚(Roll)、俯仰(Pitch)与偏航(Yaw)\n\n\n    翻滚(Roll)               俯仰(Pitch)   偏航(Yaw)",
+    "image_sizes": [
+      [
+        504,
+        403
+      ],
+      [
+        502,
+        404
+      ],
+      [
+        504,
+        407
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 48,
+    "chars": 225,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n Ø 欧拉角可以细分为欧拉角(Euler-angles)和泰特布莱恩角(Tait-Bryan-angles)。这两种方\n   法都利用了笛卡尔坐标系的三轴作为旋转轴，主要区别在于旋转顺序：\n\n    l 欧拉角的旋转顺序：绕 a 轴旋转某角度后，绕新生成的 b 轴旋转一个角度，最后绕两次\n     旋转以后的 a 轴再旋转一个角度，以此表示最终的方向\n\n                                Z\n\n\n\n\n                      Y               X",
+    "image_sizes": [
+      [
+        368,
+        348
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 49,
+    "chars": 158,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n l 泰特布莱恩角的旋转顺序：遍历笛卡尔坐标系的三轴，即前述的 Roll-Pitch-Yaw 角就是其中的情况\n\n\n\n\nØ 这两种方法都是在空间中用最直观的方式和最少的参数表示任意方向的通用方法，用它们表示方\n  向没有计算要求和容量需求的区别",
+    "image_sizes": [
+      [
+        360,
+        207
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 50,
+    "chars": 262,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\nØ 欧拉角存在问题\n\n  • (1) 不唯一性\n\n  • (2) 万向节死锁\n\n  • (3) 对复杂多次变换的情景，欧拉角的计算量会增大\n\n\n\n  (1) 不唯一性\n\n     l 三维空间中的任意一个方向都可以通过至少两种不同欧拉角表示，即当给定了目标\n      角以后，可以很容易找到欧拉角表述的方向；但当我们获得了一个方向以后，却不\n      一定能反推回目标欧拉角\n\n\n\n      参考资料：https://www.zhihu.com/question/47736315/answer/236808639",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 51,
+    "chars": 222,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n  (2) 万向节死锁\n\n   l 假设我们要把 3D 物体旋转到某个想要的方向时，我们按照先以 x 轴为旋转轴旋转 α 角，然\n     后绕 y 轴旋转 β 角，最后绕 z 轴旋转 γ 角这样的顺序实现（即按欧拉角来表示旋转）。上述\n     过程可用旋转矩阵表示为：\n\n\n\n\n          参考资料：https://www.cnblogs.com/driftingclouds/p/6540222.html",
+    "image_sizes": [
+      [
+        2403,
+        237
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 52,
+    "chars": 212,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n  (2) 万向节死锁\n\n   当我们的物体的初始方向就是已经绕 y 轴旋转了负 90 度，即 β 角取 −�/� ，那么上面的旋转\n   矩阵将会变成：\n\n\n\n\n  l 注意到 α 角和 γ 角在矩阵元素里是成对出现的，也就是说改变 α 角和改变 γ 角对旋转矩阵\n    的影响是一样的\n  l 换句话说，原本有 3 个自由度，现在变成了 2 个自由度，这就是所谓的万向节死锁",
+    "image_sizes": [
+      [
+        1305,
+        314
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 53,
+    "chars": 152,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n  (2) 万向节死锁\n\n\n\n\n                       发生死锁\n\n\n\n\n平衡环架(陀螺仪)：由彼此垂直的枢纽轴所组成\n                               “万向节死锁”原因，是由于欧拉角多对一的映\n的一组三只平衡环架，可使最内环架的物体维持\n                               射，造成一些旋转自由度的缺失，产生“死锁”\n旋转轴不变",
+    "image_sizes": [
+      [
+        250,
+        250
+      ],
+      [
+        420,
+        340
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 54,
+    "chars": 287,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\n (3) 对复杂多次变换的情景，欧拉角的计算量会增大\n\n\n Ø 为了避免欧拉角不唯一性，通常采用轴角表示的方式描述物体旋转\n\n   l 轴角表示(Axis-Angle-Representation)：找到一根旋转轴，通过绕这根旋转轴旋转一次就可\n     以得到目标方向\n\n   l 三维空间中，任意旋转轴是唯一的，绕一个旋转轴旋转不同角度，对应的方向也是不同的。三\n     维空间中任一位置的轴角表示是唯一的，不存在不唯一性问题\n\n\n Ø 旋转轴通过向量 [x, y, z]T 来表示，旋转角度以通过一个度数 θ 来表示，轴角表示为：",
+    "image_sizes": [
+      [
+        892,
+        311
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 55,
+    "chars": 223,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\nØ 四元数的引入\n\n l 引入四元数是为了更方便地计算轴角表示的方向变换\n\n l 万向节死锁的根源在于欧拉角的定义方式，万向节死锁的结果会导致丧失自由度，要规避万向节死\n   锁，需要选择合适的旋转顺序。编程中很难规避死锁问题，所以很多时候都使用四元数实现三维物\n   体旋转\n\n l 在大量变换的运算中，四元数的应用可以减少计算量和计算时存储占用的空间(解决欧拉角计算量\n   大的问题)",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 56,
+    "chars": 212,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\nØ 四元数的定义\n\n  l 轴角表示(Axis-Angle-Representation)：\n\n  l 四元数是一个超复数，其定义为：\n     其中 i, j, k 是虚数单位，满足：              ，且    ，\n     w, x, y, z 是实数\n\n  l 四元数用于计算轴角表示运算时，我们通常写成向量形式(vector representation)",
+    "image_sizes": [
+      [
+        150,
+        243
+      ],
+      [
+        349,
+        130
+      ],
+      [
+        199,
+        199
+      ],
+      [
+        273,
+        46
+      ],
+      [
+        233,
+        44
+      ],
+      [
+        107,
+        45
+      ],
+      [
+        132,
+        43
+      ],
+      [
+        311,
+        120
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 57,
+    "chars": 355,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\nØ 四元数的使用\n\n  l 四元数和欧拉角度可以互相转换\n\n  l 给定一个欧拉旋转(X, Y, Z)（即分别绕x轴、y轴和z轴旋转X、Y、Z度），则对应的四元数为：\n\n     x = sin(Y/2)sin(Z/2)cos(X/2)+cos(Y/2)cos(Z/2)sin(X/2)\n\n     y = sin(Y/2)cos(Z/2)cos(X/2)+cos(Y/2)sin(Z/2)sin(X/2)\n\n     z = cos(Y/2)sin(Z/2)cos(X/2)-sin(Y/2)cos(Z/2)sin(X/2)\n\n     w = cos(Y/2)cos(Z/2)cos(X/2)-sin(Y/2)sin(Z/2)sin(X/2)\n\n     q = ((x, y, z), w)",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 58,
+    "chars": 409,
+    "text": "1.1 TF2\n\n1.1.2 Euler angles and quaternions\nØ 四元数的使用\n\n  l ROS中，将 RPY坐标系下的 角度 转换为 四元数\n\n    #include “tf2/LinearMath/Quaternion.h”\n\n\n    tf2::Quaternion myQuaternion;\n    myQuaternion.setRPY(1.5707, 0, -1.5707); // Create this quaternion from\n    roll/pitch/yaw (in radians)\n\n\n    void setRPY (const tf2Scalar &roll, const tf2Scalar &pitch, const tf2Scalar &yaw)\n    Set the quaternion using fixed axis RPY.\n\n\n\n     参考资料：https://www.guyuehome.com/33233",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 59,
+    "chars": 25,
+    "text": "2\nData Visualization Tool",
+    "image_sizes": []
+  },
+  {
+    "lesson": 11,
+    "page": 60,
+    "chars": 129,
+    "text": "2.1 Rviz\n\n2.1.1 Overview\n  Ø 机器人系统中存在大量数据，这些数据在计算过程中往往都处于数据形态\n\n  Ø 数据形态的值不利于开发者去感受数据所描述的内容，需要将数据可视化显示\n\n  Ø 举例：机器人模型的可视化、图像数据的可视化、地图数据的可视化等",
+    "image_sizes": [
+      [
+        1122,
+        631
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 61,
+    "chars": 278,
+    "text": "2.1 Rviz\n\n2.1.1 Overview\nØ Rviz是一款三维可视化工具，很好的兼容了各种基于 ROS 软件框架的机器人平台\n\nØ 在 Rviz 中，可以使用 XML 对机器人、周围物体等任何实物进行尺寸、质量、位置、材质、关节等属性\n 的描述，并且在界面中呈现出来\n\nØ Rviz 可以通过图形化的方式，实时显示机器人传感器的信息、机器人的运动状态、周围环境的变化等\n\n\nØ Rviz 安装：\n\n     $ sudo apt install ros-noetic-rviz\n\nl Rviz 运行：\n\n     $ roscore\n\n     $ rosrun rviz rviz\n\n     $ rviz",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 62,
+    "chars": 189,
+    "text": "2.1 Rviz\n\n2.1.1 Overview\n                 1\n                         1、工具栏，提供视角控\n                         制、目标设置、发布地点\n                         等工具\n\n                         2、显示项列表，用于显\n                         示当前选择的插件，可以\n                         配置每个插件的属性\n    2            3   4\n                         3、3D视图区，用于可视\n                         化显示数据，目前没有任\n                         何数据，所以显示黑色\n\n                         4、视角设置区，可以选\n                         择多种观测视角\n\n                         5、时间显示区，显示当\n                         前的系统时间和ROS时间\n                 5",
+    "image_sizes": [
+      [
+        1651,
+        1030
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 63,
+    "chars": 162,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization： http://wiki.ros.org/rviz/UserGuide\n1、假设需要可视化的数据以对应的消息类型发布，在Rviz中使用、插件订阅该消息即可实现显示\n\n2、Rviz默认可以显示下表所示的通用类型数据，其中包含坐标轴、摄像头图像、地图、激光等数据",
+    "image_sizes": [
+      [
+        1103,
+        759
+      ],
+      [
+        1083,
+        603
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 64,
+    "chars": 33,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization",
+    "image_sizes": [
+      [
+        1355,
+        917
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 65,
+    "chars": 33,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization",
+    "image_sizes": [
+      [
+        1388,
+        797
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 66,
+    "chars": 70,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization\nØ 如何操作？\n\n\n\n\n                           1\n                               1、插件列表\n\n\n\n\n                           2   2、插件描述\n\n\n                           3\n                               3、插件名称",
+    "image_sizes": [
+      [
+        373,
+        877
+      ],
+      [
+        494,
+        699
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 67,
+    "chars": 93,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization\nØ TF操作演示：乌龟跟随\n\n $ roslaunch turtle_tf2 turtle_tf2_demo.launch",
+    "image_sizes": [
+      [
+        497,
+        697
+      ],
+      [
+        1973,
+        863
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 68,
+    "chars": 141,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization\nØ TF操作演示：乌龟跟随\n\n\n\n\n  $ sudo rm -f /usr/bin/python\n\n  $ whereis python\n\n  $ sudo ln -s /usr/bin/python3.8 /usr/bin/python",
+    "image_sizes": [
+      [
+        1514,
+        441
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 69,
+    "chars": 54,
+    "text": "2.1 Rviz\n\n2.1.2 Data visualization\nØ TF操作演示：乌龟跟随\n  $ rviz",
+    "image_sizes": [
+      [
+        1963,
+        772
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 70,
+    "chars": 129,
+    "text": "Summary\n 1. TF2\n\n     a) 概念、作用、\n\n     b) 分析乌龟跟随案例的实现流程\n\n     c) 欧拉角和四元数\n\n           1. 欧拉角定义、存在问题\n\n           2. 轴角表示\n\n           3. 四元数引入、定义和使用\n\n 2. Rviz\n\n     a) Rviz作用\n\n     b) 基本使用方案\n\n     c) 乌龟跟随案例演示",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 11,
+    "page": 71,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 1,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 2,
+    "chars": 124,
+    "text": "Overview lesson 12-1\n\n  1          2                 3   4\n\n静态坐标变换        ~                ~   ~\n\n\n\n\n                  Objectives\n         1、掌握静态坐标变换的 C++ 编程方法",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 3,
+    "chars": 43,
+    "text": "Pre-assessment\n\n\n\n\n             1、是否用过TF坐标变换？\n\n             2、如何进行坐标变换的编程？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 4,
+    "chars": 8,
+    "text": "1\n静态坐标变换",
+    "image_sizes": []
+  },
+  {
+    "lesson": 12,
+    "page": 5,
+    "chars": 187,
+    "text": "1.1 静态坐标变换\n\n1.1.1 Overview\n  Ø 坐标变换 tf2\n\n   机器人系统通常具有许多随时间变化的三维坐标系，例如世界坐标系、基础坐标系、夹具坐\n   标系、头部坐标系等。tf2随时间跟踪所有的这些坐标系，并可以解答下列问题：\n\n    ① 在5秒之前，头部坐标系相对于世界坐标系在哪；\n\n    ② 我抓手中的物体相对于我的底座的姿态是什么；\n\n    ③ 地图坐标系中的基础坐标系当前位姿是什么。",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 6,
+    "chars": 178,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  Ø 静态坐标变换\n\n\n\n\n  Ø tf2 对应的常用功能包有：\n\n    l tf2：tf2核心功能包，封装了坐标变换的常用消息\n\n    l tf2_ros：为 tf2 提供了 roscpp 和 rospy 绑定，封装了坐标变换常用的 APIs\n\n    l tf2_geometry_msgs：可以将 ROS 消息转换成 tf2 消息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        794,
+        168
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 7,
+    "chars": 116,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  l tf2:\n   •   tf2 功能包是 ROS 中 geometry2 元软件包下的一个重要软件包，是ROS的第二代机器\n       人坐标变换库，允许用户随着时间的推移跟踪多个坐标系",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1644,
+        862
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 8,
+    "chars": 87,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  l tf2 APIs:   http://docs.ros.org/en/noetic/api/tf2/html/",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1747,
+        1043
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 9,
+    "chars": 108,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  l tf2:\n   •   tf2 功能包封装了坐标变换的常用消息，例如：\n       •   srd_msgs\n       •   geometry_msgs\n       •   tf2_msgs",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        584,
+        570
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 10,
+    "chars": 121,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  l tf2_ros: 此功能包包含 tf2 库的 ROS 绑定，适用于 Python 和 C++\n\n\n\n\n              http://wiki.ros.org/tf2_ros?distro=melodic",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1756,
+        855
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 11,
+    "chars": 110,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n     l tf2_ros APIs   http://docs.ros.org/en/noetic/api/tf2_ros/html/c++/\n\n\n\n 1\n 2\n 3\n\n\n\n\n      1\n\n\n 2\n\n 3",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1566,
+        710
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 12,
+    "chars": 161,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  l tf2_geometry_msgs:\n   •   tf2_geometry_msgs 包含用于在各种 geometry_msgs 数据类型之间进行转换的函数\n\n\n\n\n  http://wiki.ros.org/tf2_geometry_msgs?distro=melodic",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1300,
+        1158
+      ],
+      [
+        1232,
+        968
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 13,
+    "chars": 119,
+    "text": "1.1 静态坐标变换\n\n1.1.2 Tf2 packages\n  l tf2_geometry_msgs APIs:   http://docs.ros.org/en/noetic/api/tf2_geometry_msgs/html/c++/",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1569,
+        507
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 14,
+    "chars": 176,
+    "text": "1.1 静态坐标变换\n\n1.1.3 Tf2 messages\n  Ø 坐标转换实现中常用的消息类型\n\n    l geometry_msgs/TransformStamped\n\n    l geometry_msgs/PointStamped\n\n  Ø 前者用于传输坐标系相关位置信息，后者用于传输某个坐标系内坐标点的信息\n\n  Ø 在坐标变换中，频繁的使用到坐标系的相对关系以及坐标点信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 15,
+    "chars": 170,
+    "text": "1.1 静态坐标变换\n\n1.1.3 Tf2 messages\n l geometry_msgs/TransformStamped\n\n         rosmsg info\n       $ rosmsg\n       $             geometry_msgs/TransformStamped\n                info geometry_msgs/TransformStamped\n\n         ①\n\n\n\n         ②\n         ③",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        868,
+        622
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 16,
+    "chars": 103,
+    "text": "1.1 静态坐标变换\n\n1.1.3 Tf2 messages\n l geometry_msgs/PointStamped\n\n       $ rosmsg info geometry_msgs/PointStamped\n\n\n       ①\n\n\n\n\n       ②",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        815,
+        354
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 17,
+    "chars": 292,
+    "text": "1.1 静态坐标变换\n\n 1.1.4 Time and duration\nØ ROS 里经常用到时间变量，比如坐标变换、基于时间和控制量计算机器人的移动距离、设定程序的等待\n 时间/循环时间、设定计时器等\n\nØ roscpp 里有两种时间表示方法：时刻 (ros::Time) 和时长(ros::Duration)。其中Duration可以是负数\n\nØ Time和Duration拥有一样的成员：\n\n  int32 sec\n\n  int32 nsec\n\n  sec是秒，nsec是纳秒\n\n\n\n\n   参考资料：https://blog.csdn.net/u014453443/article/details/104636566",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 18,
+    "chars": 384,
+    "text": "1.1 静态坐标变换\n\n1.1.4 Time and duration\nØ 使用 Time 和 Duration，需要分别 #include<ros/time.h> 和 #include <ros/duration.h>\n\n\n   //定义类对象\n   ros::Time::Time(uint32_t _sec, uint32_t _nsec)\n   ros::Time::Time(double t)\n\n\n   ros::Duration::Duration(uint32_t _sec, uint32_t _nsec)\n   ros::Duration::Duration(double t)\n\n\n   //故ros::Time a_little_after_the_beginning(0, 1000000); 等价于ros::Time\n   a_little_after_the_beginning(0.001);",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 19,
+    "chars": 896,
+    "text": "1.1 静态坐标变换\n\n1.1.4 Time and duration\nØ 使用 Time 和 Duration，需要分别 #include<ros/time.h> 和 #include <ros/duration.h>\n  ros::Time begin=ros::Time::now();   //获取当前时间\n  ros::Time double1=ros::Time();      //获取0时刻时间，默认值为0\n  ros::Time double2=ros::Time(1);     //获取1时刻时间，默认值为0\n  ros::Time at_some_time1(5,20000000); //逗号之前表示 second，逗号之后表示 nanosecond\n  ros::Time at_some_time2(5.2);        //同上,重载了float类型和两个uint类型的构造函数\n  ros::Duration one_hour(60*60,0);     //1h\n  double secs1=at_some_time1.toSec(); //将 Time 转为 double 型时间\n  double secs2=one_hour.toSec();       //将 Duration 转为 double 型时间\n  std::cout << \"Test1:\"\n  << \"\\nbegin:\" << begin\n  << \"\\ndouble1:\" << double1\n  << \"\\ndouble2:\" << double2\n  << \"\\nat_some_time1:\" << at_some_time1\n  << \"\\nat_some_time2:\" << at_some_time2\n  << \"\\none_hour:\" << one_hour\n  << \"\\nsecs1:\" << secs1\n  << \"\\nsecs2:\" << secs2\n  << std::endl;                                                上述代码在ros_time.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 20,
+    "chars": 568,
+    "text": "1.1 静态坐标变换\n\n1.1.4 Time and duration\nØ 使用 Time 和 Duration进行加减运算：\n\n ros::Time t1=ros::Time::now()-ros::Duration(5.5);   //t1是5.5s前的时刻,Time加减Duration返\n 回Time\n ros::Time t2=ros::Time::now()+ros::Duration(3.3);    //t2是当前时刻往后推3.3s的时刻\n ros::Duration d1=t2-t1;                             //从t1到t2的时长，两个Time相减返回\n Duration类型\n ros::Duration d2=d1-ros::Duration(0,300);           //两个Duration相减，返回Duration\n std::cout << \"\\nTest2:\"\n << \"\\nt1:\" << t1\n << \"\\nt2:\" << t2\n << \"\\nd1:\" << d1\n << \"\\nd2:\" << d2\n << std::endl;\n\n 注意：没有Time+Time的运算                                    上述代码在ros_time.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 21,
+    "chars": 191,
+    "text": "1.1 静态坐标变换\n\n1.1.5 C++ code\nØ 需求描述:\n\n   l 现有一机器人模型，核心构成包含主体与雷达，各对应一坐标系，坐标系的原点分别位于主体与\n    雷达的物理中心\n\n   l 已知雷达原点相对于主体原点位移关系如下: x=0.1, y=0.0, z=0.2。当前雷达检测到一障碍物，\n    在雷达坐标系中障碍物的坐标为 (2.0 3.0 5.0),请问，该障碍物相对于主体的坐标是多少？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        794,
+        168
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 22,
+    "chars": 165,
+    "text": "1.1 静态坐标变换\n\n1.1.5 C++ code\n  Ø 功能实现分析：\n\n    1. 发布方发布坐标系相对位置关系\n\n    2. 订阅方订阅到发布的坐标系相对位置关系，再传入坐标点信息，然后借助于 tf 实现坐标变\n      换，并将结果输出\n\n  Ø 整体实现流程：\n\n    1. 新建功能包，添加依赖\n\n    2. 编写发布方实现\n\n    3. 编写订阅方实现\n\n    4. 执行并查看结果",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 23,
+    "chars": 114,
+    "text": "1.1 静态坐标变换\n\n1.1.5 C++ code\n Ø 发布方实现流程：\n\n    1.包含头文件\n\n    2.初始化 ROS 节点\n\n    3.创建静态坐标转换广播器\n\n    4.创建坐标系信息\n\n    5.广播器发布坐标系信息，进行坐标系之间的变换\n\n    6.spin()",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 24,
+    "chars": 254,
+    "text": "1.1 静态坐标变换\n\n 1.1.5 C++ code\nl 创建功能包\n  • 项目功能包依赖为： tf2 tf2_ros tf2_geometry_msgs roscpp rospy std_msgs geometry_msgs\n\nl 创建静态坐标变换广播器：\n    #include \"tf2_ros/static_transform_broadcaster.h\"   // 包含广播器头文件\n    tf2_ros::StaticTransformBroadcaster broadcaster     // 实例化广播器对象",
+    "image_sizes": [
+      [
+        1097,
+        208
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 25,
+    "chars": 633,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：   #include \"ros/ros.h\"\n                   #include \"tf2_ros/static_transform_broadcaster.h\"\n                   #include \"geometry_msgs/TransformStamped.h\"\n                   #include \"tf2/LinearMath/Quaternion.h\"\n\n                   int main(int argc, char *argv[])\n                   {\n                      setlocale(LC_ALL,\"\");\n                      ros::init(argc,argv,\"tf_static_pub\");\n                      tf2_ros::StaticTransformBroadcaster broadcaster;\n                      geometry_msgs::TransformStamped ts;\n                      ts.header.seq = 100;\n                      ts.header.stamp = ros::Time::now();\n                      ts.header.frame_id = \"baselink\";\n                      ts.child_frame_id = \"laser\";\n                      ts.transform.translation.x = 0.1;\n                      ts.transform.translation.y = 0.0;\n                      ts.transform.translation.z = 0.2;        上述代码在tf_static_pub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 26,
+    "chars": 406,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：\n\n\n               tf2::Quaternion qtn;\n               qtn.setRPY(0,0,0);\n               ts.transform.rotation.x = qtn.getX();\n               ts.transform.rotation.y = qtn.getY();\n               ts.transform.rotation.z = qtn.getZ();\n               ts.transform.rotation.w = qtn.getW();\n                broadcaster.sendTransform(ts);\n               ros::spin();\n               return 0;\n           }\n\n\n\n\n 上述代码在tf_static_pub.cpp 文件中 代码详解：https://www.bilibili.com/video/BV1Ci4y1L7ZZ?p=185\n                                 【奥特学园】ROS机器人入门课程《ROS理论与实践》185-187",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 27,
+    "chars": 94,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：\n\n         $ rosrun ros_bilibili tf_static_pub\n\n         $ rostopic list",
+    "image_sizes": [
+      [
+        952,
+        481
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 28,
+    "chars": 42,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：",
+    "image_sizes": [
+      [
+        1519,
+        785
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 29,
+    "chars": 42,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：",
+    "image_sizes": [
+      [
+        1483,
+        799
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 30,
+    "chars": 42,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：",
+    "image_sizes": [
+      [
+        1549,
+        617
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 31,
+    "chars": 42,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：",
+    "image_sizes": [
+      [
+        1336,
+        657
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 32,
+    "chars": 69,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 发布方(Bilibili)：\n\n         $ rostopic echo /tf_static",
+    "image_sizes": [
+      [
+        907,
+        619
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 33,
+    "chars": 139,
+    "text": "1.1 静态坐标变换\n\n1.1.5 C++ code\n\n Ø 订阅方实现流程：\n\n    1.包含头文件\n\n    2.初始化 ROS 节点\n\n    3.创建 TF 静态坐标监听器\n\n    4.生成一个坐标点(相对于子级坐标系)，\n\n    5.转换坐标点(相对于父级坐标系)，进行坐标点和基坐标系的变换\n\n    6.spinOnce()",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 34,
+    "chars": 273,
+    "text": "1.1 静态坐标变换\n\n1.1.5 C++ code\nl 创建静态坐标变换监听器：\n  #include \"tf2_ros/buffer.h\"                    // 包含缓存头文件\n  #include \"tf2_ros/transform_listener.h\"        // 包含监听器头文件\n  tf2_ros::Buffer buffer;                        // 实例化缓存对象\n  tf2_ros::TransformListener listener(buffer);   // 实例化监听对象",
+    "image_sizes": [
+      [
+        1281,
+        375
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 35,
+    "chars": 447,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 订阅方(Bilibili)：\n            #include \"ros/ros.h\"\n            #include \"tf2_ros/transform_listener.h\"\n            #include \"tf2_ros/buffer.h\"\n            #include \"geometry_msgs/PointStamped.h\"\n            #include \"tf2_geometry_msgs/tf2_geometry_msgs.h\"\n\n            int main(int argc, char *argv[])\n            {\n               setlocale(LC_ALL,\"\");\n               ros::init(argc,argv,\"tf_static_sub\");\n               ros::NodeHandle nh;\n               tf2_ros::Buffer buffer;\n               tf2_ros::TransformListener listener(buffer);\n\n              ros::Rate r(1);\n                                                              上述代码在tf_static_sub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 36,
+    "chars": 535,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 订阅方(Bilibili)：\n      while (ros::ok())\n      {\n        geometry_msgs::PointStamped point_laser;\n        point_laser.header.frame_id = \"laser\";\n        point_laser.header.stamp = ros::Time::now();\n        point_laser.point.x = 2;\n        point_laser.point.y = 3;\n        point_laser.point.z = 5;\n        try\n        {\n           geometry_msgs::PointStamped point_base;\n           point_base = buffer.transform(point_laser,\"baselink\");\n           ROS_INFO(\"转换后的数据:(%.2f,%.2f,%.2f),参考的坐标系是:(%s)\",\n    point_base.point.x,point_base.point.y,point_base.point.z,point_base.header.frame_id.c_str());\n        }\n\n                                                              上述代码在tf_static_sub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 37,
+    "chars": 203,
+    "text": "1.1 静态坐标变换\n\n   1.1.5 C++ code\nl 订阅方(Bilibili)：\n\n\n                  catch(const std::exception& e)\n                  {\n                    // std::cerr << e.what() << '\\n';\n                    ROS_INFO(\"程序异常.....\");\n                  }\n\n                  r.sleep();\n                  ros::spinOnce();\n              }\n\n              return 0;\n          }\n\n\n\n                                                        上述代码在tf_static_sub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 38,
+    "chars": 774,
+    "text": "1.1 静态坐标变换\n\n  1.1.6 Supplemental information\nl 发布方(ROS_wiki)：\n  #include <ros/ros.h>\n  #include <tf2_ros/static_transform_broadcaster.h>     // 静态坐标变换\n  #include <geometry_msgs/TransformStamped.h>           // 静态坐标变换消息类型\n  #include <cstdio>                                     // C++输入输出标准库，cstdio中的函数定义在名称空间std里\n  #include <tf2/LinearMath/Quaternion.h>                // 四元数计算\n\n\n  std::string static_turtle_name;\n  int main(int argc, char **argv)\n  {\n    ros::init(argc,argv, \"my_static_tf2_broadcaster\");\n    if(argc != 8)\n    {\n      ROS_ERROR(\"Invalid number of parameters\\nusage: static_turtle_tf2_broadcaster child_frame_name x y z roll pitch yaw\");\n      return -1;\n    }\n    if(strcmp(argv[1],\"world\")==0)\n    {\n      ROS_ERROR(\"Your static turtle name cannot be 'world'\");\n      return -1;\n    }\n                                                             上述代码在static_turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 39,
+    "chars": 1191,
+    "text": "1.1 静态坐标变换\n\n  1.1.6 Supplemental information\nl 发布方(ROS_wiki)：\n   static_turtle_name = argv[1];\n   static tf2_ros::StaticTransformBroadcaster static_broadcaster;\n   geometry_msgs::TransformStamped static_transformStamped;\n\n    static_transformStamped.header.seq = 1;\n    static_transformStamped.header.stamp = ros::Time::now();\n    static_transformStamped.header.frame_id = \"world\";\n    static_transformStamped.child_frame_id = static_turtle_name;\n    static_transformStamped.transform.translation.x = atof(argv[2]);\n    static_transformStamped.transform.translation.y = atof(argv[3]);\n    static_transformStamped.transform.translation.z = atof(argv[4]);\n    tf2::Quaternion quat;\n    quat.setRPY(atof(argv[5]), atof(argv[6]), atof(argv[7]));\n    static_transformStamped.transform.rotation.x = quat.x();\n    static_transformStamped.transform.rotation.y = quat.y();\n    static_transformStamped.transform.rotation.z = quat.z();\n    static_transformStamped.transform.rotation.w = quat.w();\n    static_broadcaster.sendTransform(static_transformStamped);\n    ROS_INFO(\"Spinning until killed publishing %s to world\", static_turtle_name.c_str());\n    ros::spin();\n    return 0;\n  };                                                          上述代码在static_turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 40,
+    "chars": 212,
+    "text": "1.1 静态坐标变换\n\n  1.1.6 Supplemental information\nl 发布方(ROS_wiki)：\n\n      $ rosrun tf2_roswiki static_turtle_tf2_broadcaster \"laser\" 0.1 0 0.2 0 0 0\n\n\n\n\n      $ rosrun ros_bilibili tf_static_sub\n\n\n\n\n                                                 上述代码在static_turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        1260,
+        58
+      ],
+      [
+        734,
+        264
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 41,
+    "chars": 101,
+    "text": "1.1 静态坐标变换\n\n  1.1.6 Supplemental information\nl 发布方(ROS_wiki)：\n\n\n\n\n                              上述代码在static_turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        1278,
+        682
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 42,
+    "chars": 137,
+    "text": "1.1 静态坐标变换\n\n  1.1.6 Supplemental information\nl 发布方(ROS_wiki)：\n\n\n   $ rosrun ros_bilibili tf_static_sub\n\n\n\n\n                                         上述代码在static_turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        1241,
+        276
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 43,
+    "chars": 380,
+    "text": "1.1 静态坐标变换\n\n1.1.6 Supplemental information\nØ 补充1：\n  l 当坐标系之间的相对位置固定时，所需参数也是固定的：父系坐标名称、子级坐标系名称、x偏移\n    量、y偏移量、z偏移量、x 翻滚角度、y俯仰角度、z偏航角度\n\n  l 不同案例区别：实现逻辑相同，参数不同，ROS 系统就已经封装好了专门的节点，使用方式如下：\n\n   rosrun tf2_ros static_transform_publisher x偏移量 y偏移量 z偏移量 z偏航角度 y俯仰角度 x\n翻滚角度 父级坐标系 子级坐标系\n\n  l 举例： $ rosrun tf2_ros static_transform_publisher 0.1 0 0.2 0 0 0 /baselink /laser\n\n          $ rosrun ros_bilibili tf_static_sub",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 44,
+    "chars": 215,
+    "text": "1.1 静态坐标变换\n\n1.1.6 Supplemental information\nØ 补充2：\n\n   l 可以借助 rviz 显示坐标系关系，具体操作：\n\n      1. 新建窗口输入命令：rviz\n\n      2. 在启动的 rviz 中设置 Fixed Frame 为 base_link\n\n      3. 点击左下的 add 按钮，在弹出的窗口中选择 TF 组件，即可显示坐标关系\n\n\n      $ roslaunch ros_bilibili tf_static.launch",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 45,
+    "chars": 41,
+    "text": "1.1 静态坐标变换\n\n1.1.6 Supplemental information",
+    "image_sizes": [
+      [
+        1999,
+        1092
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 46,
+    "chars": 41,
+    "text": "1.1 静态坐标变换\n\n1.1.6 Supplemental information",
+    "image_sizes": [
+      [
+        1995,
+        1091
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 47,
+    "chars": 396,
+    "text": "主观题 10分\n\n   1.   坐标变换中常用的3个功能包？\n   2.   坐标转换中常用的2种消息类型？\n   3.   TransformStamped和PointStamped的消息类型定义？（列出一级字段类型\n        和字段名称）\n   4.   ros::Time::now()和ros::Time()的含义为？\n   5.   tf2_ros::StaticTransformBroadcaster broadcaster，\n        broadcaster.sendTransform(ts)，这2行代码的作用是？\n   6.   静态坐标变换默认创建的话题是？\n   7.   tf2_ros::Buffer buffer，tf2_ros::TransformListener listener(buffer)，这2\n        行代码的作用是？\n   8.   tf2_ros功能包中静态坐标变换的节点是？\n\n                            正常使用主观题需2.0以上版本雨课堂\n\n                                                                   作答",
+    "image_sizes": [
+      [
+        224,
+        80
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 48,
+    "chars": 198,
+    "text": "Summary\n\n 1. 静态坐标变换\n\n   a) 静态坐标变换功能包和APIs：tf2 tf2_ros tf2_geometry_msgs\n\n   b) Tf2 messages\n\n   c) Time and duration\n\n   d) C++ code：\n\n      a. 发布方：ros_bilibili ros_wiki\n\n      b. 订阅方\n\n   e) 补充信息：\n\n      a. static_transform_publisher\n\n      b. rviz",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 49,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 50,
+    "chars": 110,
+    "text": "机器人控制设计实践\nRobot Control Design Practice\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 51,
+    "chars": 127,
+    "text": "Overview lesson 12-2\n\n  1           2                3   4\n\n动态坐标变换        ~                ~   ~\n\n\n\n\n                  Objectives\n         1、理解动态坐标变换原理及其 C++ 编程方法",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 52,
+    "chars": 50,
+    "text": "Pre-assessment\n\n\n\n\n       1、静态坐标变换和动态坐标变换的区别？\n\n       2、动态坐标变换用到哪些函数？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 53,
+    "chars": 8,
+    "text": "1\n动态坐标变换",
+    "image_sizes": []
+  },
+  {
+    "lesson": 12,
+    "page": 54,
+    "chars": 139,
+    "text": "1.1 动态坐标变换\n\n1.1.1 Overview\n  Ø 动态坐标变换是指两个坐标系之间的相对位置是变化的\n\n  Ø 需求分析：启动 turtlesim_node，该节点中窗体有一个世界坐标系(左下角为坐标系原点)，乌龟\n   是另一个坐标系，键盘控制乌龟运动，将两个坐标系的相对位置动态发布",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        828,
+        531
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 55,
+    "chars": 189,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\n  Ø 功能实现分析：\n\n    1. 订阅 turtle1/pose，可以获取乌龟在世界坐标系的 x坐标、y坐标、偏移量以及线速度\n      和角速度\n\n    2. 将 pose 信息转换成 坐标系相对信息 并发布\n\n  Ø 实现流程\n\n    1. 新建功能包，添加依赖\n\n    2. 创建坐标相对关系发布方(同时需要订阅乌龟位姿信息)\n\n    3. 创建坐标相对关系订阅方\n\n    4. 执行",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 56,
+    "chars": 511,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nl 创建功能包\n  • 项目功能包依赖为：roscpp rospy std_msgs tf2 tf2_ros tf2_geometry_msgs geometry_msgs\n    turtlesim\n\nl 创建动态坐标变换广播器：\n  #include \"tf2_ros/transform_broadcaster.h\"          // 包含广播器头文件\n  static tf2_ros::TransformBroadcaster broadcaster;   // 实例化广播器对象\n\nl 创建动态坐标变换监听器：\n  #include \"tf2_ros/buffer.h\"                    // 包含缓存头文件\n  #include \"tf2_ros/transform_listener.h\"        // 包含监听器头文件\n  tf2_ros::Buffer buffer;                        // 实例化缓存对象\n  tf2_ros::TransformListener listener(buffer);   // 实例化监听对象",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 57,
+    "chars": 193,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\n\n l TF的坐标变换，表征子坐标系到父坐标系的坐标变换关系\n\n l 通过使用TF广播，每次只需要发布相邻两个坐标系之间的坐标关系。然后通过TF监听得到这\n  些相邻的坐标变换关系，TF就能计算出任意两个坐标系之间的坐标变换关系\n\n l 存在问题：由于TF建立的坐标系一般都是动坐标系，也就是坐标系之间的变换关系是随着时\n  间变化的，即存在时间对齐问题",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 58,
+    "chars": 278,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nl 举例：\n  1. 一个机械手臂有大臂和小臂，大臂绕着肩关节转，小臂绕着肘关节转\n\n  2. 在大臂和小臂上分别有两个IMU（A和B）可以检测姿态，A检测大臂相对肩膀的姿态，B检\n    测小臂相对大臂的姿态。通过这两个数据计算，最后就能得到小臂相对肩膀的姿态\n\n  3. 两个IMU的数据一直在发送，如果想知道0.5S时刻小臂对肩膀的姿态，那么就需要使用\n    0.5S时刻A的数据和0.5S时刻B的数据相乘得到，而不能使用其他时刻的数据相乘，因为需\n    要时间对齐。坐标点在不同坐标系下表示的时候也是同理，所以TF中就有时间戳的概念",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 59,
+    "chars": 130,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nl 静态坐标变换（发布方）：\n\n\n\n\n   这里的时间戳使用的是ros::Time::now();，也就是当前调用这条命令的时候的时间，比如\n   得到的结果是150.3S这个时刻，表示这个tf变换是在150.3S时刻的坐标变换",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1018,
+        555
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 60,
+    "chars": 224,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nl 静态坐标变换（订阅方）：\n\n\n\n\n 这里的时间戳使用的是ros::Time::now();，也就是当前调用这条命令的时候的时间，因为订阅方是\n 使用buffer缓存监听tf广播，然后调用buffer.transform函数进行转换，转换时刻比150.3S这个时\n 刻远，即有时间延迟，比如订阅者的转换时刻152.3S，即存在时间同步问题（理想情况：150.3S）\n\n                                   其他说明见《ROS学习之TF变换的时间戳》",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        857,
+        363
+      ],
+      [
+        889,
+        375
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 61,
+    "chars": 153,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nl 时间对齐步问题解决思路：\n\n Ø 选择TF广播中最近的时刻，使用：\n    • ros::Time()或者ros::Time(0)\n\n Ø 使用这样的时间戳在进行坐标变换的时候，会使用tf广播中最近一次发布的坐标变换，认为设置\n   的点的时间戳和变换的时间戳是时间对齐的",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 62,
+    "chars": 159,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\n Ø 发布方实现流程：\n    1.包含头文件\n    2.初始化 ROS 节点\n    3.创建 ROS 句柄\n    4.创建订阅对象\n    5.回调函数处理订阅到的数据(实现TF广播)\n      5-1.创建 TF 广播器\n      5-2.创建 广播的数据(通过 pose 设置)\n      5-3.广播器发布数据\n    6.spin",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 63,
+    "chars": 245,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ 发布方(bilibili)：\n\n           #include \"ros/ros.h\"\n           #include \"turtlesim/Pose.h\"\n           #include \"tf2_ros/transform_broadcaster.h\"\n           #include \"geometry_msgs/TransformStamped.h\"\n           #include \"tf2/LinearMath/Quaternion.h\"\n\n\n\n\n                                             上述代码在tf_dynamic_pub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 64,
+    "chars": 684,
+    "text": "1.1 动态坐标变换\n\n  1.1.2 C++ code\nØ 发布方(bilibili)： void doPose(const turtlesim::Pose::ConstPtr& pose){\n                   static tf2_ros::TransformBroadcaster broadcaster;\n                   geometry_msgs::TransformStamped tf;\n                   tf.header.frame_id = \"world\";\n                   tf.header.stamp = ros::Time::now();\n                   tf.child_frame_id = \"turtle1\";\n                   tf.transform.translation.x = pose->x;\n                   tf.transform.translation.y = pose->y;\n                   tf.transform.translation.z = 0.0;\n                   tf2::Quaternion qtn;\n                   qtn.setRPY(0,0,pose->theta);\n                   tf.transform.rotation.x = qtn.getX();\n                   tf.transform.rotation.y = qtn.getY();\n                   tf.transform.rotation.z = qtn.getZ();\n                   tf.transform.rotation.w = qtn.getW();\n                   broadcaster.sendTransform(tf);\n                 }                                   上述代码在tf_dynamic_pub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 65,
+    "chars": 293,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ 发布方(bilibili)：\n\n\n int main(int argc, char *argv[])\n {\n    setlocale(LC_ALL,\"\");\n    ros::init(argc,argv,\"tf_dynamic_pub\");\n    ros::NodeHandle nh;\n    ros::Subscriber sub = nh.subscribe<turtlesim::Pose>(\"/turtle1/pose\",1000,doPose);\n    ros::spin();\n    return 0;\n }\n\n\n\n\n                                                  上述代码在tf_dynamic_pub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 66,
+    "chars": 93,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\n Ø 订阅方实现流程：\n\n    1.包含头文件\n\n    2.初始化 ROS 节点\n\n    3.创建 TF 订阅对象\n\n    4.处理订阅的数据\n\n    5.spinOnce()",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 67,
+    "chars": 248,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ 订阅方(bilibili)：\n\n           #include \"ros/ros.h\"\n           #include \"tf2_ros/transform_listener.h\"\n           #include \"tf2_ros/buffer.h\"\n           #include \"geometry_msgs/PointStamped.h\"\n           #include \"tf2_geometry_msgs/tf2_geometry_msgs.h\"\n\n\n\n\n                                              上述代码在tf_dynamic_sub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 68,
+    "chars": 413,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ 订阅方(bilibili)：\n             int main(int argc, char *argv[])\n             {\n                setlocale(LC_ALL,\"\");\n                ros::init(argc,argv,\"tf_dynamic_sub\");\n                ros::NodeHandle nh;\n                tf2_ros::Buffer buffer;\n                tf2_ros::TransformListener listener(buffer);\n\n               ros::Rate r(1);\n               while (ros::ok())\n               {\n                 geometry_msgs::PointStamped point_laser;\n                 point_laser.header.frame_id = \"turtle1\";\n                 point_laser.header.stamp = ros::Time();\n\n\n                                                    上述代码在tf_dynamic_sub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 69,
+    "chars": 508,
+    "text": "1.1 动态坐标变换\n\n 1.1.2 C++ code\nØ 订阅方(bilibili)：\n\n    try\n    {\n       geometry_msgs::PointStamped point_base;\n       point_base = buffer.transform(point_laser,\"world\");\n       ROS_INFO(\"坐标系%s相对于 world 的坐标为:(%.2f,%.2f,%.2f)\",\npoint_laser.header.frame_id.c_str(),point_base.point.x,point_base.point.y,point_base.point.z);\n    }\n    catch(const std::exception& e)\n    {\n       // std::cerr << e.what() << '\\n';\n       ROS_INFO(\"程序异常:%s\",e.what());\n    }\n    r.sleep();\n    ros::spinOnce();\n  }\n  return 0;\n}                                                      上述代码在tf_dynamic_sub.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 70,
+    "chars": 92,
+    "text": "1.1 动态坐标变换\n\n 1.1.2 C++ code\nØ 订阅方(bilibili)：\n\n          $ roslaunch ros_bilibili tf_dynamic_turtle.launch",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        2128,
+        1270
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 71,
+    "chars": 335,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ ROS 配置参数（补充知识）：\n\n  Ø ROS参数服务器能保存的数据类型包括：字符串、整型、浮点型、布尔型、列表、词典等\n\n  Ø ROS提供了两种管理参数的API，一个是在 ros::param 命名空间，一个是通过\n\n   ros::NodeHandle接口，在底层参数服务器基于XMLRPC与节点进行通信\n\n  Ø 参数根据类型不同可分为：全局参数、相对参数、私有参数等。其中以“/”开头的为全局参\n\n   数，以“~”开头的参数为私有参数，其他的为相对参数。\n\n  Ø 在 roslaunch 文件中，当 param 作为 launch 标签的子标签出现时，参数为全局参数，当\n\n   param 标签作为 node 标签的子标签出现时，参数为相对参数",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 72,
+    "chars": 182,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ ROS 配置参数（补充知识）：\n\n  Ø 通过NodeHandle检查参数：\n\n    ros::NodeHandle private_node(\"~\");\n\n    if(!private_node.hasParam(\"turtle\")) //判断参数服务器中是否存在turtle这个参数\n\n    {\n\n\n\n    }\n\n\n\n\n                                            其他参数配置见《ROS之参数配置》",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 73,
+    "chars": 252,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ 发布方(roswiki)：\n\n          #include <ros/ros.h>\n          #include <tf2/LinearMath/Quaternion.h>\n          #include <tf2_ros/transform_broadcaster.h>\n          #include <geometry_msgs/TransformStamped.h>\n          #include <turtlesim/Pose.h>\n\n\n\n\n                                       上述代码在turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 74,
+    "chars": 812,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\n                  std::string turtle_name;\nØ 发布方(roswiki)：\n                  void poseCallback(const turtlesim::PoseConstPtr& msg){\n                   static tf2_ros::TransformBroadcaster br;\n                   geometry_msgs::TransformStamped transformStamped;\n                   transformStamped.header.stamp = ros::Time::now();\n                   transformStamped.header.frame_id = \"world\";\n                   transformStamped.child_frame_id = turtle_name;\n                   transformStamped.transform.translation.x = msg->x;\n                   transformStamped.transform.translation.y = msg->y;\n                   transformStamped.transform.translation.z = 0.0;\n                   tf2::Quaternion q;\n                   q.setRPY(0, 0, msg->theta);\n                   transformStamped.transform.rotation.x = q.x();\n                   transformStamped.transform.rotation.y = q.y();\n                   transformStamped.transform.rotation.z = q.z();\n                   transformStamped.transform.rotation.w = q.w();\n\n                      br.sendTransform(transformStamped);\n                  }\n                                               上述代码在turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 75,
+    "chars": 508,
+    "text": "1.1 动态坐标变换\n\n1.1.2 C++ code\nØ 发布方(roswiki)： int main(int argc, char** argv){\n                     ros::init(argc, argv, \"my_tf2_broadcaster\");\n\n                     ros::NodeHandle private_node(\"~\");\n                     if (! private_node.hasParam(\"turtle\"))\n                     {\n                       if (argc != 2){ROS_ERROR(\"need turtle name as argument\"); return -1;};\n                       turtle_name = argv[1];\n                     }\n                     else\n                     {\n                       private_node.getParam(\"turtle\", turtle_name);\n                     }\n\n                     ros::NodeHandle node;\n                     ros::Subscriber sub = node.subscribe(turtle_name+\"/pose\", 10, &poseCallback);\n\n                      ros::spin();\n                      return 0;\n                    };\n                                                   上述代码在turtle_tf2_broadcaster.cpp 文件中",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 76,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 77,
+    "chars": 110,
+    "text": "机器人控制设计实践\nRobot Control Design Practice\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 78,
+    "chars": 191,
+    "text": "Overview lesson 12-3\n\n .1   1        2                3      .1   4\n\n多坐标变换     Turtlesim跟随示例         ~           ~\n\n\n\n\n                   Objectives\n 1、了解多坐标变换的基本原理，理解多坐标变换的 C++ 编程思想\n\n 2、了解 turtlesim 跟随示例的实现原理，理解其 C++ 代码",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 79,
+    "chars": 47,
+    "text": "Pre-assessment\n\n\n\n\n         1、何为多坐标变换？\n\n         2、多坐标变换与静态和动态坐标变换的关系？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 80,
+    "chars": 7,
+    "text": "1\n多坐标变换",
+    "image_sizes": []
+  },
+  {
+    "lesson": 12,
+    "page": 81,
+    "chars": 287,
+    "text": "1.1 多坐标变换\n\n1.1.1 Overview\nØ 需求描述：\n\n   l 现有多坐标系统，父级坐标系统 world 下有两个子级系统 local1 和 local2；loacl1 相对于\n    world，以及 local2 相对于 world 的偏移量是分别为(1, 2, 3) 和 (4, 5, 6)\n\n     1. 求 local1 原点在 local2 中的坐标\n\n     2. 已知在 local1 中有一移动的坐标点，某一时刻该点在 local1 的坐标为(2, 3, 5)，求该时刻\n       该点在 local2 中的坐标\n\n\n\n                                              (1) 坐标为(-3, -3, -3)\n                                              (2) 坐标为(-1, 0, 2)",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        227,
+        227
+      ],
+      [
+        2048,
+        1108
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 82,
+    "chars": 269,
+    "text": "1.1 多坐标变换\n\n1.1.1 Overview\n Ø 需求分析：\n\n   l 父级坐标系统 world 下有两子级系统 local1 和 local2；loacl1 相对于 world，以及 local2\n    相对于 world 的偏移量是分别为(1, 2, 3) 和 (4, 5, 6)    静态坐标变换\n\n   l 求 local1原点在 local2 中的坐标      多坐标变换\n\n   l 已知在 local1 中有一移动的坐标点，某一时刻该点在local1的坐标为(1, 2, 3)，求该时刻该点\n    在 local2 中的坐标       动态坐标变换",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        155,
+        155
+      ],
+      [
+        155,
+        155
+      ],
+      [
+        155,
+        155
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 83,
+    "chars": 437,
+    "text": "1.1 多坐标变换\n\n1.1.1 Overview\n Ø 实现分析：\n\n   l 利用静态坐标变换，发布 local1 相对于 world，以及 local2 相对于 world 的坐标消息\n\n   l 订阅坐标发布消息，并取出订阅的消息；利用多坐标变换，实现 local1 和 local2 的转换\n\n   l 利用动态坐标变换，实现坐标点的转换\n\n   静态/动态坐标变换：\n   geometry_msgs::PointStamped point_world\n   point_world = buffer.transform(point_local1,\"world\")\n\n   多坐标变换：\n\n   geometry_msgs::TransformStamped tf\n\n   tf = buffer.lookupTransform(\"local2\",\"local1\",ros::Time(0))\n\n   Get the transform between two frames by frame ID assuming fixed frame.",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 84,
+    "chars": 180,
+    "text": "1.1 多坐标变换\n\n1.1.1 Overview\n Ø 实现流程：\n\n   l 新建功能包，添加依赖\n\n   l 创建坐标相对关系发布方(需要发布两个坐标相对关系)\n\n   l 创建坐标相对关系订阅方\n\n   l 执行\n\n\n\n\nl 创建功能包:\n\n   • 创建项目功能包依赖： tf2 tf2_ros tf2_geometry_msgs roscpp rospy std_msgs\n     geometry_msgs",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 85,
+    "chars": 196,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法一\nl local1 发布方：\n\n\n\n\n                #include \"ros/ros.h\"\n                #include \"tf2_ros/static_transform_broadcaster.h\"\n                #include \"geometry_msgs/TransformStamped.h\"\n                #include \"tf2/LinearMath/Quaternion.h\"",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 86,
+    "chars": 848,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法一\nl local1 发布方：\n\nint main(int argc, char *argv[])\n{\n   setlocale(LC_ALL,\"\");\n   ros::init(argc,argv,\"tf_multi_pub_local1\");\n   tf2_ros::StaticTransformBroadcaster broadcaster;\n   geometry_msgs::TransformStamped ts;\n   ts.header.seq = 1;                                 tf2::Quaternion qtn;\n   ts.header.stamp = ros::Time::now();                qtn.setRPY(0,0,0);\n   ts.header.frame_id = \"world\";                         ts.transform.rotation.x = qtn.getX();\n   ts.child_frame_id = \"local1\";                         ts.transform.rotation.y = qtn.getY();\n   ts.transform.translation.x = 1;                       ts.transform.rotation.z = qtn.getZ();\n   ts.transform.translation.y = 2;                       ts.transform.rotation.w = qtn.getW();\n   ts.transform.translation.z = 3;                       broadcaster.sendTransform(ts);\n                                                         ros::spin();\n                                                         return 0;\n                                                      }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 87,
+    "chars": 196,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法一\nl local2 发布方：\n\n\n\n                #include \"ros/ros.h\"\n                #include \"tf2_ros/static_transform_broadcaster.h\"\n                #include \"geometry_msgs/TransformStamped.h\"\n                #include \"tf2/LinearMath/Quaternion.h\"",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 88,
+    "chars": 851,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法一\nl local2 发布方：\n\nint main(int argc, char *argv[])\n{\n   setlocale(LC_ALL,\"\");\n   ros::init(argc,argv,\"tf_multi_pub_local2\");\n   tf2_ros::StaticTransformBroadcaster broadcaster;\n   geometry_msgs::TransformStamped ts;\n   ts.header.seq = 1;                                 tf2::Quaternion qtn;\n   ts.header.stamp = ros::Time::now();                   qtn.setRPY(0,0,0);\n   ts.header.frame_id = \"world\";                         ts.transform.rotation.x = qtn.getX();\n   ts.child_frame_id = \"local2\";                         ts.transform.rotation.y = qtn.getY();\n   ts.transform.translation.x = 4;                       ts.transform.rotation.z = qtn.getZ();\n   ts.transform.translation.y = 5;                       ts.transform.rotation.w = qtn.getW();\n   ts.transform.translation.z = 6;                       broadcaster.sendTransform(ts);\n                                                         ros::spin();\n                                                         return 0;\n                                                      }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 89,
+    "chars": 257,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法一\nl local2 发布方：\n\n\n  <launch>\n\n    <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_local1\" name=\"tf_multi_pub_local1\"\n  output=\"screen\" />\n\n    <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_local2\" name=\"tf_multi_pub_local2\"\n  output=\"screen\" />\n\n\n  </launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 90,
+    "chars": 205,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法二\nl local1 + local2 发布方：\n\n\n\n               #include \"ros/ros.h\"\n               #include \"tf2_ros/static_transform_broadcaster.h\"\n               #include \"geometry_msgs/TransformStamped.h\"\n               #include \"tf2/LinearMath/Quaternion.h\"",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 91,
+    "chars": 893,
+    "text": "1.1 多坐标变换\n\n    1.1.2 C++ code：方法二\n  l local1 + local2 发布方：\n\nint main(int argc, char *argv[])\n{\n   setlocale(LC_ALL,\"\");\n   ros::init(argc,argv,\"tf_multi_pub_opti\");\n   tf2_ros::StaticTransformBroadcaster broadcaster;       tf2::Quaternion qtn;\n   geometry_msgs::TransformStamped ts;                    qtn.setRPY(0,0,0);\n   ts.header.seq = 100;                                   ts.transform.rotation.x = qtn.getX();\n   ts.header.stamp = ros::Time::now();                    ts.transform.rotation.y = qtn.getY();\n   ts.header.frame_id = \"world\";                          ts.transform.rotation.z = qtn.getZ();\n   ts.child_frame_id = argv[1];                           ts.transform.rotation.w = qtn.getW();\n   ts.transform.translation.x = atoi(argv[2]);            broadcaster.sendTransform(ts);\n   ts.transform.translation.y = atoi(argv[3]);            ros::spin();\n   ts.transform.translation.z = atoi(argv[4]);            return 0;\n                                                      }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 92,
+    "chars": 237,
+    "text": "1.1 多坐标变换\n\n1.1.4 C++ code：方法二\nØ 补充知识：\n\n ros传参主要有两种：第一种是通过 main 函数的 argc 和 argv 变量，第二种是通过参数服务器。\n 具体实现如下：\n\n\n (1) 通过 main 函数的 argv 变量传递参数, 在 launch 文件中使用 args 参数传递参数的值\n\n\n (2) 通过参数服务器传参, 通过语句 n.param<std::string>(\"n_arg\",n_arg,\"arg1\")来完成对变\n 量 n_arg 的传参",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 93,
+    "chars": 279,
+    "text": "1.1 多坐标变换\n\n1.1.4 C++ code：方法二\n\n\n<launch>\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_opti\" name=\"tf_multi_pub_opti_1\"\nargs=\"local1 1 2 3\" output=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_opti\" name=\"tf_multi_pub_opti_2\"\nargs=\"local2 4 5 6\" output=\"screen\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 94,
+    "chars": 312,
+    "text": "1.1 多坐标变换\n\n 1.1.2 C++ code：方法三\nl local1 + local2 发布方：\n\n\n       <launch>\n         <node pkg=\"tf2_ros\" type=\"static_transform_publisher\"\n       name=\"local1\" args=\"1 2 3 0 0 0 /world /local1\" output=\"screen\" />\n\n         <node pkg=\"tf2_ros\" type=\"static_transform_publisher\"\n       name=\"local2\" args=\"4 5 6 0 0 0 /world /local2\" output=\"screen\" />\n\n       </launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 95,
+    "chars": 265,
+    "text": "1.1 多坐标变换\n\n  1.1.2 C++ code：\nl 订阅方：\n\n\n            #include \"ros/ros.h\"\n            #include \"tf2_ros/transform_listener.h\"\n            #include \"tf2/LinearMath/Quaternion.h\"\n            #include \"tf2_geometry_msgs/tf2_geometry_msgs.h\"\n            #include \"geometry_msgs/TransformStamped.h\"\n            #include \"geometry_msgs/PointStamped.h\"",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 96,
+    "chars": 648,
+    "text": "1.1 多坐标变换\n\n  1.1.2 C++ code：\n         int main(int argc, char *argv[])\nl 订阅方：   { setlocale(LC_ALL,\"\");\n            ros::init(argc,argv,\"tf_multi_sub\");\n            ros::NodeHandle nh;\n            tf2_ros::Buffer buffer;\n            tf2_ros::TransformListener listener(buffer);\n            ros::Rate rate(1);\n            while (ros::ok())\n            {\n               try\n               {\n                  geometry_msgs::TransformStamped tf;\n                  tf = buffer.lookupTransform(\"local2\",\"local1\",ros::Time(0));\n                  ROS_INFO(\"local1 相对于 local2 的坐标关系:父坐标系ID=%s\",tf.header.frame_id.c_str());\n                  ROS_INFO(\"local1 相对于 local2 的坐标关系:子坐标系ID=%s\",tf.child_frame_id.c_str());\n                  ROS_INFO(\"local1原点 在 local2 的坐标为:x=%.2f,y=%.2f,z=%.2f\",\n                        tf.transform.translation.x,\n                        tf.transform.translation.y,\n                        tf.transform.translation.z\n                        );",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 97,
+    "chars": 564,
+    "text": "1.1 多坐标变换\n\n  1.1.2 C++ code：\n                 geometry_msgs::PointStamped ps_local1;\nl 订阅方：           ps_local1.header.frame_id = \"local1\";\n                 ps_local1.header.stamp = ros::Time::now();\n                 ps_local1.point.x = 2.0;\n                 ps_local1.point.y = 3.0;\n                 ps_local1.point.z = 5.0;\n\n                 geometry_msgs::PointStamped ps_local2;\n                 ps_local2 = buffer.transform(ps_local1,\"local2\");\n                 ROS_INFO(\"local1中的点 ps_local1 在 local2 中的坐标:x=%.2f,y=%.2f,z=%.2f\",\n                     ps_local2.point.x,\n                     ps_local2.point.y,\n                     ps_local2.point.z\n                     );\n               }\n               catch(const std::exception& e)\n               {\n                  ROS_INFO(\"异常信息:%s\",e.what());\n               }\n               rate.sleep();\n               ros::spinOnce();\n             }\n             return 0;\n         }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 98,
+    "chars": 477,
+    "text": "1.1 多坐标变换\n\n1.1.2 C++ code：方法一\n  l 执行：\n\n   roslaunch ros_bilibili tf_multi_bilibili.launch\n\n<launch>\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_local1\" name=\"tf_multi_pub_local1\"\noutput=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_local2\" name=\"tf_multi_pub_local2\"\noutput=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_sub\" name=\"tf_multi_sub\" output=\"screen\" />\n\n  <node pkg=\"rviz\" type=\"rviz\" name=\"rviz\" args=\"-d $(find ros_bilibili)/config/tf_multi.rviz\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 99,
+    "chars": 509,
+    "text": "1.1 多坐标变换\n\n1.1.2 C++ code：方法二\n  l 执行：\n\n   roslaunch ros_bilibili tf_multi_opti.launch\n\n<launch>\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_opti\" name=\"tf_multi_pub_opti_1\" args=\"local1\n1 2 3\" output=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_pub_opti\" name=\"tf_multi_pub_opti_2\" args=\"local2\n4 5 6\" output=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_sub\" name=\"tf_multi_sub\" output=\"screen\" />\n\n  <node pkg=\"rviz\" type=\"rviz\" name=\"rviz\" args=\"-d $(find ros_bilibili)/config/tf_multi.rviz\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 100,
+    "chars": 521,
+    "text": "1.1 多坐标变换\n\n1.1.2 C++ code：方法三\n  l 执行：\n\n   roslaunch ros_bilibili tf_multi_tf2ros.launch\n\n<launch>\n  <node pkg=\"tf2_ros\" type=\"static_transform_publisher\" name=\"local1\" args=\"1 2 3 0 0 0\n/world /local1\" output=\"screen\" />\n\n  <node pkg=\"tf2_ros\" type=\"static_transform_publisher\" name=\"local2\" args=\"4 5 6 0 0 0\n/world /local2\" output=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_multi_sub\" name=\"tf_multi_sub\" output=\"screen\" />\n\n  <node pkg=\"rviz\" type=\"rviz\" name=\"rviz\" args=\"-d $(find ros_bilibili)/config/tf_multi.rviz\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 101,
+    "chars": 15,
+    "text": "2\nTurtlesim跟随示例",
+    "image_sizes": []
+  },
+  {
+    "lesson": 12,
+    "page": 102,
+    "chars": 120,
+    "text": "2.1 Turtlesim跟随示例\n\n2.1.1 Overview\n       roslaunchturtle_tf2\n     $roslaunch  turtle_tf2turtle_tf2_demo.launch\n                            turtle_tf2_demo.launch",
+    "image_sizes": [
+      [
+        504,
+        542
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 103,
+    "chars": 411,
+    "text": "2.1 Turtlesim跟随示例\n\n2.1.1 Overview\nØ 实现分析：\n\n  l 乌龟跟随实现的核心，首先乌龟 A 和 B 都要发布相对世界坐标系的坐标信息；然后，订阅到\n   该信息需要转换获取 A 相对于 B 坐标系的信息；最后，再生成速度信息，并控制 B 运动\n\nØ 执行步骤：\n\n  l 启动乌龟显示和控制节点         启动 turtlesim_node turtle_teleop_key\n\n  l 在乌龟显示窗体中生成一只新的乌龟(需要使用服务)                调用/spawn服务\n\n  l 编写两只乌龟发布坐标信息的节点           多坐标变换（订阅/turtlex/pose x=1，2）\n\n  l 编写订阅节点订阅坐标信息并生成新的相对关系生成速度信息                     获取turtle2速度信息，\n   结合turtle1和turtle2的相对位置，计算turtle2的速度信息",
+    "image_sizes": [
+      [
+        1280,
+        1280
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 104,
+    "chars": 224,
+    "text": "2.1 Turtlesim跟随示例\n\n2.1.1 Overview\nØ 实现流程：\n\n   l 新建功能包，添加依赖\n\n   l 编写服务客户端，用于生成一只新的乌龟\n\n   l 编写发布方，发布两只乌龟的坐标信息\n\n   l 编写订阅方，订阅两只乌龟信息，生成速度信息并发布\n\n   l 执行\n\n\nØ 创建功能包:\n\n  l 创建项目功能包依赖： tf2 tf2_ros tf2_geometry_msgs roscpp rospy std_msgs\n    geometry_msgs turtlesim",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 105,
+    "chars": 861,
+    "text": "2.1 Turtlesim跟随示例\n\n  2.1.2 C++ code\nØ 编写服务客户端，用于生成一只新的乌龟：\n#include \"ros/ros.h\"\n#include \"turtlesim/Spawn.h\"                    bool flag = client.call(spawn);\n                                                 if (flag)\nint main(int argc, char *argv[])                 {\n{                                                    ROS_INFO(\"乌龟%s创建成\n   setlocale(LC_ALL,\"\");                        功!\",spawn.response.name.c_str());\n   ros::init(argc,argv,\"create_turtle2\");        }\n   ros::NodeHandle nh;                           else\n   ros::ServiceClient client =                   {\nnh.serviceClient<turtlesim::Spawn>(\"/spawn\");        ROS_INFO(\"乌龟2创建失败!\");\n                                                 }\n  ros::service::waitForService(\"/spawn\");\n  turtlesim::Spawn spawn;                           ros::spin();\n  spawn.request.name = \"turtle2\";\n  spawn.request.x = 2.0;                            return 0;\n  spawn.request.y = 2.0;                        }\n  spawn.request.theta = 1.57;",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 106,
+    "chars": 916,
+    "text": "2.1 Turtlesim跟随示例\n\n     2.1.2 C++ code                           std::string turtle_name;\n     Ø 编写发布方，发布两只乌龟的坐标信息：\n                                            void doPose(const turtlesim::Pose::ConstPtr& pose){\n                                              static tf2_ros::TransformBroadcaster broadcaster;\n                                              geometry_msgs::TransformStamped tf;\n                                              tf.header.frame_id = \"world\";\n                                              tf.header.stamp = ros::Time::now();\n#include \"ros/ros.h\"                          tf.child_frame_id = turtle_name;\n#include \"turtlesim/Pose.h\"                   tf.transform.translation.x = pose->x;\n#include \"tf2_ros/transform_broadcaster.h\"    tf.transform.translation.y = pose->y;\n#include \"tf2/LinearMath/Quaternion.h\"        tf.transform.translation.z = 0.0;\n#include \"geometry_msgs/TransformStamped.h\"   tf2::Quaternion qtn;\n                                              qtn.setRPY(0,0,pose->theta);\n                                              tf.transform.rotation.x = qtn.getX();\n                                              tf.transform.rotation.y = qtn.getY();\n                                              tf.transform.rotation.z = qtn.getZ();\n                                              tf.transform.rotation.w = qtn.getW();\n                                              broadcaster.sendTransform(tf);\n\n                                              }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 107,
+    "chars": 404,
+    "text": "2.1 Turtlesim跟随示例\n\n2.1.2 C++ code\nØ 编写发布方，发布两只乌龟的坐标信息：\n\n  int main(int argc, char *argv[])\n  {\n     setlocale(LC_ALL,\"\");\n     ros::init(argc,argv,\"tf_turtlesim_pub\");\n     if (argc != 2)\n     {\n         ROS_ERROR(\"请传入正确的参数\");\n     } else\n     {\n         turtle_name = argv[1];\n         ROS_INFO(\"乌龟 %s 坐标发送启动\",turtle_name.c_str());\n     }\n     ros::NodeHandle nh;\n     ros::Subscriber sub = nh.subscribe<turtlesim::Pose>(turtle_name + \"/pose\",1000,doPose);\n     ros::spin();\n     return 0;\n  }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 108,
+    "chars": 96,
+    "text": "2.1 Turtlesim跟随示例\n\n2.1.2 C++ code\nØ 编写订阅方，订阅两只乌龟信息，生成速度信息并发布：\n\n\n\n                    l 线速度计算公式：系数 * 距离\n\n                    l 角速度计算公式：系数 * 角度",
+    "image_sizes": [
+      [
+        2048,
+        1182
+      ],
+      [
+        810,
+        202
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 109,
+    "chars": 487,
+    "text": "2.1 Turtlesim跟随示例\n\n2.1.2 C++ code\nØ 编写订阅方，订阅两只乌龟信息，生成速度信息并发布：\n\n\n#include \"ros/ros.h\"\n#include \"tf2_ros/transform_listener.h\"\n#include \"geometry_msgs/TransformStamped.h\"\n#include \"geometry_msgs/Twist.h\"\n\nint main(int argc, char *argv[])\n{\n   setlocale(LC_ALL,\"\");\n   ros::init(argc,argv,\"tf_turtlesim_sub\");\n   ros::NodeHandle nh;\n   tf2_ros::Buffer buffer;\n   tf2_ros::TransformListener listener(buffer);\n   ros::Publisher pub = nh.advertise<geometry_msgs::Twist>(\"/turtle2/cmd_vel\",1000);\n   ros::Rate rate(10);",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 110,
+    "chars": 574,
+    "text": "2.1 Turtlesim跟随示例\n\n    2.1.2 C++ code\n    Ø 编写订阅方，订阅两只乌龟信息，生成速度信息并发布：\n    while (ros::ok())\n    {\n      try\n      {\n         geometry_msgs::TransformStamped tf = buffer.lookupTransform(\"turtle2\",\"turtle1\",ros::Time(0));\n         geometry_msgs::Twist twist;\n         twist.linear.x = 2 * sqrt(pow(tf.transform.translation.x,2) + pow(tf.transform.translation.y,2));\n         twist.angular.z = 2 * atan2(tf.transform.translation.y,tf.transform.translation.x);\n         pub.publish(twist);\n      }\n      catch(const std::exception& e)\n      {\n         // std::cerr << e.what() << '\\n';\n         ROS_INFO(\"tf_turtlesim_sub 错误提示:%s\",e.what());\n      }\n      rate.sleep();\n      ros::spinOnce();\n    }\n    return 0;\n}",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 111,
+    "chars": 628,
+    "text": "2.1 Turtlesim跟随示例\n\n   2.1.2 C++ code\n    Ø 执行：\n\n<launch>\n\n  <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtle1\" output=\"screen\" />\n  <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"urtle_teleop_key\" output=\"screen\"/>\n\n  <node pkg=\"ros_bilibili\" type=\"tf_turtlesim_spawn\" name=\"tf_turtlesim_spawn\" output=\"screen\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_turtlesim_pub\" name=\"tf_turtlesim_pub1\" output=\"screen\"\nargs=\"turtle1\" />\n  <node pkg=\"ros_bilibili\" type=\"tf_turtlesim_pub\" name=\"tf_turtlesim_pub2\" output=\"screen\"\nargs=\"turtle2\" />\n\n  <node pkg=\"ros_bilibili\" type=\"tf_turtlesim_sub\" name=\"tf_turtlesim_sub\" output=\"screen\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 112,
+    "chars": 645,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 roslaunch\n$ roslaunch tf2_roswiki start_demo.launch\n\n\n<launch>\n\n <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtlesim_node\"/>\n <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"turtle_teleop_key\" output=\"screen\"/>\n <param name=\"scale_linear\" value=\"2\" type=\"double\"/>\n <param name=\"scale_angular\" value=\"2\" type=\"double\"/>\n <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n    args=\"/turtle1\" name=\"turtle1_tf2_broadcaster\" />\n <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n    args=\"/turtle2\" name=\"turtle2_tf2_broadcaster\" />\n <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_listener\"\n    name=\"listener\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 113,
+    "chars": 1165,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n      2.2.1 C++ code                    carrot1 与 turtle1 位置固定：\n#include <ros/ros.h>\n#include <tf2_ros/transform_broadcaster.h>\n#include <tf2/LinearMath/Quaternion.h>\n                                                   tf2::Quaternion q;\nint main(int argc, char** argv){                         q.setRPY(0, 0, 0);\n ros::init(argc, argv, \"my_tf2_broadcaster\");        transformStamped.transform.rotation.x = q.x();\n ros::NodeHandle node;                               transformStamped.transform.rotation.y = q.y();\n                                                     transformStamped.transform.rotation.z = q.z();\n  tf2_ros::TransformBroadcaster tfb;                 transformStamped.transform.rotation.w = q.w();\n  geometry_msgs::TransformStamped\ntransformStamped;                                   ros::Rate rate(10.0);\n                                                    while (node.ok()){\n transformStamped.header.frame_id = \"turtle1\";        transformStamped.header.stamp = ros::Time::now();\n transformStamped.child_frame_id = \"carrot1\";         tfb.sendTransform(transformStamped);\n transformStamped.transform.translation.x = 0.0;      rate.sleep();\n transformStamped.transform.translation.y = 2.0;      printf(\"sending\\n\");\n transformStamped.transform.translation.z = 0.0;    }\n };\n                                                                  frame_tf2_broadcaster.cpp",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 114,
+    "chars": 90,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 C++ code\n          rosrun tf2_tools view_frames.py\n\n          evince frames.pdf",
+    "image_sizes": [
+      [
+        1778,
+        1204
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 115,
+    "chars": 269,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 C++ code\n     carrot1 与 turtle1 位置固定：\n\n     // transformStamped = tfBuffer.lookupTransform(\"turtle2\", \"turtle1\",\n     //              ros::Time(0));\n\n     transformStamped = tfBuffer.lookupTransform(\"turtle2\", \"carrot1\",\n                   ros::Time(0));\n\n\n\n\n                                                                  turtle_tf2_listener.cpp",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 116,
+    "chars": 790,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 roslaunch\n$ roslaunch tf2_roswiki start_demo_update0.launch\n\n <launch>\n\n  <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtlesim_node\"/>\n  <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"turtle_teleop_key\" output=\"screen\"/>\n  <param name=\"scale_linear\" value=\"2\" type=\"double\"/>\n  <param name=\"scale_angular\" value=\"2\" type=\"double\"/>\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n     args=\"/turtle1\" name=\"turtle1_tf2_broadcaster\" />\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n     args=\"/turtle2\" name=\"turtle2_tf2_broadcaster\" />\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_listener\"\n     name=\"listener\" />\n  <node pkg=\"tf2_roswiki\" type=\"frame_tf2_broadcaster\"\n     name=\"broadcaster_frame\" />\n\n </launch>                                  turtle2 跟随 turtle1，无变化",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 117,
+    "chars": 924,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 roslaunch\n$ roslaunch tf2_roswiki start_demo_update1.launch\n\n <launch>\n  <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtlesim_node\"/>\n  <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"turtle_teleop_key\" output=\"screen\"/>\n  <param name=\"scale_linear\" value=\"2\" type=\"double\"/>\n  <param name=\"scale_angular\" value=\"2\" type=\"double\"/>\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n      args=\"/turtle1\" name=\"turtle1_tf2_broadcaster\" />\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n      args=\"/turtle2\" name=\"turtle2_tf2_broadcaster\" />\n     <!-- update: change urtle_tf2_listener to turtle_tf2_listener_update1:\n     change turtle1 to carrot1 -->\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_listener_update1\"\n      name=\"listener\" />\n  <node pkg=\"tf2_roswiki\" type=\"frame_tf2_broadcaster\"\n      name=\"broadcaster_frame\" />\n </launch>                              turtle2 跟随 turtle1，y方向相差2（carrot1 与 turtle1 y方向相差2）",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 118,
+    "chars": 1290,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n      2.2.1 C++ code                    carrot1 与 turtle1 位置随时间变化：\n#include <ros/ros.h>                             tf2::Quaternion q;\n#include <tf2_ros/transform_broadcaster.h>             q.setRPY(0, 0, 0);\n#include <tf2/LinearMath/Quaternion.h>             transformStamped.transform.rotation.x = q.x();\n                                                   transformStamped.transform.rotation.y = q.y();\nint main(int argc, char** argv){                   transformStamped.transform.rotation.z = q.z();\n ros::init(argc, argv, \"my_tf2_broadcaster\");      transformStamped.transform.rotation.w = q.w();\n ros::NodeHandle node;\n                                                   ros::Rate rate(10.0);\n   tf2_ros::TransformBroadcaster tfb;              while (node.ok()){\n  geometry_msgs::TransformStamped                    transformStamped.header.stamp = ros::Time::now();\ntransformStamped;                                    transformStamped.transform.translation.x =\n                                                  2.0*sin(ros::Time::now().toSec());\n  transformStamped.header.frame_id = \"turtle1\";      transformStamped.transform.translation.y =\n  transformStamped.child_frame_id = \"carrot1\";    2.0*cos(ros::Time::now().toSec());\n  transformStamped.transform.translation.z = 0.0;    tfb.sendTransform(transformStamped);\n  };                                                 rate.sleep();\n                                                     printf(\"sending\\n\");\n                                                   }\n            frame_tf2_broadcaster.cpp",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 119,
+    "chars": 983,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 roslaunch\n$ roslaunch tf2_roswiki start_demo_update2.launch\n\n <launch>\n  <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtlesim_node\"/>\n  <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"turtle_teleop_key\" output=\"screen\"/>\n  <param name=\"scale_linear\" value=\"2\" type=\"double\"/>\n  <param name=\"scale_angular\" value=\"2\" type=\"double\"/>\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n      args=\"/turtle1\" name=\"turtle1_tf2_broadcaster\" />\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n      args=\"/turtle2\" name=\"turtle2_tf2_broadcaster\" />\n  <!-- update: change urtle_tf2_listener to turtle_tf2_listener_update1 -->\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_listener_update1\"\n      name=\"listener\" />\n     <!-- update: change frame_tf2_broadcaster to frame_tf2_broadcaster_update2 -->\n  <node pkg=\"tf2_roswiki\" type=\"frame_tf2_broadcaster_update2\"\n      name=\"broadcaster_frame\" />\n </launch>                                                      turtle2 跟随 turtle1，动作随时间变化",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 120,
+    "chars": 837,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 roslaunch\n$ roslaunch tf2_roswiki start_demo_update3.launch\n\n <launch>\n  <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtlesim_node\"/>\n  <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"turtle_teleop_key\" output=\"screen\"/>\n  <param name=\"scale_linear\" value=\"2\" type=\"double\"/>\n  <param name=\"scale_angular\" value=\"2\" type=\"double\"/>\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n     args=\"/turtle1\" name=\"turtle1_tf2_broadcaster\" />\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n     args=\"/turtle2\" name=\"turtle2_tf2_broadcaster\" />\n\n  <!-- update: change urtle_tf2_listener to turtle_tf2_listener_update2 -->\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_listener_update2\"\n      name=\"listener\" />\n\n </launch>                                    turtle2 跟随 5秒前的turtle1，turtle2无序运动\n                                              （相当于5秒前的turtle2 跟随 5秒前的turtle1）",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 121,
+    "chars": 818,
+    "text": "2.2 Turtlesim跟随示例-roswiki\n\n2.2.1 roslaunch\n$ roslaunch tf2_roswiki start_demo_update4.launch\n\n <launch>\n  <node pkg=\"turtlesim\" type=\"turtlesim_node\" name=\"turtlesim_node\"/>\n  <node pkg=\"turtlesim\" type=\"turtle_teleop_key\" name=\"turtle_teleop_key\" output=\"screen\"/>\n  <param name=\"scale_linear\" value=\"2\" type=\"double\"/>\n  <param name=\"scale_angular\" value=\"2\" type=\"double\"/>\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n     args=\"/turtle1\" name=\"turtle1_tf2_broadcaster\" />\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_broadcaster\"\n     args=\"/turtle2\" name=\"turtle2_tf2_broadcaster\" />\n\n  <!-- update: change urtle_tf2_listener to turtle_tf2_listener_update3 -->\n  <node pkg=\"tf2_roswiki\" type=\"turtle_tf2_listener_update3\"\n      name=\"listener\" />\n                                               turtle2 跟随 5秒前的turtle1，turtle2无序运动\n                                               （相当于5秒前的turtle2 跟随 现在的turtle1）\n </launch>\n                                                  tip：默认保留10s的坐标变换",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 122,
+    "chars": 144,
+    "text": "Summary\n\n 1. 动态坐标变换\n\n    a) 动态坐标变换功能包：tf2 tf2_ros tf2_geometry_msgs\n\n    b) C++ code（三种方法）\n\n 2. Turtlesim跟随示例\n\n    a) 实现分析\n\n    b) 执行步骤\n\n    c) 实现流程\n\n    d) C++ code：turtle2 速度计算",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 12,
+    "page": 123,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 1,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 2,
+    "chars": 192,
+    "text": "Overview lesson 13-1\n\n     1               2                3         4\n\nURDF Overview    URDF Syntax    URDF Practice   ~\n\n\n\n\n                         Objectives\n         1、了解 URDF 的概念，以及 ROS 中搭建仿真环境的方法\n\n         2、掌握 URDF 基本语法，能够编写机器人模型的 URDF 文件",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 3,
+    "chars": 63,
+    "text": "Pre-assessment\n\n\n\n\n           1、是否了解 URDF 的作用？\n\n           2、是否了解 Xacro？\n\n           3、是否自己建立过机器人仿真模型？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 4,
+    "chars": 15,
+    "text": "1\nURDF Overview",
+    "image_sizes": []
+  },
+  {
+    "lesson": 13,
+    "page": 5,
+    "chars": 242,
+    "text": "1.1 URDF File\n\n1.1.1 Overview\n   Ø 场景1：机器人价格高昂，学习ROS要购买一台机器人吗？\n\n   Ø 场景2：机器人交互的外界环境多样复杂，如何实现多样化环境中的性能测试？\n\n   Ø 场景3：进行算法测试时，直接将未经验证的程序部署到实体机器人运行，安全吗？\n解决方案\n\n\n   Ø 机器人系统仿真：通过计算机对实体机器人系统进行模拟的技术\n\n   Ø 在 ROS 中，仿真实现涉及的内容有三部分：\n\n       l 机器人建模(URDF)\n\n       l 创建仿真环境(Gazebo)\n\n       l 数据可视化(Rviz)",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        286,
+        286
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 6,
+    "chars": 250,
+    "text": "1.1 URDF File\n\n1.1.1 Overview\n 1. 仿真优势：\n\n   Ø 降低成本：仿真可以降低成本，减小风险\n\n   Ø 灵活高效：搭建的环境更为灵活多样，可以提高测试效率以及测试覆盖率\n\n   Ø 高安全性：仿真环境下，无需考虑耗损问题\n\n 2. 仿真劣势：\n\n   Ø 失真：仿真所用的物理引擎无法完全模拟真实的物理世界\n\n   Ø 失准：仿真器构建的是关节驱动器、传感器与信号通信的绝对理想情况，还无法实现模拟实际硬\n     件缺陷或者一些临界状态等情形\n\n 3. 仿真三大件：(1) URDF (2) Rviz (3) Gazebo",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 7,
+    "chars": 442,
+    "text": "1.1 URDF File\n\n1.1.1 Overview\n(1) URDF：创建机器人模型       https://wiki.ros.org/urdf\n  Ø URDF 是 Unified Robot Description Format 的首字母缩写，直译为统一(标准化)机器人描\n   述格式\n\n  Ø URDF 是一种 XML 文件，以 XML 的方式描述机器人的结构，比如底盘、摄像头、激光雷达、\n   机械臂以及不同关节的自由度\n\n  Ø URDF 可以被 C++ 内置的解释器转换成可视化的机器人模型，是 ROS 中实现机器人仿真的重\n   要组件\n\n  Ø URDF 需要结合 Gazebo 或 Rviz 使用，在 Gazebo 或 Rviz 中可以将 URDF 文件解析为图形\n   化的机器人模型，一般的使用组合为：\n\n    l 对于非仿真环境，使用 URDF 结合 Rviz 直接显示感知的真实环境信息\n\n    l 对于仿真环境，使用 URDF 结合 Gazebo 搭建仿真环境，并结合 Rviz 显示感知的虚拟环\n      境信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 8,
+    "chars": 218,
+    "text": "1.1 URDF File\n\n1.1.1 Overview\n(2) Rviz：图形化显示机器人模型、传感器感知到的数据信息\n\n  Ø Rviz 是 ROS Visualization Tool 的首字母缩写，直译为 ROS 的三维可视化工具\n\n  Ø Rviz 主要用于以三维方式显示 ROS 消息，以及将数据进行可视化表达\n\n  Ø 举例：显示机器人模型、激光测距仪传感器检测到的障碍物距离、Kinect 三维距离传感器的点\n   云数据、从相机获取的图像值等",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 9,
+    "chars": 302,
+    "text": "1.1 URDF File\n\n1.1.1 Overview\n (3) Gazebo：搭建仿真环境\n   Ø Gazebo是一款 3D 动态模拟器，用于显示机器人模型并创建仿真环境\n\n   Ø Gazebo 能够在复杂的室内和室外环境中准确有效地模拟机器人\n\n   Ø 与游戏引擎提供高保真度的视觉模拟类似，Gazebo 提供高保真度的物理模拟以及各类传感器模\n    型，Gazebo 为用户和程序提供友好的交互方式\n\n   Ø 安装：\n      $ sudo apt install gazebo11\n\n      $ sudo apt install libgazebo11-dev\n\n   Ø 运行：\n\n      $ rosrun gazebo_ros gazebo\n\n      $ gazebo",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 10,
+    "chars": 13,
+    "text": "2\nURDF Syntax",
+    "image_sizes": []
+  },
+  {
+    "lesson": 13,
+    "page": 11,
+    "chars": 215,
+    "text": "2.1 URDF Format\n\n2.1.1 Overview：https://wiki.ros.org/urdf/XML\n\nØ URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型\n\nØ URDF 的标签可以简化为两部分：连杆( link 标签) 与 关节( joint 标签)\n  (1) robot 根标签\n  (2) link 连杆标签\n  (3) joint 关节标签\n  (4) gazebo 标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 12,
+    "chars": 197,
+    "text": "2.1 URDF Format\n\n2.1.2 Link\n robot 根标签：\n\n   Ø URDF 中为了保证 XML 语法的完整性，使用了 robot 标签作为根标签，所有的\n    link 和 joint 以及其他标签都必须包含在 robot 标签内，在该标签内可以通过\n    name 属性设置机器人模型的名称\n\n   Ø 属性\n\n     l name=“机器人模型的名称”\n\n   Ø 子标签\n\n     l 其他标签都是 robot 的子级标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 13,
+    "chars": 158,
+    "text": "2.1 URDF Format\n\n2.1.2 Link\n link 标签：\n\n   Ø URDF 中的 link 标签用于描述机器人刚体部件的外观和物理属性。比如：机器人底\n    座、轮子、激光雷达、摄像头等\n\n   Ø 每一个部件都对应一个 link。在 link 标签内，可以设计该部件的形状、尺寸、颜色、\n    惯性矩阵、碰撞参数等一系列属性",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        828,
+        443
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 14,
+    "chars": 130,
+    "text": "2.1 URDF Format\n\n2.1.2 Link\n link 标签：\n\n   Ø 属性\n\n     l name=“连杆名称”\n\n   Ø 子标签\n\n     l visual：描述零件外观(对应的数据是可视的)\n\n     l collision：描述连杆的碰撞属性\n\n     l inertial：描述连杆的惯性矩阵",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        828,
+        443
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 15,
+    "chars": 105,
+    "text": "2.1 URDF Format\n\n2.1.2 Link\n\n    l visual：描述零件外观\n\n       • geometry：设置零件的形状\n\n       • origin：设置零件的偏移量与倾斜角度\n\n       • material：设置零件的材料属性",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 16,
+    "chars": 218,
+    "text": "2.1 URDF Format\n\n2.1.2 Link\n     • geometry：设置零件的形状\n        ü box：盒状\n             • 属性：size=“长 宽 高”\n        ü cylinder：圆柱\n             • 属性：radius=“半径” length=“高度”\n        ü sphere：球体\n             • 属性：radius=“半径”\n        ü mesh：网格模型\n             • 属性：filename=“模型路径”（格式：\n               package://<packagename>/<path>/file）",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 17,
+    "chars": 201,
+    "text": "2.1 URDF Format\n\n2.1.2 Link\n\n       • origin：设置零件的偏移量与倾斜角度，以零件自身的几何中心为基准\n\n             • 属性1：xyz=“x偏移 y偏移 z偏移”（单位：米）\n\n             • 属性2：rpy=“x翻滚 y俯仰 z偏航”（单位：弧度）\n\n       • material：设置零件的材料属性\n\n             • 属性：name=“材料名称”\n\n             • 标签：color\n\n               • 属性：rgba=“红黄蓝透明度”（取值[0,1]）",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 18,
+    "chars": 26,
+    "text": "2.1 URDF Format\n\n2.1.2 Link",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1795,
+        992
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 19,
+    "chars": 219,
+    "text": "2.1 URDF Format\n\n2.1.3 Joint\nØ URDF 中的 joint 标签用于描述机器人关节的运\n动学和动力学属性\n\nØ 可以指定关节运动的安全极限，机器人的两个部\n件(分别称之为 parent link 与 child link)以\"关节\"\n的形式相连接\n\nØ 不同的关节有不同的运动形式: 旋转、滑动、固定、\n旋转速度、旋转角度限制等\n\nØ 举例：安装在底座上的轮子可以 360 度旋转，摄\n像头完全固定在底座上等应用场景",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        820,
+        733
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 20,
+    "chars": 270,
+    "text": "2.1 URDF Format\n\n2.1.3 Joint\n joint标签：\n\n    l 属性\n       • name=“关节命名”\n\n       • type=“关节类型”，关节类型可取如下值：\n            ü continuous: 旋转关节，可以绕单轴无限旋转\n            ü revolute: 旋转关节，类似于 continues，但是有旋转角度限制\n            ü prismatic: 滑动关节，沿某一轴线移动的关节，有位置极限\n            ü planer: 平面关节，允许在平面正交方向上平移或旋转\n            ü floating: 浮动关节，允许进行平移、旋转运动\n            ü fixed: 固定关节，不允许运动的特殊关节",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 21,
+    "chars": 259,
+    "text": "2.1 URDF Format\n\n2.1.3 Joint\n joint标签：\n\n     l 子标签\n        • parent(必需的)，parent link 是一个强制属性：\n              ü link=“父级连杆的名称”\n        • child(必需的)，child link 是一个强制属性：\n              ü link=“子级连杆的名称”\n        • origin 此处的 origin 以 parent link 的几何中心为基准\n              ü 属性: xyz=“xyz轴线上的偏移量” rpy=“xyz轴线上的偏移角度”\n        • axis\n              ü 属性: xyz=“设置围绕哪个关节轴运动”",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 22,
+    "chars": 149,
+    "text": "2.1 URDF Format\n\n2.1.4 案例\n\n     案例：在 Rviz 中显示建立的机器人模型步骤\n\n       1. 准备：新建功能包，导入依赖\n\n       2. 核心：编写 URDF 文件\n\n       3. 核心：在 launch 文件集成 URDF 与 Rviz\n\n       4. 在 Rviz 中显示机器人模型\n\n       5. 启动 launch 文件",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 23,
+    "chars": 263,
+    "text": "2.1 URDF Format\n\n 2.1.4 案例\n1. 准备：新建功能包，导入依赖\n\n  l 创建一个新的功能包\n\n    Ø 功能包名称：rcdp\n\n    Ø 添加依赖项：urdf xacro gazebo_ros gazebo_ros_control gazebo_plugins\n\n  l 在当前功能包下，创建以下目录：\n\n    • urdf: 存放 URDF 文件的目录\n\n       ü urdf目录下，新建 URDF 和 Xacro 文件夹\n\n    • meshes：存放机器人模型网格文件\n\n    • config: 存放配置文件\n\n    • launch: 存放 launch 启动文件",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 24,
+    "chars": 240,
+    "text": "2.1 URDF Format\n                  ROS中URDF格式和使用：\n2.1.4 案例          https://blog.csdn.net/shenyan0712/article/details/89919959\n\n2. 核心：根据 URDF 规则编写 URDF 文件\n\n3. Launch文件：在 launch 文件集成 URDF 与 Rviz\n\n\n\n\n   在launch文件中导入URDF文件的方法：使用参数名：robot_description，\n   将 URDF 文件的路径设置到参数服务器",
+    "image_sizes": [
+      [
+        136,
+        136
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1017,
+        311
+      ],
+      [
+        313,
+        313
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 25,
+    "chars": 173,
+    "text": "2.1 URDF Format\n\n2.1.4 案例\n  4. Rviz 参数设置\n  l 重复启动 launch 文件时，Rviz 之前的组件配置信息不会自动保存\n\n  l 为了方便使用，可以使用如下方式优化：\n\n     • 第一步，将当前配置保存进 config 目录\n\n     • 第二步，launch文件中 Rviz 的启动配置添加参数：args，值设置为 -d 配置文件路径",
+    "image_sizes": [
+      [
+        909,
+        310
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 26,
+    "chars": 86,
+    "text": "2.1 URDF Format\n\n2.1.4 案例\n\n  5. 启动：在 Rviz 中显示机器人模型\n\n\n  ctrl+shift+b 编译\n\n  roslaunch 功能包 launch文件名",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 27,
+    "chars": 197,
+    "text": "2.1 URDF Format\n\n2.1.5 实践\n 实践内容：创建差速机器人模型，该模型为双层结构，中间由圆柱形连杆连接；机器人底盘为圆柱体，\n 在圆柱体的前面放置一个深度摄像头，摄像头可沿着Z轴 -180 到 180 旋转；机器人二层为圆柱体，\n 在圆柱体前面放置一个激光雷达，雷达可以沿着 Z 轴 360 度旋转\n\n             激光雷达\n\n\n\n\n           深度摄像头\n\n\n\n\n            支撑轮                支撑轮\n                    驱动轮 * 2",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 28,
+    "chars": 32,
+    "text": "2.1 URDF Format\n\n  2.1.5 实践\nURDF文件：",
+    "image_sizes": [
+      [
+        1850,
+        1007
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 29,
+    "chars": 34,
+    "text": "2.1 URDF Format\n\n 2.1.5 实践\nlaunch文件：",
+    "image_sizes": [
+      [
+        2024,
+        570
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 30,
+    "chars": 186,
+    "text": "2.1 URDF Format\n\n2.1.5 实践\nØ 运行结果：\n\n\n\n                  原因：\n                  rviz 中显示 URDF时，必须发布不同\n                  零件之间的 坐标系变换 关系\n                  解决方案：\n                  ROS中提供了关于机器人模型显示的坐\n                  标系关系节点，分别为：\n                  joint_state_publisher(功能包同名)\n                  robot_state_publisher(功能包同名)\n                  在launch文件中包含这两个节点",
+    "image_sizes": [
+      [
+        1602,
+        846
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 31,
+    "chars": 321,
+    "text": "2.1 URDF Format\n\n   2.1.5 实践\n  Ø 2个重要功能包：\n\njoint_state_publisher：\nØ joint_state_publisher是一个ROS功能包，它的主要功能是发布关节状态信息，包括关节角度、速度、加\n  速度等。关节状态信息是从机器人硬件接收，并转换为ROS中的JointState消息\nØ 通过读取参数服务器上的/robot_description来获得机器人的所有非固定关节\nØ 节点会将关节状态信息发布到/joint_state话题，这个话题可以被其他ROS节点如运动控制节点、仿真节点\n  等订阅。\nØ 这个节点发布的频率一般是10Hz，如果发布的话题频率超过10Hz，关节角度可能会出现来回跳动的情况",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 32,
+    "chars": 381,
+    "text": "2.1 URDF Format\n\n   2.1.5 实践\n  Ø 2个重要功能包：\n\nrobot_state_publisher：\nØ robot_state_publisher是一个ROS软件包，它的主要功能是发布机器人的完整状态信息。除了关节状态信\n  息之外，robot_state_publisher还发布了机器人的TF变换信息，包括机器人坐标系和关节坐标系之间的变\n  换关系\nØ 在实际应用中，robot_state_publisher节点通常在joint_state_publisher节点的工作基础之上工作。它\n  根据创建的描述机器人装配的URDF模型，编写一个节点来对机器人的运动进行仿真，并发布JointState和\n  平移消息。然后，robot_state_publisher节点会将整个机器人的状态消息发布到/tf2话题上，以供系统中\n  其他使用tf的组件获取和使用",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 33,
+    "chars": 34,
+    "text": "2.1 URDF Format\n\n 2.1.5 实践\nlaunch文件：",
+    "image_sizes": [
+      [
+        2249,
+        922
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 34,
+    "chars": 67,
+    "text": "2.1 URDF Format\n\n2.1.5 实践\n Ø 运行结果：\n\n\n\n\n                  原因：\n                  URDF文件中包含注释\n                  解决方案：\n                  删除URDF文件中的注释",
+    "image_sizes": [
+      [
+        731,
+        218
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 35,
+    "chars": 125,
+    "text": "Summary\n\n 1. URDF Overview\n\n    a) 作用\n\n    b) 优劣势\n\n    c) 定义和使用方法\n\n    d) Rviz 和 Gazebo简介\n\n 2. URDF Syntax\n\n    a) robot 标签\n\n    b) link 标签\n\n    c) joint 标签\n\n    d) 案例演示",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 36,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 37,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 38,
+    "chars": 252,
+    "text": "Overview lesson 13-2\n\n     1                2                3                .1   4\n\nXacro Overview    Xacro Syntax   Xacro Practice   Arbotix Controller\n\n\n\n\n                          Objectives\n         1、了解 Xacro 的概念，以及 ROS 中搭建仿真环境的方法\n\n         2、掌握 Xacro 基本语法，能够编写机器人模型的 Xacro 文件\n\n         3、了解 Arbotix 控制器的配置和使用方法",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 39,
+    "chars": 50,
+    "text": "Pre-assessment\n\n\n\n\n           1、是否了解 Xacro 的作用？\n\n           2、是否编写过 Xacro 文件？",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 40,
+    "chars": 16,
+    "text": "1\nXacro Overview",
+    "image_sizes": []
+  },
+  {
+    "lesson": 13,
+    "page": 41,
+    "chars": 506,
+    "text": "1.1 URDF Review\n\n1.1.1 Overview\n(1) URDF：创建机器人模型      https://wiki.ros.org/urdf\n  Ø URDF是一种 XML 文件，以 XML 的方式描述机器人的结构，比如底盘、摄像头、激光雷达、机械臂以\n    及不同关节的自由度；URDF 需要结合 Gazebo 或 Rviz 使用，在 Gazebo 或 Rviz 中可以将 URDF 文\n    件解析为图形化的机器人模型\n\n\n(2) Rviz：图形化的显示机器人各种传感器感知到的环境信息\n  Ø Rviz 是 ROS 的三维可视化工具，主要用于以三维方式显示 ROS 消息，将数据进行可视化表达\n\n  Ø 举例：显示机器人模型、显示表达激光测距仪传感器检测到的障碍物距离、Kinect 三维距离传感器的点云\n    数据显示、从相机获取的图像值等\n\n(3) Gazebo：搭建仿真环境\n  Ø Gazebo 是一款 3D 动态模拟器，用于显示机器人模型并创建仿真环境\n\n  Ø Gazebo 能够在复杂的室内和室外环境中准确有效地模拟机器人\n\n  Ø Gazebo 提供高保真度的物理模拟，其提供一整套传感器模型，以及对用户和程序非常友好的交互方式",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 42,
+    "chars": 211,
+    "text": "1.2 URDF Syntax\n\n1.2.1 Overview：https://wiki.ros.org/urdf/XML\n\nØ URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型\n\nØ URDF的标签可以简化为两部分：连杆(link标签) 与 关节( joint标签)\n\n  (1) robot 根标签\n\n  (2) link 连杆标签\n\n  (3) joint 关节标签\n\n  (4) gazebo 标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 43,
+    "chars": 189,
+    "text": "1.3 URDF Demo\n\n1.3.1 Overview：https://wiki.ros.org/urdf/XML\n案例需求：创建差速机器人模型，该模型为双层结构，中间由圆柱形连杆连接；机器人底盘为圆柱体，在\n圆柱体的前面放置一个深度摄像头，摄像头可沿着Z轴 -180 到 180 旋转；机器人二层为圆柱体，在圆柱\n体前面放置一个激光雷达，雷达可以沿着 Z 轴 360 度旋转",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1264,
+        877
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 44,
+    "chars": 75,
+    "text": "1.3 URDF Demo\n\n1.3.1 Overview\n                 Ø 蓝色数字：link\n\n                 Ø 黄色数字：joint\n\n                 Ø 使用元素：\n\n                   l球\n\n                   l 圆柱\n\n                   l 长方体",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        103,
+        103
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 45,
+    "chars": 43,
+    "text": "1.3 URDF Demo\n\n 1.3.2 URDF File\nØ 代码分析：link标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1018,
+        943
+      ],
+      [
+        869,
+        895
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 46,
+    "chars": 43,
+    "text": "1.3 URDF Demo\n\n 1.3.2 URDF File\nØ 代码分析：link标签",
+    "image_sizes": [
+      [
+        893,
+        889
+      ],
+      [
+        920,
+        910
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 47,
+    "chars": 43,
+    "text": "1.3 URDF Demo\n\n 1.3.2 URDF File\nØ 代码分析：link标签",
+    "image_sizes": [
+      [
+        882,
+        890
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 48,
+    "chars": 43,
+    "text": "1.3 URDF Demo\n\n 1.3.2 URDF File\nØ 代码分析：join标签",
+    "image_sizes": [
+      [
+        1164,
+        825
+      ],
+      [
+        930,
+        836
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 49,
+    "chars": 43,
+    "text": "1.3 URDF Demo\n\n 1.3.2 URDF File\nØ 代码分析：join标签",
+    "image_sizes": [
+      [
+        1160,
+        935
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 50,
+    "chars": 302,
+    "text": "1.4 Xacro Overview\n\n1.4.1 URDF 问题分析\n\n (1) 问题1：在设计关节的位置时，需要按照一定的公式计算，公式是固定的。但是在\n URDF 中依赖于手工计算，存在不便，容易计算失误，且当某些参数发生改变时，还需要重\n 新计算\n\n (2) 问题2：URDF 中的部分内容是高度重复的，驱动轮与支撑轮的设计实现，不同轮子只\n 是部分参数不同，形状、颜色、翻转量都是一致的；在实际应用中，构建复杂的机器人模型\n 时，更是易于出现高度重复的设计，按照一般的编程涉及到重复代码应该考虑封装\n\n\n\n   可以通过 变量 结合 函数 直接解决上述问题。在 ROS 中，已经给出了\n   类似编程的优化方案，称之为：Xacro",
+    "image_sizes": [
+      [
+        167,
+        167
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 51,
+    "chars": 278,
+    "text": "1.4 Xacro Overview\n\n1.4.2 Xacro File： http://wiki.ros.org/xacro\n\n   Ø 概念：\n   Xacro 是 XML Macros 的缩写，Xacro 是一种 XML 宏语言，是可编程的 XML\n\n   Ø 原理\n   Xacro 可以 声明变量，可以通过 数学运算求解，使用 流程控制控制执行顺序，还可以通\n   过 类似函数的实现，封装固定的逻辑，将逻辑中需要的可变的数据以参数的方式展示，\n   提高代码复用率以及程序的安全性\n\n   Ø 作用\n   较之于 URDF 实现，可以编写更安全、精简、易读性更强的机器人模型文件，且可以提\n   高编写效率",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 52,
+    "chars": 14,
+    "text": "2\nXacro Syntax",
+    "image_sizes": []
+  },
+  {
+    "lesson": 13,
+    "page": 53,
+    "chars": 324,
+    "text": "2.1 Xacro basic Syntax\n\n2.1.1 属性与算数运算 https://www.cnblogs.com/caiyishuai/p/15044043.html\n\n  (1) Xacro 提供了可编程接口，类似于计算机语言，包括 变量声明调用、函数声明与调用\n  等语法实现。在使用 xacro 生成 URDF 时，根标签 robot 中必须包含命名空间声明：\n  xmlns:xacro=\"http://wiki.ros.org/xacro\"\n\n  (2) 属性与算数运算：\n  用于封装 URDF 中的一些字段，比如: PI 值，小车的尺寸，轮子半径\n\n\n    l 属性定义：\n\n      <xacro:property name=\"xxxx\" value=\"yyyy\" />",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 54,
+    "chars": 69,
+    "text": "2.1 Xacro basic Syntax\n\n2.1.1 属性与算数运算\n\n l 属性调用：\n\n ${属性名称}\n\n\n l 算数运算：\n\n ${数学表达式}",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 55,
+    "chars": 211,
+    "text": "2.1 Xacro basic Syntax\n\n2.1.2 Xacro宏\n\n  (1) 宏\n  类似于函数实现，提高代码复用率，优化代码结构，提高安全性\n\n\n  (2) 宏定义(函数定义)：\n  <xacro:macro name=\"宏名称\" params=\"参数列表(多参数之间使用空格分隔)\">\n    参数调用格式: ${参数名}\n  </xacro:macro>\n\n  (3) 宏调用(函数调用)：\n  <xacro:宏名称 参数1=xxx 参数2=xxx/>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 56,
+    "chars": 322,
+    "text": "2.1 Xacro basic Syntax\n\n2.1.3 文件包含\n (1) 文件包含\n 机器人由多部件组成，不同部件可能封装为单独的 xacro 文件，最后再将不同的文件集成，\n 组合为完整机器人，可以使用文件包含实现\n\n (2) 语法结构：\n <robot name=\"xxx\" xmlns:xacro=\"http://wiki.ros.org/xacro\">\n    <xacro:include filename=\"my_base.xacro\" />\n    <xacro:include filename=\"my_camera.xacro\" />\n    <xacro:include filename=\"my_laser.xacro\" />\n    ....\n </robot>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 57,
+    "chars": 16,
+    "text": "3\nXacro Practice",
+    "image_sizes": []
+  },
+  {
+    "lesson": 13,
+    "page": 58,
+    "chars": 122,
+    "text": "3.1 Xacro Demo\n\n3.1.1 Xacro案例演示\n\n在 urdf 目录的 xacro 目\n录中，新建\nmyrobot_v1.xacro 和\nmyrobot_v2.xacro 文件，\n通过 xacro 规则编写小车\n的 xacro 文件",
+    "image_sizes": [
+      [
+        1800,
+        1259
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 59,
+    "chars": 59,
+    "text": "3.1 Xacro Demo\n\n3.1.1 Xacro案例演示\n (1) 使用变量的版本-myrobot_v1.xacro",
+    "image_sizes": [
+      [
+        2060,
+        1157
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 60,
+    "chars": 59,
+    "text": "3.1 Xacro Demo\n\n3.1.1 Xacro案例演示\n (2) 使用函数的版本-myrobot_v2.xacro",
+    "image_sizes": [
+      [
+        2255,
+        1235
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 61,
+    "chars": 186,
+    "text": "3.1 Xacro Demo\n\n3.1.1 Xacro案例演示\n(3) 集成 launch 文件\n\n  方式1：先将 Xacro 文件转换出 URDF 文件，然后集成\n\n\n  切换到 xacro 文件所在目录，将 xacro 文件解析成 urdf 文件：\n  rosrun xacro xacro xxx.xacro > xxx.urdf\n  然后再按照之前的集成方式直接整合 launch 文件",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 62,
+    "chars": 426,
+    "text": "3.1 Xacro Demo\n\n     3.1.1 Xacro案例演示\n      (3) 集成launch文件\n\n<launch>\n\n  <param name=\"robot_description\" textfile=\"$(find rcdp)/urdf/xacro/myrobot_v2.urdf\" />\n\n  <node pkg=\"rviz\" type=\"rviz\" name=\"rviz\" args=\"-d $(find rcdp)/config/myrobot.rviz\"/>\n\n  <node pkg=\"joint_state_publisher\" type=\"joint_state_publisher\" name=\"joint_state_publisher\" />\n\n  <node pkg=\"robot_state_publisher\" type=\"robot_state_publisher\" name=\"robot_state_publisher\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 63,
+    "chars": 480,
+    "text": "3.1 Xacro Demo\n\n   3.1.1 Xacro案例演示\n    (3) 集成launch文件\n\n      方式2：在 launch 文件中直接加载 Xacro(建议使用)\n\n<launch>\n\n  <param name=\"robot_description\" command=\"$(find xacro)/xacro $(find\nrcdp)/urdf/xacro/myrobot_v2.xacro\" />\n\n  <node pkg=\"rviz\" type=\"rviz\" name=\"rviz\" args=\"-d $(find rcdp)/config/myrobot.rviz\" />\n\n  <node pkg=\"joint_state_publisher\" type=\"joint_state_publisher\" name=\"joint_state_publisher\" />\n\n  <node pkg=\"robot_state_publisher\" type=\"robot_state_publisher\" name=\"robot_state_publisher\" />\n\n</launch>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 64,
+    "chars": 20,
+    "text": "4\nArbotix Controller",
+    "image_sizes": []
+  },
+  {
+    "lesson": 13,
+    "page": 65,
+    "chars": 277,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview：http://wiki.ros.org/arbotix\n\nØ Arbotix 是一款控制电机、舵机的控制板，并提供相应的 ros 功能包\n\nØ Arbotix 可以驱动真实的 Arbotix 控制板，它还提供一个差速控制器，通过接受速度控制\n  指令更新机器人的 joint 状态，从而帮助我们实现机器人在 Rviz 中的运动\n\nØ 这个差速控制器在 arbotix_python 程序包中，完整的 arbotix 程序包还包括多种控制器，\n  分别对应 dynamixel 电机、多关节机械臂以及不同形状的夹持器",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 66,
+    "chars": 163,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview\n Ø 实现流程：\n   1. 安装 Arbotix\n   2. 创建新功能包(或继续使用rcdp功能包)，准备机器人 URDF、Xacro 文件\n   3. 添加 Arbotix 配置文件\n   4. 编写 launch 文件配置 Arbotix\n   5. 启动 launch 文件并控制机器人模型运动",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 67,
+    "chars": 119,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview\n (1) 安装 Arbotix：\n    1. 命令行安装\n\n    $ sudo apt install ros-noetic-arbotix\n\n\n(2) 创建新功能包，准备机器人 URDF、Xacro文件",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 68,
+    "chars": 247,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview\n (3) 添加 arbotix 所需的配置文件：\n        controllers: {\n          base_controller: {\n            type: diff_controller,\n            base_frame_id: root_link,   urdf/xacro文件中所有link的父节点\n            base_width: 0.8,\n            ticks_meter: 2000,\n            Kp: 12,\n            Kd: 12,\n            Ki: 0,\n            Ko: 50,\n            accel_limit: 1.0\n          }\n        }",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 69,
+    "chars": 398,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview\n (4) launch 文件中配置 arbotix 节点：\n\n<node name=\"arbotix\" pkg=\"arbotix_python\" type=\"arbotix_driver\" output=\"screen\">\n   <rosparam file=\"$(find rcdp)/config/arbotix_control.yaml\" command=\"load\" />\n   <param name=\"sim\" value=\"true\" />\n</node>\n\n\n\n Ø 代码讲解：\n <node> 调用了 arbotix_python 功能包下的 arbotix_driver 节点\n\n <rosparam> arbotix 驱动机器人运行时，需要获取机器人信息，可以通过 file 加载配置文件\n\n <param> 在仿真环境下，需要配置 sim 为 true",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 70,
+    "chars": 120,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview\n (5) 启动 launch 文件并控制机器人模型运动：\n\n\n\n\n                    $ rostopic pub /cmd_vel\n                    geometry_msgs/Twist \"[0.1,0,0]\" \"[0,0,0]\"",
+    "image_sizes": [
+      [
+        379,
+        563
+      ],
+      [
+        654,
+        234
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 71,
+    "chars": 153,
+    "text": "4.1 Arbotix\n\n4.1.1 Overview\n (6) 通过键盘控制机器人模型运动：\n\n  $ sudo apt install ros-noetic-teleop-twist-keyboard\n\n  $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py",
+    "image_sizes": [
+      [
+        1086,
+        852
+      ],
+      [
+        1573,
+        1059
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 72,
+    "chars": 161,
+    "text": "Summary\n 1. Xacro概述\n    a) URDF基本语法\n    b) URDF案例演示\n    c) Xacro概述\n 2. Xacro基本语法\n    a) 属性与算数运算\n    b) 宏\n    c) 文件包含\n 3. Xacro案例演示\n    a) 变量版本（v1）\n    b) 函数版本（v2）\n 4. Arbotix 控制器\n    a) 使用方法\n    b) 键盘控制功能包",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 13,
+    "page": 73,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 1,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 2,
+    "chars": 186,
+    "text": "Overview lesson 14-1\n\n   .1   1         .   2                .1   3   .1   4\n\nXacro 集成     Xacro、Gazebo                   ~        ~\n Gazebo      和 Rviz 综合案例\n\n\n\n\n                          Objectives\n            1、掌握 Xacro 集成 Gazebo 方法",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 3,
+    "chars": 17,
+    "text": "1\nXacro 集成 Gazebo",
+    "image_sizes": []
+  },
+  {
+    "lesson": 14,
+    "page": 4,
+    "chars": 221,
+    "text": "1.1 URDF Format-Look back\n\n1.1.1 URDF：https://wiki.ros.org/urdf/XML\n\nØ URDF 文件是一个标准的 XML 文件，在 ROS 中预定义了一系列的标签用于描述机器人模型\n\nØ URDF 的标签可以简化为两部分：连杆( link 标签) 与 关节( joint 标签)\n  (1) robot 根标签\n  (2) link 连杆标签\n  (3) joint 关节标签\n  (4) gazebo 标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        118,
+        118
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 5,
+    "chars": 133,
+    "text": "1.1 URDF Format-Look back\n\n1.1.2 Link\n (2) link 标签：\n\n   Ø 属性\n\n      l name=“连杆名称”\n\n   Ø 子标签\n\n      l visual：描述零件外观\n\n      l collision：描述连杆的碰撞属性\n\n      l inertial：描述连杆的惯性矩阵",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        828,
+        443
+      ],
+      [
+        118,
+        118
+      ],
+      [
+        118,
+        118
+      ],
+      [
+        93,
+        93
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 6,
+    "chars": 263,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.1 Overview\n(1) Xacro 与 Gazebo 集成的基本流程\n\n Xacro 与 Gazebo 集成流程与 Rviz 实现类似，主要步骤如下:\n\n   1. 创建功能包(或继续使用rcdp功能包)，导入依赖项\n\n   2. 编写 URDF 或 Xacro 文件\n\n   3. 启动 Gazebo 并显示机器人模型\n\n\n\n创建功能包(或继续使用rcdp功能包)，导入依赖项\n\n 功能包依赖项：urdf、xacro、gazebo_ros、gazebo_ros_control、gazebo_plugins",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        156,
+        156
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 7,
+    "chars": 374,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.1 Overview\n gazebo_ros：\n\n Ø 提供了ROS插件，这些插件支持消息和服务发布者，使ROS与gazebo交互\n\n Ø 通过这些插件，ROS可以与gazebo进行通信，实现机器人模型的加载、控制和传感器数\n   据的获取等功能\n\n gazebo_ros_control：\n\n Ø ROS中用于控制Gazebo仿真的插件集合。它提供了一个基于pluginlib的接口，用于在\n   gazebo和ros_control之间实现自定义接口，以模拟更复杂的机制（非线性弹簧，连杆等）\n\n gazebo_plugins：\n\n Ø 包含了独立于机器人的gazebo插件，用于传感器。这些插件可以提供对physics::Model\n   API、sensors::Sensor API和rendering::Visual API的访问",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 8,
+    "chars": 246,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.2 Xacro\n 编写 Xacro 文件\n\n    注意， 当 Xacro 与 Gazebo 集成时，和 Rviz 有以下区别:\n\n    (1) 必须使用 collision 标签，因为仿真环境涉及到碰撞检测，collision 提供碰撞检\n    测的依据\n\n    (2) 必须使用 inertial 标签，此标签标注了当前机器人某个刚体部分的惯性矩阵，用\n    于一些力学相关的仿真计算\n\n    (3) 必须使用 gazebo 标签，gazebo 中的颜色设置需要使用 gazebo 标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        128,
+        128
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 9,
+    "chars": 292,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.2 Xacro\n (1) collision 标签\n\n 如果机器人 link 是标准的几何体形状，collision 标签设置为和 visual 标签一致即可\n\n (2) inertial 标签\n\n 惯性矩阵的设置需要结合 link 的质量与外形参数计算生成。标准的球体、圆柱与立方体\n 的惯性矩阵可由公式进行计算(已经封装为 xacro 实现)\n\n\n 说明：除了 root_link 外，机器人的每个刚体部分都需要设置惯性矩阵，且惯性矩阵\n 必须经计算得出，如果随意定义刚体部分的惯性矩阵，那么可能会导致机器人在\n Gazebo 中出现漂移、抖动，翻滚等现象",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 10,
+    "chars": 252,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.2 Xacro\n\n   1) 球体惯性矩阵\n\n    <xacro:macro name=\"sphere_inertial_matrix\" params=\"m r\">\n      <inertial>\n        <mass value=\"${m}\" />\n        <inertia ixx=\"${2*m*r*r/5}\" ixy=\"0\" ixz=\"0\"\n          iyy=\"${2*m*r*r/5}\" iyz=\"0\"\n          izz=\"${2*m*r*r/5}\" />\n      </inertial>\n    </xacro:macro>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 11,
+    "chars": 274,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.2 Xacro\n\n   2) 圆柱惯性矩阵\n\n   <xacro:macro name=\"cylinder_inertial_matrix\" params=\"m r h\">\n       <inertial>\n         <mass value=\"${m}\" />\n         <inertia ixx=\"${m*(3*r*r+h*h)/12}\" ixy = \"0\" ixz = \"0\"\n           iyy=\"${m*(3*r*r+h*h)/12}\" iyz = \"0\"\n           izz=\"${m*r*r/2}\" />\n       </inertial>\n     </xacro:macro>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 12,
+    "chars": 280,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.2 Xacro\n\n   3) 立方体惯性矩阵\n\n   <xacro:macro name=\"Box_inertial_matrix\" params=\"m l w h\">\n      <inertial>\n          <mass value=\"${m}\" />\n          <inertia ixx=\"${m*(h*h + l*l)/12}\" ixy = \"0\" ixz = \"0\"\n             iyy=\"${m*(w*w + l*l)/12}\" iyz= \"0\"\n             izz=\"${m*(w*w + h*h)/12}\" />\n      </inertial>\n    </xacro:macro>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 13,
+    "chars": 181,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.2 Xacro\n\n   (3) 颜色设置\n\n   <gazebo reference=\"link 节点名称\">\n\n     <material>Gazebo/Blue</material>\n\n   </gazebo>\n\n\n\n   material 标签中，设置的值区分大小写，颜色可以设置为 Red Blue Green Black 等\n   gazebo 内置颜色",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 14,
+    "chars": 310,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.3 Gazebo\n 补充1：gazebo简介 参考：https://www.ngui.cc/51cto/show-28107.html?action=onClick\n\n    Ø 运行 Gazebo 仿真实例所涉及的两个主要组件是 gzserver 和 gzclient\n\n    Ø gzserver 负责解析与模拟场景以及其中的对象相关的描述文件，然后使用物理\n      和传感器引擎模拟整个场景\n\n    Ø gzclient 提供图形客户端，该客户端可连接到 gzserver 并渲染仿真场景以及\n      有用的交互工具\n\n    Ø 在终端中输入 gazebo 后，会先启动 gzserver，然后运行 gzclient",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 15,
+    "chars": 301,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.3 Gazebo\n 补充1：gazebo简介\n   Ø 打开 gazebo 时出现 error：process has died 的报错，虽然仍然可以打开\n     gazebo，但是 gazebo 显示的并不是 launch 文件调用的 world 文件与 urdf文件\n     内容，可能显示之前使用 gazebo 时的内容，或者出现机器人模型乱转的情况\n\n   Ø 原因： gazebo 未完全关闭\n\n   Ø 可尝试的解决方案，在终端输入：\n\n      killall gzserver\n\n      killall gzclient\n\n     若仍无效可打开系统监视器，\n     强行关闭 gzserver 和 gzclient",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1678,
+        899
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 16,
+    "chars": 306,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.3 Gazebo\n                  World选项卡：\n 补充1：gazebo简介     Ø 显示场景中当前的灯光和模型。通过单击单个模型，可以查看\n                       或编辑其基本参数，例如位置和方向\n                  Ø 可以通过“Physics”选项更改场景的物理场，例如重力和磁场。\n                       GUI选项提供对默认摄像机视角和姿势的访问\n\n\n                  Insert选项卡：\n                  Ø 显示添加到模拟场景中的模型。左键单击以展开或折叠模型列\n                       表/目录。要将对象放置在场景中，在“插入”选项卡下单击模\n                       型对象，通过在选定位置单击鼠标左键将该对象放置在场景中\n                       的指定位置\n\n\n                  Layers选项卡：\n                  Ø 此选项卡展示可选功能，在大多数情况下此选项卡为空",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        428,
+        680
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 17,
+    "chars": 132,
+    "text": "1.2 Xacro and Gazebo\n\n 1.2.3 Gazebo\n补充1：gazebo简介\n\n\n顶部工具栏：它可以快速访问某\n些光标类型，几何形状和视图\n\n\n底部工具栏：底部工具栏有一个\n播放/暂停按钮，可以暂停模拟以\n方便地移动对象。该工具栏还显\n示有关模拟的时间数据",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        2125,
+        1337
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 18,
+    "chars": 95,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.3 Gazebo\n 补充2：为防止 gazebo 启动黑屏或者卡顿，启动 gazebo 前在~/.gazebo/models 目录\n 中加载模型",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        2041,
+        522
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 19,
+    "chars": 133,
+    "text": "1.2 Xacro and Gazebo\n\n  1.2.3 Gazebo\n   补充2：为防止 gazebo 启动黑屏或者卡顿，启动 gazebo 前在~/.gazebo/models 目录\n   中加载模型\n\n\n\n\n若 .gazebo 目录中没有\nmodels目录，则新建\nmodels目录",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        2288,
+        1424
+      ],
+      [
+        734,
+        315
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 20,
+    "chars": 101,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.3 Gazebo\n 补充2：为防止 gazebo 启动黑屏或者卡顿，启动 gazebo 前在~/.gazebo/models 目录\n 中加载模型\n\n\n\n\n 加载的模型",
+    "image_sizes": [
+      [
+        800,
+        800
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1788,
+        1216
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 21,
+    "chars": 450,
+    "text": "1.2 Xacro and Gazebo\n\n 1.2.4 launch文件\n\nmyrobot_gazebo.launch：\n   <launch>\n     <param name=\"robot_description\" command=\"$(find xacro)/xacro $(find\n   rcdp)/urdf/gazebo/myrobot_gazebo.xacro\" />\n\n     <include file=\"$(find gazebo_ros)/launch/empty_world.launch\" >\n       <arg name=\"world_name\" value=\"$(find rcdp)/worlds/box_house.world\" />\n     </include>\n\n     <node pkg=\"gazebo_ros\" type=\"spawn_model\" name=\"model\" args=\"-urdf -model\n   myrobot_gazebo -param robot_description\" />\n   </launch>",
+    "image_sizes": [
+      [
+        92,
+        92
+      ],
+      [
+        95,
+        95
+      ],
+      [
+        92,
+        92
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 22,
+    "chars": 135,
+    "text": "1.2 Xacro and Gazebo\n\n  1.2.5 launch文件解析\n   <include file=\"$(find gazebo_ros)/launch/empty_world.launch\" >\n\n   </include>\n\n\n\n\n会启动 gazebo\n提供的空白世界虚\n拟环境",
+    "image_sizes": [
+      [
+        2438,
+        1343
+      ],
+      [
+        307,
+        307
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 23,
+    "chars": 233,
+    "text": "1.2 Xacro and Gazebo\n\n  1.2.5 launch文件解析\n      <include file=\"$(find gazebo_ros)/launch/empty_world.launch\" >\n\n        <arg name=\"world_name\" value=\"$(find rcdp)/worlds/box_house.world\" />\n\n      </include>\n\n\n\n\n会启动 rcdp 功能包\n中 worlds 目录中的\nbox_house.world\n(自建虚拟环境)",
+    "image_sizes": [
+      [
+        2445,
+        1403
+      ],
+      [
+        307,
+        307
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 24,
+    "chars": 328,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.5 launch文件解析\n <node pkg=\"gazebo_ros\" type=\"spawn_model\" name=\"model\" args=\"-\n urdf -model myrobot_gazebo -param robot_description\" />\n\n\n\n Ø 在 Gazebo 中加载一个机器人模型，该功能由 gazebo_ros 下的 spawn_model 提供：\n   -urdf 加载的是 URDF 文件\n  -model myrobot_gazebo 模型名称是 myrobot_gazebo\n  -param robot_description 从参数 robot_description 中载入模型",
+    "image_sizes": [
+      [
+        348,
+        491
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 25,
+    "chars": 125,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.6 Gazebo仿真环境搭建\n\n  Gazebo 中创建仿真实现方式有两种:\n\n   方式1: 直接添加内置组件创建仿真环境\n\n   方式2: 手动绘制仿真环境(更为灵活)\n\n  还可以直接下载使用官方或第三方提高的仿真环境插件",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 26,
+    "chars": 76,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.6 Gazebo仿真环境搭建\n 1. 添加内置组件创建仿真环境：\n\n   1.1 启动 Gazebo 并添加组件",
+    "image_sizes": [
+      [
+        1848,
+        482
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 27,
+    "chars": 135,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.6 Gazebo仿真环境搭建\n 1.2 保存仿真环境：\n 添加完毕后，选择 file ---> Save World as 选择保存路径(rcdp 功能包下的 worlds 目录)，\n 文件名自定义，后缀名设置为 .world",
+    "image_sizes": [
+      [
+        1453,
+        755
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 28,
+    "chars": 78,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.6 Gazebo仿真环境搭建\n 2. 自定义仿真环境\n  2.1 启动 gazebo 打开构建面板，绘制仿真环境",
+    "image_sizes": [
+      [
+        1143,
+        526
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 29,
+    "chars": 67,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.6 Gazebo仿真环境搭建\n 2.1 启动 gazebo 打开构建面板，绘制仿真环境",
+    "image_sizes": [
+      [
+        1844,
+        892
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 30,
+    "chars": 280,
+    "text": "1.2 Xacro and Gazebo\n\n1.2.6 Gazebo仿真环境搭建\n2.2 保存构建的仿真场景\n\n 点击: 左上角 file ---> Save (保存路径：rcdp 功能包下 worlds 目录的 models 目录)\n\n 然后 file ---> Exit Building Editor\n\n2.3 保存为 world 文件\n\n 像方式1一样添加一些插件，然后保存为 world 文件(保存路径：rcdp 功能包下 worlds 目录)\n\n3. 使用官方提供的插件\n\ngit clone https://github.com/osrf/gazebo_models",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 31,
+    "chars": 26,
+    "text": "2\nXacro、Gazebo 和 Rviz 综合案例",
+    "image_sizes": []
+  },
+  {
+    "lesson": 14,
+    "page": 32,
+    "chars": 353,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.1 机器人运动控制\n1. ros_control 简介\n\nØ 问题：同一套 ROS 程序，如何部署在不同的机器人系统上，如何保证 ROS 程序的可移植\n  性？ROS 内置的解决方式是 ros_control\n\nØ ros_control 是一组软件包，它包含了控制器接口，控制器管理器，传输和硬件接口。\n  ros_control 是一套机器人控制的中间件，是一套规范，不同的机器人平台只要按照这套\n  规范实现，那么就可以保证与 ROS 程序兼容。通过这套规范，实现了一种可插拔的架构\n  设计，大大提高了程序设计的效率与灵活性\n\nØ gazebo 已经实现了 ros_control 的相关接口，如果需要在 gazebo 中控制机器人运动，\n  直接调用相关接口即可",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 33,
+    "chars": 179,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.1 机器人运动控制\n\n2. 运动控制实现流程(Gazebo)\n\n\nØ 运动控制基本流程:\n\n  1. 已经创建完毕的机器人模型，编写一个单独的 Xacro 文件，为机器人模型添加\n    传动装置以及控制器\n\n  2. 将此文件集成到 Xacro 文件\n\n  3. 启动 Gazebo 并发布 /cmd_vel 消息控制机器人运动",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 34,
+    "chars": 49,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n  2.1.1 机器人运动控制\n\n\n\n\n传动装置以及控制器",
+    "image_sizes": [
+      [
+        1056,
+        697
+      ],
+      [
+        307,
+        307
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 35,
+    "chars": 39,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.1 机器人运动控制",
+    "image_sizes": [
+      [
+        2463,
+        1400
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 36,
+    "chars": 146,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.2 雷达信息仿真及显示\n\n\nØ 雷达仿真基本流程\n\n\n\n 1. 已经创建完毕的机器人模型，编写一个单独的 xacro 文件，为机器人模型添加雷达配置\n\n 2. 将此文件集成进 xacro 文件\n\n 3. 启动 Gazebo，使用 Rviz 显示雷达信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 37,
+    "chars": 41,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.2 雷达信息仿真及显示",
+    "image_sizes": [
+      [
+        2466,
+        1414
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 38,
+    "chars": 176,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.3 Kinect摄像头信息仿真及显示\n\nØ Kinect 摄像头仿真基本流程\n\n\n\n 1. 已经创建完毕的机器人模型，编写一个单独的 Xacro 文件，为机器人模型添加 Kinect 配置\n\n 2. 将此文件集成进 xacro 文件\n\n 3. 启动 Gazebo，使用 Rviz 显示 Kinect 摄像头信息",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 39,
+    "chars": 48,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.3 Kinect摄像头信息仿真及显示",
+    "image_sizes": [
+      [
+        2463,
+        1402
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 40,
+    "chars": 358,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.4 launch文件集成-gazebo\n\nmyrobot_sensor.xacro：\n\n\n    <robot name=\"myrobot\" xmlns:xacro=\"http://wiki.ros.org/xacro\">\n      <xacro:include filename=\"myrobot_gazebo.xacro\" />\n      <xacro:include filename=\"gazebo_sensor/move.xacro\" />\n      <xacro:include filename=\"gazebo_sensor/laser.xacro\" />\n      <xacro:include filename=\"gazebo_sensor/kinect.xacro\" />\n    </robot>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 41,
+    "chars": 570,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.4 launch文件集成-gazebo\ngazebo_control.launch：\n\n <launch>\n   <param name=\"robot_description\" command=\"$(find xacro)/xacro $(find\n rcdp)/urdf/gazebo/myrobot_sensor.xacro\" />\n\n   <include file=\"$(find gazebo_ros)/launch/empty_world.launch\" >\n     <arg name=\"world_name\" value=\"$(find rcdp)/worlds/box_house.world\" />\n    </include>\n\n   <node pkg=\"gazebo_ros\" type=\"spawn_model\" name=\"model\" args=\"-urdf -model\n myrobot -param robot_description\" />\n\n   <node pkg=\"teleop_twist_keyboard\" type=\"teleop_twist_keyboard.py\"\n name=\"teleop_twist_keyboard\" output=\"screen\"/>\n </launch>",
+    "image_sizes": [
+      [
+        92,
+        92
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        92,
+        92
+      ],
+      [
+        91,
+        91
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 42,
+    "chars": 644,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n   2.1.4 launch文件集成-rviz\nmyrobot_rviz.launch\n\n <launch>\n   <node pkg=\"tf2_ros\" type=\"static_transform_publisher\" name=\"static_transform_publisher\"\n args=\"0 0 0 -1.57 0 -1.57 /depth_camera_link /rotate_depth_camera_link\" />\n\n   <param name=\"robot_description\" command=\"$(find xacro)/xacro $(find\n rcdp)/urdf/gazebo/myrobot_gazebo.xacro\" />\n\n   <node pkg=\"rviz\" type=\"rviz\" name=\"rviz\" args=\"-d $(find rcdp)/config/myrobot_gazebo.rviz\" />\n\n   <node pkg=\"joint_state_publisher\" type=\"joint_state_publisher\" name=\"joint_state_publisher\" />\n\n   <node pkg=\"robot_state_publisher\" type=\"robot_state_publisher\" name=\"robot_state_publisher\" />\n </launch>",
+    "image_sizes": [
+      [
+        92,
+        92
+      ],
+      [
+        91,
+        91
+      ],
+      [
+        92,
+        92
+      ],
+      [
+        91,
+        91
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 43,
+    "chars": 133,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.4 launch文件集成-rviz\n 打开两个终端，按顺序启动：\n\n roslaunch rcdp gazebo_control.launch\n\n\n roslaunch rcdp myrobot_rviz.launch",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 44,
+    "chars": 43,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.5 运行结果-gazebo",
+    "image_sizes": [
+      [
+        2462,
+        1456
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 45,
+    "chars": 41,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.5 运行结果-rviz",
+    "image_sizes": [
+      [
+        2469,
+        1415
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 46,
+    "chars": 50,
+    "text": "2.1 Xacro、Gazebo and Rviz\n\n2.1.5 运行结果-gazebo + rviz",
+    "image_sizes": [
+      [
+        2470,
+        1266
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 47,
+    "chars": 238,
+    "text": "Summary\n 1. Xacro 集成 Gazebo\n    a) URDF Format-Look back\n    b) Xacro and Gazebo\n       1. Overview\n       2. Xacro\n       3. Gazebo\n       4. launch文件\n       5. launch文件解析\n       6. Gazebo仿真环境搭建\n\n 2. Xacro、Gazebo 和 Rviz 综合案例\n    a) 机器人运动控制\n    b) 雷达信息仿真及显示\n    c) Kinect摄像头信息仿真及显示\n    d) launch文件集成\n    e) 运行结果",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 14,
+    "page": 48,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 1,
+    "chars": 117,
+    "text": "机器人操作系统（双语）\nRobot Operating System (Bilingual)\nWHERE THERE'S A WILL, THERE'S A WAY\n\n\n\n\n         授课教师：郄(qiè)龙飞                机器人工程",
+    "image_sizes": [
+      [
+        427,
+        470
+      ],
+      [
+        1992,
+        1121
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 2,
+    "chars": 237,
+    "text": "Overview lesson 15-1\n\n    .1   1             .   2                .1   3   .1   4\n\nXacro 模型优化         Gazebo 控制小车          自主导航              ~\n\n\n\n\n                               Objectives\n             1、修改自己的Xacro模型，使其能在Gazebo中正常显示\n\n             2、能够使用teleop_twist_key在Gazebo中控制小车\n\n             3、运行导航模块中的navigation功能包",
+    "image_sizes": [
+      [
+        350,
+        312
+      ],
+      [
+        233,
+        503
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 3,
+    "chars": 12,
+    "text": "1\nXacro 模型优化",
+    "image_sizes": []
+  },
+  {
+    "lesson": 15,
+    "page": 4,
+    "chars": 45,
+    "text": "1.1 Xacro 模型回顾\n\n1.1.1 myrobot_whole_func.xacro",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        916,
+        873
+      ],
+      [
+        487,
+        535
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 5,
+    "chars": 143,
+    "text": "1.1 Xacro 模型回顾\n\n1.1.1 myrobot_whole_func.xacro\n Ø 问题1：右轮有离地间隙            Ø 问题2：模型运动时会后仰\n\n\n\n\n    Ø 产生原因：base_link 和       Ø 产生原因：缺少后支撑轮\n     root_link 的偏移量计算有误",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        698,
+        556
+      ],
+      [
+        738,
+        549
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 6,
+    "chars": 209,
+    "text": "1.1 Xacro 模型回顾\n\n1.1.1 myrobot_whole_func.xacro\n   Ø 问题3：两个驱动轮无法绕            Ø 问题4：模型倾倒\n     y 轴转动\n\n\n\n\n   Ø 产生原因：驱动轮未设置 y           Ø 产生原因：(1) 模型 link 质量设置不\n\n     轴自由度                        合理；(2) root_link 设置了 inertial，\n                                 增加不稳定性(较难)",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        460,
+        440
+      ],
+      [
+        606,
+        399
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 7,
+    "chars": 209,
+    "text": "1.2 Xacro 模型优化\n\n1.2.1 myrobot_gazebo.xacro\n   Ø 问题1：右轮有离地间隙\n\n    <xacro:joint_info child_link=\"base_link\" parent_link=\"root_link\"\n    type=\"fixed\" ox=\"0\" oy=\"0\" oz=\"${base_height / 2 + wheel_radius}\"\n    ax=\"0\" ay=\"0\" az=\"0\"/>",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 8,
+    "chars": 56,
+    "text": "1.2 Xacro 模型优化\n\n1.2.1 myrobot_gazebo.xacro\n Ø 问题2：模型运动时会后仰",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1659,
+        780
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 9,
+    "chars": 117,
+    "text": "1.2 Xacro 模型优化\n\n1.2.1 myrobot_gazebo.xacro\n   Ø 问题3：两个驱动轮无法绕 y 轴转动\n\n\n\n\n   Ø 问题4：模型倾倒\n\n      重新设置 link 质量\n\n      删除 root_link 的 inertial 标签",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        862,
+        155
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 10,
+    "chars": 41,
+    "text": "1.2 Xacro 模型优化\n\n1.2.1 myrobot_gazebo.xacro",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        919,
+        881
+      ],
+      [
+        516,
+        350
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 11,
+    "chars": 13,
+    "text": "2\nGazebo 控制小车",
+    "image_sizes": []
+  },
+  {
+    "lesson": 15,
+    "page": 12,
+    "chars": 158,
+    "text": "2.1 键盘控制小车运动\n\n2.1.1 teleop_twist_key 键盘控制节点\n   Ø 安装和启动\n\n       $ sudo apt install ros-noetic-teleop-twist-keyboard\n\n       $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        537,
+        346
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 13,
+    "chars": 50,
+    "text": "2.1 键盘控制小车运动\n\n2.1.1 teleop_twist_key 键盘控制节点\n   Ø 安装和启动",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1643,
+        945
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 14,
+    "chars": 88,
+    "text": "2.1 键盘控制小车运动\n\n2.1.2 rviz 查看激光雷达信息\nØ 新开一个终端，输入以下指令： $ roslaunch rs_gazebo rviz_show.launch",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1634,
+        903
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 15,
+    "chars": 57,
+    "text": "2.1 键盘控制小车运动\n\n2.1.2 rviz 查看激光雷达信息\nØ 通过键盘控制小车运动，查看激光雷达信息的变化",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1646,
+        903
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 16,
+    "chars": 134,
+    "text": "2.1 键盘控制小车运动\n\n2.1.2 rviz 查看激光雷达信息\nØ 要求1：修改激光雷达的配置信息，查看各个参数的作用效果\n\n\n\n\n                         Ø 参考资料：282-综合应用-雷达仿真\n\n                         https://www.bilibili.com/video/BV1Ci4\n                         y1L7ZZ?p=284",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1006,
+        889
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 17,
+    "chars": 133,
+    "text": "2.1 键盘控制小车运动\n\n2.1.3 rviz 查看摄像头信息\nØ 要求2：修改摄像头的配置信息，查看各个参数的作用效果\n\n\n\n\n                         Ø 参考资料：283-综合应用-摄像头仿真\n\n                         https://www.bilibili.com/video/BV1Ci4\n                         y1L7ZZ?p=285",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        884,
+        871
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 18,
+    "chars": 205,
+    "text": "2.1 键盘控制小车运动\n\n2.1.4 rviz 查看 kinect 信息\nØ 要求3：添加 kinect 的 xacro 文件，增加 kinect 相机，在 rviz 中查看 kinect 点云信息；\n 修改kinect 的配置信息，查看各个参数的作用效果\n\n\n\n\n                                    Ø 参考资料：284-综合应用-深度相机仿真-点\n                                      云\n\n                                    https://www.bilibili.com/video/BV1Ci4y1\n                                    L7ZZ?p=287",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1267,
+        873
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 19,
+    "chars": 204,
+    "text": "2.1 键盘控制小车运动\n\n2.1.4 rviz 查看 kinect 信息\nØ 要求3：添加 kinect 的 xacro 文件，增加 kinect 相机，在 rviz 中查看 kinect 点云信息；\n 修改kinect 的配置信息，查看各个参数的作用效果\n\n\n\n\n                                   Ø 参考资料：284-综合应用-深度相机仿真-点云\n\n                                   https://www.bilibili.com/video/BV1Ci4y1L\n                                   7ZZ?p=287",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ],
+      [
+        1124,
+        933
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 20,
+    "chars": 6,
+    "text": "3\n自主导航",
+    "image_sizes": []
+  },
+  {
+    "lesson": 15,
+    "page": 21,
+    "chars": 128,
+    "text": "3.1 Navigation\n\n3.1.1 Overview\n  Ø ROS机器人导航(Navigation)由多个功能包组合实现，称为导航功能包集\n\n  Ø 官方介绍：一个二维导航堆栈，它接收来自里程计、传感器流和目标姿态的信息，并输出发\n    送到移动底盘的安全速度命令",
+    "image_sizes": [
+      [
+        537,
+        600
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 22,
+    "chars": 148,
+    "text": "3.1 Navigation\n\n 3.1.2 Campus Cases\n\n1. 校园地图(熟悉)\n\n\n2. 自身位置(结合周围建筑信息)\n\n\n3. 行走路线\n\n最近的路：从 紫竹餐厅 往北走，看到 玉兰\n餐厅 再往前走，走到 青年教师公寓E 的那个\n路口，右拐，过了 专家公寓 就是\n\n走过来就可以，骑自行车也行~",
+    "image_sizes": [
+      [
+        640,
+        854
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 23,
+    "chars": 149,
+    "text": "3.1 Navigation\n\n 3.1.2 Campus Cases\n\n1. 校园地图(不熟悉)\n\n\n2. 自身位置(无需建筑信息)\n\n\n3. 行走路线\n\n最近的路：从 紫竹餐厅 往北走100米，看到\n一个十字路口，继续 往北走300米，看到一\n个丁字路口，右转，直行300米就到了\n\n走过来就可以，骑自行车也行~",
+    "image_sizes": [
+      [
+        640,
+        854
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 24,
+    "chars": 219,
+    "text": "3.1 Navigation\n\n  3.1.2 Campus Cases\n\n1. 校园地图 -----------------------> 全局地图\n\n\n2. 自身位置 -----------------------> 自身定位\n\n\n3. 最近的路 -----------------------> 路径规划\n\n\n4. 骑车or走路 --------------------> 运动方式\n\n\n5. 骑车or走路速度 ----------------> 运动控制",
+    "image_sizes": [
+      [
+        640,
+        854
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 25,
+    "chars": 105,
+    "text": "3.1 Navigation\n\n3.1.3 Navigation structure\n\n ②                ③\n                                                  ①\n\n\n\n\n                                                  ⑤\n\n\n\n\n                              ④\n\n\n         1. 全局地图 2. 自身定位 3. 路径规划 4. 运动控制 5.环境感知",
+    "image_sizes": [
+      [
+        1413,
+        578
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 26,
+    "chars": 405,
+    "text": "3.1 Navigation\n\n    3.1.3 Navigation structure\n\n1 全局地图\n\nØ   SLAM(simultaneous localization and mapping)，即时定位与地图构建。SLAM问题可以描述为: 机器\n    人在未知环境中从一个未知位置开始移动，在移动过程中根据位置估计和地图进行自身定位，同时在自身定位\n    的基础上建造增量式地图，以绘制出外部环境的完全地图\n\nØ 在 ROS 中，常用的 SLAM 包括 gmapping、hector_slam、cartographer、rgbdslam、ORB_SLAM等\n\n\nØ SLAM建图 ，机器人需具备感知外界环境的能力，尤其是获取周围环境深度信息的能力。感知的实现需要依\n    赖于传感器，比如: 激光雷达、摄像头、RGB-D摄像头等\n\n\nØ SLAM 生成的地图需要被保存以待后续使用，在 ROS 中保存地图的功能包是 map_server",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 27,
+    "chars": 262,
+    "text": "3.1 Navigation\n\n  3.1.3 Navigation structure\n\n2 自身定位\n\nØ 导航过程中，机器人需要实时确定当前自身的位置。如果在室外，可以使用GPS辅助定位；在室内、隧道、\n 地下或一些屏蔽 GPS 信号的区域，需要使用具备自身定位功能的功能包，例如：AMCL\n\nØ AMCL(adaptive MonteCarlo Localization)自适应的蒙特卡洛定位，是用于2D移动机器人的概率定位\n 系统。它实现了自适应（或KLD采样）蒙特卡洛定位方法，该方法使用粒子过滤器根据已知地图跟踪机器\n 人的姿态",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 28,
+    "chars": 377,
+    "text": "3.1 Navigation\n\n 3.1.3 Navigation structure\n3 路径规划\n\nØ 导航过程中，机器人需要根据目标位置计算最优路径，此过程称为全局路径规划。在运动过程中，机器人\n 需要根据障碍物动态调整运动路线，此过程就称为局部路径规划\n\n\nØ 在 ROS 中提供了 move_base 功能包来实现路径规则，该功能包主要由两大规划器组成\n\n  Ø 1 全局路径规划(gloable_planner)\n     根据给定的目标点和全局地图实现总体的路径规划，使用 A* 或 Dijkstra 算法进行全局路径规划，\n  计算最优路线，作为全局路线\n\n\n  Ø 2 局部路径规划(local_planner)\n     局部路径规划的作用就是使用相应算法(Dynamic Window Approaches，DWA) 等来实现障碍物\n  的规避，并选取当前最优路径以尽量符合全局最优路径",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 29,
+    "chars": 176,
+    "text": "3.1 Navigation\n\n3.1.3 Navigation structure\n4. 运动控制\n\nØ move_base功能包通过话题\"cmd_vel\"发布geometry_msgs/Twist类型的消息，这个消息基于机\n 器人的基座坐标系，它传递的是运动命令\n\nØ 运动节点订阅\"cmd_vel\"话题， 将该话题上的速度命令转换为电机命令并进行运动控制",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 30,
+    "chars": 203,
+    "text": "3.1 Navigation\n\n3.1.3 Navigation structure\n5. 环境感知\n\nØ 感知周围环境信息，比如: 摄像头、激光雷达、编码器等\n\nØ 摄像头、激光雷达可以用于感知外界环境的深度信息，编码器可以感知电机的转速信息，通过获取\n  速度信息并生成里程计信息\n\n在导航功能包集中，环境感知是重要模块，它为其他模块提供了支持，包括 SLAM、AMCL、\nmove_base 都需要依赖于环境感知",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 31,
+    "chars": 41,
+    "text": "3.1 Navigation\n\n3.1.3 Navigation structure",
+    "image_sizes": [
+      [
+        1532,
+        920
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 32,
+    "chars": 137,
+    "text": "3.1 Navigation\n\n 3.1.4 Odom\n定位实现方式有两种：\n\n 1 通过里程计定位：实时收集机器人的速度\n信息，计算并发布机器人坐标系与父级参考系\n的相对关系\n\n 2 通过传感器定位：通过传感器收集外界环\n境信息，通过匹配计算并发布机器人坐标系与\n父级参考系的相对关系",
+    "image_sizes": [
+      [
+        640,
+        854
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 33,
+    "chars": 180,
+    "text": "3.1 Navigation\n\n 3.1.4 Odom\n两种定位方式优缺点：\n\n1 里程计定位\n\n  优点：里程计定位信息是连续的，没有离\n散的跳跃\n  缺点：里程计存在累计误差，不利于长距\n离或长期定位\n\n2 传感器定位\n 优点：比里程计定位更精准\n 缺点：传感器定位会出现跳变的情况，在标\n志物较少的环境下，其定位精度会大打折扣\n\n两种定位方式优缺点互补，应用时一般二者结\n合使用",
+    "image_sizes": [
+      [
+        640,
+        854
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 34,
+    "chars": 210,
+    "text": "3.1 Navigation\n\n3.1.4 Odom\n\n\n Ø 上述两种定位实现中，机器人坐标系一般使用机器人模型中的根坐标系(root_link)\n\n Ø 里程计定位时，父级坐标系一般称之为 odom\n\n Ø 如果通过传感器定位，父级参考系一般称之为 map\n\n Ø 当二者结合使用时，map 和 odom 都是机器人模型根坐标系的父级，一般会将转换\n\n   关系设置为: map -> doom -> base_link 或 root_link",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 35,
+    "chars": 293,
+    "text": "3.1 Navigation\n\n3.1.5 ROS packages\n   1 安装相关的ROS功能包：\n\n     gmapping (用于构建地图)\n\n     $ sudo apt install ros-noetic-gmapping\n\n     地图服务map-server(用于保存与读取地图)\n\n     $ sudo apt install ros-noetic-map-server\n\n    navigation (用于定位以及路径规划)\n     $ sudo apt install ros-noetic-navigation\n\n   2 使用方法：\n    新建功能包，并导入依赖: gmapping map_server amcl move_base",
+    "image_sizes": [
+      [
+        227,
+        227
+      ],
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 36,
+    "chars": 299,
+    "text": "3.1 Navigation\n\n3.1.5 ROS packages\n\n      1.先启动 Gazebo 仿真环境 launch 文件\n\n       $ roslaunch rs_nav gazebo_control.launch\n\n      2.然后再启动地图绘制的 launch 文件\n\n       $ roslaunch rs_nav gmapping.launch\n\n      3.启动键盘键盘控制节点，用于控制机器人运动建图\n\n       $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py\n\n      4.在 rviz 中添加组件，进行导航操作\n\n       $ roslaunch rs_nav move_base.launch",
+    "image_sizes": [
+      [
+        360,
+        167
+      ],
+      [
+        1280,
+        1280
+      ]
+    ]
+  },
+  {
+    "lesson": 15,
+    "page": 37,
+    "chars": 20,
+    "text": "Q&A\n\n\n\n\n      今日事今日毕\n      Question?",
+    "image_sizes": [
+      [
+        360,
+        167
+      ]
+    ]
+  }
+]

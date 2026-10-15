@@ -1,0 +1,7 @@
+# Preserve archived bytes across Windows/Linux so SHA256 remains valid.
+* -text
+*.pdf binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary

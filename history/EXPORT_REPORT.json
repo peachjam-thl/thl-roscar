@@ -1,0 +1,28 @@
+{
+  "export_date_china": "2026-10-15",
+  "snapshot_utc_start": "2026-09-02T06:53:14.351Z",
+  "snapshot_utc_end": "2026-10-15T05:36:41.790Z",
+  "bounded_source_bytes": 115223769,
+  "user_messages": 100,
+  "assistant_messages": 176,
+  "embedded_user_images": 34,
+  "skipped_runtime_blocks": {
+    "runtime_injected_context": 14,
+    "authentication_code_redacted": 1
+  },
+  "compacted_record_count_not_exported": 7,
+  "exported_categories": [
+    "user message text",
+    "assistant commentary/final text",
+    "embedded user images"
+  ],
+  "excluded_categories": [
+    "system/developer messages",
+    "reasoning",
+    "tool payloads/results",
+    "raw session file",
+    "runtime-injected context",
+    "internal memory citation blocks"
+  ],
+  "limitation": "仅覆盖本地记录中仍可恢复的人类可见消息，不承诺从未记录或已缺失的旧平台状态。归档截止点后的上传反馈不在此快照内。历史旧答案需要核验。"
+}

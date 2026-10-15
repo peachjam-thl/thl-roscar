@@ -1,0 +1,36 @@
+<launch>
+    <!-- <param name="robot_description" textfile="$(find rcdp)/urdf/urdf/myrobot.urdf" /> -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find rcdp)/urdf/xacro/myrobot_v1.xacro" />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rcdp)/config/myrobot_arbotix.rviz" />
+
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+    
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+
+    <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+        <rosparam file="$(find rcdp)/config/arbotix_control.yaml" command="load" />
+        <param name="sim" value="true" />
+    </node>
+
+    <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen"/>
+
+</launch>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

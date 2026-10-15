@@ -1,0 +1,108 @@
+===== Lesson1 =====
+p2: Overview lesson 1-1 | .1 1 .1 2 .1 3 .1 4 | Why ROS? What is ROS? About the course References | 1、了解：需要知晓 | Objectives 2、理解：在知晓基础上进行理性认识 | 3、掌握：在理解基础上进行重点学习 | 1、了解 ROS 特点、现状及内涵 4、运用：在掌握基础上灵活使用(编程) | 2、了解课程内容和考核方式 | 3、了解学习课程的参考资料
+p27: Summary | 1. 为何要学习ROS | a) ROS特点及现状 | 2. ROS的定义和内涵 | a) ROS = Robot Operating System | b) Plumbing + Tools + Capabilities + Ecosystem | 3. 课程设置 | a) 课程内容、授课方式、考核指标 | 4. 参考资料 | a) 参考书目、网络学习资源
+p30: Overview lesson 1-2 | .1 1 .1 2 .1 3 .1 4 | Linux Virtual Machine ~ ~ | Installation and | Overview | Setups | Objectives | 1、理解 Unix、GNU 和 Linux 之间的关系 | 2、了解 Ubuntu 的特点 | 3、掌握在 Windows 虚拟环境中安装 Ubuntu20.04 的方法
+p62: Summary | 1. Linux和Ubuntu发展简史 | a) Unix、GNU、Linux | b) Debian、Ubuntu特点、衍生版本 | 2. 虚拟机安装和设置 | a) VirtualBox | b) Ubuntu
+p65: Overview lesson 1-3 | .1 1 .1 2 .1 3 .1 4 | Ubuntu Desktop ~ ~ ~ | Environment | Objectives | 1、了解 Ubuntu 系统的桌面环境 | 2、掌握 GNOME 的操作方法
+p100: Summary | 1. Linux的桌面环境，介绍常见桌面环境 | 2. GNOME桌面环境的图形界面和使用方法 | a) Ubuntu 桌面 | b) Ubuntu 搜索界面 | c) Ubuntu dash 主页 | d) Ubuntu 文件管理器 | e) Ubuntu 系统设置 | f) GNOME扩展工具
+
+===== Lesson2 =====
+p2: Overview lesson 2-1 | .1 1 .1 2 .1 3 .1 4 | Ubuntu File ~ ~ ~ | System | Objectives | 1、掌握 Ubuntu 中文件、目录的概念，以及 Ubuntu 的文件系统架构 | 2、理解 FHS 中四种目录形态，掌握两层规范的内容
+p29: Summary | 1. Ubuntu文件系统 | a) Ubuntu文件 | ① 文件概念 | ② 文件命名规范 | ③ 文件类型 | b) Ubuntu目录 | ① 目录树 | c) 文件系统层级标准 | ① 目录类型 | ② 两层规范
+p37: Overview lesson 2-2 | .1 1 .1 2 .1 3 .1 4 | Terminal and Linux ~ ~ | Shell Command | Objectives | 1、理解仿真终端、文本终端和 Shell 的基本概念，掌握仿真终端的使用方法 | 2、掌握 ls、cd、pwd、echo、touch、mkdir、rm、mv、cp、cat 命令的使 | 用方法（包括命令作用和常用参数）
+p77: Summary | 1. Terminal and Shell | 2. Linux Command： | a) ls | b) cd | c) pwd | d) echo | e) touch | f) mkdir | g) rm | h) mv | i) cp | j) cat
+
+===== Lesson3 =====
+p2: Overview lesson 3-1 | .1 1 .1 2 .1 3 .1 4 | Shell ~ ~ ~ | Programming | Objectives | 1、了解 Shell 脚本执行方法，掌握 Shell 环境变量的使用方法 | 2、理解输出重定向使用方法，了解管道使用方法
+p26: Summary | 1. Shell Programming | a) Shell脚本：编写和执行脚本方法 | b) Shell变量： | ① 用户自定义； | ② 环境变量（系统级、用户级） | c) 输出/输出重定向 | d) 管道
+p29: Overview lesson 3-2 | .1 1 .1 2 .1 3 .1 4 | Archiving and ~ ~ ~ | Compression | Objectives | 1、了解归档和压缩单独使用时常用命令的用法 | 2、掌握归档和压缩结合使用时4条命令的用法
+p55: Summary | 1. Archiving and Compression | a) 归档和压缩的联系与区别 | b) tar命令用于打包和解打包 | c) gzip、gunzip、bzip2、bunzip2、zip、unzip命令用于压缩和解压缩 | d) tar+gzip、tar+bzip2进行打包及压缩
+p58: Overview lesson 3-3 | .1 1 .1 2 .1 3 .1 4 | Permission ~ ~ ~ | and Security | Objectives | 1、了解 Linux 中文件权限管理的方法 | 2、掌握变更文件访问权限的方法
+p73: Summary | 1. Permission and Security | a) 文件访问者 3 种身份、文件3种访问权限 | b) u、g、o 与 w、r、x 的定义与使用 | c) chown、chgrp 变更文件访问者身份 | d) chmod修改文件访问权限
+
+===== Lesson4 =====
+p2: Overview lesson 4-1 | .1 1 .1 2 .1 3 .1 4 | Package ~ ~ ~ | Management | Objectives | 1、掌握源代码软件包的安装步骤，掌握 apt、dpkg 的使用方法 | 2、理解 PPA 安装软件包的方法
+p23: Summary | 1. Package Management | a) 源代码：tar.gz tar.bz2 | b) 二进制：deb包，apt、dpkg | c) bin文件，无需安装 | d) PPA
+p27: Overview lesson 4-2 | 1 2 3 4 | Ubuntu ~ ~ ~ | summary | Objectives | 1、掌握星星 标记知识点
+p28: Overview lesson 1-1 | .1 1 .1 2 .1 3 .1 4 | Why ROS? What is ROS? About the course References | 1、了解：需要知晓 | Objectives 2、理解：在知晓基础上进行理性认识 | 3、掌握：在理解基础上进行重点学习 | 1、了解 ROS 特点、现状及内涵 4、运用：在掌握基础上灵活使用(编程) | 2、了解课程内容和考核方式 | 3、了解学习课程的参考资料
+p52: Summary | 1. 为何要学习ROS | a) ROS特点及现状 | 2. ROS的定义和内涵 | a) ROS = Robot Operating System | b) Plumbing + Tools + Capabilities + Ecosystem | 3. 课程设置 | a) 课程内容、授课方式、考核指标 | 4. 参考资料 | a) 参考书目、网络学习资源
+p53: Overview lesson 1-2 | .1 1 .1 2 .1 3 .1 4 | Linux Virtual Machine ~ ~ | Installation and | Overview | Setups | Objectives | 1、理解 Unix、GNU 和 Linux 之间的关系 | 2、了解 Ubuntu 的特点 | 3、掌握在 Windows 虚拟环境中安装 Ubuntu20.04 的方法
+p84: Summary | 1. Linux和Ubuntu发展简史 | a) Unix、GNU、Linux | b) Debian、Ubuntu特点、衍生版本 | 2. 虚拟机安装和设置 | a) VirtualBox | b) Ubuntu
+p85: Overview lesson 1-3 | .1 1 .1 2 .1 3 .1 4 | Ubuntu Desktop ~ ~ ~ | Environment | Objectives | 1、了解 Ubuntu 系统的桌面环境 | 2、掌握 GNOME 的操作方法
+p119: Summary | 1. Linux的桌面环境，介绍常见桌面环境 | 2. GNOME桌面环境的图形界面和使用方法 | a) Ubuntu 桌面 | b) Ubuntu 搜索界面 | c) Ubuntu dash 主页 | d) Ubuntu 文件管理器 | e) Ubuntu 系统设置 | f) GNOME扩展工具
+p120: Overview lesson 2-1 | .1 1 .1 2 .1 3 .1 4 | Ubuntu File ~ ~ ~ | System | Objectives | 1、掌握 Ubuntu 中文件、目录的概念，以及 Ubuntu 的文件系统架构 | 2、理解 FHS 中四种目录形态，掌握两层规范的内容
+p146: Overview lesson 2-2 | .1 1 .1 2 .1 3 .1 4 | Terminal and Linux ~ ~ | Shell Command | Objectives | 1、理解仿真终端、文本终端和 Shell 的基本概念，掌握仿真终端的使用方法 | 2、掌握 ls、cd、pwd、echo、touch、mkdir、rm、mv、cp、cat 命令的使 | 用方法（包括命令作用和常用参数）
+p185: Summary | 1. Terminal and Shell | 2. Linux Command： | a) ls | b) cd | c) pwd | d) echo | e) touch | f) mkdir | g) rm | h) mv | i) cp | j) cat
+p186: Overview lesson 3-1 | .1 1 .1 2 .1 3 .1 4 | Shell ~ ~ ~ | Programming | Objectives | 1、了解 Shell 脚本执行方法，掌握 Shell 环境变量的使用方法 | 2、理解输出重定向使用方法，了解管道使用方法
+p209: Summary | 1. Shell Programming | a) Shell脚本：编写和执行脚本方法 | b) Shell变量： | ① 用户自定义； | ② 环境变量（系统级、用户级） | c) 输出/输出重定向 | d) 管道
+p210: Overview lesson 3-2 | .1 1 .1 2 .1 3 .1 4 | Archiving and ~ ~ ~ | Compression | Objectives | 1、了解归档和压缩单独使用时常用命令的用法 | 2、掌握归档和压缩结合使用时4条命令的用法
+p235: Summary | 1. Archiving and Compression | a) 归档和压缩的联系与区别 | b) tar命令用于打包和解打包 | c) gzip、gunzip、bzip2、bunzip2、zip、unzip命令用于压缩和解压缩 | d) tar+gzip、tar+bzip2进行打包及压缩
+p236: Overview lesson 3-3 | .1 1 .1 2 .1 3 .1 4 | Permission ~ ~ ~ | and Security | Objectives | 1、了解 Linux 中文件权限管理的方法 | 2、掌握变更文件访问权限的方法
+p250: Summary | 1. Permission and Security | a) 文件访问者 3 种身份、文件3种访问权限 | b) u、g、o 与 w、r、x 的定义与使用 | c) chown、chgrp 变更文件访问者身份 | d) chmod修改文件访问权限
+p251: Overview lesson 4-1 | .1 1 .1 2 .1 3 .1 4 | Package ~ ~ ~ | Management | Objectives | 1、掌握源代码软件包的安装步骤，掌握 apt、dpkg 的使用方法 | 2、理解 PPA 安装软件包的方法
+p271: Summary | 1. Package Management | a) 源代码：tar.gz tar.bz2 | b) 二进制：deb包，apt、dpkg | c) bin文件，无需安装 | d) PPA
+
+===== Lesson5 =====
+p4: Overview lesson 5-1 | 1 2 .1 3 .1 4 | Introduction ~ ~ ~ | to ROS | Objectives | 1、了解 ROS 的定义和特点 | 2、理解 ROS“四位一体”内涵
+p27: Summary | 1. Introduction to ROS | a) What is ROS | b) ROS philosophy | c) ROS history | d) Five stages of learning ROS
+p30: Overview lesson 5-2 | 1 2 .1 3 .1 4 | ROS ~ ~ ~ | Installation | Objectives | 1、掌握在Ubuntu 20.04 中安装 ROS Noetic 发行版的方法 | 2、了解安装过程中错误问题的处理方法
+p56: Summary | 1. ROS Installation | a) 步骤1——步骤7 | b) 步骤3和步骤5错误提示的解决方案 | 2. Command-line tools for ROS | a) rosrun、roscd、roscp、rosed、rosls | 3. Turtlesim | a) turtlesim_node | b) turtle_teleop_key | c) draw_square | d) mimic
+
+===== Lesson6 =====
+p2: Overview lesson 6-1 | .1 1 .1 2 .1 3 .1 4 | ROS ~ ~ ~ | Filesystem(1) | Objectives | 1、了解ROS系统的三层架构 | 2、掌握ROS文件系统架构 | 3、掌握创建工作空间和功能包的方法
+p24: Summary | 1. ROS系统架构的三个层次： | a) 系统层、中间层、应用层 | 2. ROS系统实现的三层架构： | a) 文件系统级、计算图级、开源社区级 | 3. ROS文件系统 | a) 文件系统架构 | b) 工作空间架构 | c) ROS功能包
+p27: Overview lesson 6-2 | .1 1 .1 2 .1 3 .1 4 | XML File ROS ~ ~ | Filesystem(2) | Objectives | 1、理解 XML 文件的结构 | 2、掌握 Catkin 功能包的组织架构 | 3、掌握 package.xml 的使用方法
+p59: Summary | 1. XML文件：文件结构（文档声明、元素、属性、注释） | 2. ROS文件系统 | a) 文件系统架构 | b) 功能包架构 | c) rosbash | d) catkin功能包 | 3. package.xml： 作用、基本结构、必备标签、依赖项
+p62: Overview lesson 6-3 | 1 . 2 .1 3 4 | Message and ~ ~ | ~ | Service | Objectives | 1、掌握 ROS Message 的定义和使用方法 | 2、掌握 ROS Service 的定义和使用方法
+p85: Summary | 1. Message and Service | a) ROS Message: | ① fields and constants | ② command line tools | ③ custom message type | b) ROS Service: | ① description specification | ② command line tools
+
+===== Lesson7 =====
+p2: Overview lesson 7-1 | .1 1 . 2 .1 3 .1 4 | CMakeLists.txt ~ ~ ~ | Introduction | Objectives | 1、掌握 CMakeLists.txt 的编译规则 | 2、掌握 CMakeLists.txt 修改方法
+p31: Summary | 1. CMakeLists.txt Introduction | a) Required CMake Version (cmake_minimum_required) | b) Package Name (project()) | c) Find other CMake/Catkin packages needed for build (find_package()) | d) Enable Python module support (catkin_python_setup()) | e) Message/Service/Action Generators (add_message_files(), add_service_files(), | add_action_files()) | f) Invoke message/service/action generation (generate_messages()) | g) Specify package build info export (catkin_package()) | h) Libraries/Executables to build | (add_library()/add_executable()/target_link_libraries())ROS
+p35: Overview lesson 7-2 | .1 1 . 2 .1 3 .1 4 | ROS | ~ ~ ~ | Computation | Graph | Objectives | 1、掌握 ROS Computation Graph 的基本概念 | 2、熟练使用 ROS Computation Graph 命令行工具
+p56: Summary | 1. ROS Computation Graph Level | a) 节点 | b) 主机 | c) 参数服务器 | d) 话题 | e) 消息 | f) 服务 | g) 消息记录包
+p59: Overview lesson 7-3 | .1 1 2 3 4 | Turtlesim ~ ~ ~ | Exercises | Objectives | 1、掌握节点、话题、消息、服务的使用方法 | 2、了解 rqt 使用方法 | 3、掌握 roslaunch 编写方法
+p82: Summary | 1. Turtlesim | a) turtlesim introduction, start ros, start turtlesim | b) turtlesim_node(rosnode rospotic) | c) turtle_teleop_key(rqt, rosmsg, rossrv,rosparam) | d) mimic(rosservice)
+
+===== Lesson8 =====
+p2: Overview lesson 8-1 | 1 2 3 4 | C++ basic ~ ~ ~ | Objectives | 1、掌握 c++ 的基本语法 | 2、学会在 Linux 中运行 C/C++ 程序 | 3、了解 OPP 概念 | 4、学会建立 C++ 工程
+p51: Summary | 1. C++ basic | a) 在Ubuntu中运行C/C++ | 1. 安装 GCC 和 G++编译器 | 2. 安装和使用 GDB 调试器 | 3. 编写并调试 C++ 程序 | b) C++中OPP概念 | 1. 类和结构体的定义与区别 | 2. C++ 中的类和对象 | 3. 类的访问修饰符 | 4. 类的 Inheritance 属性 | 5. 命名空间 | c) 建立C++工程 | 1. Linux makefile
+p54: Overview lesson 8-2 | 1 2 3 .1 4 | Roslaunch ~ ~ ~ | Objectives | 1、掌握 roslaunch 编写方法 | 2、熟练使用 roslaunch中的 <node> 标签
+p80: Summary | 1. Roslaunch | a) <launch> | b) <node> | c) <machine> | d) <include> | e) <remap> | f) <env> | g) <param> | h) <rosparam> | i) <group> | j) <test> | k) <arg>
+
+===== Lesson9 =====
+p2: Overview lesson 9-1 | .1 1 . 2 .1 3 .1 4 | Communication C++ example-基 ~ ~ | Model 于ROS编程 | Objectives | 1、掌握发布订阅的通讯模型 | 2、掌握 C++ 编写 ROS 程序的11个步骤
+p32: Summary | 1. C++ example | 1. 头文件和 ROS 模块 | 2. 初始化 ROS 节点 | 3. 在 ROS 节点中打印消息 | 4. 创建节点句柄 | 5. 创建 ROS 消息定义 | 6. 在 ROS 节点中发布话题 | 7. 在 ROS 节点中订阅话题 | 8. 在 ROS 节点中编写回调函数 | 9. ROS 节点中的 ROS spin() 函数 | 10. ROS节点中的 sleep 函数 | 11. 设置和获取 ROS 参数
+p35: Overview lesson 9-2 | 1 2 3 4 | VSCode Topic Model ~ ~ | Installation and C++ Code | Application | Objectives | 1、了解 VSCode 的使用和配置方法 | 2、掌握 C++ 编写 ROS 发布和订阅节点程序
+p63: Summary | 1. VSCode | a) Download | b) Installation | c) Plugins | d) Setups | 2. Communication Model | a) Topic model | b) Service model | 3. Topic Model C++ Code | a) Publush node | b) Subscribe node
+
+===== Lesson10 =====
+p2: Overview lesson 10-1 | 1 . 2 .1 3 .1 4 | Topic Service | communication communication | example-custom example-custom | message type service type | Objectives | 1、掌握自定义消息和自定义服务类型的定义方法 | 2、掌握上述两种方法发布和订阅节点的编程方法
+p41: Summary | 1. Topic communication example-custom message type | a) Standard message type | b) Custom message type | c) Publish node | d) Subscribe node | 2. Service communication example-custom service type | a) Custom service type | b) Publish node | c) Subscribe node | d) Additional statement
+p45: Overview lesson 10-2 | 1 2 3 4 | ROS basic ~ ~ ~ | summary | Objectives | 1、掌握 标记知识点
+p46: Overview lesson 5-1 | 1 2 .1 3 .1 4 | Introduction ~ ~ ~ | to ROS | Objectives | 1、了解 ROS 的定义和特点 | 2、理解 ROS“四位一体”内涵
+p68: Summary | 1. Introduction to ROS | a) What is ROS | b) ROS philosophy | c) ROS history | d) Five stages of learning ROS
+p69: Overview lesson 5-2 | 1 2 .1 3 .1 4 | ROS ~ ~ ~ | Installation | Objectives | 1、掌握在Ubuntu 20.04 中安装 ROS Noetic 发行版的方法 | 2、了解安装过程中错误问题的处理方法
+p94: Summary | 1. ROS Installation | a) 步骤1——步骤7 | b) 步骤3和步骤5错误提示的解决方案 | 2. Command-line tools for ROS | a) rosrun、roscd、roscp、rosed、rosls | 3. Turtlesim | a) turtlesim_node | b) turtle_teleop_key | c) draw_square | d) mimic
+p95: Overview lesson 6-1 | .1 1 .1 2 .1 3 .1 4 | ROS ~ ~ ~ | Filesystem(1) | Objectives | 1、了解ROS系统的三层架构 | 2、掌握ROS文件系统架构 | 3、掌握创建工作空间和功能包的方法
+p116: Summary | 1. ROS系统架构的三个层次： | a) 系统层、中间层、应用层 | 2. ROS系统实现的三层架构： | a) 文件系统级、计算图级、开源社区级 | 3. ROS文件系统 | a) 文件系统架构 | b) 工作空间架构 | c) ROS功能包
+p117: Overview lesson 6-2 | .1 1 .1 2 .1 3 .1 4 | XML File ROS ~ ~ | Filesystem(2) | Objectives | 1、理解 XML 文件的结构 | 2、掌握 Catkin 功能包的组织架构 | 3、掌握 package.xml 的使用方法
+p148: Summary | 1. XML文件：文件结构（文档声明、元素、属性、注释） | 2. ROS文件系统 | a) 文件系统架构 | b) 功能包架构 | c) rosbash | d) catkin功能包 | 3. package.xml： 作用、基本结构、必备标签、依赖项
+p149: Overview lesson 6-3 | 1 . 2 .1 3 4 | Message and ~ ~ | ~ | Service | Objectives | 1、掌握 ROS Message 的定义和使用方法 | 2、掌握 ROS Service 的定义和使用方法
+p171: Summary | 1. Message and Service | a) ROS Message: | ① fields and constants | ② command line tools | ③ custom message type | b) ROS Service: | ① description specification | ② command line tools
+p172: Overview lesson 7-1 | .1 1 . 2 .1 3 .1 4 | CMakeLists.txt ~ ~ ~ | Introduction | Objectives | 1、掌握 CMakeLists.txt 的编译规则 | 2、掌握 CMakeLists.txt 修改方法
+p201: Summary | 1. CMakeLists.txt Introduction | a) Required CMake Version (cmake_minimum_required) | b) Package Name (project()) | c) Find other CMake/Catkin packages needed for build (find_package()) | d) Enable Python module support (catkin_python_setup()) | e) Message/Service/Action Generators (add_message_files(), add_service_files(), | add_action_files()) | f) Invoke message/service/action generation (generate_messages()) | g) Specify package build info export (catkin_package()) | h) Libraries/Executables to build | (add_library()/add_executable()/target_link_libraries())ROS
+p203: Overview lesson 7-2 | .1 1 . 2 .1 3 .1 4 | ROS | ~ ~ ~ | Computation | Graph | Objectives | 1、掌握 ROS Computation Graph 的基本概念 | 2、熟练使用 ROS Computation Graph 命令行工具
+p224: Summary | 1. ROS Computation Graph Level | a) 节点 | b) 主机 | c) 参数服务器 | d) 话题 | e) 消息 | f) 服务 | g) 消息记录包
+p225: Overview lesson 7-3 | .1 1 2 3 4 | Turtlesim ~ ~ ~ | Exercises | Objectives | 1、掌握节点、话题、消息、服务的使用方法 | 2、了解 rqt 使用方法 | 3、掌握 roslaunch 编写方法
+p248: Summary | 1. Turtlesim | a) turtlesim introduction, start ros, start turtlesim | b) turtlesim_node(rosnode rospotic) | c) turtle_teleop_key(rqt, rosmsg, rossrv,rosparam) | d) mimic(rosservice)
+p249: Overview lesson 8-1 | 1 2 3 4 | C++ basic ~ ~ ~ | Objectives | 1、掌握 c++ 的基本语法 | 2、学会在 Linux 中运行 C/C++ 程序 | 3、了解 OPP 概念 | 4、学会建立 C++ 工程
+p298: Summary | 1. C++ basic | a) 在Ubuntu中运行C/C++ | 1. 安装 GCC 和 G++编译器 | 2. 安装和使用 GDB 调试器 | 3. 编写并调试 C++ 程序 | b) C++中OPP概念 | 1. 类和结构体的定义与区别 | 2. C++ 中的类和对象 | 3. 类的访问修饰符 | 4. 类的 Inheritance 属性 | 5. 命名空间 | c) 建立C++工程 | 1. Linux makefile
+p299: Overview lesson 8-2 | 1 2 3 .1 4 | Roslaunch ~ ~ ~ | Objectives | 1、掌握 roslaunch 编写方法 | 2、熟练使用 roslaunch中的 <node> 标签
+p325: Summary | 1. Roslaunch | a) <launch> | b) <node> | c) <machine> | d) <include> | e) <remap> | f) <env> | g) <param> | h) <rosparam> | i) <group> | j) <test> | k) <arg>
+p326: Overview lesson 9-1 | .1 1 . 2 .1 3 .1 4 | Communication C++ example-基 ~ ~ | Model 于ROS编程 | Objectives | 1、掌握发布订阅的通讯模型 | 2、掌握 C++ 编写 ROS 程序的11个步骤
+p356: Summary | 1. C++ example | 1. 头文件和 ROS 模块 | 2. 初始化 ROS 节点 | 3. 在 ROS 节点中打印消息 | 4. 创建节点句柄 | 5. 创建 ROS 消息定义 | 6. 在 ROS 节点中发布话题 | 7. 在 ROS 节点中订阅话题 | 8. 在 ROS 节点中编写回调函数 | 9. ROS 节点中的 ROS spin() 函数 | 10. ROS节点中的 sleep 函数 | 11. 设置和获取 ROS 参数
+p357: Overview lesson 9-2 | 1 2 3 4 | VSCode Topic Model ~ ~ | Installation and C++ Code | Application | Objectives | 1、了解 VSCode 的使用和配置方法 | 2、掌握 C++ 编写 ROS 发布和订阅节点程序
+p385: Summary | 1. VSCode | a) Download | b) Installation | c) Plugins | d) Setups | 2. Communication Model | a) Topic model | b) Service model | 3. Topic Model C++ Code | a) Publush node | b) Subscribe node
+p386: Overview lesson 10-1 | 1 . 2 .1 3 .1 4 | Topic Service | communication communication | example-custom example-custom | message type service type | Objectives | 1、掌握自定义消息和自定义服务类型的定义方法 | 2、掌握上述两种方法发布和订阅节点的编程方法
+p425: Summary | 1. Topic communication example-custom message type | a) Standard message type | b) Custom message type | c) Publish node | d) Subscribe node | 2. Service communication example-custom service type | a) Custom service type | b) Publish node | c) Subscribe node | d) Additional statement

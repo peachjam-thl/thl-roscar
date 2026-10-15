@@ -1,0 +1,35 @@
+{
+  "client_date": "2026-10-15",
+  "verification_basis": "User-supplied Gazebo screenshot, ROS service/topic output, publisher log and explicit report; not independent VM access or instrumented trajectory measurement.",
+  "stage4": {
+    "gazebo_model_visible": true,
+    "model_name": "lesson13_robot",
+    "get_model_properties_success": true,
+    "is_static": false,
+    "drive_joints": ["base_l_wheel_joint", "base_r_wheel_joint"]
+  },
+  "stage6": {
+    "plugin_library_present": true,
+    "cmd_vel_type": "geometry_msgs/Twist",
+    "cmd_vel_subscriber": "/gazebo",
+    "plugin_load_confirmed_by_user_evidence": true,
+    "test_command": "python3 /home/thl/catkin_ws/src/rcdp/scripts/test_forward_step6.py",
+    "commanded_forward_speed_mps": 0.1,
+    "commanded_duration_wall_seconds": 3.0,
+    "reported_forward_motion": true,
+    "reported_stop_after_test": true,
+    "user_confirmation": "向前移动且停止",
+    "log": [
+      "[INFO] [1791994044.814923, 182.107000]: Gazebo test: request forward 0.1 m/s for 3 wall-clock seconds.",
+      "[INFO] [1791994048.332462, 185.597000]: Zero velocity sent; verify that the robot has stopped."
+    ]
+  },
+  "not_verified": [
+    "Measured speed, stopping distance or quantitative trajectory",
+    "Keyboard teleoperation",
+    "LaserScan sensor data",
+    "RGB/depth camera data",
+    "Full robot TF tree and RViz integration",
+    "SLAM and navigation"
+  ]
+}

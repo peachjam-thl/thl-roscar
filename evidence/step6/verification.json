@@ -1,0 +1,51 @@
+{
+  "local_checks": "passed",
+  "xacro_validation_version": "1.13.3",
+  "base_model_links_and_joints_unchanged": true,
+  "expanded_link_count": 10,
+  "expanded_joint_count": 9,
+  "plugin_count": 1,
+  "plugin_parameters": {
+    "robotNamespace": "/",
+    "updateRate": "100",
+    "leftJoint": "base_l_wheel_joint",
+    "rightJoint": "base_r_wheel_joint",
+    "wheelSeparation": "0.8",
+    "wheelDiameter": "0.2",
+    "wheelAcceleration": "0.3",
+    "wheelTorque": "5.0",
+    "commandTopic": "/cmd_vel",
+    "odometryTopic": "/odom",
+    "odometryFrame": "odom",
+    "robotBaseFrame": "root_link",
+    "odometrySource": "world",
+    "publishTf": "true",
+    "publishOdomTF": "true",
+    "publishWheelTF": "false",
+    "publishWheelJointState": "true"
+  },
+  "python_test_script_syntax": "passed",
+  "code_stop_on_normal_exit_or_ctrl_c": "implemented; not a safety watchdog",
+  "archive_crc": "passed",
+  "files": [
+    {
+      "path": "urdf/gazebo/myrobot_drive_step6.xacro",
+      "sha256": "6749814305c92fb69281669f0c3fff93b1a97dbf57a71eee756562445d249c9b"
+    },
+    {
+      "path": "launch/myrobot_drive_step6.launch",
+      "sha256": "7cde38e82c677a12b4f922c7ec38a9223aeec7d809493214b189b8ba18c8fc18"
+    },
+    {
+      "path": "scripts/test_forward_step6.py",
+      "sha256": "96c94f52bf092c2bdc0900ea4d54c488feef6006feaf0365fd79281f30f8cb85"
+    }
+  ],
+  "stage4_user_runtime_evidence": "Screenshot shows robot; GetModelProperties returned dynamic model and both drive joints",
+  "stage6_user_plugin_load_verified": true,
+  "stage6_user_forward_motion_verified": true,
+  "stage6_user_stop_verified": true,
+  "user_runtime_evidence_file": "runtime_user_reported.json",
+  "user_runtime_verification_basis": "User-supplied Gazebo screenshot, ROS service/topic output, publisher log and explicit report; not independent VM access or instrumented trajectory measurement.",
+  "staging_directory": "C:\\Users\\cris\\Documents\\Codex\\2026-09-02\\xu\\work\\lesson13_step6_validation_gvskfrnm"
+}
