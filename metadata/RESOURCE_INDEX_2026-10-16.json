@@ -1,0 +1,349 @@
+{
+  "date_asia_shanghai": "2026-10-16",
+  "assembly_utc": "2026-10-16T09:19:21.788669+00:00",
+  "authorization": "User requested courseware, used code packages, supplied screenshots/logs and project-style documentation in the existing repository",
+  "courseware_latest_supplied": [
+    {
+      "path": "courseware/Lesson11.pdf",
+      "pages": 71,
+      "sha256": "2a85289793ba3504d3ed8435bbb2bc5cf2119a2adfd0739660dd25bd1fa4d9b8",
+      "already_in_previous_commit_same_bytes": true
+    },
+    {
+      "path": "courseware/Lesson12.pdf",
+      "pages": 123,
+      "sha256": "a6533d5a26ac3b4bf629205e1c253d374f96ad2cf7809677f4ecbd948afe53d8",
+      "already_in_previous_commit_same_bytes": true
+    },
+    {
+      "path": "courseware/Lesson13.pdf",
+      "pages": 73,
+      "sha256": "bb3a2f7fbae5a0f018d84086ee10681493a6e2c56b40086750d8b1138eb3cc1c",
+      "already_in_previous_commit_same_bytes": true
+    },
+    {
+      "path": "courseware/Lesson14.pdf",
+      "pages": 48,
+      "sha256": "280d0188343a214ca46ed94bea9aa2898671ba9ed30229471fed677aeccfcb55",
+      "already_in_previous_commit_same_bytes": true
+    },
+    {
+      "path": "courseware/Lesson15.pdf",
+      "pages": 37,
+      "sha256": "baf39f4539523cc42ef448a2549374da762e4cb16238978b61e030e9fd69255e",
+      "already_in_previous_commit_same_bytes": true
+    }
+  ],
+  "new_binary_and_world_assets": [
+    {
+      "path": "reference/Lesson14_code_original.zip",
+      "source_name": "Lesson14_code.zip",
+      "bytes": 94041,
+      "sha256": "46b3f9b5f53e7e96c9f2fe2d9fb7698255b0071f0a3f476d4a5159b94c9605d2",
+      "byte_identical_to_supplied_file": true
+    },
+    {
+      "path": "reference/Lesson15_code_original.zip",
+      "source_name": "Lesson15_code.zip",
+      "bytes": 167320,
+      "sha256": "dc714ec2a474eb5b5858ae4c05e376837ca00bfd6b346ee63a4f769cf76bbf9e",
+      "byte_identical_to_supplied_file": true
+    },
+    {
+      "path": "archives/Lesson14_laser_step7.zip",
+      "source_name": "Lesson14_laser_step7.zip",
+      "bytes": 3950,
+      "sha256": "718eb0a59ae8bdfa2b2c9c033ba2d5bbdd9dffd324384294c041cd8e95365bda",
+      "byte_identical_to_supplied_file": true
+    },
+    {
+      "path": "archives/Lesson14_tf_rviz_step8.zip",
+      "source_name": "Lesson14_tf_rviz_step8.zip",
+      "bytes": 2276,
+      "sha256": "af4941c6bd737f6af6a8ea086c91b2cda922958a1da4c8c40f8246d5b06d296d",
+      "byte_identical_to_supplied_file": true
+    },
+    {
+      "path": "archives/Lesson14_camera_step9.zip",
+      "source_name": "Lesson14_camera_step9.zip",
+      "bytes": 3331,
+      "sha256": "e1c44d9b177ae11620521f7fd4e26e54cc3420e57d381e988617b022c761122e",
+      "byte_identical_to_supplied_file": true
+    },
+    {
+      "path": "archives/Lesson14_cloud_preview_step9a.zip",
+      "source_name": "Lesson14_cloud_preview_step9a.zip",
+      "bytes": 3752,
+      "sha256": "5c0f06fa98466c0b7265c06bb2f2becf08f5b489e98ee7c25ef634ad017c9d5e",
+      "byte_identical_to_supplied_file": true
+    },
+    {
+      "path": "catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world",
+      "source_name": "lesson14_box_house_step7.world",
+      "bytes": 20805,
+      "sha256": "ab704ef5ba19928c0edceb9a863a65027e1bff78a05110090679fe0bbf4d0857",
+      "byte_identical_to_supplied_file": true
+    }
+  ],
+  "zip_checks": [
+    {
+      "path": "reference/Lesson14_code_original.zip",
+      "file_count": 86,
+      "crc": "passed",
+      "path_safety": "passed"
+    },
+    {
+      "path": "reference/Lesson15_code_original.zip",
+      "file_count": 126,
+      "crc": "passed",
+      "path_safety": "passed"
+    },
+    {
+      "path": "archives/Lesson14_laser_step7.zip",
+      "file_count": 4,
+      "crc": "passed",
+      "path_safety": "passed"
+    },
+    {
+      "path": "archives/Lesson14_tf_rviz_step8.zip",
+      "file_count": 3,
+      "crc": "passed",
+      "path_safety": "passed"
+    },
+    {
+      "path": "archives/Lesson14_camera_step9.zip",
+      "file_count": 4,
+      "crc": "passed",
+      "path_safety": "passed"
+    },
+    {
+      "path": "archives/Lesson14_cloud_preview_step9a.zip",
+      "file_count": 2,
+      "crc": "passed",
+      "path_safety": "passed"
+    }
+  ],
+  "new_screenshots": [
+    {
+      "path": "evidence/screenshots/step8_rviz_laser_2026-10-15.png",
+      "source_name": "屏幕截图 2026-10-15 211929.png",
+      "bytes": 997394,
+      "sha256": "09f343c1f0a9c2351ebdba7fad8fd3a6a4dfdcaae114f9b0392974ddb0472ea9",
+      "byte_identical_to_supplied_file": true,
+      "stage": "step8"
+    },
+    {
+      "path": "evidence/screenshots/step9_rgb_depth_2026-10-16.png",
+      "source_name": "屏幕截图 2026-10-16 124249.png",
+      "bytes": 1004967,
+      "sha256": "da7cb1a6f63fc958c3a0e4fd6add44a74855ac9fa1d7045590adbd52a00ab1f4",
+      "byte_identical_to_supplied_file": true,
+      "stage": "step9"
+    }
+  ],
+  "original_user_text_attachments": [
+    {
+      "path": "evidence/logs/step7_launch_user_supplied.txt",
+      "source_name": "已粘贴的文本.txt",
+      "bytes": 7266,
+      "sha256": "4a30fa840d8089e5e6db90b3f74711752049529db371fa373662623c5df5914b",
+      "byte_identical_to_supplied_file": true,
+      "source_kind": "user-supplied text attachment, original bytes"
+    },
+    {
+      "path": "evidence/logs/step8_launch_user_supplied.txt",
+      "source_name": "已粘贴的文本.txt",
+      "bytes": 10332,
+      "sha256": "f6a3d579fa3e65be321944198911e6634222794cb375b87c01b975f1efad095f",
+      "byte_identical_to_supplied_file": true,
+      "source_kind": "user-supplied text attachment, original bytes"
+    }
+  ],
+  "extracted_user_terminal_records": [
+    {
+      "path": "evidence/logs/user_terminal_001.txt",
+      "timestamp_utc": "2026-10-15T12:38:19.499Z",
+      "first_line": "thl@ubuntu:~/桌面$ ls -lh /home/thl/Lesson14_code.zip /home/thl/Lesson15_code.zip",
+      "bytes": 351,
+      "sha256": "dcc143a36975b5d14989f3c2ac22eb8c8b6f4f97599c28624ee3ebf75edc6107",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_002.txt",
+      "timestamp_utc": "2026-10-15T12:41:10.954Z",
+      "first_line": "thl@ubuntu:~/桌面$ ls -l /home/thl/ros_course_reference/Lesson14_code/catkin_ws/src/rcdp/package.xml",
+      "bytes": 440,
+      "sha256": "b7ab4b073ed076cfddc8260d15056eb53110219cc9ee0f151bdfd1060489dbfc",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_003.txt",
+      "timestamp_utc": "2026-10-15T12:44:08.911Z",
+      "first_line": "ls -lh /home/thl/ros_course_backups/rcdp_before_lesson14_15_*.tar.gz",
+      "bytes": 183,
+      "sha256": "fd9cce2b6e9b60e774ae51da5bb59382881416122b642ced1213d73cae04c63a",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_004.txt",
+      "timestamp_utc": "2026-10-15T12:46:00.868Z",
+      "first_line": "thl@ubuntu:~/桌面$ rospack find teleop_twist_keyboard",
+      "bytes": 430,
+      "sha256": "01e7c9965d081f30cda7fa28f20df84cc644692eae9c470a4d8e9bee67ebebf1",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_005.txt",
+      "timestamp_utc": "2026-10-15T12:46:44.910Z",
+      "first_line": "thl@ubuntu:~/桌面$ rospack find robot_state_publisher",
+      "bytes": 831,
+      "sha256": "d9a512bcb32f46b674a975e909b762280dcd64be2a43844e842b32c188ee6a8a",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_006.txt",
+      "timestamp_utc": "2026-10-15T12:52:48.870Z",
+      "first_line": "thl@ubuntu:~/桌面$ unzip -n /home/thl/Lesson14_laser_step7.zip -d /home/thl/catkin_ws/src/rcdp",
+      "bytes": 816,
+      "sha256": "82263d20ac77442f6855f589c4cfefab6ccc23444fec53e1987811777310ec50",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_007.txt",
+      "timestamp_utc": "2026-10-15T13:01:28.506Z",
+      "first_line": "thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 1491,
+      "sha256": "e9865436d79d908bdcf21f37abb0beea882ee8532400f2894ac4885732e38df2",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_008.txt",
+      "timestamp_utc": "2026-10-15T13:04:07.034Z",
+      "first_line": "frame: laser_scan_link",
+      "bytes": 132,
+      "sha256": "8086928483ffcb85831bac93a57cbac1ab1057a70a647ecded591e15d54e078f",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_009.txt",
+      "timestamp_utc": "2026-10-15T13:14:11.785Z",
+      "first_line": "thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 765,
+      "sha256": "4e977249b1cc7b632564c26c83e151ef8fdfd045a346f3381ff1f5bf4fafa68c",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_010.txt",
+      "timestamp_utc": "2026-10-15T13:20:30.852Z",
+      "first_line": "thl@ubuntu:~/桌面$ rosrun tf tf_echo odom laser_scan_link",
+      "bytes": 1651,
+      "sha256": "f108886fb3677a682f3f479d852fc8c41dae8158c33a0178f74547de6a5dc249",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_011.txt",
+      "timestamp_utc": "2026-10-15T13:25:54.437Z",
+      "first_line": "这是黄色报错。以下是后续完整输出thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 765,
+      "sha256": "3012730b34a97c83f97d47afe7c3c223ecbd4eb0964b25aa1a6dca656f56da56",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_012.txt",
+      "timestamp_utc": "2026-10-15T13:33:01.744Z",
+      "first_line": "thl@ubuntu:~/桌面$ rosnode info /sim",
+      "bytes": 1545,
+      "sha256": "5d8afbf74e34586c2bfa31ec7d3cae833b38d7cf2f530410a3570a7244042cd7",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_013.txt",
+      "timestamp_utc": "2026-10-15T13:36:54.411Z",
+      "first_line": "received: 2997",
+      "bytes": 68,
+      "sha256": "9a12c02bfd123ee65c2fb311a76b840f75ce3afa522c8813f43b3518f40f305a",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_014.txt",
+      "timestamp_utc": "2026-10-16T04:36:25.414Z",
+      "first_line": "thl@ubuntu:~/桌面$ unzip -n /home/thl/Lesson14_camera_step9.zip -d /home/thl/catkin_ws/src/rcdp",
+      "bytes": 821,
+      "sha256": "e1cb5b2bd79f98e856bbb6f143f6704a25982dd490a266e99f9ac3a1085122a0",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_015.txt",
+      "timestamp_utc": "2026-10-16T04:43:20.326Z",
+      "first_line": "thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 437,
+      "sha256": "72786503c57aebee8a7c49d9fd1776fbde422cdad716339271250c8907b26a46",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_016.txt",
+      "timestamp_utc": "2026-10-16T04:54:34.667Z",
+      "first_line": "thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 4262,
+      "sha256": "7549b5f4fa7884dcb4f6e0ebc3718304b856a54cf4091a39e99b40ad358d4821",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_017.txt",
+      "timestamp_utc": "2026-10-16T05:00:58.869Z",
+      "first_line": "[WARN] [1792126743.722288295, 844.271000000]: TF_REPEATED_DATA ignoring data with redundant timestam",
+      "bytes": 747,
+      "sha256": "83c80eb35d44b1ef51542f487c6c7f13e7388fbb9d153be8ed2c7c54c9939c11",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_018.txt",
+      "timestamp_utc": "2026-10-16T05:06:04.454Z",
+      "first_line": "hl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 1457,
+      "sha256": "932d0874d7658dd4eebb659598e59578d35bc5b4248dbc07a1b2c69eae70559a",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_019.txt",
+      "timestamp_utc": "2026-10-16T05:10:33.918Z",
+      "first_line": "thl@ubuntu:~/桌面$ LIBGL_ALWAYS_SOFTWARE=true rosrun rviz rviz -d /home/thl/catkin_ws/src/rcdp/config/",
+      "bytes": 1985,
+      "sha256": "05445d6ac159339c2f1c258b6769d2344da1fe569ca9de8f0d9ad1a5f0537d03",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_020.txt",
+      "timestamp_utc": "2026-10-16T05:16:12.122Z",
+      "first_line": "hl@ubuntu:~/桌面$ timeout 25s python3 -u - <<'PY'",
+      "bytes": 1434,
+      "sha256": "b2c9d5cd599f741ca4f2935f5351368106e218175810b7ff6ff1f855863173d3",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_021.txt",
+      "timestamp_utc": "2026-10-16T05:27:33.052Z",
+      "first_line": "thl@ubuntu:~/桌面$ timeout 15s python3 -u - <<'PY'",
+      "bytes": 567,
+      "sha256": "3a41b58b834223f2f3ef37afb74e338e72db7e7135d88ea74592769b8d7003ef",
+      "source_kind": "human user terminal message only"
+    },
+    {
+      "path": "evidence/logs/user_terminal_022.txt",
+      "timestamp_utc": "2026-10-16T05:40:07.260Z",
+      "first_line": "thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash",
+      "bytes": 3628,
+      "sha256": "8b054b91ce3e088157309ed55c3745aa56b5625a920255b66f8b3ad487803894",
+      "source_kind": "human user terminal message only"
+    }
+  ],
+  "excluded": [
+    "raw internal session file",
+    "assistant reasoning",
+    "system/developer messages",
+    "tool calls and results",
+    "credentials",
+    "unprovided VM files"
+  ],
+  "runtime_evidence_scope": "User supplied/observed, not direct agent VM access"
+}

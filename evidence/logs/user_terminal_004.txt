@@ -1,0 +1,8 @@
+thl@ubuntu:~/桌面$ rospack find teleop_twist_keyboard
+[rospack] Error: package 'teleop_twist_keyboard' not found
+thl@ubuntu:~/桌面$ rospack find robot_state_publisher
+/opt/ros/noetic/share/robot_state_publisher
+thl@ubuntu:~/桌面$ rospack find joint_state_publisher
+/opt/ros/noetic/share/joint_state_publisher
+thl@ubuntu:~/桌面$ rospack find teleop_twist_keyboard
+[rospack] Error: package 'teleop_twist_keyboard' not found

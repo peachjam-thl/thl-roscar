@@ -1,0 +1,11 @@
+thl@ubuntu:~/桌面$ unzip -n /home/thl/Lesson14_laser_step7.zip -d /home/thl/catkin_ws/src/rcdp
+Archive:  /home/thl/Lesson14_laser_step7.zip
+  inflating: /home/thl/catkin_ws/src/rcdp/urdf/gazebo/myrobot_laser_step7.xacro  
+  inflating: /home/thl/catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro  
+  inflating: /home/thl/catkin_ws/src/rcdp/launch/myrobot_laser_step7.launch  
+  inflating: /home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world  
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ rosrun xacro xacro /home/thl/catkin_ws/src/rcdp/urdf/gazebo/myrobot_laser_step7.xacro -o /tmp/lesson14_laser_step7.urdf
+
+thl@ubuntu:~/桌面$ ls -lh /tmp/lesson14_laser_step7.urdf
+-rw-rw-r-- 1 thl thl 13K Oct 15 05:52 /tmp/lesson14_laser_step7.urdf

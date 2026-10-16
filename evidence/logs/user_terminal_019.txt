@@ -1,0 +1,15 @@
+thl@ubuntu:~/桌面$ LIBGL_ALWAYS_SOFTWARE=true rosrun rviz rviz -d /home/thl/catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz __name:=lesson14_rviz_recovery
+[INFO] [1792127400.712397416]: rviz version 1.14.26
+[INFO] [1792127400.712425101]: compiled against Qt version 5.12.8
+[INFO] [1792127400.712429660]: compiled against OGRE version 1.9.0 (Ghadamon)
+[INFO] [1792127400.717612932]: Forcing OpenGl version 0.
+[INFO] [1792127400.983903132, 1403.002000000]: Stereo is NOT SUPPORTED
+[INFO] [1792127400.983964725, 1403.002000000]: OpenGL device: llvmpipe (LLVM 12.0.0, 256 bits)
+[INFO] [1792127400.983995863, 1403.002000000]: OpenGl version: 3.1 (GLSL 1.4).
+[WARN] [1792127404.774321985, 1406.316000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 1406.316000 according to authority unknown_publisher
+[WARN] [1792127406.588358305, 1407.919000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 1407.907000 according to authority unknown_publisher
+[WARN] [1792127411.952506215, 1412.576000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 1412.565000 according to authority unknown_publisher
+[WARN] [1792127412.276397287, 1412.859000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 1412.847000 according to authority unknown_publisher
+[WARN] [1792127415.776499406, 1415.902000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 1415.887000 according to authority unknown_publisher
+[WARN] [1792127417.421692778, 1417.329000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 1417.314000 according to authority unknown_publisher
+[WARN] [1792127420.399765942, 1419.909000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) a

@@ -1,0 +1,3 @@
+received: 2997
+repeated_timestamps: 0
+publishers: {'/gazebo': 2997}

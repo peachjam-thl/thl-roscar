@@ -1,0 +1,39 @@
+thl@ubuntu:~/桌面$ rosrun tf tf_echo odom laser_scan_link
+Failure at 78.454000000
+Exception thrown:"laser_scan_link" passed to lookupTransform argument source_frame does not exist. 
+The current list of frames is:
+Frame base_link exists with parent root_link.
+Frame root_link exists with parent odom.
+Frame platform_link exists with parent support_link.
+Frame support_link exists with parent base_link.
+
+Failure at 78.456000000
+Exception thrown:"laser_scan_link" passed to lookupTransform argument source_frame does not exist. 
+The current list of frames is:
+Frame base_link exists with parent root_link.
+Frame root_link exists with parent odom.
+Frame platform_link exists with parent support_link.
+Frame support_link exists with parent base_link.
+
+At time 79.418
+- Translation: [0.231, -0.001, 0.889]
+- Rotation: in Quaternion [0.000, 0.000, -0.001, 1.000]
+            in RPY (radian) [0.000, 0.000, -0.002]
+            in RPY (degree) [0.000, 0.018, -0.111]
+At time 80.437
+- Translation: [0.231, -0.001, 0.889]
+- Rotation: in Quaternion [0.000, 0.000, -0.001, 1.000]
+            in RPY (radian) [0.000, 0.000, -0.002]
+            in RPY (degree) [0.000, 0.018, -0.113]
+At time 81.438
+- Translation: [0.232, -0.001, 0.889]
+- Rotation: in Quaternion [0.000, 0.000, -0.001, 1.000]
+            in RPY (radian) [0.000, 0.000, -0.002]
+            in RPY (degree) [0.000, 0.018, -0.114]
+At time 82.437
+- Translation: [0.232, -0.001, 0.889]
+- Rotation: in Quaternion [0.000, 0.000, -0.001, 1.000]
+            in RPY (radian) [0.000, 0.000, -0.002]
+            in RPY (degree) [0.000, 0.018, -0.116]
+
+[Screenshot supplied separately; see screenshot index.]

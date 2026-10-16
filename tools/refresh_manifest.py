@@ -38,10 +38,11 @@ def main():
     provenance["last_update_date_china"] = "2026-10-16"
     provenance["active_code_snapshot_basis"] = (
         "Original rcdp plus delivered step4/6 and twelve step7/8/9/9a supplemental "
-        "source/config files; not a fresh VM disk read-back. "
-        "The classroom indoor world is intentionally not newly distributed."
+        "source/config files plus the user-requested classroom indoor world; "
+        "not a fresh VM disk read-back. Original course packages stay in reference."
     )
     provenance["public_update_2026_10_16"] = {
+        "scope_applies_to_commit": "91ceab5",
         "scope": "Sanitized notes and supplemental implementation/configuration only",
         "course_original_archives_world_screenshots_raw_logs_added": False,
         "new_source_files": [
@@ -52,6 +53,18 @@ def main():
         "whole_repository_history_sanitized": False,
         "rights_note": "No blanket open-source license or redistribution right for historical course material is granted."
     }
+    resource_path = ROOT / "metadata/RESOURCE_INDEX_2026-10-16.json"
+    if resource_path.is_file():
+        resource = json.loads(resource_path.read_text(encoding="utf-8"))
+        provenance["followup_user_requested_project_resources"] = {
+            "resource_index": resource_path.relative_to(ROOT).as_posix(),
+            "latest_course_pdfs_already_present_same_bytes": len(resource["courseware_latest_supplied"]),
+            "new_archives_and_world": resource["new_binary_and_world_assets"],
+            "new_screenshots": resource["new_screenshots"],
+            "original_text_attachments": resource["original_user_text_attachments"],
+            "user_terminal_record_count": len(resource["extracted_user_terminal_records"]),
+            "internal_session_or_credentials_exported": False
+        }
     provenance_path.write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     listed = subprocess.check_output(
         ["git", "-c", "core.quotepath=false", "ls-files", "--cached", "--others", "--exclude-standard", "-z"],

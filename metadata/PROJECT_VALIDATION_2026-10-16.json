@@ -1,0 +1,37 @@
+{
+  "date_asia_shanghai": "2026-10-16",
+  "checks": "passed",
+  "scope": "Static archive/code/content checks only; no direct Ubuntu runtime or full clean-install acceptance",
+  "latest_course_pdfs_same_existing_bytes": 5,
+  "latest_course_pages": 352,
+  "new_zip_crc_checks_passed": 6,
+  "new_original_screenshots_verified": 2,
+  "new_original_user_text_attachments": 2,
+  "selected_user_terminal_records": 22,
+  "resource_hashes_verified": 33,
+  "relative_document_links_checked": 101,
+  "xacro_expansion_counts": {
+    "myrobot_laser_step7.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 2
+    },
+    "myrobot_tf_step8.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 3
+    },
+    "myrobot_camera_step9.xacro": {
+      "links": 11,
+      "joints": 10,
+      "plugins": 4
+    }
+  },
+  "python38_syntax": "passed",
+  "rviz_yaml": "passed",
+  "credential_pattern_check": "none_detected_in_changed_text_or_added_zip_text",
+  "raw_internal_session_exported": false,
+  "historical_repository_pii_cleanup": false,
+  "rviz_sigbus_root_cause_fixed": false,
+  "tf_repeated_data_root_cause_fixed": false
+}

@@ -1,0 +1,4 @@
+[WARN] [1792126743.722288295, 844.271000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 844.256000 according to authority unknown_publisher
+[WARN] [1792126745.286672862, 845.629000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 845.616000 according to authority unknown_publisher
+[lesson14_rviz-5] process has died [pid 86178, exit code -7, cmd /opt/ros/noetic/lib/rviz/rviz -d /home/thl/catkin_ws/src/rcdp/config/lesson14_camera_step9.rviz __name:=lesson14_rviz __log:=/home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/lesson14_rviz-5.log].
+log file: /home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/lesson14_rviz-5*.log

@@ -352,13 +352,14 @@
       "sha256": "c2820f8316595c5d426045d0f28ab6aaab118934c2a3dd563a9156a2449da8de"
     }
   ],
-  "active_code_snapshot_basis": "Original rcdp plus delivered step4/6 and twelve step7/8/9/9a supplemental source/config files; not a fresh VM disk read-back. The classroom indoor world is intentionally not newly distributed.",
+  "active_code_snapshot_basis": "Original rcdp plus delivered step4/6 and twelve step7/8/9/9a supplemental source/config files plus the user-requested classroom indoor world; not a fresh VM disk read-back. Original course packages stay in reference.",
   "missing_live_vm_source": [
     "robot_course_pkg full current source",
     "entire VM environment and runtime logs not supplied by user"
   ],
   "last_update_date_china": "2026-10-16",
   "public_update_2026_10_16": {
+    "scope_applies_to_commit": "91ceab5",
     "scope": "Sanitized notes and supplemental implementation/configuration only",
     "course_original_archives_world_screenshots_raw_logs_added": false,
     "new_source_files": [
@@ -413,5 +414,98 @@
     ],
     "whole_repository_history_sanitized": false,
     "rights_note": "No blanket open-source license or redistribution right for historical course material is granted."
+  },
+  "followup_user_requested_project_resources": {
+    "resource_index": "metadata/RESOURCE_INDEX_2026-10-16.json",
+    "latest_course_pdfs_already_present_same_bytes": 5,
+    "new_archives_and_world": [
+      {
+        "path": "reference/Lesson14_code_original.zip",
+        "source_name": "Lesson14_code.zip",
+        "bytes": 94041,
+        "sha256": "46b3f9b5f53e7e96c9f2fe2d9fb7698255b0071f0a3f476d4a5159b94c9605d2",
+        "byte_identical_to_supplied_file": true
+      },
+      {
+        "path": "reference/Lesson15_code_original.zip",
+        "source_name": "Lesson15_code.zip",
+        "bytes": 167320,
+        "sha256": "dc714ec2a474eb5b5858ae4c05e376837ca00bfd6b346ee63a4f769cf76bbf9e",
+        "byte_identical_to_supplied_file": true
+      },
+      {
+        "path": "archives/Lesson14_laser_step7.zip",
+        "source_name": "Lesson14_laser_step7.zip",
+        "bytes": 3950,
+        "sha256": "718eb0a59ae8bdfa2b2c9c033ba2d5bbdd9dffd324384294c041cd8e95365bda",
+        "byte_identical_to_supplied_file": true
+      },
+      {
+        "path": "archives/Lesson14_tf_rviz_step8.zip",
+        "source_name": "Lesson14_tf_rviz_step8.zip",
+        "bytes": 2276,
+        "sha256": "af4941c6bd737f6af6a8ea086c91b2cda922958a1da4c8c40f8246d5b06d296d",
+        "byte_identical_to_supplied_file": true
+      },
+      {
+        "path": "archives/Lesson14_camera_step9.zip",
+        "source_name": "Lesson14_camera_step9.zip",
+        "bytes": 3331,
+        "sha256": "e1c44d9b177ae11620521f7fd4e26e54cc3420e57d381e988617b022c761122e",
+        "byte_identical_to_supplied_file": true
+      },
+      {
+        "path": "archives/Lesson14_cloud_preview_step9a.zip",
+        "source_name": "Lesson14_cloud_preview_step9a.zip",
+        "bytes": 3752,
+        "sha256": "5c0f06fa98466c0b7265c06bb2f2becf08f5b489e98ee7c25ef634ad017c9d5e",
+        "byte_identical_to_supplied_file": true
+      },
+      {
+        "path": "catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world",
+        "source_name": "lesson14_box_house_step7.world",
+        "bytes": 20805,
+        "sha256": "ab704ef5ba19928c0edceb9a863a65027e1bff78a05110090679fe0bbf4d0857",
+        "byte_identical_to_supplied_file": true
+      }
+    ],
+    "new_screenshots": [
+      {
+        "path": "evidence/screenshots/step8_rviz_laser_2026-10-15.png",
+        "source_name": "屏幕截图 2026-10-15 211929.png",
+        "bytes": 997394,
+        "sha256": "09f343c1f0a9c2351ebdba7fad8fd3a6a4dfdcaae114f9b0392974ddb0472ea9",
+        "byte_identical_to_supplied_file": true,
+        "stage": "step8"
+      },
+      {
+        "path": "evidence/screenshots/step9_rgb_depth_2026-10-16.png",
+        "source_name": "屏幕截图 2026-10-16 124249.png",
+        "bytes": 1004967,
+        "sha256": "da7cb1a6f63fc958c3a0e4fd6add44a74855ac9fa1d7045590adbd52a00ab1f4",
+        "byte_identical_to_supplied_file": true,
+        "stage": "step9"
+      }
+    ],
+    "original_text_attachments": [
+      {
+        "path": "evidence/logs/step7_launch_user_supplied.txt",
+        "source_name": "已粘贴的文本.txt",
+        "bytes": 7266,
+        "sha256": "4a30fa840d8089e5e6db90b3f74711752049529db371fa373662623c5df5914b",
+        "byte_identical_to_supplied_file": true,
+        "source_kind": "user-supplied text attachment, original bytes"
+      },
+      {
+        "path": "evidence/logs/step8_launch_user_supplied.txt",
+        "source_name": "已粘贴的文本.txt",
+        "bytes": 10332,
+        "sha256": "f6a3d579fa3e65be321944198911e6634222794cb375b87c01b975f1efad095f",
+        "byte_identical_to_supplied_file": true,
+        "source_kind": "user-supplied text attachment, original bytes"
+      }
+    ],
+    "user_terminal_record_count": 22,
+    "internal_session_or_credentials_exported": false
   }
 }

@@ -1,6 +1,6 @@
 # ROS 小车实践复盘：2026-10-15—16
 
-本文回答：这两天做了什么、怎样做、遇到什么问题、怎样恢复、还没做什么。日期按中国时间整理，虚拟机显示时间可能不同，不拿文件时间推断运行先后。公开版本不包含个人截图、原始日志、用户名／主机地址、课程原包或新增课件。
+本文回答：这两天做了什么、怎样做、遇到什么问题、怎样恢复、还没做什么。日期按中国时间整理，虚拟机显示时间可能不同，不拿文件时间推断运行先后。本文最初是脱敏复盘，之后按用户新要求另补齐实际截图、用户终端记录、原始附件与代码包，见 [资料索引](RESOURCES.md)。
 
 证据分两类：**用户现场反馈**是用户在 Ubuntu 执行并回传的输出／观察；**本地静态检查**是助手侧 XML/Xacro/YAML、Python 与合成数据测试。后者不等于在 Ubuntu 或 VMware 运行。
 
@@ -42,7 +42,7 @@
 - `urdf/gazebo/myrobot_laser_step7.xacro`：包含既有 step6，只追加雷达。
 - `urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro`：ray 传感器和 `libgazebo_ros_laser.so` 配置。
 - `launch/myrobot_laser_step7.launch`：加载场景、模型，spawn 一台车。
-- 用户本地的 `worlds/lesson14_box_house_step7.world`：课程室内场景；本次公开更新不新增分发该文件。
+- 用户本地的 `worlds/lesson14_box_house_step7.world`：课程室内场景；先前更新未包含，后按用户新要求补入当前仓库。
 
 雷达挂在 `laser_scan_link`，输出 `/scan`，360 个角度采样，角范围 -3 到 +3 rad（约 343.8°，不是正好 360°）；配置 5.5 Hz、距离 0.1–30 m。
 
@@ -276,4 +276,4 @@ rostopic pub -1 /cmd_vel geometry_msgs/Twist '{linear: {x: 0.0, y: 0.0, z: 0.0},
 
 恢复实践后先检查 teleop、gmapping、map_server、amcl、move_base 等依赖；做当前工程新备份，再适配 rs_nav 到 `laser_scan_link`、当前模型和新地图。老师地图含旧机器绝对路径，参考图也不保证对应当前 world。先建图保存，再停 Gmapping 开 AMCL，最后 move_base；不把老师完整导航 launch 与现有 RSP 叠加。
 
-**本次只归档，不执行这些待办。** 公开上传边界及缺失的课程 world 见 [PUBLIC_UPDATE_SCOPE.md](PUBLIC_UPDATE_SCOPE.md)。
+**本次只归档，不执行这些待办。** world、课件、原始代码包及证据现已建立 [资料索引](RESOURCES.md)；分享边界见 [PUBLIC_UPDATE_SCOPE.md](PUBLIC_UPDATE_SCOPE.md)。

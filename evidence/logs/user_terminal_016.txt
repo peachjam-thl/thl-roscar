@@ -1,0 +1,101 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ timeout 20s python3 - <<'PY'
+> import math
+> import struct
+> import rospy
+> from sensor_msgs.msg import Image
+> 
+> rospy.init_node("lesson14_check_depth", anonymous=True)
+> msg = rospy.wait_for_message(
+>     "/kinect/depth/image_raw", Image, timeout=12
+> )
+> 
+> print("frame:", msg.header.frame_id)
+> print("resolution:", msg.width, msg.height)
+> print("encoding:", msg.encoding)
+> 
+> if msg.encoding != "32FC1":
+>     raise SystemExit("Unexpected encoding; send this output for checking.")
+> if msg.width == 0 or msg.height == 0:
+>     raise SystemExit("Empty image.")
+> 
+> row = struct.Struct(
+>     (">" if msg.is_bigendian else "<") + str(msg.width) + "f"
+> )
+> if msg.step < row.size or len(msg.data) < msg.step * msg.height:
+>     raise SystemExit("Image byte layout is invalid.")
+> 
+> valid = []
+> for y in range(msg.height):
+>     values = row.unpack_from(msg.data, y * msg.step)
+>     valid.extend(v for v in values if math.isfinite(v) and v > 0)
+> 
+> center_offset = (msg.height // 2) * msg.step + (msg.width // 2) * 4
+> center = struct.unpack_from(
+>     (">" if msg.is_bigendian else "<") + "f", msg.data, center_offset
+> )[0]
+> 
+> print("total_pixels:", msg.width * msg.height)
+> print("valid_pixels:", len(valid))
+> print("min_depth_m:", min(valid) if valid else None)
+> print("max_depth_m:", max(valid) if valid else None)
+> print("center_depth_m:", center)
+> PY
+frame: rotate_depth_camera_link
+resolution: 640 480
+encoding: 32FC1
+total_pixels: 307200
+valid_pixels: 307200
+min_depth_m: 0.783237874507904
+max_depth_m: 3.8378396034240723
+center_depth_m: 3.8069357872009277
+thl@ubuntu:~/桌面$ timeout 7s rosrun tf tf_echo odom rotate_depth_camera_link
+Failure at 589.308000000
+Exception thrown:Could not find a connection between 'odom' and 'rotate_depth_camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+The current list of frames is:
+Frame base_link exists with parent root_link.
+Frame root_link exists with parent odom.
+Frame rotate_depth_camera_link exists with parent depth_camera_link.
+Frame platform_link exists with parent support_link.
+Frame support_link exists with parent base_link.
+Frame left_wheel_link exists with parent base_link.
+Frame right_wheel_link exists with parent base_link.
+
+Failure at 589.308000000
+Exception thrown:Could not find a connection between 'odom' and 'rotate_depth_camera_link' because they are not part of the same tree.Tf has two or more unconnected trees.
+The current list of frames is:
+Frame base_link exists with parent root_link.
+Frame root_link exists with parent odom.
+Frame rotate_depth_camera_link exists with parent depth_camera_link.
+Frame platform_link exists with parent support_link.
+Frame support_link exists with parent base_link.
+Frame left_wheel_link exists with parent base_link.
+Frame right_wheel_link exists with parent base_link.
+
+At time 590.268
+- Translation: [0.574, -0.018, 0.339]
+- Rotation: in Quaternion [-0.496, 0.504, -0.503, 0.496]
+            in RPY (radian) [-1.571, 0.000, -1.585]
+            in RPY (degree) [-90.018, 0.000, -90.822]
+At time 591.267
+- Translation: [0.574, -0.018, 0.339]
+- Rotation: in Quaternion [-0.496, 0.504, -0.504, 0.496]
+            in RPY (radian) [-1.571, 0.000, -1.585]
+            in RPY (degree) [-90.018, 0.000, -90.823]
+At time 592.268
+- Translation: [0.574, -0.018, 0.339]
+- Rotation: in Quaternion [-0.496, 0.504, -0.504, 0.496]
+            in RPY (radian) [-1.571, 0.000, -1.585]
+            in RPY (degree) [-90.018, 0.000, -90.825]
+At time 593.287
+- Translation: [0.575, -0.018, 0.339]
+- Rotation: in Quaternion [-0.496, 0.504, -0.504, 0.496]
+            in RPY (radian) [-1.571, 0.000, -1.585]
+            in RPY (degree) [-90.018, 0.000, -90.826]
+At time 594.297
+- Translation: [0.575, -0.018, 0.339]
+- Rotation: in Quaternion [-0.496, 0.504, -0.504, 0.496]
+            in RPY (radian) [-1.571, 0.000, -1.585]
+            in RPY (degree) [-90.018, 0.000, -90.828]
+Warning: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 594.525000 according to authority unknown_publisher
+         at line 277 in /tmp/binarydeb/ros-noetic-tf2-0.7.10/src/buffer_core.cpp

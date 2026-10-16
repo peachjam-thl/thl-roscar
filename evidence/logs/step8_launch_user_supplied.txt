@@ -1,0 +1,142 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ roslaunch rcdp myrobot_tf_step8.launch
+... logging to /home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/roslaunch-ubuntu-85078.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://ubuntu:37777/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo/enable_ros_network: True
+ * /lesson14_robot_state_publisher/listener_queue_size: 100
+ * /lesson14_robot_state_publisher/publish_frequency: 50.0
+ * /lesson14_robot_state_publisher/use_tf_static: True
+ * /robot_description: <?xml version="1....
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    lesson14_robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    lesson14_rviz (rviz/rviz)
+    spawn_lesson13_robot (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[gazebo-1]: started with pid [85094]
+process[gazebo_gui-2]: started with pid [85098]
+process[spawn_lesson13_robot-3]: started with pid [85103]
+process[lesson14_robot_state_publisher-4]: started with pid [85105]
+process[lesson14_rviz-5]: started with pid [85108]
+[INFO] [1792070197.335974178]: rviz version 1.14.26
+[INFO] [1792070197.336026589]: compiled against Qt version 5.12.8
+[INFO] [1792070197.336049299]: compiled against OGRE version 1.9.0 (Ghadamon)
+[INFO] [1792070197.341978338]: Forcing OpenGl version 0.
+[INFO] [1792070197.369639, 0.000000]: Loading model XML from ros parameter robot_description
+[INFO] [1792070197.372447, 0.000000]: Waiting for service /gazebo/spawn_urdf_model
+Gazebo multi-robot simulator, version 11.15.1
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration/)
+
+
+[Wrn] [GuiIface.cc:194] g/gui-plugin is really loading a SystemPlugin. To load a GUI plugin please use --gui-client-plugin 
+Gazebo multi-robot simulator, version 11.15.1
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration/)
+
+
+[INFO] [1792070197.415086542]: Finished loading Gazebo ROS API Plugin.
+[INFO] [1792070197.415718355]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[Msg] Waiting for master.
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 127.0.0.1
+[INFO] [1792070197.475081250]: Finished loading Gazebo ROS API Plugin.
+[INFO] [1792070197.475997080]: waitForService: Service [/gazebo_gui/set_physics_properties] has not been advertised, waiting...
+[Msg] Waiting for master.
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 127.0.0.1
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+[INFO] [1792070199.332856024]: Stereo is NOT SUPPORTED
+[INFO] [1792070199.332911723]: OpenGL device: SVGA3D; build: RELEASE;  LLVM;
+[INFO] [1792070199.332934220]: OpenGl version: 4.1 (GLSL 4.1) limited to GLSL 1.4 on Mesa system.
+[Msg] Loading world file [/home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world]
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+[INFO] [1792070199.450222891]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[INFO] [1792070199.468720145, 0.003000000]: Physics dynamic reconfigure ready.
+[INFO] [1792070199.483824, 0.014000]: Calling service /gazebo/spawn_urdf_model
+[INFO] [1792070199.726630, 0.137000]: Spawn status: SpawnModel: Successfully spawned entity
+[INFO] [1792070199.733159153, 0.137000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[INFO] [1792070199.733211030, 0.137000000]: Starting Laser Plugin (ns = /)
+[INFO] [1792070199.733738260, 0.137000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[INFO] [1792070199.831095787, 0.137000000]: Starting plugin DiffDrive(ns = //)
+[WARN] [1792070199.831218252, 0.137000000]: DiffDrive(ns = //): missing <rosDebugLevel> default is na
+[INFO] [1792070199.831911686, 0.137000000]: DiffDrive(ns = //): <tf_prefix> = 
+[INFO] [1792070199.832417203, 0.137000000]: DiffDrive(ns = //): Advertise joint_states
+[INFO] [1792070199.832859175, 0.137000000]: DiffDrive(ns = //): Try to subscribe to /cmd_vel
+[INFO] [1792070199.834093905, 0.137000000]: DiffDrive(ns = //): Subscribe to /cmd_vel
+[INFO] [1792070199.834421884, 0.137000000]: DiffDrive(ns = //): Advertise odom on /odom 
+[INFO] [1792070199.845502166, 0.137000000]: GazeboRosJointStatePublisher is going to publish joint: front_support_wheel_link2_base_link
+[INFO] [1792070199.845587137, 0.137000000]: GazeboRosJointStatePublisher is going to publish joint: back_support_wheel_link2_base_link
+[INFO] [1792070199.845607367, 0.137000000]: GazeboRosJointStatePublisher is going to publish joint: laser_scan_link2platform_link
+[INFO] [1792070199.845612636, 0.137000000]: GazeboRosJointStatePublisher is going to publish joint: depth_camera_link2base_link
+[INFO] [1792070199.845693406, 0.137000000]: Starting GazeboRosJointStatePublisher Plugin (ns = //)!, parent name: lesson13_robot
+
+libcurl: (6) Could not resolve host: fuel.gazebosim.org
+
+libcurl: (6) Could not resolve host: fuel.ignitionrobotics.org
+[Wrn] [ModelDatabase.cc:213] Unable to connect to model database using [http://models.gazebosim.org//database.config]. Only locally installed models will be available.
+[spawn_lesson13_robot-3] process has finished cleanly
+log file: /home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/spawn_lesson13_robot-3*.log
+[WARN] [1792070200.474035443, 0.750000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 0.732000 according to authority unknown_publisher
+context mismatch in svga_surface_destroy
+context mismatch in svga_surface_destroy
+[WARN] [1792070218.874033931, 19.037000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 19.037000 according to authority unknown_publisher
+[WARN] [1792070218.885289986, 19.037000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 19.037000 according to authority unknown_publisher
+[Wrn] [Publisher.cc:135] Queue limit reached for topic /gazebo/default/physics/contacts, deleting message. This warning is printed only once.
+[WARN] [1792070314.290188780, 113.997000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 113.997000 according to authority unknown_publisher
+[WARN] [1792070314.290234223, 113.997000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 113.997000 according to authority unknown_publisher
+[WARN] [1792070314.290241509, 113.997000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 113.997000 according to authority unknown_publisher
+[WARN] [1792070669.989178234, 468.508000000]: TF_REPEATED_DATA ignoring data with redundant timestamp for frame root_link (parent odom) at time 468.494000 according to authority unknown_publisher
+
+

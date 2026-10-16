@@ -1,0 +1,12 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ rospack find rviz
+/opt/ros/noetic/share/rviz
+thl@ubuntu:~/桌面$ unzip -n /home/thl/Lesson14_tf_rviz_step8.zip -d /home/thl/catkin_ws/src/rcdp
+Archive:  /home/thl/Lesson14_tf_rviz_step8.zip
+  inflating: /home/thl/catkin_ws/src/rcdp/urdf/gazebo/myrobot_tf_step8.xacro  
+  inflating: /home/thl/catkin_ws/src/rcdp/launch/myrobot_tf_step8.launch  
+  inflating: /home/thl/catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz  
+thl@ubuntu:~/桌面$ rosrun xacro xacro /home/thl/catkin_ws/src/rcdp/urdf/gazebo/myrobot_tf_step8.xacro -o /tmp/lesson14_tf_step8.urdf
+
+thl@ubuntu:~/桌面$ ls -lh /tmp/lesson14_tf_step8.urdf
+-rw-rw-r-- 1 thl thl 13K Oct 15 06:13 /tmp/lesson14_tf_step8.urdf

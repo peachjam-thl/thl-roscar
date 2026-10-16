@@ -1,0 +1,21 @@
+hl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ pgrep -a gzserver
+86165 /bin/sh /opt/ros/noetic/lib/gazebo_ros/gzserver --verbose -e ode /home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world __name:=gazebo __log:=/home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/gazebo-1.log
+86240 gzserver --verbose -e ode /home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world -s /opt/ros/noetic/lib/libgazebo_ros_paths_plugin.so -s /opt/ros/noetic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/gazebo-1.log
+thl@ubuntu:~/桌面$ timeout 5s rostopic echo -n 1 /scan/header
+seq: 4660
+stamp: 
+  secs: 1171
+  nsecs: 184000000
+frame_id: "laser_scan_link"
+---
+thl@ubuntu:~/桌面$ free -h
+              总计         已用        空闲      共享    缓冲/缓存    可用
+内存：       7.7Gi       3.0Gi       474Mi        16Mi       4.3Gi       4.4Gi
+交换：       2.0Gi       1.0Mi       2.0Gi
+thl@ubuntu:~/桌面$ df -h /dev/shm /tmp
+文件系统        容量  已用  可用 已用% 挂载点
+tmpfs           3.9G     0  3.9G    0% /dev/shm
+/dev/sda5        59G   15G   41G   27% /
+thl@ubuntu:~/桌面$ tail -n 60 /home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/lesson14_rviz-5*.log
+tail: 无法打开'/home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/lesson14_rviz-5*.log' 读取数据: 没有那个文件或目录

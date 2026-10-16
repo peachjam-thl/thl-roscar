@@ -1,0 +1,31 @@
+这是黄色报错。以下是后续完整输出thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ rosnode list
+/gazebo
+/gazebo_gui
+/lesson14_robot_state_publisher
+/lesson14_rviz
+/rosout
+/sim
+/teleop
+thl@ubuntu:~/桌面$ rostopic info /tf
+Type: tf2_msgs/TFMessage
+
+Publishers: 
+ * /lesson14_robot_state_publisher (http://ubuntu:41433/)
+ * /gazebo (http://ubuntu:46285/)
+
+Subscribers: 
+ * /lesson14_rviz (http://ubuntu:37009/)
+
+
+thl@ubuntu:~/桌面$ rostopic info /clock
+Type: rosgraph_msgs/Clock
+
+Publishers: 
+ * /gazebo (http://ubuntu:46285/)
+
+Subscribers: 
+ * /lesson14_robot_state_publisher (http://ubuntu:41433/)
+ * /lesson14_rviz (http://ubuntu:37009/)
+ * /gazebo (http://ubuntu:46285/)
+ * /gazebo_gui (http://ubuntu:34845/)

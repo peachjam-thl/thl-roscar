@@ -1,0 +1,47 @@
+hl@ubuntu:~/桌面$ timeout 25s python3 -u - <<'PY'
+> import math
+> import rospy
+> import sensor_msgs.point_cloud2 as pc2
+> from sensor_msgs.msg import PointCloud2
+> 
+> rospy.init_node("lesson14_cloud_data_check", anonymous=True)
+> msg = rospy.wait_for_message(
+>     "/kinect/depth/points", PointCloud2, timeout=12
+> )
+> 
+> print("frame:", msg.header.frame_id)
+> print("resolution:", msg.width, msg.height)
+> print("fields:", [f.name for f in msg.fields])
+> print("point_step:", msg.point_step)
+> print("data_bytes:", len(msg.data))
+> 
+> if not {"x", "y", "z"}.issubset({f.name for f in msg.fields}):
+>     raise SystemExit("Missing XYZ fields.")
+> if len(msg.data) < msg.row_step * msg.height:
+>     raise SystemExit("Incomplete point-cloud data.")
+> 
+> valid = 0
+> z_min = float("inf")
+> z_max = float("-inf")
+> 
+> for x, y, z in pc2.read_points(
+>     msg, field_names=("x", "y", "z"), skip_nans=True
+> ):
+>     if all(math.isfinite(v) for v in (x, y, z)) and z > 0:
+>         valid += 1
+>         z_min = min(z_min, z)
+>         z_max = max(z_max, z)
+> 
+> print("total_points:", msg.width * msg.height)
+> print("valid_xyz_points:", valid)
+> print("z_range_m:", (z_min, z_max) if valid else None)
+> PY
+frame: rotate_depth_camera_link
+resolution: 640 480
+fields: ['x', 'y', 'z', 'rgb']
+point_step: 32
+data_bytes: 9830400
+total_points: 307200
+valid_xyz_points: 307200
+z_range_m: (0.7832250595092773, 3.452345609664917)
+窗口稳定

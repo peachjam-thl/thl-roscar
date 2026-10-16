@@ -1,0 +1,49 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ rostopic info /scan
+Type: sensor_msgs/LaserScan
+
+Publishers: 
+ * /gazebo (http://ubuntu:33139/)
+
+Subscribers: None
+
+
+thl@ubuntu:~/桌面$ rostopic echo -n 1 /scan/header
+seq: 0
+stamp: 
+  secs: 140
+  nsecs: 465000000
+frame_id: "laser_scan_link"
+---
+thl@ubuntu:~/桌面$ rostopic hz /scan
+subscribed to [/scan]
+WARNING: may be using simulated time
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00063s window: 6
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00063s window: 11
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00050s window: 17
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00044s window: 22
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00054s window: 28
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00056s window: 33
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00061s window: 39
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00059s window: 44
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00057s window: 50
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00058s window: 55
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00055s window: 61
+average rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00053s window: 66
+caverage rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00052s window: 72
+^Caverage rate: 5.495
+	min: 0.181s max: 0.183s std dev: 0.00052s window: 76
+thl@ubuntu:~/桌面$

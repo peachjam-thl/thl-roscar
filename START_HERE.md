@@ -14,7 +14,7 @@
 
 ## 可直接复制给新助手
 
-> 请接手我的 ROS1 Noetic / Ubuntu 20.04.6 / Gazebo Classic 11.15.1 课程实践。先读 START_HERE.md、context/CURRENT_STATE.md、docs/PRACTICE_LOG_2026-10-15_16.md、docs/RUNBOOK.md 和 AGENTS.md。现有工作空间是 ~/catkin_ws，包为 rcdp，模型 lesson13_robot，控制 /cmd_vel，雷达 /scan。step9 RGB-D 数据和光学 TF、step9a 软件渲染轻量点云、受控前进／停车视觉联动已经由我反馈通过。原始完整点云曾使 RViz SIGBUS 退出，偶发 odom→root_link 重复时间戳警告还没定位，不能说彻底解决。当前先暂停后续实践，不擅自安装或启动键盘、建图、定位、导航。之后按我的新请求一次给一个可验证阶段，写清终端、文件路径、预期输出，等我反馈。保留现有工程，不整包覆盖课程代码，不混入 rs_gazebo。仓库保持公开，只新增脱敏总结和可分享补充代码，不能追加原始日志、个人截图或课程原包。
+> 请接手我的 ROS1 Noetic / Ubuntu 20.04.6 / Gazebo Classic 11.15.1 课程实践。先读 START_HERE.md、context/CURRENT_STATE.md、docs/PRACTICE_LOG_2026-10-15_16.md、docs/RUNBOOK.md 和 AGENTS.md。现有工作空间是 ~/catkin_ws，包为 rcdp，模型 lesson13_robot，控制 /cmd_vel，雷达 /scan。step9 RGB-D 数据和光学 TF、step9a 软件渲染轻量点云、受控前进／停车视觉联动已经由我反馈通过。原始完整点云曾使 RViz SIGBUS 退出，偶发 odom→root_link 重复时间戳警告还没定位，不能说彻底解决。当前先暂停后续实践，不擅自安装或启动键盘、建图、定位、导航。之后按我的新请求一次给一个可验证阶段，写清终端、文件路径、预期输出，等我反馈。保留现有工程，不整包覆盖课程代码，不混入 rs_gazebo。仓库按我的新要求补齐课件、所用代码包、截图和用户终端记录；资源索引在 docs/RESOURCES.md，不能上传凭据、内部会话、隐藏推理或未提供的 VM 文件。
 
 ## 防止进度倒退
 
@@ -25,5 +25,5 @@
 - 重新启动时可用 `start_rviz:=false`，再单独开预览；这是现有开关的整理用法，完整冷启动组合尚未单独复测。
 - APT/DNS 故障未确认恢复；teleop_twist_keyboard 之前缺失，不能把未来检查写成已经安装。
 - 重新遇到端口占用，重新查 PID，不照抄旧记录或 killall。
-- 本次没有新上传室内课程 world。干净下载缺这个文件时，按公开范围说明补充本地合法副本，不猜它已经存在。
+- 室内课程 world、所用阶段 ZIP 和 Lesson14/15 原包已按新要求补齐；课件 Lesson11–15 与已有副本一致。参看 docs/RESOURCES.md，不整包覆盖旧工程，不把参考导航包说成已跑通。
 - 代码是“原包＋已交付补充文件”的合并，不是从 VM 逐字读回的镜像。精确位移、长时稳定性、真实相机标定均未完成。

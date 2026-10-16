@@ -19,7 +19,7 @@
 | 预览脚本 | `scripts/cloud_preview_step9a.py` |
 | 当前 RViz | `lesson14_cloud_preview_step9a.rviz`，Fixed Frame=odom，Depth_Preview 开启 |
 | 软件渲染 | 每次 RViz 命令前 `LIBGL_ALWAYS_SOFTWARE=true`；日志确认 llvmpipe |
-| 本地 world | `worlds/lesson14_box_house_step7.world`，本次不新增分发 |
+| 本地 world | `worlds/lesson14_box_house_step7.world`，本次资料补齐已纳入仓库 |
 | 速度 / 里程计 | `/cmd_vel` / `/odom` |
 
 ## 已验证证据
@@ -64,4 +64,4 @@
 
 最后反馈时低负载显示稳定，但下次接手仍需按需检查，不能根据旧日志推断进程仍在线。当前暂停后续实践；用户要求继续后，先键盘／建图依赖只读检查，再逐阶段进入 Lesson15。不混用 rs_gazebo；不让 Gmapping 和 AMCL 同时发布 map→odom。
 
-本次保持仓库公开，只新增脱敏总结与补充代码；没有新上传课程 PDF、Lesson14/15 原 ZIP、室内 world、个人截图、原始日志或完整聊天。旧文件未清理，不声称全仓已脱敏。
+按用户随后提出的新要求，项目已补齐 Lesson14/15 原 ZIP、step7–9a 增量 ZIP、室内 world、两张截图、两份原始文本附件及 22 条用户终端记录。Lesson11–15 已有同版 PDF，核对 352 页与 SHA256 后直接链接，不重复复制。参看 docs/RESOURCES.md。不上传内部会话、凭据或隐藏推理；没有清理旧历史，不声称全仓已脱敏。资料补齐不是继续运行实践，后续仍暂停。

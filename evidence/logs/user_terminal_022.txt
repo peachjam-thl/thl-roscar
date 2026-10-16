@@ -1,0 +1,96 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ 
+thl@ubuntu:~/桌面$ timeout 30s python3 -u - <<'PY'
+> import math
+> import rospy
+> from sensor_msgs.msg import CameraInfo
+> 
+> rospy.init_node("lesson14_camera_info_check", anonymous=True)
+> 
+> for name in ("rgb", "depth"):
+>     m = rospy.wait_for_message(
+>         "/kinect/" + name + "/camera_info",
+>         CameraInfo, timeout=12
+>     )
+>     fx, fy, cx, cy = m.K[0], m.K[4], m.K[2], m.K[5]
+>     ok = (
+>         m.header.frame_id.lstrip("/") == "rotate_depth_camera_link"
+>         and (m.width, m.height) == (640, 480)
+>         and all(math.isfinite(v) for v in m.K)
+>         and fx > 0 and fy > 0
+>         and 0 <= cx < m.width and 0 <= cy < m.height
+>         and math.isclose(m.K[8], 1.0)
+>     )
+>     print(name + "_frame:", m.header.frame_id)
+>     print(name + "_resolution:", m.width, m.height)
+>     print(name + "_fx_fy:", fx, fy)
+>     print(name + "_cx_cy:", cx, cy)
+>     print(name + "_basic_metadata_ok:", ok, flush=True)
+> PY
+rgb_frame: rotate_depth_camera_link
+rgb_resolution: 640 480
+rgb_fx_fy: 554.254691191187 554.254691191187
+rgb_cx_cy: 320.5 240.5
+rgb_basic_metadata_ok: True
+depth_frame: rotate_depth_camera_link
+depth_resolution: 640 480
+depth_fx_fy: 554.254691191187 554.254691191187
+depth_cx_cy: 320.5 240.5
+depth_basic_metadata_ok: True
+thl@ubuntu:~/桌面$ timeout -s INT 8s rostopic hz /kinect/rgb/image_raw
+subscribed to [/kinect/rgb/image_raw]
+WARNING: may be using simulated time
+average rate: 10.576
+	min: 0.071s max: 0.109s std dev: 0.01071s window: 10
+average rate: 10.253
+	min: 0.071s max: 0.118s std dev: 0.01143s window: 18
+average rate: 10.156
+	min: 0.071s max: 0.118s std dev: 0.01111s window: 27
+average rate: 10.089
+	min: 0.071s max: 0.120s std dev: 0.01068s window: 36
+average rate: 10.103
+	min: 0.071s max: 0.120s std dev: 0.01034s window: 44
+average rate: 10.072
+	min: 0.071s max: 0.120s std dev: 0.01033s window: 53
+average rate: 10.067
+	min: 0.071s max: 0.120s std dev: 0.01044s window: 61
+average rate: 10.051
+	min: 0.071s max: 0.126s std dev: 0.01058s window: 68
+thl@ubuntu:~/桌面$ timeout -s INT 8s rostopic hz /kinect/depth/image_raw
+subscribed to [/kinect/depth/image_raw]
+WARNING: may be using simulated time
+average rate: 10.116
+	min: 0.092s max: 0.109s std dev: 0.00505s window: 8
+average rate: 10.044
+	min: 0.087s max: 0.115s std dev: 0.00703s window: 17
+average rate: 10.042
+	min: 0.083s max: 0.115s std dev: 0.00740s window: 25
+average rate: 9.994
+	min: 0.083s max: 0.126s std dev: 0.00937s window: 34
+average rate: 10.014
+	min: 0.083s max: 0.126s std dev: 0.00998s window: 43
+average rate: 10.010
+	min: 0.083s max: 0.126s std dev: 0.00959s window: 51
+average rate: 10.017
+	min: 0.083s max: 0.126s std dev: 0.00957s window: 60
+average rate: 9.960
+	min: 0.083s max: 0.137s std dev: 0.01069s window: 66
+thl@ubuntu:~/桌面$ timeout -s INT 8s rostopic hz --wall-time /lesson14/depth_points_preview
+subscribed to [/lesson14/depth_points_preview]
+WARNING: may be using simulated time
+average rate: 1.661
+	min: 0.602s max: 0.602s std dev: 0.00000s window: 2
+average rate: 1.696
+	min: 0.579s max: 0.602s std dev: 0.00950s window: 4
+average rate: 1.719
+	min: 0.558s max: 0.602s std dev: 0.01581s window: 5
+average rate: 1.719
+	min: 0.558s max: 0.602s std dev: 0.01291s window: 7
+average rate: 1.711
+	min: 0.558s max: 0.621s std dev: 0.01855s window: 9
+average rate: 1.708
+	min: 0.558s max: 0.621s std dev: 0.01707s window: 11
+average rate: 1.714
+	min: 0.558s max: 0.621s std dev: 0.01751s window: 12
+average rate: 1.712
+	min: 0.558s max: 0.621s std dev: 0.01697s window: 13

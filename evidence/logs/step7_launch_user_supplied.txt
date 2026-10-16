@@ -1,0 +1,113 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ roslaunch rcdp myrobot_laser_step7.launch
+... logging to /home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/roslaunch-ubuntu-84496.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://ubuntu:36829/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo/enable_ros_network: True
+ * /robot_description: <?xml version="1....
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /use_sim_time: True
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+    spawn_lesson13_robot (gazebo_ros/spawn_model)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[gazebo-1]: started with pid [84512]
+process[gazebo_gui-2]: started with pid [84516]
+process[spawn_lesson13_robot-3]: started with pid [84522]
+Gazebo multi-robot simulator, version 11.15.1
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration/)
+
+
+[Wrn] [GuiIface.cc:194] g/gui-plugin is really loading a SystemPlugin. To load a GUI plugin please use --gui-client-plugin 
+Gazebo multi-robot simulator, version 11.15.1
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+#     # ####### ####### ###  #####  #######
+##    # #     #    #     #  #     # #
+# #   # #     #    #     #  #       #
+#  #  # #     #    #     #  #       #####
+#   # # #     #    #     #  #       #
+#    ## #     #    #     #  #     # #
+#     # #######    #    ###  #####  #######
+
+This version of Gazebo, now called Gazebo classic, reaches end-of-life
+in January 2025. Users are highly encouraged to migrate to the new Gazebo
+using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration/)
+
+
+[INFO] [1792069094.078028, 0.000000]: Loading model XML from ros parameter robot_description
+[INFO] [1792069094.082103, 0.000000]: Waiting for service /gazebo/spawn_urdf_model
+[INFO] [1792069094.101849360]: Finished loading Gazebo ROS API Plugin.
+[INFO] [1792069094.103327283]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[Msg] Waiting for master.
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 127.0.0.1
+[INFO] [1792069094.143142086]: Finished loading Gazebo ROS API Plugin.
+[INFO] [1792069094.144143447]: waitForService: Service [/gazebo_gui/set_physics_properties] has not been advertised, waiting...
+[Msg] Waiting for master.
+[Msg] Connected to gazebo master @ http://127.0.0.1:11345
+[Msg] Publicized address: 127.0.0.1
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+[Msg] Loading world file [/home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world]
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+Couldn't find a preferred IP via the getifaddrs() call; I'm assuming that your IP address is 127.0.0.1.  This should work for local processes, but will almost certainly not work if you have remote processes.Report to the disc-zmq development team to seek a fix.
+[INFO] [1792069095.207318124, 0.003000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[INFO] [1792069095.216407567, 0.011000000]: Physics dynamic reconfigure ready.
+[INFO] [1792069095.287336, 0.067000]: Calling service /gazebo/spawn_urdf_model
+[INFO] [1792069095.493417, 0.143000]: Spawn status: SpawnModel: Successfully spawned entity
+[INFO] [1792069095.507733813, 0.143000000]: Laser Plugin: Using the 'robotNamespace' param: '/'
+[INFO] [1792069095.507792061, 0.143000000]: Starting Laser Plugin (ns = /)
+[INFO] [1792069095.509039366, 0.143000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""
+[INFO] [1792069095.598786270, 0.143000000]: Starting plugin DiffDrive(ns = //)
+[WARN] [1792069095.598840576, 0.143000000]: DiffDrive(ns = //): missing <rosDebugLevel> default is na
+[INFO] [1792069095.599526623, 0.143000000]: DiffDrive(ns = //): <tf_prefix> = 
+[INFO] [1792069095.600276032, 0.143000000]: DiffDrive(ns = //): Advertise joint_states
+[INFO] [1792069095.600663981, 0.143000000]: DiffDrive(ns = //): Try to subscribe to /cmd_vel
+[INFO] [1792069095.601596338, 0.143000000]: DiffDrive(ns = //): Subscribe to /cmd_vel
+[INFO] [1792069095.601882212, 0.143000000]: DiffDrive(ns = //): Advertise odom on /odom 
+
+libcurl: (6) Could not resolve host: fuel.ignitionrobotics.org
+
+libcurl: (6) Could not resolve host: fuel.gazebosim.org
+[Wrn] [ModelDatabase.cc:213] Unable to connect to model database using [http://models.gazebosim.org//database.config]. Only locally installed models will be available.
+[spawn_lesson13_robot-3] process has finished cleanly
+log file: /home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/spawn_lesson13_robot-3*.log
+context mismatch in svga_surface_destroy
+context mismatch in svga_surface_destroy

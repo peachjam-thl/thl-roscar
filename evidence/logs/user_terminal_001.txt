@@ -1,0 +1,6 @@
+thl@ubuntu:~/桌面$ ls -lh /home/thl/Lesson14_code.zip /home/thl/Lesson15_code.zip
+-rwxrw-rw- 1 thl thl  92K Oct 15 04:58 /home/thl/Lesson14_code.zip
+-rwxrw-rw- 1 thl thl 164K Oct 15 04:58 /home/thl/Lesson15_code.zip
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ rospack find rcdp
+/home/thl/catkin_ws/src/rcdp

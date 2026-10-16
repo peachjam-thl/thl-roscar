@@ -1,0 +1,20 @@
+thl@ubuntu:~/桌面$ timeout 15s python3 -u - <<'PY'
+> import rospy
+> from sensor_msgs.msg import PointCloud2
+> 
+> rospy.init_node("lesson14_preview_check", anonymous=True)
+> m = rospy.wait_for_message(
+>     "/lesson14/depth_points_preview", PointCloud2, timeout=12
+> )
+> 
+> print("frame:", m.header.frame_id)
+> print("resolution:", m.width, m.height)
+> print("points:", m.width * m.height)
+> print("point_step:", m.point_step)
+> print("data_bytes:", len(m.data))
+> PY
+frame: rotate_depth_camera_link
+resolution: 80 60
+points: 4800
+point_step: 32
+data_bytes: 153600

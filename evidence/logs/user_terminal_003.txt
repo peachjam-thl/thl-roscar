@@ -1,0 +1,2 @@
+ls -lh /home/thl/ros_course_backups/rcdp_before_lesson14_15_*.tar.gz
+-rw-rw-r-- 1 thl thl 14K Oct 15 05:39 /home/thl/ros_course_backups/rcdp_before_lesson14_15_20261015_053934.tar.gz

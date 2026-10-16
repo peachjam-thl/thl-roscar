@@ -1,0 +1,18 @@
+thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash
+thl@ubuntu:~/桌面$ rostopic info /kinect/rgb/image_raw
+Type: sensor_msgs/Image
+
+Publishers: 
+ * /gazebo (http://ubuntu:35775/)
+
+Subscribers: None
+
+
+thl@ubuntu:~/桌面$ timeout 15s rostopic echo -n 1 /kinect/rgb/image_raw/header
+seq: 275
+stamp: 
+  secs: 29
+  nsecs: 913000000
+frame_id: "rotate_depth_camera_link"
+
+[Screenshot supplied separately; see screenshot index.]

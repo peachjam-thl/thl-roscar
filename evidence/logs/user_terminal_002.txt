@@ -1,0 +1,4 @@
+thl@ubuntu:~/桌面$ ls -l /home/thl/ros_course_reference/Lesson14_code/catkin_ws/src/rcdp/package.xml
+-rw-rw-r-- 1 thl thl 3025 Dec 25  2022 /home/thl/ros_course_reference/Lesson14_code/catkin_ws/src/rcdp/package.xml
+thl@ubuntu:~/桌面$ ls -l /home/thl/ros_course_reference/Lesson15_code/catkin_ws/src/rs_nav/package.xml
+-rw-rw-r-- 1 thl thl 3003 Dec 28  2021 /home/thl/ros_course_reference/Lesson15_code/catkin_ws/src/rs_nav/package.xml

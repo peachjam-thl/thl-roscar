@@ -13,5 +13,6 @@
   "rviz_recovery": {"software_renderer_log_confirmed": "llvmpipe", "raw_full_cloud_exit_code": -7, "signal_x86_linux": "SIGBUS", "root_cause_resolved": false, "raw_full_resolution_display_reaccepted": false, "tf_repeated_data_resolved": false},
   "not_completed": ["keyboard teleoperation acceptance", "turning and quantitative trajectory tests", "long-duration load testing", "SLAM and map saving", "AMCL localization", "move_base navigation", "APT/DNS recovery", "complete VM backup"],
   "practice_paused_by_user": true,
-  "publication": {"repository_kept_public_by_explicit_user_choice": true, "new_raw_logs_screenshots_course_archives_or_world_uploaded": false, "existing_repository_history_fully_sanitized": false}
+  "publication_initial_update_91ceab5": {"repository_kept_public_by_explicit_user_choice": true, "new_raw_logs_screenshots_course_archives_or_world_uploaded": false, "existing_repository_history_fully_sanitized": false},
+  "publication_followup_resource_request": {"user_requested_courseware_code_screenshots_logs_and_project_docs": true, "resource_index": "metadata/RESOURCE_INDEX_2026-10-16.json", "new_zip_files": 6, "new_screenshots": 2, "original_text_attachments": 2, "user_terminal_records": 22, "raw_internal_session_uploaded": false}
 }

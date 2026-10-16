@@ -1,0 +1,64 @@
+thl@ubuntu:~/桌面$ rosnode info /sim
+--------------------------------------------------------------------------------
+Node [/sim]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /turtle1/color_sensor [turtlesim/Color]
+ * /turtle1/pose [turtlesim/Pose]
+ * /turtle2/color_sensor [turtlesim/Color]
+ * /turtle2/pose [turtlesim/Pose]
+
+Subscriptions: 
+ * /turtle1/cmd_vel [geometry_msgs/Twist]
+ * /turtle2/cmd_vel [geometry_msgs/Twist]
+
+Services: 
+ * /clear
+ * /kill
+ * /reset
+ * /sim/get_loggers
+ * /sim/set_logger_level
+ * /spawn
+ * /turtle1/set_pen
+ * /turtle1/teleport_absolute
+ * /turtle1/teleport_relative
+ * /turtle2/set_pen
+ * /turtle2/teleport_absolute
+ * /turtle2/teleport_relative
+
+
+contacting node http://ubuntu:36537/ ...
+ERROR: Communication with node[http://ubuntu:36537/] failed!
+thl@ubuntu:~/桌面$ rosnode info /teleop
+--------------------------------------------------------------------------------
+Node [/teleop]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /turtle1/cmd_vel [geometry_msgs/Twist]
+
+Subscriptions: None
+
+Services: 
+ * /teleop/get_loggers
+ * /teleop/set_logger_level
+
+
+contacting node http://ubuntu:44777/ ...
+ERROR: Communication with node[http://ubuntu:44777/] failed!
+thl@ubuntu:~/桌面$ rostopic info /joint_states
+Type: sensor_msgs/JointState
+
+Publishers: 
+ * /gazebo (http://ubuntu:46285/)
+
+Subscribers: 
+ * /lesson14_robot_state_publisher (http://ubuntu:41433/)
+
+
+thl@ubuntu:~/桌面$ rostopic info /cmd_vel
+Type: geometry_msgs/Twist
+
+Publishers: None
+
+Subscribers: 
+ * /gazebo (http://ubuntu:46285/)
