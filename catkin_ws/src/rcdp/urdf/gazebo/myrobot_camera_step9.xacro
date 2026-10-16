@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Stage 9: reuse every stage-8 physical part and existing plugin unchanged. -->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="myrobot_tf_step8.xacro"/>
+  <xacro:include filename="gazebo_sensor/lesson14_camera_step9.xacro"/>
+</robot>

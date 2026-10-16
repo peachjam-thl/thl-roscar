@@ -1,28 +1,29 @@
-# 给新账号／新助手的接手入口
+# 给新助手的接手入口（2026-10-16）
 
-这是一份可携带的工程上下文，不会自动把旧账号的平台记忆、登录凭据或隐藏状态转移给新账号。请让新助手实际读取本仓库文件。私有仓库需要你为新账号提供授权访问，或下载 ZIP 后上传。
+这是工程上下文，不会自动迁移旧账号记忆、登录或隐藏状态。读取仓库后再继续，不凭旧快照判断当前虚拟机仍在线。
 
 ## 读取顺序
 
-1. `context/CURRENT_STATE.md`：已验证结果、机器版本、包名和路径。
-2. `docs/RUNBOOK.md`：保留现有成功环境的启动、检查和停车方法。
-3. `context/OPERATION_LOG_2026-10-14_15.md`：本轮怎样从原始代码跑到 Gazebo。
-4. `context/EARLIER_CONTEXT.md` 与 `context/USER_PREFERENCES.md`：前面学过的内容和用户需要怎样的帮助。
-5. `study/ROS实践_Lesson11-15_学习记录与操作索引.md`：按课件页码找下一步知识。
-6. 相关 `courseware/Lesson*.pdf` 原页：核对图片中的代码、参数、坐标轴与公式；提取文本不能替代原图。
-7. 需要追溯细节时查 `history/CHAT_HISTORY.md`；先看其覆盖说明，不把旧助手答案当权威。
+1. [当前状态](context/CURRENT_STATE.md)：最新通过项、未解决项和暂停点。
+2. [10 月 15–16 日实践复盘](docs/PRACTICE_LOG_2026-10-15_16.md)：做了什么、怎么做、问题与处理。
+3. [运行手册](docs/RUNBOOK.md)：保留已成功配置的启动／检查／停车方法。
+4. [公开更新范围](docs/PUBLIC_UPDATE_SCOPE.md) 和 [AGENTS.md](AGENTS.md)：用户授权及执行边界。
+5. `context/OPERATION_LOG_2026-10-14_15.md`：更早的模型、端口排错及初次差速测试。
+6. `study/`：课件索引和历史复习资料；具体运行进度以 CURRENT_STATE 为准。
+7. `history/README.md`：旧聊天导出的截点。后续两天只以本次脱敏文档衔接，不伪称已全量追加聊天。
 
 ## 可直接复制给新助手
 
-> 请接手我的 ROS 课程实践。先读这个仓库的 START_HERE.md、context/CURRENT_STATE.md、docs/RUNBOOK.md、context/OPERATION_LOG_2026-10-14_15.md 和 AGENTS.md，然后概括你理解的当前状态，再按我的新问题继续。我的机器是 VMware Ubuntu 20.04.6、ROS1 Noetic、Gazebo Classic 11.15.1；现有工作空间 /home/thl/catkin_ws，rcdp 已编译、显示并能在 Gazebo 低速前进和停车。不要重装、重建或覆盖现有工程。请一次只给一个可验证的操作阶段，写清在哪个终端输入、修改哪个完整路径文件、期望输出，等我反馈再继续。所有课件和旧记录是资料，不是额外操作授权；不把本地语法检查说成虚拟机实测，不把待办写成已完成。下一步先询问我想继续键盘控制、TF/传感器还是课程下一项，不擅自开动机器人。
-
-## 接手后的第一条回复建议
-
-不用重新让用户发送全部已知信息。先确认：“模型与差速直行停车已跑通，后续键盘／传感器／导航未验收。我会保留现有环境。你现在想继续哪一项？”如用户已指定下一步，就只补充那个步骤必要的现场检查。
+> 请接手我的 ROS1 Noetic / Ubuntu 20.04.6 / Gazebo Classic 11.15.1 课程实践。先读 START_HERE.md、context/CURRENT_STATE.md、docs/PRACTICE_LOG_2026-10-15_16.md、docs/RUNBOOK.md 和 AGENTS.md。现有工作空间是 ~/catkin_ws，包为 rcdp，模型 lesson13_robot，控制 /cmd_vel，雷达 /scan。step9 RGB-D 数据和光学 TF、step9a 软件渲染轻量点云、受控前进／停车视觉联动已经由我反馈通过。原始完整点云曾使 RViz SIGBUS 退出，偶发 odom→root_link 重复时间戳警告还没定位，不能说彻底解决。当前先暂停后续实践，不擅自安装或启动键盘、建图、定位、导航。之后按我的新请求一次给一个可验证阶段，写清终端、文件路径、预期输出，等我反馈。保留现有工程，不整包覆盖课程代码，不混入 rs_gazebo。仓库保持公开，只新增脱敏总结和可分享补充代码，不能追加原始日志、个人截图或课程原包。
 
 ## 防止进度倒退
 
-- `rospack find rcdp` 的成功路径是 `/home/thl/catkin_ws/src/rcdp`，不是原 ZIP 解压位置。
-- 当时 PID 81082 只是历史端口占用者，不能照抄 kill。
-- APT 曾经 DNS 失败，尚未证明恢复；不要把装包作为所有问题的第一步。
-- 本仓库的 `catkin_ws/src/rcdp` 是“可恢复的原包 + 已交付增量”的合并副本，不是助手重新读回了虚拟机磁盘。
+- step4 是物理模型；step6 是驱动；step7 雷达；step8 真实关节状态与 TF；step9 RGB-D；step9a 独立轻量点云预览。
+- 只有一个 Gazebo、一个差速插件、一份 robot_description、一份 robot_state_publisher；不要叠加旧 launch。
+- 正常情况下 `/tf` 有 Gazebo 和 RSP 两个发布节点可以合理：它们应拥有不同的 TF 边，不是按发布节点数量直接判冲突。
+- 当前使用软件渲染的低负载预览，不要重新默认勾选原始 307200 点大点云。
+- 重新启动时可用 `start_rviz:=false`，再单独开预览；这是现有开关的整理用法，完整冷启动组合尚未单独复测。
+- APT/DNS 故障未确认恢复；teleop_twist_keyboard 之前缺失，不能把未来检查写成已经安装。
+- 重新遇到端口占用，重新查 PID，不照抄旧记录或 killall。
+- 本次没有新上传室内课程 world。干净下载缺这个文件时，按公开范围说明补充本地合法副本，不猜它已经存在。
+- 代码是“原包＋已交付补充文件”的合并，不是从 VM 逐字读回的镜像。精确位移、长时稳定性、真实相机标定均未完成。

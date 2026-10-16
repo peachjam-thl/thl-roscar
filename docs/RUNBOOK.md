@@ -2,7 +2,88 @@
 
 适用：用户 VMware 中的 Ubuntu 20.04.6、ROS1 Noetic、Gazebo Classic 11.15.1。命令块内没有提示符 `$`，可以逐行复制。不要把中文注释或终端输出当成命令。
 
-## A. 已有包，重新启动
+> 2026-10-16：最新功能已到 step9＋step9a；原 A–F 是首次模型／驱动历史手册，不是当前默认重启入口。当前先暂停实践，以下供日后明确要求恢复时使用。命令中的 HOME 指当前 Ubuntu 用户主目录，不是在 Windows 执行。
+
+## 0. 当前成功方案：相机仿真＋轻量点云
+
+### 已经在正常运行时
+
+保留一个 step9 Gazebo/RSP、一个预览中继和一个软件渲染 RViz。不要重复执行另一个 stage 的 launch，不重新勾选原始大点云。
+
+只读检查可另开终端执行：
+
+```bash
+source "$HOME/catkin_ws/devel/setup.bash"
+rospack find rcdp
+rostopic info /cmd_vel
+rostopic info /scan
+rostopic info /lesson14/depth_points_preview
+```
+
+`/cmd_vel` 是否无发布者需当场检查，不凭昨日输出推断。任何非零运动仍需先确认只有课程仿真接收、无竞争控制者、仿真未暂停且前方空旷。
+
+### 确实要重新启动时
+
+先在旧启动终端正常退出旧仿真；检查端口，没有辨清占用者就不再起新 Gazebo。确保以下课程场景文件存在（本次公开更新没有新增分发它）：
+
+```bash
+source "$HOME/catkin_ws/devel/setup.bash"
+test -f "$HOME/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world" && echo "world exists"
+ss -ltnp 'sport = :11345'
+rosrun xacro xacro "$HOME/catkin_ws/src/rcdp/urdf/gazebo/myrobot_camera_step9.xacro" -o /tmp/lesson14_camera_step9.urdf
+```
+
+文件缺失／Xacro 报错／旧端口仍占用就停在这里。不要直接运行后面的命令。
+
+终端 A：
+
+```bash
+roslaunch rcdp myrobot_camera_step9.launch start_rviz:=false
+```
+
+这里使用现有 start_rviz 开关避免自动再起普通 RViz。Gazebo、RSP、中继和软件预览各部分已有用户现场证据；**这个整理后的完整冷启动组合尚未另外复测**，需要按下面顺序逐项观察，而不是承诺一键成功。
+
+终端 B，保持运行：
+
+```bash
+source "$HOME/catkin_ws/devel/setup.bash"
+python3 "$HOME/catkin_ws/src/rcdp/scripts/cloud_preview_step9a.py"
+```
+
+等确认仿真和中继没有报错，终端 C 启动唯一一个 RViz：
+
+```bash
+source "$HOME/catkin_ws/devel/setup.bash"
+LIBGL_ALWAYS_SOFTWARE=true rosrun rviz rviz -d "$HOME/catkin_ws/src/rcdp/config/lesson14_cloud_preview_step9a.rviz" __name:=lesson14_rviz_preview
+```
+
+先看模型和红色雷达正常，再勾选 Depth_Preview。预期 80×60、4800 点的青色预览，不是原始 307200 点。中继无订阅者时等待是正常状态；RViz 开启预览后才按需订阅原始点云。
+
+### 读数检查
+
+终端 D：
+
+```bash
+source "$HOME/catkin_ws/devel/setup.bash"
+timeout 7s rosrun tf tf_echo odom laser_scan_link
+timeout 7s rosrun tf tf_echo odom rotate_depth_camera_link
+timeout -s INT 8s rostopic hz /scan
+timeout -s INT 8s rostopic hz /kinect/rgb/image_raw
+timeout -s INT 8s rostopic hz /kinect/depth/image_raw
+timeout -s INT 8s rostopic hz --wall-time /lesson14/depth_points_preview
+```
+
+timeout 到期终止持续观察是预期行为；个别程序退出码非零不能脱离输出直接判仿真崩溃。TF 刚接入可短暂未收齐，后续应持续成功；一直失败就回传，不叠加静态 TF。图像／CameraInfo 是按需数据流，预览开启时相关深度数据链路活跃；没有消费者时需区分“未激活”与“插件坏了”。
+
+预览最多 2 Hz 墙钟，历史短测约 1.712；RGB/Depth 约 10 Hz 指 ROS 仿真时间。此手册不自动运行会发非零速度的程序；短时运动必须再走 B 节前置安全检查。
+
+### 正常退出与故障边界
+
+如曾发非零速度，先按 B 节发零并观察停车，再正常关闭 RViz、中继和 Gazebo。中继本身没有机器人控制输出。不要把退出发布者当作插件保证停车。
+
+完整原始点云 SIGBUS 和偶发 TF_REPEATED_DATA 尚未根治。显示再卡死时不要反复开启大点云，先保留后端并报告新错误；不要永久改 VM 显卡／软件源、重复启动 Gazebo 或强杀所有进程。
+
+## A. 历史 step6：仅模型与驱动
 
 先关闭不再使用的旧仿真：在它原来的 roslaunch 终端按 **Ctrl+C**，等其正常退出。不要同时开启两份 Gazebo server。
 
@@ -64,7 +145,7 @@ roslaunch rcdp myrobot_gazebo_step4.launch
 
 ## D. 从交接仓库恢复源文件（仅在确实需要时）
 
-现有 VM 已成功时不用执行本节，不要为了“重新来一遍”覆盖文件。仓库内 `catkin_ws/src/rcdp/` 包含原始 14 文件与六个阶段新增文件。原始课件中的另外三个包只在 reference ZIP 内，不是当前有效工作空间的一部分。
+现有 VM 已成功时不用执行本节，不要为了“重新来一遍”覆盖文件。仓库内代码是原始 rcdp、早前 step4/6 和本次 12 个补充文件的合并，不是 VM 回读备份。本次没有新分发室内课程 world；仅复制代码不能据此承诺干净下载可直接重现房间。原始参考 ZIP 里的其他包也不是当前应默认导入的内容。
 
 若 VM 文件丢失或迁移到另一个同版本环境，先将本仓库下载到 Ubuntu，确认实际下载位置。以下用**示例路径** `/home/thl/thl-roscar`；只有实际存在且内容核对后才能照用：
 

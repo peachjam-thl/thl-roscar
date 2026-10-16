@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-15T05:36:43.678626+00:00",
-  "date_china": "2026-10-15",
+  "generated_utc": "2026-10-16T07:22:53.469756+00:00",
+  "date_china": "2026-10-16",
   "manifest_excludes_itself": true,
   "files": [
     {
@@ -15,8 +15,23 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2182,
-      "sha256": "f674671fa72b804575d401afa244b5752725ca74c084d00da71a015590e65af2"
+      "bytes": 2711,
+      "sha256": "cf26a4a80ac40d78c0ae494bc991d71fcfcd8edc4ba73b654ee742617cfb7509"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4599,
+      "sha256": "c9d937e5e9d6b2135775696ae35623af329bc06f32800c7ef08e565c085caae0"
+    },
+    {
+      "path": "RIGHTS_AND_PRIVACY.md",
+      "bytes": 1345,
+      "sha256": "f0831b95f97f6d83439aef142a0a3521f218fd972910a380ea4b7cdc3826f6b6"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 3185,
+      "sha256": "540c81ddbd6234b6c6d3e1caa5ba557a6d37edb79c4aac321d2bd394bc12d10f"
     },
     {
       "path": "archives/Lesson13_Gazebo_step4.zip",
@@ -39,6 +54,21 @@
       "sha256": "4223d9f7a747bd3e9c32d1da7283901a0551654c8f0c4784307449bb79eae0ba"
     },
     {
+      "path": "catkin_ws/src/rcdp/config/lesson14_camera_step9.rviz",
+      "bytes": 3032,
+      "sha256": "d336ad4cbc1da796a80036033d65ae4e714cf5bf5f0d2586830eb300d9b85c51"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/config/lesson14_cloud_preview_step9a.rviz",
+      "bytes": 2403,
+      "sha256": "923e84c3de171ea8dd9c82cf0761c12e31ebba93fb3f9f65eb200e3b7c2f2d1c"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz",
+      "bytes": 2218,
+      "sha256": "8d46492ddb6eb8738f03bdab237e6e5392d5268cf73b072eabe8247972420ceb"
+    },
+    {
       "path": "catkin_ws/src/rcdp/config/myrobot.rviz",
       "bytes": 6708,
       "sha256": "3e7c1ddb16b3ebb3dc2cfbe54029ff663d8e528ac583564ed433d15d6202b674"
@@ -49,6 +79,11 @@
       "sha256": "6cf5a198d60282db23fe93c6b795a5bda2cc953bfeb9b2a6a6a397111de56e69"
     },
     {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_camera_step9.launch",
+      "bytes": 1570,
+      "sha256": "db4c968213c95cab8ee6b328ea7dff5de09a0e4ce99123a41757a1ebed8928ef"
+    },
+    {
       "path": "catkin_ws/src/rcdp/launch/myrobot_drive_step6.launch",
       "bytes": 810,
       "sha256": "7cde38e82c677a12b4f922c7ec38a9223aeec7d809493214b189b8ba18c8fc18"
@@ -57,6 +92,16 @@
       "path": "catkin_ws/src/rcdp/launch/myrobot_gazebo_step4.launch",
       "bytes": 806,
       "sha256": "85ede33d09d96629fd930063bfd4c5c9487751862f699de95c2361b548322efd"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_laser_step7.launch",
+      "bytes": 815,
+      "sha256": "b27c018b498022095867fef5a5b7373db3b8688e70623ab89de74fd05294a004"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_tf_step8.launch",
+      "bytes": 1488,
+      "sha256": "841fbfe42f6a66ebc78e7e73fed2cdae89b313faa54b20fe536df508615fd379"
     },
     {
       "path": "catkin_ws/src/rcdp/launch/urdf/myrobot_urdf.launch",
@@ -84,9 +129,29 @@
       "sha256": "0f7e6887be319cab0764d99f3f7feaec9479fb38d13b71dbeb23f66e07f4abb5"
     },
     {
+      "path": "catkin_ws/src/rcdp/scripts/cloud_preview_step9a.py",
+      "bytes": 7703,
+      "sha256": "c422fcfc58f51bb457c4910ce582096137bfad45c6d6889f3185ffa8c253f473"
+    },
+    {
       "path": "catkin_ws/src/rcdp/scripts/test_forward_step6.py",
       "bytes": 1866,
       "sha256": "96c94f52bf092c2bdc0900ea4d54c488feef6006feaf0365fd79281f30f8cb85"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_camera_step9.xacro",
+      "bytes": 2228,
+      "sha256": "4a4aba75d3ae45cdf193b46b7f715da54a19889eadba1440e6e3b278697c7bdf"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro",
+      "bytes": 1382,
+      "sha256": "10b4b5a4a1a4e3fd093a5bbc5ab31b200fd2ae38453f7c9393b98e5985b2c01b"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_camera_step9.xacro",
+      "bytes": 313,
+      "sha256": "b4650f8c941ff35ac615ce0f81064e86140459e08cc446a5712b015df343b05d"
     },
     {
       "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_drive_step6.xacro",
@@ -97,6 +162,16 @@
       "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_gazebo_step4.xacro",
       "bytes": 9046,
       "sha256": "99252280c93b4e84f1a17842f7569f654ccdade43c02dd2f4a1738b1fe98a534"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_laser_step7.xacro",
+      "bytes": 316,
+      "sha256": "c4af8dccb9584b29d4f237be0f8c8fcb2edf8c0654db27b236e4900148335cc9"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_tf_step8.xacro",
+      "bytes": 761,
+      "sha256": "88b663762a15e4bf7ae4df2b7eb9c96dd6f039021bb920a0ada7d305eb82ff9a"
     },
     {
       "path": "catkin_ws/src/rcdp/urdf/urdf/myrobot.urdf",
@@ -130,13 +205,13 @@
     },
     {
       "path": "context/COVERAGE_AND_LIMITS.md",
-      "bytes": 2608,
-      "sha256": "c025d26970836967f24093133c75b37e463a5cf82a3e2a53be7879c8c03682f9"
+      "bytes": 3629,
+      "sha256": "beee08a3745a44277e3da15f4fde175dd4cb7ca527dae86eae1d0a59f6dd4319"
     },
     {
       "path": "context/CURRENT_STATE.md",
-      "bytes": 3641,
-      "sha256": "135d704f8f173b2e5b4e6c9086ae0441833f17e495e9fc15537598e101355cef"
+      "bytes": 5462,
+      "sha256": "8e7365cc30c095774d20e4a91d68799d289997522b584e28b7687e9ba87b52fc"
     },
     {
       "path": "context/EARLIER_CONTEXT.md",
@@ -145,8 +220,8 @@
     },
     {
       "path": "context/OPERATION_LOG_2026-10-14_15.md",
-      "bytes": 5584,
-      "sha256": "aac146dcb3237974ec31f3469d495fb4403b0f21e9995635bb2c1bd50d963c95"
+      "bytes": 5776,
+      "sha256": "92fe2c8d5ff4746b3172c894a378f14d1c99ca0947e5a28d10b33ebee8ce4710"
     },
     {
       "path": "context/USER_PREFERENCES.md",
@@ -234,14 +309,29 @@
       "sha256": "2bad27dab4ddff1db9869c80a821f9c13eff013e639bbaa2be5174266668a9f0"
     },
     {
+      "path": "docs/PRACTICE_LOG_2026-10-15_16.md",
+      "bytes": 16789,
+      "sha256": "f9bdac91a4cf1f00de34c9f5e8eaeb0e14d10a4e3dd0a74e33b984656e28682c"
+    },
+    {
+      "path": "docs/PUBLIC_UPDATE_SCOPE.md",
+      "bytes": 2597,
+      "sha256": "283c72e7d572316baedf36abe11d2187c7ad6e058d07f8ce857163149b88b58b"
+    },
+    {
       "path": "docs/RUNBOOK.md",
-      "bytes": 6105,
-      "sha256": "9d8c59b728ab6604f57ea830c46dde888f5159832d890094e4b5b086022b75f1"
+      "bytes": 10235,
+      "sha256": "9b9770bdd1ad98e0e4957fe0b14e1feec8946412461abeafb008a06cf2f60f36"
     },
     {
       "path": "evidence/gazebo_model_user_screenshot_2026-10-14.png",
       "bytes": 245917,
       "sha256": "6f17f07a7529c5d7bc9abaada00937492536dad10ef1660d970e1eee1b52ec2a"
+    },
+    {
+      "path": "evidence/practice_2026-10-15_16.json",
+      "bytes": 2962,
+      "sha256": "fe65233692986ea37dcf8d3b4051c01a2bb125232a1500c39e17938d821f4c5a"
     },
     {
       "path": "evidence/step4/README_使用说明.md",
@@ -267,6 +357,36 @@
       "path": "evidence/step6/verification.json",
       "bytes": 2041,
       "sha256": "e13aabcaa4aa69dc1c1ea927d2d466f8cde10f2fe7c5ee191f7bbf0ac576e4e2"
+    },
+    {
+      "path": "history/ATTACHMENT_PATH_AUDIT.json",
+      "bytes": 13699,
+      "sha256": "69a1a1937f24953f7ef38a16197af30c7c0c57efe7457f10f091c8b37f7aeaa0"
+    },
+    {
+      "path": "history/CHAT_HISTORY.jsonl",
+      "bytes": 200746,
+      "sha256": "f67b001530a2660b208a94ce42347dbb8a92db2d22aa072b2bf93a692b43b3cd"
+    },
+    {
+      "path": "history/CHAT_HISTORY.md",
+      "bytes": 180601,
+      "sha256": "b959e0015db6863efc63cf1713a9bd6c1538f58e3bdb03efadbe2aa5111f9530"
+    },
+    {
+      "path": "history/EXPORT_REPORT.json",
+      "bytes": 989,
+      "sha256": "95bb3e6bc5c00657e1f51d90234a0e7e0238a7ff9840ca1e1d6eb574d0aea035"
+    },
+    {
+      "path": "history/IMAGE_INDEX.json",
+      "bytes": 7371,
+      "sha256": "09b28777859f6294e8b10c40528b25fc501ea7af75751f5b5e090a6423e76d41"
+    },
+    {
+      "path": "history/README.md",
+      "bytes": 1526,
+      "sha256": "cfea678d8b86f50bf9d952f6ad36d39831c8a7a3255cf49ead5d80fc151f1967"
     },
     {
       "path": "history/assets/user_image_001.jpg",
@@ -439,36 +559,6 @@
       "sha256": "6f17f07a7529c5d7bc9abaada00937492536dad10ef1660d970e1eee1b52ec2a"
     },
     {
-      "path": "history/ATTACHMENT_PATH_AUDIT.json",
-      "bytes": 13699,
-      "sha256": "69a1a1937f24953f7ef38a16197af30c7c0c57efe7457f10f091c8b37f7aeaa0"
-    },
-    {
-      "path": "history/CHAT_HISTORY.jsonl",
-      "bytes": 200746,
-      "sha256": "f67b001530a2660b208a94ce42347dbb8a92db2d22aa072b2bf93a692b43b3cd"
-    },
-    {
-      "path": "history/CHAT_HISTORY.md",
-      "bytes": 180601,
-      "sha256": "b959e0015db6863efc63cf1713a9bd6c1538f58e3bdb03efadbe2aa5111f9530"
-    },
-    {
-      "path": "history/EXPORT_REPORT.json",
-      "bytes": 989,
-      "sha256": "95bb3e6bc5c00657e1f51d90234a0e7e0238a7ff9840ca1e1d6eb574d0aea035"
-    },
-    {
-      "path": "history/IMAGE_INDEX.json",
-      "bytes": 7371,
-      "sha256": "09b28777859f6294e8b10c40528b25fc501ea7af75751f5b5e090a6423e76d41"
-    },
-    {
-      "path": "history/README.md",
-      "bytes": 1219,
-      "sha256": "64411b4221e303115df29e26144833197bed9d3f656522d2a4e2ea9febf67928"
-    },
-    {
       "path": "metadata/COURSEWARE_INVENTORY.json",
       "bytes": 3160,
       "sha256": "713c1b283150fe86afd8ad4528b5c29f995add6d78c86200deac7c306dbd5312"
@@ -480,18 +570,8 @@
     },
     {
       "path": "metadata/SOURCE_PROVENANCE.json",
-      "bytes": 14056,
-      "sha256": "017b99b216825d15f1a0b8025190dacc3e3fb288e338e27d9fa6dceab0f55bef"
-    },
-    {
-      "path": "README.md",
-      "bytes": 3317,
-      "sha256": "24cce4b4cd9ba8eb6827fd2cb6c65a5f1cde2aad601acde29ae34283e11b66ab"
-    },
-    {
-      "path": "reference/legacy/Shell练习_前三项_历史交付.zip",
-      "bytes": 5881,
-      "sha256": "4b4d7c003082b8fbb34babcb5049f607ac80ead26307a54a3efef17c5f731626"
+      "bytes": 16788,
+      "sha256": "eee71be877cc1cc93995d5190f66a772f1fdc247b3db6597c9ca97f54dadb538"
     },
     {
       "path": "reference/Lesson13_code_original.zip",
@@ -504,14 +584,24 @@
       "sha256": "b193f7e29bd41d9197dea7e3fe5a95b497715ee73c557bc6060ec578252cf721"
     },
     {
-      "path": "RIGHTS_AND_PRIVACY.md",
-      "bytes": 840,
-      "sha256": "01519162771f608bffe3c4b8051eeb8f47d68c58fcf568bfcba3edfee943a0f1"
+      "path": "reference/legacy/Shell练习_前三项_历史交付.zip",
+      "bytes": 5881,
+      "sha256": "4b4d7c003082b8fbb34babcb5049f607ac80ead26307a54a3efef17c5f731626"
     },
     {
-      "path": "START_HERE.md",
-      "bytes": 2722,
-      "sha256": "8867fb672b5bfd3043cee364e355b0d7b77b6970489e167e0f56f8c0e7dddcf9"
+      "path": "study/README.md",
+      "bytes": 832,
+      "sha256": "27515fa8c381dfe157eb1fc963501071981c2befdce3ecffbb379bf9a5387766"
+    },
+    {
+      "path": "study/ROS实践_Lesson11-15_学习记录与操作索引.md",
+      "bytes": 32151,
+      "sha256": "5291db665e8676849e6c92cd7fc0cf092054b6a38171794fd88659ec5ca6bf5c"
+    },
+    {
+      "path": "study/Ubuntu与ROS基础_期末笔试复习资料.pdf",
+      "bytes": 671355,
+      "sha256": "099d50204449aebc6d81cf0ad63e167c4c1b69f09a281ddbdf8db9926b4ecf3a"
     },
     {
       "path": "study/index_lesson11_15/coverage.json",
@@ -552,16 +642,6 @@
       "path": "study/index_lesson1_10/structure.txt",
       "bytes": 21098,
       "sha256": "5621c81c8d84dec38bdccc0a42b6cf86c8fd20bde4e1c99bea32b5673df9c4c3"
-    },
-    {
-      "path": "study/README.md",
-      "bytes": 832,
-      "sha256": "27515fa8c381dfe157eb1fc963501071981c2befdce3ecffbb379bf9a5387766"
-    },
-    {
-      "path": "study/ROS实践_Lesson11-15_学习记录与操作索引.md",
-      "bytes": 32151,
-      "sha256": "5291db665e8676849e6c92cd7fc0cf092054b6a38171794fd88659ec5ca6bf5c"
     },
     {
       "path": "study/text/Lesson1.txt",
@@ -639,16 +719,19 @@
       "sha256": "ad80d94cf2fd5e216e9ae592f54b555114ebaa92511fe3a7c6e3ca8813897452"
     },
     {
-      "path": "study/Ubuntu与ROS基础_期末笔试复习资料.pdf",
-      "bytes": 671355,
-      "sha256": "099d50204449aebc6d81cf0ad63e167c4c1b69f09a281ddbdf8db9926b4ecf3a"
+      "path": "tests/test_cloud_preview.py",
+      "bytes": 7965,
+      "sha256": "2d3da9000ad43cfe4bbf085a3c330882ed130fb9cf46a4e5b2cde61b3cab8e9f"
+    },
+    {
+      "path": "tools/refresh_manifest.py",
+      "bytes": 3265,
+      "sha256": "ac329c3d3f9fa52e8f08da86ba009ad49869aa26495bc0687eb722b7896e4625"
     },
     {
       "path": "tools/verify_archive.py",
       "bytes": 1872,
       "sha256": "2698eef4e81fa1c01bf8d459bc76e4674aa85cb858da8fef7531d7002dc52836"
     }
-  ],
-  "file_count_excluding_manifest": 129,
-  "total_bytes_excluding_manifest": 87335281
+  ]
 }

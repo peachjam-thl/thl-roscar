@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- Stage 8: unchanged stage-7 robot/drive/lidar, plus measured auxiliary joints.
+     The drive plugin already publishes the two drive-wheel positions.
+     Only the other four movable joints are listed below to avoid overlap.
+-->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="myrobot_laser_step7.xacro"/>
+
+  <gazebo>
+    <plugin name="lesson14_aux_joint_states" filename="libgazebo_ros_joint_state_publisher.so">
+      <robotNamespace>/</robotNamespace>
+      <updateRate>50</updateRate>
+      <jointName>front_support_wheel_link2_base_link,back_support_wheel_link2_base_link,laser_scan_link2platform_link,depth_camera_link2base_link</jointName>
+    </plugin>
+  </gazebo>
+</robot>

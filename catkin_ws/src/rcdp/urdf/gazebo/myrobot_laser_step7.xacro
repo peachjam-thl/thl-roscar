@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Stage 7: retain the stage-6 robot and single drive plugin; add only lidar. -->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="myrobot_drive_step6.xacro"/>
+  <xacro:include filename="gazebo_sensor/lesson14_laser_step7.xacro"/>
+</robot>

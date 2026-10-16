@@ -1,0 +1,17 @@
+{
+  "period_asia_shanghai": ["2026-10-15", "2026-10-16"],
+  "evidence_type": "Sanitized summary of user-supplied outputs and functional confirmations, not raw logs or direct agent VM access",
+  "environment": {"ubuntu": "20.04.6 LTS", "ros": "Noetic", "gazebo_classic": "11.15.1", "virtualization": "VMware"},
+  "laser": {"frame": "laser_scan_link", "rate_hz_ros_time": 5.495, "samples": 360, "valid_samples_in_one_scan": 360, "nearest_m": 1.7491929531097412, "configured_angle_radians": [-3, 3]},
+  "joint_tf": {"gazebo_joint_states_and_rsp_consumer_observed": true, "six_joint_live_message_inventory_collected": false, "laser_tf_subsequent_queries_succeeded": true, "odom_root_short_sample": {"requested_wall_seconds": 30, "received": 2997, "repeated_timestamps": 0, "later_warning_recurred": true}},
+  "depth_sample": {"frame": "rotate_depth_camera_link", "resolution": [640, 480], "encoding": "32FC1", "total_pixels": 307200, "valid_pixels": 307200, "min_m": 0.783237874507904, "max_m": 3.8378396034240723, "center_m": 3.8069357872009277},
+  "raw_cloud_sample": {"resolution": [640, 480], "fields": ["x", "y", "z", "rgb"], "point_step": 32, "data_bytes": 9830400, "valid_xyz_points": 307200, "z_range_m": [0.7832250595092773, 3.452345609664917]},
+  "camera_info": {"rgb_basic_metadata_ok": true, "depth_basic_metadata_ok": true, "resolution": [640, 480], "frame": "rotate_depth_camera_link", "fx_fy": [554.254691191187, 554.254691191187], "cx_cy": [320.5, 240.5], "physical_calibration_verified": false},
+  "preview": {"topic": "/lesson14/depth_points_preview", "frame": "rotate_depth_camera_link", "resolution": [80, 60], "point_count": 4800, "point_step": 32, "data_bytes": 153600, "configured_max_wall_hz": 2, "measured_wall_hz": 1.712, "display_stable_by_user_report": true},
+  "camera_short_sample_rates": {"rgb_hz_ros_time": 10.051, "depth_hz_ros_time": 9.960, "requested_wall_seconds_per_command": 8, "simulated_and_wall_rates_not_directly_equivalent": true},
+  "motion_regression": {"user_reply": "正常 同步 稳定", "requested_linear_x_m_s": 0.1, "requested_wall_seconds": 3, "forward_stop_and_visual_linkage_confirmed": true, "exact_distance_independently_measured": false, "message_timestamp_alignment_measured": false},
+  "rviz_recovery": {"software_renderer_log_confirmed": "llvmpipe", "raw_full_cloud_exit_code": -7, "signal_x86_linux": "SIGBUS", "root_cause_resolved": false, "raw_full_resolution_display_reaccepted": false, "tf_repeated_data_resolved": false},
+  "not_completed": ["keyboard teleoperation acceptance", "turning and quantitative trajectory tests", "long-duration load testing", "SLAM and map saving", "AMCL localization", "move_base navigation", "APT/DNS recovery", "complete VM backup"],
+  "practice_paused_by_user": true,
+  "publication": {"repository_kept_public_by_explicit_user_choice": true, "new_raw_logs_screenshots_course_archives_or_world_uploaded": false, "existing_repository_history_fully_sanitized": false}
+}

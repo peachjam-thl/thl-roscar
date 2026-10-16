@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="false"/>
+  <arg name="verbose" default="true"/>
+  <arg name="start_rviz" default="true"/>
+
+  <!-- One description for Gazebo and RSP; do not also launch stage 7 or 8. -->
+  <param name="robot_description"
+         command="$(find xacro)/xacro '$(find rcdp)/urdf/gazebo/myrobot_camera_step9.xacro'"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find rcdp)/worlds/lesson14_box_house_step7.world"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="verbose" value="$(arg verbose)"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_lesson13_robot"
+        args="-urdf -param robot_description -model lesson13_robot -x 0 -y 0 -z 0.02"
+        output="screen"/>
+
+  <!-- Real joint positions still come from the two existing Gazebo plugins.
+       This RSP also owns the new fixed optical transform through /tf_static. -->
+  <node pkg="robot_state_publisher" type="robot_state_publisher"
+        name="lesson14_robot_state_publisher" output="screen">
+    <param name="publish_frequency" value="50.0"/>
+    <param name="listener_queue_size" value="100"/>
+    <param name="use_tf_static" value="true"/>
+  </node>
+
+  <group if="$(arg start_rviz)">
+    <node pkg="rviz" type="rviz" name="lesson14_rviz"
+          args="-d $(find rcdp)/config/lesson14_camera_step9.rviz" output="screen"/>
+  </group>
+</launch>

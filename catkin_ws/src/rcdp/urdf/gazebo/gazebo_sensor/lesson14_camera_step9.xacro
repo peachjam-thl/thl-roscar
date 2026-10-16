@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<robot name="lesson14_camera" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Optical origin is 1 mm ahead of the existing camera housing's +X face.
+       The sensor pose and this fixed joint must have the same translation.
+       REP-103 optical axes: Z forward, X right, Y down. No physical mass added. -->
+  <link name="rotate_depth_camera_link"/>
+  <joint name="depth_camera_optical_joint_step9" type="fixed">
+    <parent link="depth_camera_link"/>
+    <child link="rotate_depth_camera_link"/>
+    <origin xyz="${depth_length/2.0+0.001} 0 0" rpy="${-Pi/2.0} 0 ${-Pi/2.0}"/>
+  </joint>
+
+  <gazebo reference="depth_camera_link">
+    <sensor type="depth" name="lesson14_kinect_step9">
+      <pose>${depth_length/2.0+0.001} 0 0 0 0 0</pose>
+      <always_on>true</always_on>
+      <!-- Lesson14 uses 20 Hz at the sensor; begin with 10 Hz in VMware. -->
+      <update_rate>10.0</update_rate>
+      <camera>
+        <horizontal_fov>${Pi/3.0}</horizontal_fov>
+        <image>
+          <format>R8G8B8</format>
+          <width>640</width>
+          <height>480</height>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>8.0</far>
+        </clip>
+      </camera>
+      <plugin name="lesson14_kinect_step9_controller" filename="libgazebo_ros_openni_kinect.so">
+        <robotNamespace>/</robotNamespace>
+        <cameraName>kinect</cameraName>
+        <updateRate>10.0</updateRate>
+        <imageTopicName>rgb/image_raw</imageTopicName>
+        <depthImageTopicName>depth/image_raw</depthImageTopicName>
+        <pointCloudTopicName>depth/points</pointCloudTopicName>
+        <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+        <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+        <frameName>rotate_depth_camera_link</frameName>
+        <hackBaseline>0.0</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+        <pointCloudCutoff>0.4</pointCloudCutoff>
+        <pointCloudCutoffMax>8.0</pointCloudCutoffMax>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

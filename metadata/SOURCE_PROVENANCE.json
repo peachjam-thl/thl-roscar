@@ -352,9 +352,66 @@
       "sha256": "c2820f8316595c5d426045d0f28ab6aaab118934c2a3dd563a9156a2449da8de"
     }
   ],
-  "active_code_snapshot_basis": "Original rcdp package plus delivered stage4/stage6 files; not a fresh read-back of VM disk",
+  "active_code_snapshot_basis": "Original rcdp plus delivered step4/6 and twelve step7/8/9/9a supplemental source/config files; not a fresh VM disk read-back. The classroom indoor world is intentionally not newly distributed.",
   "missing_live_vm_source": [
     "robot_course_pkg full current source",
     "entire VM environment and runtime logs not supplied by user"
-  ]
+  ],
+  "last_update_date_china": "2026-10-16",
+  "public_update_2026_10_16": {
+    "scope": "Sanitized notes and supplemental implementation/configuration only",
+    "course_original_archives_world_screenshots_raw_logs_added": false,
+    "new_source_files": [
+      {
+        "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_laser_step7.xacro",
+        "sha256": "c4af8dccb9584b29d4f237be0f8c8fcb2edf8c0654db27b236e4900148335cc9"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro",
+        "sha256": "10b4b5a4a1a4e3fd093a5bbc5ab31b200fd2ae38453f7c9393b98e5985b2c01b"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/launch/myrobot_laser_step7.launch",
+        "sha256": "b27c018b498022095867fef5a5b7373db3b8688e70623ab89de74fd05294a004"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_tf_step8.xacro",
+        "sha256": "88b663762a15e4bf7ae4df2b7eb9c96dd6f039021bb920a0ada7d305eb82ff9a"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/launch/myrobot_tf_step8.launch",
+        "sha256": "841fbfe42f6a66ebc78e7e73fed2cdae89b313faa54b20fe536df508615fd379"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz",
+        "sha256": "8d46492ddb6eb8738f03bdab237e6e5392d5268cf73b072eabe8247972420ceb"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_camera_step9.xacro",
+        "sha256": "b4650f8c941ff35ac615ce0f81064e86140459e08cc446a5712b015df343b05d"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_camera_step9.xacro",
+        "sha256": "4a4aba75d3ae45cdf193b46b7f715da54a19889eadba1440e6e3b278697c7bdf"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/launch/myrobot_camera_step9.launch",
+        "sha256": "db4c968213c95cab8ee6b328ea7dff5de09a0e4ce99123a41757a1ebed8928ef"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/config/lesson14_camera_step9.rviz",
+        "sha256": "d336ad4cbc1da796a80036033d65ae4e714cf5bf5f0d2586830eb300d9b85c51"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/scripts/cloud_preview_step9a.py",
+        "sha256": "c422fcfc58f51bb457c4910ce582096137bfad45c6d6889f3185ffa8c253f473"
+      },
+      {
+        "path": "catkin_ws/src/rcdp/config/lesson14_cloud_preview_step9a.rviz",
+        "sha256": "923e84c3de171ea8dd9c82cf0761c12e31ebba93fb3f9f65eb200e3b7c2f2d1c"
+      }
+    ],
+    "whole_repository_history_sanitized": false,
+    "rights_note": "No blanket open-source license or redistribution right for historical course material is granted."
+  }
 }
