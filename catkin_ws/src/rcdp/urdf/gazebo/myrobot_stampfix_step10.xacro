@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- Stage 10: same expanded stage-9 robot, except the diff-drive library path.
+     Do not also include stage9: that would load a second diff-drive plugin. -->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="myrobot_drive_stampfix_step10.xacro"/>
+  <xacro:include filename="gazebo_sensor/lesson14_laser_step7.xacro"/>
+
+  <!-- Identical to stage8: only the four non-drive moving joints. -->
+  <gazebo>
+    <plugin name="lesson14_aux_joint_states" filename="libgazebo_ros_joint_state_publisher.so">
+      <robotNamespace>/</robotNamespace>
+      <updateRate>50</updateRate>
+      <jointName>front_support_wheel_link2_base_link,back_support_wheel_link2_base_link,laser_scan_link2platform_link,depth_camera_link2base_link</jointName>
+    </plugin>
+  </gazebo>
+
+  <xacro:include filename="gazebo_sensor/lesson14_camera_step9.xacro"/>
+</robot>

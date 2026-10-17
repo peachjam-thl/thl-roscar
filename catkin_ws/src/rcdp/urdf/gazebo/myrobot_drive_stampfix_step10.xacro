@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- Stage 10: stage-6 model and settings; only the drive library is replaced. -->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Relative include resolves beside this file inside rcdp/urdf/gazebo/. -->
+  <xacro:include filename="myrobot_gazebo_step4.xacro"/>
+
+  <gazebo>
+    <plugin name="lesson13_diff_drive" filename="/home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so">
+      <robotNamespace>/</robotNamespace>
+      <updateRate>100</updateRate>
+      <leftJoint>base_l_wheel_joint</leftJoint>
+      <rightJoint>base_r_wheel_joint</rightJoint>
+      <wheelSeparation>${2.0*base_radius}</wheelSeparation>
+      <wheelDiameter>${2.0*move_wheel_radius}</wheelDiameter>
+      <!-- wheelAcceleration is the wheel tangential speed ramp in m/s^2. -->
+      <wheelAcceleration>0.3</wheelAcceleration>
+      <wheelTorque>5.0</wheelTorque>
+      <commandTopic>/cmd_vel</commandTopic>
+      <odometryTopic>/odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>root_link</robotBaseFrame>
+      <!-- Ground-truth simulation odometry, not a real encoder estimator. -->
+      <odometrySource>world</odometrySource>
+      <publishTf>true</publishTf>
+      <publishOdomTF>true</publishOdomTF>
+      <!-- A later robot_state_publisher should own link transforms. -->
+      <publishWheelTF>false</publishWheelTF>
+      <publishWheelJointState>true</publishWheelJointState>
+    </plugin>
+  </gazebo>
+</robot>

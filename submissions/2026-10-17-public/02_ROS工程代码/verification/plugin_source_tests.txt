@@ -1,0 +1,17 @@
+test_01_original_hashes_and_commit (__main__.SourceTests.test_01_original_hashes_and_commit) ... ok
+test_02_exact_cpp_patch_scope (__main__.SourceTests.test_02_exact_cpp_patch_scope) ... ok
+test_03_exact_header_patch_scope (__main__.SourceTests.test_03_exact_header_patch_scope) ... ok
+test_04_original_license_retained (__main__.SourceTests.test_04_original_license_retained) ... ok
+test_05_four_actual_joint_motor_targets (__main__.SourceTests.test_05_four_actual_joint_motor_targets) ... ok
+test_06_forward_math_from_actual_source (__main__.SourceTests.test_06_forward_math_from_actual_source) ... ok
+test_07_reverse_math_from_actual_source (__main__.SourceTests.test_07_reverse_math_from_actual_source) ... ok
+test_08_positive_yaw_math_from_actual_source (__main__.SourceTests.test_08_positive_yaw_math_from_actual_source) ... ok
+test_09_curve_math_from_actual_source (__main__.SourceTests.test_09_curve_math_from_actual_source) ... ok
+test_10_time_and_pose_consistency_source (__main__.SourceTests.test_10_time_and_pose_consistency_source) ... ok
+test_11_manifest_and_build_identity (__main__.SourceTests.test_11_manifest_and_build_identity) ... ok
+test_12_no_launch_model_or_binary_in_compile_package (__main__.SourceTests.test_12_no_launch_model_or_binary_in_compile_package) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.006s
+
+OK

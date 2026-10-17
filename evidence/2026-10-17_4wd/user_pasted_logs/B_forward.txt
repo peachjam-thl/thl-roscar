@@ -1,0 +1,158 @@
+thl@ubuntu:~/桌面$ printf 'B组日志目录：%s\n' "$b_trial_dir"
+B组日志目录：/home/thl/ros_course_logs/step11f_B_tests_mMb7nY
+thl@ubuntu:~/桌面$ if [ -n "$b_trial_dir" ] && [ -d "$b_trial_dir" ]; then
+>     python3 -u /home/thl/catkin_ws/src/rcdp/scripts/test_4wd_forward_step11d.py 2>&1 | tee -i "$b_trial_dir/B_forward.log"
+>     b_forward_status=("${PIPESTATUS[@]}")
+>     printf 'python_exit=%s tee_exit=%s\n' "${b_forward_status[0]}" "${b_forward_status[1]}"
+> else
+>     printf '日志目录无效，未执行运动测试。\n'
+> fi
+FORWARD TEST: 0.08 m/s for at most about 3 WALL seconds, then 2 seconds of zeros. Watch Gazebo.
+{
+  "model": "lesson13_robot",
+  "command_topic": "/cmd_vel",
+  "requested_linear_mps": 0.08,
+  "requested_angular_radps": 0.0,
+  "requested_forward_wall_seconds": 3.0,
+  "ideal_wheel_target_radps": 0.7999999999999999,
+  "motion_attempted": true,
+  "forward_wall_seconds_observed": 3.0002,
+  "forward_messages_sent": 60,
+  "zero_messages_sent": 40,
+  "moving_samples": [
+    {
+      "wall_start_s": 0.7021354909957154,
+      "wall_end_s": 0.7078895489976276,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 0.8000297897903335,
+        "front_right_wheel_joint": 0.8000300164924481,
+        "rear_left_wheel_joint": 0.8000298258761227,
+        "rear_right_wheel_joint": 0.8000300176459247
+      },
+      "model": {
+        "world_xyz_m": [
+          0.05707649107757763,
+          -3.5943454071489513e-06,
+          -0.0010934789101046949
+        ],
+        "yaw_rad": -2.8881040788679912e-05,
+        "planar_speed_mps": 0.08000300117252815,
+        "yaw_rate_radps": 3.150671144695805e-08
+      }
+    },
+    {
+      "wall_start_s": 1.4125496250053402,
+      "wall_end_s": 1.4189189140015515,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 0.8000305578938888,
+        "front_right_wheel_joint": 0.8000306797454106,
+        "rear_left_wheel_joint": 0.8000305823894516,
+        "rear_right_wheel_joint": 0.8000293344006834
+      },
+      "model": {
+        "world_xyz_m": [
+          0.11419859311595966,
+          -5.253014096604825e-06,
+          -0.001093478937123804
+        ],
+        "yaw_rad": -2.8871221031924905e-05,
+        "planar_speed_mps": 0.08000302146083302,
+        "yaw_rate_radps": 2.4445043797103364e-07
+      }
+    },
+    {
+      "wall_start_s": 2.120999840000877,
+      "wall_end_s": 2.1271185929945204,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 0.8000298659488163,
+        "front_right_wheel_joint": 0.8000303553138048,
+        "rear_left_wheel_joint": 0.8000298723937728,
+        "rear_right_wheel_joint": 0.8000303598066829
+      },
+      "model": {
+        "world_xyz_m": [
+          0.17092069514352703,
+          -6.899764979791279e-06,
+          -0.0010934789718363702
+        ],
+        "yaw_rad": -2.8876952163643913e-05,
+        "planar_speed_mps": 0.08000303707899721,
+        "yaw_rate_radps": 7.318587341199695e-08
+      }
+    },
+    {
+      "wall_start_s": 2.8289547900058096,
+      "wall_end_s": 2.8348743789974833,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 0.800031125593251,
+        "front_right_wheel_joint": 0.8000292776945871,
+        "rear_left_wheel_joint": 0.8000292440394242,
+        "rear_right_wheel_joint": 0.8000291101547392
+      },
+      "model": {
+        "world_xyz_m": [
+          0.22716279644108794,
+          -8.51210659941157e-06,
+          -0.0010934789232387443
+        ],
+        "yaw_rad": -2.8882485030592576e-05,
+        "planar_speed_mps": 0.08000306231938323,
+        "yaw_rate_radps": 4.4875984778632025e-07
+      }
+    }
+  ],
+  "errors": [],
+  "before": {
+    "wheel_rates_radps": {
+      "front_left_wheel_joint": 2.6603720073467534e-05,
+      "front_right_wheel_joint": 2.6615220179945472e-05,
+      "rear_left_wheel_joint": 2.6612372141417815e-05,
+      "rear_right_wheel_joint": 2.6617838000901065e-05
+    },
+    "model": {
+      "world_xyz_m": [
+        0.001109564414422296,
+        -1.2021021667041301e-06,
+        -0.0010934790122033022
+      ],
+      "yaw_rad": -1.5749236181047197e-05,
+      "planar_speed_mps": 2.684228580001362e-06,
+      "yaw_rate_radps": 8.566989213424241e-10
+    }
+  },
+  "after_zero": {
+    "wheel_rates_radps": {
+      "front_left_wheel_joint": 2.6594660399875346e-05,
+      "front_right_wheel_joint": 2.660411958413589e-05,
+      "rear_left_wheel_joint": 2.6603003898253684e-05,
+      "rear_right_wheel_joint": 2.6607752411089743e-05
+    },
+    "model": {
+      "world_xyz_m": [
+        0.24114882877822402,
+        -7.803470226869588e-06,
+        -0.0010934789961239422
+      ],
+      "yaw_rad": -4.276611319457183e-06,
+      "planar_speed_mps": 2.6829390548769186e-06,
+      "yaw_rate_radps": 7.622714209388236e-10
+    }
+  },
+  "moving_sample_count": 4,
+  "wheel_rate_medians_radps": {
+    "front_left_wheel_joint": 0.8000302119213525,
+    "front_right_wheel_joint": 0.8000301859031265,
+    "rear_left_wheel_joint": 0.8000298491349478,
+    "rear_right_wheel_joint": 0.8000296760233041
+  },
+  "all_four_wheels_positive_in_samples": true,
+  "forward_displacement_m": 0.24003926443799872,
+  "lateral_displacement_m": -2.8209329923127044e-06,
+  "yaw_change_rad": 1.1472624861590015e-05,
+  "after_zero_stationary_sample": true,
+  "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+  "simultaneous_joint_measurement": false,
+  "turning_or_reset_verified": false
+}
+TEST_RECORDED: confirm visually that the car moved forward and stopped; send this output.
+python_exit=0 tee_exit=0

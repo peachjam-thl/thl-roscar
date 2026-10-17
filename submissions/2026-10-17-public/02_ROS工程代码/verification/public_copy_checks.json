@@ -1,0 +1,17 @@
+{
+  "date_china": "2026-10-17",
+  "public_pdf_pages": 15,
+  "images": 5,
+  "chapters": 6,
+  "identity_fields_removed": true,
+  "document_properties_checked": true,
+  "all_pages_rendered_and_visually_reviewed": true,
+  "private_originals_unchanged": true,
+  "pixel_edits_to_user_screenshots": false,
+  "render_method": "Microsoft Word read-only export + bundled Poppler; same document style as the original checked report",
+  "runtime_source_changes_for_redaction": false,
+  "new_ubuntu_clean_build_verified": false,
+  "original_runtime_evidence": "User-pasted terminal output and real screenshots",
+  "whole_repository_history_sanitized": false,
+  "video_created": false
+}

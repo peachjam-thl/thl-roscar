@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Step 11I: add only the previously validated lidar to the accepted 4WD TF model.
+     Reuse the old SENSOR include, never the old two-wheel TOP-LEVEL robot.
+     No camera, optical link, second drive, fake joint states or RViz here. -->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="myrobot_4wd_tf_step11h.xacro"/>
+  <xacro:include filename="gazebo_sensor/lesson14_laser_step7.xacro"/>
+</robot>

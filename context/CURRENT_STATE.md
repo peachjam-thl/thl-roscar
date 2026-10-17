@@ -1,67 +1,48 @@
-# 当前状态：先读此文件
+# 当前状态 2026-10-17 四轮版
 
-更新至 2026-10-16。最新用户验收：**“正常 同步 稳定”**，对应受控前进／停车、Gazebo 与 RViz 的视觉联动、轻量点云稳定。随后用户要求先暂停实践，把两天进展写入 GitHub。
+目前已到step11I：四轮四驱＋实测关节状态＋TF＋激光雷达，cone_model场景，软件渲染RViz。用户确认重启后车与墙体恢复、RViz正常，并补交5张当前四轮版截图。本次最后任务是公开脱敏归档上传，不自动进入相机或导航阶段。
 
-## 现场环境（用户逐项提供）
+## 环境与实际文件
 
-| 项目 | 已知值 |
-| --- | --- |
-| 工作方式 | 用户在 VMware 中执行，助手根据回传验收 |
-| 系统 | Ubuntu 20.04.6 LTS |
-| ROS | ROS 1 Noetic；运行日志 roslaunch/rosversion 为 1.17.4 |
-| 仿真 | Gazebo Classic 11.15.1，VMware 虚拟机 |
-| ROS 安装 | `/opt/ros/noetic` |
-| 现有工作空间 | `~/catkin_ws` |
-| 当前功能包 | `~/catkin_ws/src/rcdp` |
-| 原始参考材料 | 工作空间外隔离保存，不整包覆盖当前 rcdp |
-| 模型名 | `lesson13_robot` |
-| 最新仿真 launch | `myrobot_camera_step9.launch`，包含前面已成功模型／驱动／雷达／TF |
-| 预览脚本 | `scripts/cloud_preview_step9a.py` |
-| 当前 RViz | `lesson14_cloud_preview_step9a.rviz`，Fixed Frame=odom，Depth_Preview 开启 |
-| 软件渲染 | 每次 RViz 命令前 `LIBGL_ALWAYS_SOFTWARE=true`；日志确认 llvmpipe |
-| 本地 world | `worlds/lesson14_box_house_step7.world`，本次资料补齐已纳入仓库 |
-| 速度 / 里程计 | `/cmd_vel` / `/odom` |
+- 用户VMware：Ubuntu20.04.6、ROS1 Noetic、Gazebo Classic11.15.1、RViz1.14.26。
+- 原工作空间/home/thl/catkin_ws，模型包rcdp，当前驱动包rcdp_4wd_stampfix。
+- 当前原入口：myrobot_4wd_laser_step11i.launch friction_model:=cone_model；它不自动开RViz。
+- RViz：LIBGL_ALWAYS_SOFTWARE=true，lesson14_scan_step8.rviz，节点lesson14_4wd_rviz，Fixed Frame=odom。
+- 当前World：lesson14_4wd_cone_model_step11f.world；模型lesson13_robot。
+- /cmd_vel、/odom、/joint_states、/scan；没有已恢复的四轮相机图像或点云。
 
-## 已验证证据
+## 实体和控制
 
-1. 既有模型与驱动：构建成功，Gazebo 动态模型存在，差速订阅和低速前进／停车通过。
-2. step7 雷达：房间和小车正常；LaserScan 约 5.495 Hz；单帧 360 个样本有效，最近约 1.749 m，frame=laser_scan_link。
-3. step8 TF/RViz：使用 Gazebo 关节位置与单个 RSP；odom→laser_scan_link 后续连续可查；模型、红色扫描及运动视觉联动通过。
-4. step9 RGB-D：RGB、深度图显示；深度 640×480、32FC1；单帧 307200 像素有限且正数；原始 XYZ 点云一次检查同样 307200 点有效。
-5. 光学 TF / CameraInfo：odom 到 rotate_depth_camera_link 后续连续连通；RGB/Depth CameraInfo 的 frame、分辨率和 K 矩阵基本检查通过，不是物理标定验收。
-6. step9a：80×60=4800 点、153600 字节；保持采集时间／frame／所选点字节；最多 2 Hz 墙钟，短测约 1.712 Hz。用户确认静态稳定和运动视觉联动。
-7. 实测短窗口频率：RGB 10.051 Hz、Depth 9.960 Hz（ROS 仿真时间），预览 1.712 Hz（墙钟）；时间基准不同，不直接比较。
+- 四个同尺寸独立驱动轮，无旧小支撑轮；10 Link、9 Joint，6活动关节。
+- 轮径0.20m、宽0.08m，轴距0.40m、轮距0.72m；每轮质量0.3kg，模型总设定质量7.7kg，不是实物测量。
+- 四个continuous轮关节轴均0 1 0；相机安装revolute范围±π，雷达安装continuous；转台尚未主动控制。
+- 四电机插件源自官方gazebo_ros_pkgs2.9.3，保留BSD；100Hz配置、每轮5Nm，轮速分配v±w×0.72/2再除0.10。
+- /odom为Gazebo世界真值；驱动独占odom→root_link并用SimTime秒／纳秒；六个关节由Gazebo50Hz配置实测，经一个RSP发布内部TF。
+- 已加载库用户报告SHA256：1265cba90fa07463d7f8af80decdf33bbf47a916a113fe7fdb51599699a9424c。仓库无该编译.so，需目标机重新编译。
 
-以上来自用户现场输出、此前截图和明确反馈，不是助手直接访问 VM。速度／位移／制动时间未独立量化，不能说严格走了 0.3 m；“同步”是视觉反馈，不是消息级同步误差测量。本地静态检查与现场证据分开。详见 [脱敏复盘](../docs/PRACTICE_LOG_2026-10-15_16.md) 和 [验收摘要](../evidence/practice_2026-10-15_16.json)。
+## 已有运行证据
 
-## 当前模型与控制配置
+1. 实体、四驱库、/cmd_vel订阅与模型关节映射已逐阶段检查。
+2. A/pyramid前进0.239226m；左转净平移0.073715m、+27.6363度，停车样本通过。脚本退出2因为超过自设5cm参考，不是崩溃或老师标准。
+3. B/cone前进0.240039m；左转净平移0.012273m、+25.9996度；右转0.012240m、−25.9987度，停车样本通过。单次A/B减少约83.35%，不是重复试验统计。
+4. H全树40.047秒：根TF3990、关节状态1995；I全树40.049秒：根TF3984、odom3984、关节状态1992、clock39844。7条动态边无观察到重复／倒退，3条静态关系不变。该脚本不订阅/scan，不把它写成联合传感器压力测试。
+5. 激光独立检查约5.495Hz，frame=laser_scan_link，360有效样本、NaN/正无穷均0，角度−3..3rad，距离0.1..30m，最近1.6867m、最远8.9694m。
+6. 重启前3份World哈希匹配；重启后9个运行模型，box_house四面墙与四碰撞几何完整。未覆盖World源文件。
+7. 五张最新截图已交；15页六章报告和可复现工程副本已生成。公开版移除姓名、班级、学号；视频未处理。
 
-- 基础物理模型 10 links、9 joints；step9 只新增无质量光学参考 link＋fixed joint，成为 11 links、10 joints，6 个活动关节不变。
-- `root_link` 是参考根；底盘、立柱、二层平台通过固定关节连接，碰撞几何仍存在。
-- 驱动轮半径 0.1 m、轮宽 0.08 m；轮距 0.8 m。
-- 仅一个 `libgazebo_ros_diff_drive.so` 插件，100 Hz，轮加速度上限 0.3 m/s²，轮扭矩 5 Nm。
-- odometrySource 为 `world`（仿真真值，不是已验证的真实轮编码器）。TF 配置为 `odom → root_link`。
-- `publishWheelJointState=true` 提供两个驱动轮位置；新增 Gazebo joint-state 插件只提供其他四个活动关节，RSP 转换为模型 TF，不启动伪造位置的 JSP。
-- `publishWheelTF=false`，RSP 负责模型边，Gazebo 驱动负责 odom→root_link；两个 /tf 发布节点不自动等于边冲突。
-- 雷达及 RGB-D 已追加实际插件并通过话题／样本验证，不再只是几何外形。预览中继只用于显示，不控制车、不发布 TF。
+所有现场结果来自用户终端与截图，不是助手直接连入VM。完整记录见[evidence](../evidence/2026-10-17_4wd/README.md)和[今日复盘](../docs/PRACTICE_LOG_2026-10-17.md)。
 
-## 仍未解决
+## 排错和边界
 
-- 原始完整点云在 RViz 触发退出码 -7（x86 Linux SIGBUS），没有崩溃堆栈；未定位根因，未重新通过完整点云显示。
-- `TF_REPEATED_DATA` 偶发发生在 odom→root_link。30 秒样本曾收到 2997 条、重复 0 条，但后续又出现警告，不能宣称永久解决。
-- 软件渲染＋低负载显示是可用恢复方案，不能证明故障一定源于显卡、内存、TF 或数据。
+- libRayPlugin.so预检缺失是动态库搜索环境，加载Gazebo官方setup.sh后通过；不写成重装Gazebo。
+- 初次tf_echo可能短暂1ms缓存外推，随后持续正常；不凭初始化报错添加多余静态TF。
+- 旧lesson14_rviz有注册残留／拒绝连接；新四轮RViz显示正常，未记录执行全局cleanup。
+- 原始307200点点云SIGBUS仍未定位；历史两轮RGB-D／轻量预览可用不等于四轮已恢复。
+- 长时、reset、实物标定、精确轨迹跟踪、四轮相机、SLAM与导航均未完成。
+- 原工作空间入口含/home/thl固定库路径；提交副本新增路径适配入口只做离线等价检查，不能当作干净Ubuntu端到端通过。
 
-## 尚未完成／不允许写成已完成
+## 继续工作规则
 
-- 键盘遥控验收，旋转／转弯测试，速度／距离量化。
-- 长时稳定性、消息级同步误差、真实相机／激光精度标定。
-- 六个活动关节的逐条实时完整消息清单；当前只有静态覆盖、插件日志及相关功能证据。
-- SLAM、地图保存、AMCL、move_base 导航。
-- APT/DNS 修复和 `check_urdf` 安装（当时下载失败，检查器不是跑 Gazebo 的硬性前提）。
-- VM 全工程备份；`robot_course_pkg` 的现场完整源文件未读回。
+按用户新请求一次一步；先当前只读检查，不拿旧PID／topic输出当实时状态。不重启正常仿真，不叠加两驱动，不修改/opt/ros，不整包覆盖旧包。非零运动前看/cmd_vel，结束显式发零。新账号不继承登录，GitHub只保存工程上下文，不导出内部会话或凭据。
 
-## 下一次不要误判
-
-最后反馈时低负载显示稳定，但下次接手仍需按需检查，不能根据旧日志推断进程仍在线。当前暂停后续实践；用户要求继续后，先键盘／建图依赖只读检查，再逐阶段进入 Lesson15。不混用 rs_gazebo；不让 Gmapping 和 AMCL 同时发布 map→odom。
-
-按用户随后提出的新要求，项目已补齐 Lesson14/15 原 ZIP、step7–9a 增量 ZIP、室内 world、两张截图、两份原始文本附件及 22 条用户终端记录。Lesson11–15 已有同版 PDF，核对 352 页与 SHA256 后直接链接，不重复复制。参看 docs/RESOURCES.md。不上传内部会话、凭据或隐藏推理；没有清理旧历史，不声称全仓已脱敏。资料补齐不是继续运行实践，后续仍暂停。
+历史两轮状态已保存在[step10快照](history/CURRENT_STATE_STEP10_2026-10-16.md)，不作为当前默认配置。

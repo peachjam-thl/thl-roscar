@@ -1,0 +1,1094 @@
+{
+  "A_forward": {
+    "model": "lesson13_robot",
+    "command_topic": "/cmd_vel",
+    "requested_linear_mps": 0.08,
+    "requested_angular_radps": 0.0,
+    "requested_forward_wall_seconds": 3.0,
+    "ideal_wheel_target_radps": 0.7999999999999999,
+    "motion_attempted": true,
+    "forward_wall_seconds_observed": 3.0001,
+    "forward_messages_sent": 60,
+    "zero_messages_sent": 40,
+    "moving_samples": [
+      {
+        "wall_start_s": 0.7029307220072951,
+        "wall_end_s": 0.7115121440001531,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.8000298418361543,
+          "front_right_wheel_joint": 0.8000298655510959,
+          "rear_left_wheel_joint": 0.8000298878622611,
+          "rear_right_wheel_joint": 0.8000298898367223
+        },
+        "model": {
+          "world_xyz_m": [
+            0.05673142954086688,
+            5.563606534600458e-07,
+            -0.0010934790191631238
+          ],
+          "yaw_rad": 5.644209778100747e-07,
+          "planar_speed_mps": 0.0800029988554677,
+          "yaw_rate_radps": -1.253406472050811e-09
+        }
+      },
+      {
+        "wall_start_s": 1.4178783550014487,
+        "wall_end_s": 1.4244839159946423,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.800029941588354,
+          "front_right_wheel_joint": 0.8000299334280825,
+          "rear_left_wheel_joint": 0.8000299507531345,
+          "rear_right_wheel_joint": 0.800029937263134
+        },
+        "model": {
+          "world_xyz_m": [
+            0.1136935227499464,
+            5.882674655844378e-07,
+            -0.0010934790072519296
+          ],
+          "yaw_rad": 5.630180978590042e-07,
+          "planar_speed_mps": 0.08000300839308237,
+          "yaw_rate_radps": -1.7849068927197332e-09
+        }
+      },
+      {
+        "wall_start_s": 2.126330658997176,
+        "wall_end_s": 2.1320644340012223,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.800030070083786,
+          "front_right_wheel_joint": 0.800030058559631,
+          "rear_left_wheel_joint": 0.8000300790572136,
+          "rear_right_wheel_joint": 0.8000300628201201
+        },
+        "model": {
+          "world_xyz_m": [
+            0.1704156221549135,
+            6.183443792443079e-07,
+            -0.0010934790151302942
+          ],
+          "yaw_rad": 5.610752996427473e-07,
+          "planar_speed_mps": 0.0800030318379313,
+          "yaw_rate_radps": -2.184255224611939e-09
+        }
+      },
+      {
+        "wall_start_s": 2.834068822005065,
+        "wall_end_s": 2.8404413600073894,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.800030185750818,
+          "front_right_wheel_joint": 0.8000301775110396,
+          "rear_left_wheel_joint": 0.800030194852341,
+          "rear_right_wheel_joint": 0.8000301818628792
+        },
+        "model": {
+          "world_xyz_m": [
+            0.2267377230671296,
+            6.470542843968881e-07,
+            -0.0010934790227238311
+          ],
+          "yaw_rad": 5.592043057215259e-07,
+          "planar_speed_mps": 0.08000305349939728,
+          "yaw_rate_radps": -1.698934034007473e-09
+        }
+      }
+    ],
+    "errors": [],
+    "before": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.6603811789825864e-05,
+        "front_right_wheel_joint": 2.6615311888807683e-05,
+        "rear_left_wheel_joint": 2.6612463930265537e-05,
+        "rear_right_wheel_joint": 2.661792960039548e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.0008014190099582335,
+          4.3369316065086334e-07,
+          -0.0010934790122031357
+        ],
+        "yaw_rad": 3.853751255615787e-08,
+        "planar_speed_mps": 2.6842378425805474e-06,
+        "yaw_rate_radps": 8.566829676211227e-10
+      }
+    },
+    "after_zero": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.6603547386407397e-05,
+        "front_right_wheel_joint": 2.6612827576175783e-05,
+        "rear_left_wheel_joint": 2.6612079030198484e-05,
+        "rear_right_wheel_joint": 2.6616459497177054e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24002719058852995,
+          7.881687235694202e-07,
+          -0.0010934790473808853
+        ],
+        "yaw_rad": -1.003347207498259e-07,
+        "planar_speed_mps": 2.683828337293608e-06,
+        "yaw_rate_radps": 7.134921656853826e-10
+      }
+    },
+    "moving_sample_count": 4,
+    "wheel_rate_medians_radps": {
+      "front_left_wheel_joint": 0.8000300058360701,
+      "front_right_wheel_joint": 0.8000299959938568,
+      "rear_left_wheel_joint": 0.800030014905174,
+      "rear_right_wheel_joint": 0.800030000041627
+    },
+    "all_four_wheels_positive_in_samples": true,
+    "forward_displacement_m": 0.23922577157858518,
+    "lateral_displacement_m": 3.4525639674259083e-07,
+    "yaw_change_rad": -1.3887223330598377e-07,
+    "after_zero_stationary_sample": true,
+    "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+    "simultaneous_joint_measurement": false,
+    "turning_or_reset_verified": false
+  },
+  "A_left_turn": {
+    "model": "lesson13_robot",
+    "command_topic": "/cmd_vel",
+    "requested_linear_mps": 0.0,
+    "requested_angular_radps": 0.2,
+    "requested_turn_wall_seconds": 3.0,
+    "ideal_wheel_targets_radps": {
+      "front_left_wheel_joint": -0.7199999999999999,
+      "front_right_wheel_joint": 0.7199999999999999,
+      "rear_left_wheel_joint": -0.7199999999999999,
+      "rear_right_wheel_joint": 0.7199999999999999
+    },
+    "motion_attempted": true,
+    "turn_wall_seconds_observed": 3.0006,
+    "turn_messages_sent": 60,
+    "zero_messages_sent": 40,
+    "moving_samples": [
+      {
+        "wall_start_s": 0.7024073999928078,
+        "wall_end_s": 0.708398798989947,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.72525393516347,
+          "front_right_wheel_joint": 0.7227876187551165,
+          "rear_left_wheel_joint": -0.7197785082810951,
+          "rear_right_wheel_joint": 0.7350766425661754
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24057253601398615,
+            -0.021721444338840296,
+            -0.0010934431398880173
+          ],
+          "yaw_rad": 0.12265897212183283,
+          "planar_speed_mps": 0.03193023158694285,
+          "yaw_rate_radps": 0.17228982484629737
+        }
+      },
+      {
+        "wall_start_s": 1.4105683029920328,
+        "wall_end_s": 1.4195107400009874,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.7254220517886817,
+          "front_right_wheel_joint": 0.7248462141223275,
+          "rear_left_wheel_joint": -0.7199341510626647,
+          "rear_right_wheel_joint": 0.7299868550091151
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24079812979841128,
+            -0.04265655307271517,
+            -0.00109346661211146
+          ],
+          "yaw_rad": 0.2420888470444833,
+          "planar_speed_mps": 0.026436264259355545,
+          "yaw_rate_radps": 0.16200235247310116
+        }
+      },
+      {
+        "wall_start_s": 2.1213481390004745,
+        "wall_end_s": 2.1278517030004878,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.723775235385444,
+          "front_right_wheel_joint": 0.7277763850683441,
+          "rear_left_wheel_joint": -0.7199613125550416,
+          "rear_right_wheel_joint": 0.7283382949849091
+        },
+        "model": {
+          "world_xyz_m": [
+            0.2409560276413374,
+            -0.05927957915167916,
+            -0.0010934608690283398
+          ],
+          "yaw_rad": 0.35362180272207755,
+          "planar_speed_mps": 0.02046026649670339,
+          "yaw_rate_radps": 0.1532909109483273
+        }
+      },
+      {
+        "wall_start_s": 2.8305234979925444,
+        "wall_end_s": 2.836321748996852,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.7222539780817594,
+          "front_right_wheel_joint": 0.7305259538127055,
+          "rear_left_wheel_joint": -0.7199868842112445,
+          "rear_right_wheel_joint": 0.7267639619191756
+        },
+        "model": {
+          "world_xyz_m": [
+            0.2411060173871785,
+            -0.07148768406133366,
+            -0.0010934570389286025
+          ],
+          "yaw_rad": 0.45852591013679495,
+          "planar_speed_mps": 0.01422328986213456,
+          "yaw_rate_radps": 0.14532455864435545
+        }
+      }
+    ],
+    "errors": [],
+    "before": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.6603790810723972e-05,
+        "front_right_wheel_joint": 2.6613043797577717e-05,
+        "rear_left_wheel_joint": 2.6612285918420926e-05,
+        "rear_right_wheel_joint": 2.661667584441025e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24032792629404873,
+          9.110969264435537e-07,
+          -0.0010934790374496073
+        ],
+        "yaw_rad": -8.916014442302459e-08,
+        "planar_speed_mps": 2.683850290794477e-06,
+        "yaw_rate_radps": 7.12065457116307e-10
+      }
+    },
+    "after_zero": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 3.197280030540351e-05,
+        "front_right_wheel_joint": 2.871041536162231e-05,
+        "rear_left_wheel_joint": 2.96522412201549e-05,
+        "rear_right_wheel_joint": 3.112072369980951e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24114367538077122,
+          -0.07370923071338129,
+          -0.0010934832772616088
+        ],
+        "yaw_rad": 0.4823448575418045,
+        "planar_speed_mps": 3.064732929337755e-06,
+        "yaw_rate_radps": -6.350062000025199e-09
+      }
+    },
+    "moving_sample_count": 4,
+    "wheel_rate_medians_radps": {
+      "front_left_wheel_joint": -0.724514585274457,
+      "front_right_wheel_joint": 0.7263112995953358,
+      "rear_left_wheel_joint": -0.7199477318088532,
+      "rear_right_wheel_joint": 0.7291625749970121
+    },
+    "wheel_directions_match_left_turn": true,
+    "planar_displacement_m": 0.07371465561384767,
+    "forward_displacement_m": 0.0008157556587293808,
+    "lateral_displacement_m": -0.07371014173757513,
+    "yaw_change_rad": 0.48234494670194894,
+    "yaw_change_deg": 27.63632971548431,
+    "positive_yaw_change_observed": true,
+    "body_yaw_rate_median_radps": 0.15764663171071425,
+    "after_zero_stationary_sample": true,
+    "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+    "simultaneous_joint_measurement": false,
+    "scope_note": "One left-turn command only; actual yaw depends on skid/contact physics. Do not demand an exact 0.6 rad angle.",
+    "right_turn_or_reset_verified": false
+  },
+  "B_forward": {
+    "model": "lesson13_robot",
+    "command_topic": "/cmd_vel",
+    "requested_linear_mps": 0.08,
+    "requested_angular_radps": 0.0,
+    "requested_forward_wall_seconds": 3.0,
+    "ideal_wheel_target_radps": 0.7999999999999999,
+    "motion_attempted": true,
+    "forward_wall_seconds_observed": 3.0002,
+    "forward_messages_sent": 60,
+    "zero_messages_sent": 40,
+    "moving_samples": [
+      {
+        "wall_start_s": 0.7021354909957154,
+        "wall_end_s": 0.7078895489976276,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.8000297897903335,
+          "front_right_wheel_joint": 0.8000300164924481,
+          "rear_left_wheel_joint": 0.8000298258761227,
+          "rear_right_wheel_joint": 0.8000300176459247
+        },
+        "model": {
+          "world_xyz_m": [
+            0.05707649107757763,
+            -3.5943454071489513e-06,
+            -0.0010934789101046949
+          ],
+          "yaw_rad": -2.8881040788679912e-05,
+          "planar_speed_mps": 0.08000300117252815,
+          "yaw_rate_radps": 3.150671144695805e-08
+        }
+      },
+      {
+        "wall_start_s": 1.4125496250053402,
+        "wall_end_s": 1.4189189140015515,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.8000305578938888,
+          "front_right_wheel_joint": 0.8000306797454106,
+          "rear_left_wheel_joint": 0.8000305823894516,
+          "rear_right_wheel_joint": 0.8000293344006834
+        },
+        "model": {
+          "world_xyz_m": [
+            0.11419859311595966,
+            -5.253014096604825e-06,
+            -0.001093478937123804
+          ],
+          "yaw_rad": -2.8871221031924905e-05,
+          "planar_speed_mps": 0.08000302146083302,
+          "yaw_rate_radps": 2.4445043797103364e-07
+        }
+      },
+      {
+        "wall_start_s": 2.120999840000877,
+        "wall_end_s": 2.1271185929945204,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.8000298659488163,
+          "front_right_wheel_joint": 0.8000303553138048,
+          "rear_left_wheel_joint": 0.8000298723937728,
+          "rear_right_wheel_joint": 0.8000303598066829
+        },
+        "model": {
+          "world_xyz_m": [
+            0.17092069514352703,
+            -6.899764979791279e-06,
+            -0.0010934789718363702
+          ],
+          "yaw_rad": -2.8876952163643913e-05,
+          "planar_speed_mps": 0.08000303707899721,
+          "yaw_rate_radps": 7.318587341199695e-08
+        }
+      },
+      {
+        "wall_start_s": 2.8289547900058096,
+        "wall_end_s": 2.8348743789974833,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.800031125593251,
+          "front_right_wheel_joint": 0.8000292776945871,
+          "rear_left_wheel_joint": 0.8000292440394242,
+          "rear_right_wheel_joint": 0.8000291101547392
+        },
+        "model": {
+          "world_xyz_m": [
+            0.22716279644108794,
+            -8.51210659941157e-06,
+            -0.0010934789232387443
+          ],
+          "yaw_rad": -2.8882485030592576e-05,
+          "planar_speed_mps": 0.08000306231938323,
+          "yaw_rate_radps": 4.4875984778632025e-07
+        }
+      }
+    ],
+    "errors": [],
+    "before": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.6603720073467534e-05,
+        "front_right_wheel_joint": 2.6615220179945472e-05,
+        "rear_left_wheel_joint": 2.6612372141417815e-05,
+        "rear_right_wheel_joint": 2.6617838000901065e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.001109564414422296,
+          -1.2021021667041301e-06,
+          -0.0010934790122033022
+        ],
+        "yaw_rad": -1.5749236181047197e-05,
+        "planar_speed_mps": 2.684228580001362e-06,
+        "yaw_rate_radps": 8.566989213424241e-10
+      }
+    },
+    "after_zero": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.6594660399875346e-05,
+        "front_right_wheel_joint": 2.660411958413589e-05,
+        "rear_left_wheel_joint": 2.6603003898253684e-05,
+        "rear_right_wheel_joint": 2.6607752411089743e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24114882877822402,
+          -7.803470226869588e-06,
+          -0.0010934789961239422
+        ],
+        "yaw_rad": -4.276611319457183e-06,
+        "planar_speed_mps": 2.6829390548769186e-06,
+        "yaw_rate_radps": 7.622714209388236e-10
+      }
+    },
+    "moving_sample_count": 4,
+    "wheel_rate_medians_radps": {
+      "front_left_wheel_joint": 0.8000302119213525,
+      "front_right_wheel_joint": 0.8000301859031265,
+      "rear_left_wheel_joint": 0.8000298491349478,
+      "rear_right_wheel_joint": 0.8000296760233041
+    },
+    "all_four_wheels_positive_in_samples": true,
+    "forward_displacement_m": 0.24003926443799872,
+    "lateral_displacement_m": -2.8209329923127044e-06,
+    "yaw_change_rad": 1.1472624861590015e-05,
+    "after_zero_stationary_sample": true,
+    "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+    "simultaneous_joint_measurement": false,
+    "turning_or_reset_verified": false
+  },
+  "B_left_turn": {
+    "model": "lesson13_robot",
+    "command_topic": "/cmd_vel",
+    "requested_linear_mps": 0.0,
+    "requested_angular_radps": 0.2,
+    "requested_turn_wall_seconds": 3.0,
+    "ideal_wheel_targets_radps": {
+      "front_left_wheel_joint": -0.7199999999999999,
+      "front_right_wheel_joint": 0.7199999999999999,
+      "rear_left_wheel_joint": -0.7199999999999999,
+      "rear_right_wheel_joint": 0.7199999999999999
+    },
+    "motion_attempted": true,
+    "turn_wall_seconds_observed": 3.0001,
+    "turn_messages_sent": 60,
+    "zero_messages_sent": 40,
+    "moving_samples": [
+      {
+        "wall_start_s": 0.7023690920032095,
+        "wall_end_s": 0.7081711600039853,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.7199999999999985,
+          "front_right_wheel_joint": 0.7199999999999984,
+          "rear_left_wheel_joint": -0.7199999999999986,
+          "rear_right_wheel_joint": 0.7199999999999985
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24158629685041047,
+            -0.002846071403433607,
+            -0.0010934793056851522
+          ],
+          "yaw_rad": 0.10595038420530349,
+          "planar_speed_mps": 0.004141794100217793,
+          "yaw_rate_radps": 0.15129487633975225
+        }
+      },
+      {
+        "wall_start_s": 1.410134553007083,
+        "wall_end_s": 1.4161016669968376,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.719999999999999,
+          "front_right_wheel_joint": 0.7199999999999991,
+          "rear_left_wheel_joint": -0.7199999999999992,
+          "rear_right_wheel_joint": 0.719999999999999
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24205430209206677,
+            -0.005731189449954025,
+            -0.0010934792970347385
+          ],
+          "yaw_rad": 0.2126145034017323,
+          "planar_speed_mps": 0.004141749642956733,
+          "yaw_rate_radps": 0.1512980542714852
+        }
+      },
+      {
+        "wall_start_s": 2.1177974159945734,
+        "wall_end_s": 2.122951188997831,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.7199999999999995,
+          "front_right_wheel_joint": 0.7200000000000013,
+          "rear_left_wheel_joint": -0.7199999999999996,
+          "rear_right_wheel_joint": 0.7200000000000015
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24282477897734028,
+            -0.008554976636936301,
+            -0.0010934792882679734
+          ],
+          "yaw_rad": 0.3194315194506397,
+          "planar_speed_mps": 0.0041417275360236695,
+          "yaw_rate_radps": 0.1512993646993452
+        }
+      },
+      {
+        "wall_start_s": 2.824791865001316,
+        "wall_end_s": 2.8314917550014798,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": -0.7200000000000008,
+          "front_right_wheel_joint": 0.7200000000000009,
+          "rear_left_wheel_joint": -0.7200000000000006,
+          "rear_right_wheel_joint": 0.7200000000000009
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24389166660812803,
+            -0.011289479054796532,
+            -0.0010934792816921224
+          ],
+          "yaw_rad": 0.42655146749782724,
+          "planar_speed_mps": 0.0041417184753472,
+          "yaw_rate_radps": 0.1512984592947253
+        }
+      }
+    ],
+    "errors": [],
+    "before": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.660364737510811e-05,
+        "front_right_wheel_joint": 2.6612895317499672e-05,
+        "rear_left_wheel_joint": 2.661213927363315e-05,
+        "rear_right_wheel_joint": 2.661653149615377e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24142759404053576,
+          -7.69003925657186e-06,
+          -0.0010934790368639091
+        ],
+        "yaw_rad": -4.264997147895724e-06,
+        "planar_speed_mps": 2.683834578978577e-06,
+        "yaw_rate_radps": 7.124488340670772e-10
+      }
+    },
+    "after_zero": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 3.020493145649433e-05,
+        "front_right_wheel_joint": 3.0330015203090383e-05,
+        "rear_left_wheel_joint": 3.0191003931436248e-05,
+        "rear_right_wheel_joint": 3.034334613109978e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24421410223394632,
+          -0.011960122371747126,
+          -0.001093478503601475
+        ],
+        "yaw_rad": 0.4537752237273734,
+        "planar_speed_mps": 3.0547718057196617e-06,
+        "yaw_rate_radps": 1.8550240314720413e-09
+      }
+    },
+    "moving_sample_count": 4,
+    "wheel_rate_medians_radps": {
+      "front_left_wheel_joint": -0.7199999999999993,
+      "front_right_wheel_joint": 0.72,
+      "rear_left_wheel_joint": -0.7199999999999994,
+      "rear_right_wheel_joint": 0.72
+    },
+    "wheel_directions_match_left_turn": true,
+    "planar_displacement_m": 0.012272948568893693,
+    "forward_displacement_m": 0.0027865591704750235,
+    "lateral_displacement_m": -0.01195242044793235,
+    "yaw_change_rad": 0.4537794887245213,
+    "yaw_change_deg": 25.9996495335194,
+    "positive_yaw_change_observed": true,
+    "body_yaw_rate_median_radps": 0.15129825678310527,
+    "after_zero_stationary_sample": true,
+    "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+    "simultaneous_joint_measurement": false,
+    "scope_note": "One left-turn command only; actual yaw depends on skid/contact physics. Do not demand an exact 0.6 rad angle.",
+    "right_turn_or_reset_verified": false
+  },
+  "B_right_turn": {
+    "model": "lesson13_robot",
+    "command_topic": "/cmd_vel",
+    "requested_linear_mps": 0.0,
+    "requested_angular_radps": -0.2,
+    "requested_turn_wall_seconds": 3.0,
+    "ideal_wheel_targets_radps": {
+      "front_left_wheel_joint": 0.7199999999999999,
+      "front_right_wheel_joint": -0.7199999999999999,
+      "rear_left_wheel_joint": 0.7199999999999999,
+      "rear_right_wheel_joint": -0.7199999999999999
+    },
+    "motion_attempted": true,
+    "turn_wall_seconds_observed": 3.0004,
+    "turn_messages_sent": 60,
+    "zero_messages_sent": 40,
+    "moving_samples": [
+      {
+        "wall_start_s": 0.7021255069994368,
+        "wall_end_s": 0.7078791309904773,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.7199999999999999,
+          "front_right_wheel_joint": -0.7199999999999994,
+          "rear_left_wheel_joint": 0.7199999999999995,
+          "rear_right_wheel_joint": -0.7199999999999994
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24396623963463018,
+            -0.008933365610814644,
+            -0.0010934792893600997
+          ],
+          "yaw_rad": 0.3477921654612861,
+          "planar_speed_mps": 0.004141725903190786,
+          "yaw_rate_radps": -0.15129925020139215
+        }
+      },
+      {
+        "wall_start_s": 1.4099419269914506,
+        "wall_end_s": 1.4158643309929175,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.7200000000000004,
+          "front_right_wheel_joint": -0.7200000000000006,
+          "rear_left_wheel_joint": 0.7200000000000004,
+          "rear_right_wheel_joint": -0.7200000000000005
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24311353204123298,
+            -0.006125390371697095,
+            -0.0010934792976772245
+          ],
+          "yaw_rad": 0.24036990393615396,
+          "planar_speed_mps": 0.004141727308017473,
+          "yaw_rate_radps": -0.15129850030445746
+        }
+      },
+      {
+        "wall_start_s": 2.1177840719901724,
+        "wall_end_s": 2.1239952179894317,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.7200000000000014,
+          "front_right_wheel_joint": -0.7200000000000015,
+          "rear_left_wheel_joint": 0.7200000000000012,
+          "rear_right_wheel_joint": -0.720000000000001
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24256532342027606,
+            -0.0032508526995192626,
+            -0.0010934793064004689
+          ],
+          "yaw_rad": 0.1332515108473596,
+          "planar_speed_mps": 0.004141760342435779,
+          "yaw_rate_radps": -0.15129575321122024
+        }
+      },
+      {
+        "wall_start_s": 2.8263895279960707,
+        "wall_end_s": 2.8347286869975505,
+        "wheel_rates_radps": {
+          "front_left_wheel_joint": 0.7200000000000019,
+          "front_right_wheel_joint": -0.7200000000000016,
+          "rear_left_wheel_joint": 0.7200000000000015,
+          "rear_right_wheel_joint": -0.7200000000000015
+        },
+        "model": {
+          "world_xyz_m": [
+            0.24232616519580752,
+            -0.0003383088529304343,
+            -0.001093479314604573
+          ],
+          "yaw_rad": 0.026286909083644117,
+          "planar_speed_mps": 0.004141808770782825,
+          "yaw_rate_radps": -0.1512917139487493
+        }
+      }
+    ],
+    "errors": [],
+    "before": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 3.0226892281088194e-05,
+        "front_right_wheel_joint": 3.0241901424207807e-05,
+        "rear_left_wheel_joint": 3.0234842610503847e-05,
+        "rear_right_wheel_joint": 3.0246192072358023e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24506902476187414,
+          -0.011542408108413333,
+          -0.0010934790125340377
+        ],
+        "yaw_rad": 0.45377526932707873,
+        "planar_speed_mps": 3.051776624542534e-06,
+        "yaw_rate_radps": 1.8531465300950631e-09
+      }
+    },
+    "after_zero": {
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": 2.656073161064804e-05,
+        "front_right_wheel_joint": 2.657158115495066e-05,
+        "rear_left_wheel_joint": 2.6569798517625868e-05,
+        "rear_right_wheel_joint": 2.657523557516453e-05
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24232049312118564,
+          0.00038457678029692573,
+          -0.0010934791914798403
+        ],
+        "yaw_rad": 1.2674829033870407e-05,
+        "planar_speed_mps": 2.679616041506563e-06,
+        "yaw_rate_radps": 9.463682359008485e-10
+      }
+    },
+    "moving_sample_count": 4,
+    "wheel_rate_medians_radps": {
+      "front_left_wheel_joint": 0.7200000000000009,
+      "front_right_wheel_joint": -0.7200000000000011,
+      "rear_left_wheel_joint": 0.7200000000000009,
+      "rear_right_wheel_joint": -0.7200000000000008
+    },
+    "wheel_directions_match_right_turn": true,
+    "planar_displacement_m": 0.012239583110359139,
+    "forward_displacement_m": 0.0027579589117280863,
+    "lateral_displacement_m": 0.011924808483015914,
+    "yaw_change_rad": -0.45376259449804485,
+    "yaw_change_deg": -25.99868156564416,
+    "negative_yaw_change_observed": true,
+    "body_yaw_rate_median_radps": -0.15129712675783885,
+    "after_zero_stationary_sample": true,
+    "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+    "simultaneous_joint_measurement": false,
+    "scope_note": "One right-turn command in the current B configuration only; not a new controlled A/B pair and not a return-to-start controller. Actual yaw depends on skid/contact physics.",
+    "repeatability_or_reset_verified": false
+  },
+  "H_full_tf_audit": {
+    "status": "WINDOW_OK",
+    "completed_window": true,
+    "observed_wall_seconds": 40.047,
+    "dynamic_tf": {
+      "base_link -> depth_camera_link": {
+        "records": 1522,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1522
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> front_left_wheel_link": {
+        "records": 1522,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1522
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> front_right_wheel_link": {
+        "records": 1522,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1522
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "platform_link -> laser_scan_link": {
+        "records": 1522,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1522
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> rear_left_wheel_link": {
+        "records": 1522,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1522
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> rear_right_wheel_link": {
+        "records": 1522,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1522
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "odom -> root_link": {
+        "records": 3990,
+        "publishers": {
+          "/gazebo": 3990
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      }
+    },
+    "static_tf": {
+      "root_link -> base_link": {
+        "records": 1,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1
+        },
+        "changed_static_pose": 0
+      },
+      "support_link -> platform_link": {
+        "records": 1,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1
+        },
+        "changed_static_pose": 0
+      },
+      "base_link -> support_link": {
+        "records": 1,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1
+        },
+        "changed_static_pose": 0
+      }
+    },
+    "joint_states": {
+      "messages": 1995,
+      "publishers": {
+        "/gazebo": 1995
+      },
+      "valid_samples_per_joint": {
+        "front_left_wheel_joint": 1995,
+        "front_right_wheel_joint": 1995,
+        "rear_left_wheel_joint": 1995,
+        "rear_right_wheel_joint": 1995,
+        "depth_camera_link2base_link": 1995,
+        "laser_scan_link2platform_link": 1995
+      },
+      "joint_timestamp_anomalies": {}
+    },
+    "odom": {
+      "odom -> root_link": {
+        "records": 3990,
+        "publishers": {
+          "/gazebo": 3990
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      }
+    },
+    "clock": {
+      "/clock": {
+        "records": 39911,
+        "publishers": {
+          "/gazebo": 39911
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      }
+    },
+    "invalid_message_counts": {},
+    "unexpected_edge_counts": {},
+    "anomaly_examples": [],
+    "issues": [],
+    "clock_sim_advance_seconds": 39.914,
+    "clock_max_receive_gap_wall_seconds": 0.007611,
+    "scope": "Passive received-data window only. Static latched replay is not a dynamic timestamp duplicate. No motion, live-sensor or long-duration validation.",
+    "gazebo_or_robot_configuration_changed": false,
+    "long_term_or_sensor_loaded_stability_verified": false
+  },
+  "I_full_tf_audit": {
+    "status": "WINDOW_OK",
+    "completed_window": true,
+    "observed_wall_seconds": 40.049,
+    "dynamic_tf": {
+      "base_link -> depth_camera_link": {
+        "records": 1503,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1503
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> front_left_wheel_link": {
+        "records": 1503,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1503
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> front_right_wheel_link": {
+        "records": 1503,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1503
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "platform_link -> laser_scan_link": {
+        "records": 1503,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1503
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> rear_left_wheel_link": {
+        "records": 1503,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1503
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "base_link -> rear_right_wheel_link": {
+        "records": 1503,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1503
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      },
+      "odom -> root_link": {
+        "records": 3984,
+        "publishers": {
+          "/gazebo": 3984
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      }
+    },
+    "static_tf": {
+      "root_link -> base_link": {
+        "records": 1,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1
+        },
+        "changed_static_pose": 0
+      },
+      "support_link -> platform_link": {
+        "records": 1,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1
+        },
+        "changed_static_pose": 0
+      },
+      "base_link -> support_link": {
+        "records": 1,
+        "publishers": {
+          "/lesson14_4wd_robot_state_publisher": 1
+        },
+        "changed_static_pose": 0
+      }
+    },
+    "joint_states": {
+      "messages": 1992,
+      "publishers": {
+        "/gazebo": 1992
+      },
+      "valid_samples_per_joint": {
+        "front_left_wheel_joint": 1992,
+        "front_right_wheel_joint": 1992,
+        "rear_left_wheel_joint": 1992,
+        "rear_right_wheel_joint": 1992,
+        "depth_camera_link2base_link": 1992,
+        "laser_scan_link2platform_link": 1992
+      },
+      "joint_timestamp_anomalies": {}
+    },
+    "odom": {
+      "odom -> root_link": {
+        "records": 3984,
+        "publishers": {
+          "/gazebo": 3984
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      }
+    },
+    "clock": {
+      "/clock": {
+        "records": 39844,
+        "publishers": {
+          "/gazebo": 39844
+        },
+        "repeated_stamps": 0,
+        "same_source_repeats": 0,
+        "cross_source_repeats": 0,
+        "backwards_per_source": 0,
+        "changed_payload_on_same_stamp": 0,
+        "zero_stamps": 0
+      }
+    },
+    "invalid_message_counts": {},
+    "unexpected_edge_counts": {},
+    "anomaly_examples": [],
+    "issues": [],
+    "clock_sim_advance_seconds": 39.848,
+    "clock_max_receive_gap_wall_seconds": 0.006324,
+    "scope": "Passive received-data window only. Static latched replay is not a dynamic timestamp duplicate. No motion, live-sensor or long-duration validation.",
+    "gazebo_or_robot_configuration_changed": false,
+    "long_term_or_sensor_loaded_stability_verified": false
+  }
+}

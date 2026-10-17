@@ -1,0 +1,40 @@
+{
+  "tf_root": {
+    "received_records": 3386,
+    "publishers": {"/gazebo": 3386},
+    "frame_pairs": {"odom -> root_link": 3386},
+    "repeated_stamps": 0,
+    "same_source_repeats": 0,
+    "cross_source_repeats": 0,
+    "backwards_per_source": 0,
+    "changed_pose_on_same_stamp": 0
+  },
+  "odom": {
+    "received_records": 3387,
+    "publishers": {"/gazebo": 3387},
+    "frame_pairs": {"odom -> root_link": 3387},
+    "repeated_stamps": 0,
+    "same_source_repeats": 0,
+    "cross_source_repeats": 0,
+    "backwards_per_source": 0,
+    "changed_pose_on_same_stamp": 0
+  },
+  "clock": {
+    "received_records": 31405,
+    "publishers": {"/gazebo": 31405},
+    "frame_pairs": {},
+    "repeated_stamps": 0,
+    "same_source_repeats": 0,
+    "cross_source_repeats": 0,
+    "backwards_per_source": 0,
+    "changed_pose_on_same_stamp": 0
+  },
+  "common_tf_odom_duplicate_stamp_count": 0,
+  "duplicate_examples": [],
+  "clock_sim_advance_seconds": 33.882,
+  "clock_max_receive_gap_wall_seconds": 0.016798,
+  "counting_scope": "TF/Odom: repeated frame-pair+stamp in this window; clock: consecutive equal stamps per publisher. Receiver gaps are observations here, not Gazebo internal timing proof.",
+  "observed_wall_seconds": 40.079,
+  "completed_window": true,
+  "all_three_streams_received": true
+}

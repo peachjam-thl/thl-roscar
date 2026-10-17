@@ -1,5 +1,19 @@
 # 系统架构
 
+## 当前四轮架构 2026-10-17
+
+```text
+/cmd_vel → rcdp_4wd_stampfix → 四轮电机
+                          → /odom 世界真值
+                          → odom → root_link
+Gazebo六关节实测 → /joint_states → robot_state_publisher → 内部动态TF及/tf_static
+Gazebo ray传感器 → /scan → RViz模型与激光显示
+```
+
+当前入口step11I包含I→H→C→A的Xacro层次，再单独引入旧雷达SENSOR文件，不使用旧两轮顶层。只有一个驱动、一个RSP；相机外壳存在但图像／光学参考尚未恢复。
+
+下文原架构是两轮历史阶段，勿直接作为当前启动配置。
+
 ## 目标与边界
 
 本项目实现课程差速车在 ROS1 Noetic / Gazebo Classic 中的模型、运动、传感器与显示链路，关注逐阶段可验证、故障可追溯。不是实车驱动平台，不声称已完成自主导航。
@@ -32,8 +46,9 @@ ROS master 负责发现与注册，不把它画成所有传感器数据必须经
 | 关节／TF step8 | myrobot_tf_step8.xacro | 其他四关节来自 Gazebo；两驱动轮来自已有驱动 |
 | RGB-D step9 | myrobot_camera_step9.xacro | 光学 link 和传感器；物理主体与已有控制不变 |
 | 显示 step9a | cloud_preview_step9a.py | 行列抽样、墙钟节流、原始数据不改 |
+| 时间戳 step10 | myrobot_stampfix_step10.xacro / rcdp_stampfix | 独立 C++ 插件，状态戳直接取 SimTime；模型及100Hz控制不变 |
 
-每个组合 Xacro 包含上一层；新增功能不需要复制整份模型。只启动最新需要的 launch，不是把每层 launch 都开一次。
+step6–9 递进包含上一层；step10 重新组合相同模型与传感器层，只替换驱动库引用，预检比较整个展开 XML，除此处不允许其他差异。只启动当前入口，不是把每层 launch 都开一次。
 
 ## TF 与关节状态责任
 
@@ -52,7 +67,11 @@ odom
 
 树中 wheels/support wheels 是概念性分组，不是实际 link 字面名称。实际名称以源码为准。完整模型 11 links / 10 joints，6 个活动关节；不把模型树的静态覆盖冒充实时全关节消息清单。
 
-`odom → root_link` 与内部关节 TF 必须各有明确责任。`/tf` 上出现两个发布节点本身可以正常，不能只数节点就断定冲突。当前重复时间戳警告尚未定位，不通过禁用 odom 或增添重复静态变换掩盖它。
+`odom → root_link` 与内部关节 TF 各有明确责任。`/tf` 上两个发布节点本身可以正常，不能只数节点就断定冲突。旧驱动同源重复已捕获；step10 从发布源改用 Gazebo SimTime，两轮短测通过，不禁用 odom、不增添重复静态变换。
+
+独立库位于 `catkin_ws/src/rcdp_stampfix`，继承官方2.9.3实现并保留许可；原系统库未替换。
+状态发布从异步 ROS 时钟缓存改用当前物理仿真时间，保持现有控制逻辑。
+外部诊断没有直接测量内部线程调度延迟；结论与具体实证范围见 [验收记录](TIMESTAMP_FIX_STEP10.md)。
 
 ## 主要接口
 
@@ -72,7 +91,7 @@ odom
 
 原始完整点云曾触发 RViz SIGBUS。可用方案是每次 RViz 命令使用 `LIBGL_ALWAYS_SOFTWARE=true`，再将原始点云经独立中继抽稀，单队列、最多 2 墙钟 Hz、无显示订阅者时解绑原始输入。
 
-这改变了渲染和输出负载等多个条件，不能反推某个唯一根因。原始相机活跃生成负担没有被中继直接降低；完整原始显示与 TF 警告仍需后续证据定位。
+这改变了渲染和输出负载等多个条件，不能反推某个唯一崩溃根因。原始相机活跃生成负担没有被中继直接降低；完整原始显示根因仍待定位。step10 的时间戳修复不等于修复该 SIGBUS。
 
 ## 后续扩展
 

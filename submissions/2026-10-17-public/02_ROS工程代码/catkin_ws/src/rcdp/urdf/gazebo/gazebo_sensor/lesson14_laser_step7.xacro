@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- Adapted from Lesson14 rcdp/urdf/gazebo/gazebo_sensor/laser.xacro.
+     Preserve its 360 samples, -3..3 radians, 5.5 Hz and range/noise values.
+     The field of view is 6 radians (~343.8 degrees), not exactly 360 degrees.
+     This file adds a sensor to the existing link, not another physical link.
+-->
+<robot name="lesson14_laser" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <gazebo reference="laser_scan_link">
+    <sensor type="ray" name="lesson14_rplidar">
+      <pose>0 0 0 0 0 0</pose>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <update_rate>5.5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3</min_angle>
+            <max_angle>3</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="lesson14_laser_ros" filename="libgazebo_ros_laser.so">
+        <robotNamespace>/</robotNamespace>
+        <topicName>/scan</topicName>
+        <frameName>laser_scan_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

@@ -1,0 +1,46 @@
+{
+  "tf_root": {
+    "received_records": 3932,
+    "publishers": {"/gazebo": 3932},
+    "frame_pairs": {"odom -> root_link": 3932},
+    "repeated_stamps": 3,
+    "same_source_repeats": 3,
+    "cross_source_repeats": 0,
+    "backwards_per_source": 0,
+    "changed_pose_on_same_stamp": 3
+  },
+  "odom": {
+    "received_records": 3931,
+    "publishers": {"/gazebo": 3931},
+    "frame_pairs": {"odom -> root_link": 3931},
+    "repeated_stamps": 2,
+    "same_source_repeats": 2,
+    "cross_source_repeats": 0,
+    "backwards_per_source": 0,
+    "changed_pose_on_same_stamp": 2
+  },
+  "clock": {
+    "received_records": 38754,
+    "publishers": {"/gazebo": 38754},
+    "frame_pairs": {},
+    "repeated_stamps": 0,
+    "same_source_repeats": 0,
+    "cross_source_repeats": 0,
+    "backwards_per_source": 0,
+    "changed_pose_on_same_stamp": 0
+  },
+  "common_tf_odom_duplicate_stamp_count": 2,
+  "duplicate_examples": [
+    {"stream": "tf_root", "source": "/gazebo", "frame_pair": "odom -> root_link", "stamp_ns": 4472260000000, "seq": null, "same_source_seen_before": true, "pose_changed": true},
+    {"stream": "tf_root", "source": "/gazebo", "frame_pair": "odom -> root_link", "stamp_ns": 4472260000000, "seq": null, "same_source_seen_before": true, "pose_changed": true},
+    {"stream": "odom", "source": "/gazebo", "frame_pair": "odom -> root_link", "stamp_ns": 4472260000000, "seq": 447213, "same_source_seen_before": true, "pose_changed": true},
+    {"stream": "tf_root", "source": "/gazebo", "frame_pair": "odom -> root_link", "stamp_ns": 4478141000000, "seq": null, "same_source_seen_before": true, "pose_changed": true},
+    {"stream": "odom", "source": "/gazebo", "frame_pair": "odom -> root_link", "stamp_ns": 4478141000000, "seq": 447800, "same_source_seen_before": true, "pose_changed": true}
+  ],
+  "clock_sim_advance_seconds": 39.323,
+  "clock_max_receive_gap_wall_seconds": 0.032082,
+  "counting_scope": "TF/Odom: repeated frame-pair+stamp in this window; clock: consecutive equal stamps per publisher. Receiver gaps are observations here, not Gazebo internal timing proof.",
+  "observed_wall_seconds": 40.072,
+  "completed_window": true,
+  "all_three_streams_received": true
+}

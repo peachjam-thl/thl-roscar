@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-17",
+  "docx_pdf_pages": 15,
+  "six_chapters": true,
+  "five_real_screenshots_byte_identical": true,
+  "three_tables": true,
+  "all_15_rendered_pages_manually_viewed": true,
+  "render_method": "Packaged render_docx.py attempted; failed because bundled/available soffice.exe absent. Isolated Microsoft Word COM read-only PDF export; bundled Poppler 120dpi page rasterization.",
+  "render_issues_fixed": [
+    "inherited blue title style border",
+    "split short tables"
+  ],
+  "expanded_top_level_models": {
+    "myrobot_4wd_base_step11a.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 0
+    },
+    "myrobot_4wd_drive_step11c.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 1
+    },
+    "myrobot_4wd_laser_step11i.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 3
+    },
+    "myrobot_4wd_tf_step11h.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 2
+    },
+    "myrobot_gazebo_step4.xacro": {
+      "links": 10,
+      "joints": 9,
+      "plugins": 0
+    }
+  },
+  "launches_resource_checked": [
+    "myrobot_4wd_drive_step11c.launch",
+    "myrobot_4wd_friction_step11f.launch",
+    "myrobot_4wd_laser_step11i.launch",
+    "myrobot_4wd_model_step11a.launch",
+    "myrobot_4wd_tf_step11h.launch",
+    "submission_4wd_laser.launch"
+  ],
+  "expected_native_build_artifacts_not_shipped": [
+    "../../devel/lib/librcdp_4wd_stampfix.so"
+  ],
+  "plugin_tests": 12,
+  "source_copies_hash_checked": 59,
+  "all_original_source_hashes_unchanged": true,
+  "mp4_created": false,
+  "single_trial_left_turn_net_displacement_reduction_percent": 83.35073471253095,
+  "ubuntu_clean_build_of_submission_copy": false,
+  "portable_entry_vm_runtime_verified": false,
+  "original_vm_runtime_evidence": "Previously supplied terminal transcripts and five new screenshots, not host-native Gazebo execution."
+}

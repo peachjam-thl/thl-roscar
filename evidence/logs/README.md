@@ -41,3 +41,12 @@
 | [022](user_terminal_022.txt) | 2026-10-16T05:40:07.260Z | thl@ubuntu:~/桌面$ source /home/thl/catkin_ws/devel/setup.bash |
 
 不包含从未提供的崩溃 core、完整 ~/.ros 日志目录或新截图；未取得的内容不伪造。最终“正常 同步 稳定”属于用户功能反馈，见上层验收摘要和实验报告。
+
+## step10 后续修复记录
+
+- [编译原附件](step10_build_user_supplied.txt)：用户提供，原字节保留；成功构建和未来文件时间警告都在。
+- [ldd 后半段原附件](step10_ldd_tail_user_supplied.txt)：原字节保留，不冒充完整 ldd；完整依赖通过见后续预检摘要。
+- [部署消息转录](step10_deployment_user_reported.txt)：用户预检、启动订阅、实际进程映射和“稳定 没出现”反馈；未补造时间。
+- [完整诊断 JSON 索引](../timestamp_fix_step10/README.md)：旧插件一次及新插件两次，各约40秒；保留完整统计与计数范围。
+
+本次没有新增用户截图、core 或完整 VM 日志目录，不上传源码构建的 `.so`；其现场 SHA256 只作来源证据。

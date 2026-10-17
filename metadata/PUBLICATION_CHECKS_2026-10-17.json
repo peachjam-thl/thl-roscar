@@ -1,0 +1,21 @@
+{
+  "date_china": "2026-10-17",
+  "new_or_modified_files_scanned": 194,
+  "identity_fields_absent_in_new_text_docx_pdf_and_zip_payloads": true,
+  "known_credential_patterns_found": 0,
+  "new_screenshots_visually_reviewed": 5,
+  "report_pages_visually_reviewed": 15,
+  "foreground_local_links_checked": 34,
+  "current_model": {
+    "links": 10,
+    "joints": 9,
+    "plugins": 3
+  },
+  "root_unittests_passed": 15,
+  "four_wheel_plugin_source_tests_passed": 12,
+  "private_originals_unchanged": true,
+  "whole_history_sanitized": false,
+  "native_vm_run_during_upload": false,
+  "public_submission_zip_sha256": "eb2a65c50726e7ffd0aa17c755bfa4f558f3eda7f57726ac4a4e21a472500dea",
+  "public_submission_zip_bytes": 3420152
+}

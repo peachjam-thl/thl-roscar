@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- Step 11C: add ONE four-motor controller to the unchanged step11A body.
+     Drive-only acceptance: no live sensors, joint-state publisher or RViz yet. -->
+<robot name="lesson13_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="myrobot_4wd_base_step11a.xacro"/>
+
+  <gazebo>
+    <plugin name="lesson14_four_wheel_drive"
+            filename="/home/thl/catkin_ws/devel/lib/librcdp_4wd_stampfix.so">
+      <!-- robotNamespace is omitted intentionally: the plugin defaults to "".
+           This launch has no namespace; command/odometry topics are absolute. -->
+      <leftFrontJoint>front_left_wheel_joint</leftFrontJoint>
+      <rightFrontJoint>front_right_wheel_joint</rightFrontJoint>
+      <leftRearJoint>rear_left_wheel_joint</leftRearJoint>
+      <rightRearJoint>rear_right_wheel_joint</rightRearJoint>
+
+      <!-- Actual left/right wheel-center distance, NOT the front/rear wheelbase. -->
+      <wheelSeparation>0.72</wheelSeparation>
+      <wheelDiameter>0.20</wheelDiameter>
+      <torque>5.0</torque>
+      <updateRate>100.0</updateRate>
+
+      <commandTopic>/cmd_vel</commandTopic>
+      <odometryTopic>/odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>root_link</robotBaseFrame>
+      <broadcastTF>true</broadcastTF>
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_yaw>0.01</covariance_yaw>
+    </plugin>
+  </gazebo>
+</robot>

@@ -1,0 +1,170 @@
+thl@ubuntu:~/桌面$ b_trial_dir=/home/thl/ros_course_logs/step11f_B_tests_mMb7nY
+thl@ubuntu:~/桌面$ 
+thl@ubuntu:~/桌面$ if [ ! -d "$b_trial_dir" ]; then
+>     printf '日志目录不存在，未执行测试。\n'
+> elif [ -e "$b_trial_dir/B_left_turn.log" ]; then
+>     printf '左转日志已存在，未重复执行。请反馈现有结果。\n'
+> else
+>     python3 -u /home/thl/catkin_ws/src/rcdp/scripts/test_4wd_turn_step11e.py 2>&1 | tee -i "$b_trial_dir/B_left_turn.log"
+>     b_turn_status=("${PIPESTATUS[@]}")
+>     printf 'python_exit=%s tee_exit=%s\n' "${b_turn_status[0]}" "${b_turn_status[1]}"
+> fi
+LEFT TURN TEST: linear=0, angular.z=+0.20 rad/s for about 3 WALL seconds, then 2 seconds of zeros. Watch Gazebo.
+{
+  "model": "lesson13_robot",
+  "command_topic": "/cmd_vel",
+  "requested_linear_mps": 0.0,
+  "requested_angular_radps": 0.2,
+  "requested_turn_wall_seconds": 3.0,
+  "ideal_wheel_targets_radps": {
+    "front_left_wheel_joint": -0.7199999999999999,
+    "front_right_wheel_joint": 0.7199999999999999,
+    "rear_left_wheel_joint": -0.7199999999999999,
+    "rear_right_wheel_joint": 0.7199999999999999
+  },
+  "motion_attempted": true,
+  "turn_wall_seconds_observed": 3.0001,
+  "turn_messages_sent": 60,
+  "zero_messages_sent": 40,
+  "moving_samples": [
+    {
+      "wall_start_s": 0.7023690920032095,
+      "wall_end_s": 0.7081711600039853,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": -0.7199999999999985,
+        "front_right_wheel_joint": 0.7199999999999984,
+        "rear_left_wheel_joint": -0.7199999999999986,
+        "rear_right_wheel_joint": 0.7199999999999985
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24158629685041047,
+          -0.002846071403433607,
+          -0.0010934793056851522
+        ],
+        "yaw_rad": 0.10595038420530349,
+        "planar_speed_mps": 0.004141794100217793,
+        "yaw_rate_radps": 0.15129487633975225
+      }
+    },
+    {
+      "wall_start_s": 1.410134553007083,
+      "wall_end_s": 1.4161016669968376,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": -0.719999999999999,
+        "front_right_wheel_joint": 0.7199999999999991,
+        "rear_left_wheel_joint": -0.7199999999999992,
+        "rear_right_wheel_joint": 0.719999999999999
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24205430209206677,
+          -0.005731189449954025,
+          -0.0010934792970347385
+        ],
+        "yaw_rad": 0.2126145034017323,
+        "planar_speed_mps": 0.004141749642956733,
+        "yaw_rate_radps": 0.1512980542714852
+      }
+    },
+    {
+      "wall_start_s": 2.1177974159945734,
+      "wall_end_s": 2.122951188997831,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": -0.7199999999999995,
+        "front_right_wheel_joint": 0.7200000000000013,
+        "rear_left_wheel_joint": -0.7199999999999996,
+        "rear_right_wheel_joint": 0.7200000000000015
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24282477897734028,
+          -0.008554976636936301,
+          -0.0010934792882679734
+        ],
+        "yaw_rad": 0.3194315194506397,
+        "planar_speed_mps": 0.0041417275360236695,
+        "yaw_rate_radps": 0.1512993646993452
+      }
+    },
+    {
+      "wall_start_s": 2.824791865001316,
+      "wall_end_s": 2.8314917550014798,
+      "wheel_rates_radps": {
+        "front_left_wheel_joint": -0.7200000000000008,
+        "front_right_wheel_joint": 0.7200000000000009,
+        "rear_left_wheel_joint": -0.7200000000000006,
+        "rear_right_wheel_joint": 0.7200000000000009
+      },
+      "model": {
+        "world_xyz_m": [
+          0.24389166660812803,
+          -0.011289479054796532,
+          -0.0010934792816921224
+        ],
+        "yaw_rad": 0.42655146749782724,
+        "planar_speed_mps": 0.0041417184753472,
+        "yaw_rate_radps": 0.1512984592947253
+      }
+    }
+  ],
+  "errors": [],
+  "before": {
+    "wheel_rates_radps": {
+      "front_left_wheel_joint": 2.660364737510811e-05,
+      "front_right_wheel_joint": 2.6612895317499672e-05,
+      "rear_left_wheel_joint": 2.661213927363315e-05,
+      "rear_right_wheel_joint": 2.661653149615377e-05
+    },
+    "model": {
+      "world_xyz_m": [
+        0.24142759404053576,
+        -7.69003925657186e-06,
+        -0.0010934790368639091
+      ],
+      "yaw_rad": -4.264997147895724e-06,
+      "planar_speed_mps": 2.683834578978577e-06,
+      "yaw_rate_radps": 7.124488340670772e-10
+    }
+  },
+  "after_zero": {
+    "wheel_rates_radps": {
+      "front_left_wheel_joint": 3.020493145649433e-05,
+      "front_right_wheel_joint": 3.0330015203090383e-05,
+      "rear_left_wheel_joint": 3.0191003931436248e-05,
+      "rear_right_wheel_joint": 3.034334613109978e-05
+    },
+    "model": {
+      "world_xyz_m": [
+        0.24421410223394632,
+        -0.011960122371747126,
+        -0.001093478503601475
+      ],
+      "yaw_rad": 0.4537752237273734,
+      "planar_speed_mps": 3.0547718057196617e-06,
+      "yaw_rate_radps": 1.8550240314720413e-09
+    }
+  },
+  "moving_sample_count": 4,
+  "wheel_rate_medians_radps": {
+    "front_left_wheel_joint": -0.7199999999999993,
+    "front_right_wheel_joint": 0.72,
+    "rear_left_wheel_joint": -0.7199999999999994,
+    "rear_right_wheel_joint": 0.72
+  },
+  "wheel_directions_match_left_turn": true,
+  "planar_displacement_m": 0.012272948568893693,
+  "forward_displacement_m": 0.0027865591704750235,
+  "lateral_displacement_m": -0.01195242044793235,
+  "yaw_change_rad": 0.4537794887245213,
+  "yaw_change_deg": 25.9996495335194,
+  "positive_yaw_change_observed": true,
+  "body_yaw_rate_median_radps": 0.15129825678310527,
+  "after_zero_stationary_sample": true,
+  "threshold_note": "Stationary sample: each wheel |rate|<0.15 rad/s, planar speed<0.01 m/s, |yaw rate|<0.05 rad/s. Not long-term stability proof.",
+  "simultaneous_joint_measurement": false,
+  "scope_note": "One left-turn command only; actual yaw depends on skid/contact physics. Do not demand an exact 0.6 rad angle.",
+  "right_turn_or_reset_verified": false
+}
+TEST_RECORDED: confirm visually that the car turned left and stopped; send output even if it did NOT turn.
+python_exit=0 tee_exit=0

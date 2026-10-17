@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/ros-simulation/gazebo_ros_pkgs",
+  "tag": "2.9.3",
+  "commit": "cd9cc952402375be5f274f39b29399c4087aa839",
+  "files": [
+    {"path": "gazebo_plugins/src/gazebo_ros_skid_steer_drive.cpp", "original": "upstream/gazebo_ros_skid_steer_drive.cpp", "patched": "src/gazebo_ros_skid_steer_stampfix.cpp", "sha256": "23a667f211d0f235a48382f03198bc17ecfce655a194a5bff37b0c9302c673c6"},
+    {"path": "gazebo_plugins/include/gazebo_plugins/gazebo_ros_skid_steer_drive.h", "original": "upstream/gazebo_ros_skid_steer_drive.h", "patched": "include/rcdp_4wd_stampfix/gazebo_ros_skid_steer_stampfix.h", "sha256": "b3feeb7efd6af492194fa2a9a12163a4bd1a7736c2164e94acfc360a43fd29a7"}
+  ],
+  "library": "librcdp_4wd_stampfix.so",
+  "class": "gazebo::GazeboRosSkidSteerDriveStampFix",
+  "changes": [
+    "Unique package, library, class and header guard",
+    "Odometry and root TF stamped with integer World::SimTime sec/nsec",
+    "Odometry position.z agrees with the published world-pose TF",
+    "Null-initialized ROS pointers, atomic worker flag, guarded thread shutdown",
+    "Reset clears retained wheel commands and update time; backwards time invokes reset",
+    "Restore four motor fmax values if physics reset clears them"
+  ],
+  "preserved": ["Four-joint velocity mapping", "Original parameter names/defaults", "World-truth odometry source", "One odom publisher and one optional root TF broadcaster"],
+  "not_implemented": ["Wheel acceleration ramp", "Command watchdog timeout", "Joint-state publishing", "Wheel TF publishing"],
+  "target": "User VM: Ubuntu20.04, Noetic, Gazebo11.15.1; model dimensions prepared in step11A",
+  "runtime_acceptance": "Not yet compiled or loaded in user VM. No motion or reset behavior verified."
+}

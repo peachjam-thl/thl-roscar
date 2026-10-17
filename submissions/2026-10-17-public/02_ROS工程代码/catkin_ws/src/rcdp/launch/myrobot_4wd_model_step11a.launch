@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- Model-only acceptance. Do not run alongside the current step10 launch. -->
+<launch>
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="false"/>
+  <arg name="verbose" default="true"/>
+
+  <param name="robot_description"
+         command="$(find xacro)/xacro '$(find rcdp)/urdf/gazebo/myrobot_4wd_base_step11a.xacro'"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find rcdp)/worlds/lesson14_box_house_step7.world"/>
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="verbose" value="$(arg verbose)"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_four_wheel_model_step11a"
+        args="-urdf -param robot_description -model lesson13_robot -x 0 -y 0 -z 0.02"
+        output="screen"/>
+</launch>

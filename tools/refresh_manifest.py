@@ -35,10 +35,11 @@ def digest(path):
 def main():
     provenance_path = ROOT / "metadata/SOURCE_PROVENANCE.json"
     provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
-    provenance["last_update_date_china"] = "2026-10-16"
+    provenance["last_update_date_china"] = "2026-10-17"
     provenance["active_code_snapshot_basis"] = (
         "Original rcdp plus delivered step4/6 and twelve step7/8/9/9a supplemental "
         "source/config files plus the user-requested classroom indoor world; "
+        "and the delivered step11A-I four-wheel stages with rcdp_4wd_stampfix; "
         "not a fresh VM disk read-back. Original course packages stay in reference."
     )
     provenance["public_update_2026_10_16"] = {
@@ -65,6 +66,15 @@ def main():
             "user_terminal_record_count": len(resource["extracted_user_terminal_records"]),
             "internal_session_or_credentials_exported": False
         }
+    provenance["public_update_2026_10_17"] = {
+        "scope": "Four-wheel sources, original stage ZIPs, five screenshots, seven terminal transcripts and identity-redacted report/submission",
+        "project_update": "metadata/PROJECT_UPDATE_2026-10-17.json",
+        "removed_from_new_report": ["author name", "class", "student ID"],
+        "private_originals_uploaded": False,
+        "whole_repository_history_sanitized": False,
+        "four_wheel_camera_restored": False,
+        "clean_ubuntu_submission_build_verified": False
+    }
     provenance_path.write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     listed = subprocess.check_output(
         ["git", "-c", "core.quotepath=false", "ls-files", "--cached", "--others", "--exclude-standard", "-z"],
@@ -80,7 +90,7 @@ def main():
         files.append({"path": name, "bytes": path.stat().st_size, "sha256": digest(path)})
     result = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "date_china": "2026-10-16",
+        "date_china": "2026-10-17",
         "manifest_excludes_itself": True,
         "files": files
     }

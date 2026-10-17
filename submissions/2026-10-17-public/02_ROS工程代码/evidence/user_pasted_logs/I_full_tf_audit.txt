@@ -1,0 +1,179 @@
+thl@ubuntu:~/桌面$ if [ ! -d "$step11i_tf_dir" ]; then
+>     printf '日志目录创建失败，未执行检查。\n'
+> elif [ ! -f /home/thl/catkin_ws/src/rcdp/scripts/diagnose_4wd_tf_step11h.py ]; then
+>     printf '诊断脚本不存在，未执行检查。\n'
+> elif [ -e "$step11i_tf_dir/tf_audit.log" ]; then
+>     printf '日志已存在，不覆盖，请反馈现有结果。\n'
+> else
+>     timeout -s INT 55s python3 -u /home/thl/catkin_ws/src/rcdp/scripts/diagnose_4wd_tf_step11h.py 2>&1 | tee -i "$step11i_tf_dir/tf_audit.log"
+>     step11i_tf_status=("${PIPESTATUS[@]}")
+>     printf 'audit_exit=%s tee_exit=%s\n' "${step11i_tf_status[0]}" "${step11i_tf_status[1]}"
+> fi
+Read-only audit: observing 40 WALL seconds. Leave Gazebo running; do not move/reset the robot.
+{
+  "status": "WINDOW_OK",
+  "completed_window": true,
+  "observed_wall_seconds": 40.049,
+  "dynamic_tf": {
+    "base_link -> depth_camera_link": {
+      "records": 1503,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1503
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    },
+    "base_link -> front_left_wheel_link": {
+      "records": 1503,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1503
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    },
+    "base_link -> front_right_wheel_link": {
+      "records": 1503,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1503
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    },
+    "platform_link -> laser_scan_link": {
+      "records": 1503,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1503
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    },
+    "base_link -> rear_left_wheel_link": {
+      "records": 1503,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1503
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    },
+    "base_link -> rear_right_wheel_link": {
+      "records": 1503,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1503
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    },
+    "odom -> root_link": {
+      "records": 3984,
+      "publishers": {
+        "/gazebo": 3984
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    }
+  },
+  "static_tf": {
+    "root_link -> base_link": {
+      "records": 1,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1
+      },
+      "changed_static_pose": 0
+    },
+    "support_link -> platform_link": {
+      "records": 1,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1
+      },
+      "changed_static_pose": 0
+    },
+    "base_link -> support_link": {
+      "records": 1,
+      "publishers": {
+        "/lesson14_4wd_robot_state_publisher": 1
+      },
+      "changed_static_pose": 0
+    }
+  },
+  "joint_states": {
+    "messages": 1992,
+    "publishers": {
+      "/gazebo": 1992
+    },
+    "valid_samples_per_joint": {
+      "front_left_wheel_joint": 1992,
+      "front_right_wheel_joint": 1992,
+      "rear_left_wheel_joint": 1992,
+      "rear_right_wheel_joint": 1992,
+      "depth_camera_link2base_link": 1992,
+      "laser_scan_link2platform_link": 1992
+    },
+    "joint_timestamp_anomalies": {}
+  },
+  "odom": {
+    "odom -> root_link": {
+      "records": 3984,
+      "publishers": {
+        "/gazebo": 3984
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    }
+  },
+  "clock": {
+    "/clock": {
+      "records": 39844,
+      "publishers": {
+        "/gazebo": 39844
+      },
+      "repeated_stamps": 0,
+      "same_source_repeats": 0,
+      "cross_source_repeats": 0,
+      "backwards_per_source": 0,
+      "changed_payload_on_same_stamp": 0,
+      "zero_stamps": 0
+    }
+  },
+  "invalid_message_counts": {},
+  "unexpected_edge_counts": {},
+  "anomaly_examples": [],
+  "issues": [],
+  "clock_sim_advance_seconds": 39.848,
+  "clock_max_receive_gap_wall_seconds": 0.006324,
+  "scope": "Passive received-data window only. Static latched replay is not a dynamic timestamp duplicate. No motion, live-sensor or long-duration validation.",
+  "gazebo_or_robot_configuration_changed": false,
+  "long_term_or_sensor_loaded_stability_verified": false
+}
+audit_exit=0 tee_exit=0

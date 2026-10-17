@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/ros-simulation/gazebo_ros_pkgs",
+  "tag": "2.9.3",
+  "commit": "cd9cc952402375be5f274f39b29399c4087aa839",
+  "files": [
+    {
+      "path": "gazebo_plugins/src/gazebo_ros_diff_drive.cpp",
+      "vendored_original": "upstream/gazebo_ros_diff_drive.cpp",
+      "sha256": "8a5743caf5e0b67663d949069c30f8ff68d81baa5929bca4a06671d2eb42e725",
+      "patched": "src/gazebo_ros_diff_drive_stampfix.cpp"
+    },
+    {
+      "path": "gazebo_plugins/include/gazebo_plugins/gazebo_ros_diff_drive.h",
+      "vendored_original": "upstream/gazebo_ros_diff_drive.h",
+      "sha256": "3e51349a136fa9c8c7f9afd16669042ca35e7afc84cfb0de59b5c62821e85712",
+      "patched": "include/rcdp_stampfix/gazebo_ros_diff_drive_stampfix.h"
+    }
+  ],
+  "target_environment": "Ubuntu 20.04, ROS Noetic, Gazebo Classic 11.15.1, gazebo_plugins 2.9.3",
+  "library": "librcdp_diff_drive_stampfix.so",
+  "class": "gazebo::GazeboRosDiffDriveStampFix",
+  "behavioral_changes": [
+    "publishOdometry uses World::SimTime sec/nsec instead of ros::Time::now",
+    "publishWheelJointState uses the same simulation timestamp source",
+    "publishWheelTF uses the same simulation timestamp source when enabled"
+  ],
+  "preserved": [
+    "all SDF parameter names and defaults",
+    "all update scheduling and drive control logic",
+    "world/encoder odometry calculations and covariance",
+    "all original ROS publishers, subscribers, frames, queues and reset logic"
+  ],
+  "delivery_scope": "Source package only; no model edits, no launch switch, no system-library replacement.",
+  "validation_boundary": "User-reported VM build, dependency/model precheck and actual library mapping passed; two independent 40-wall-second raw TF/Odom/clock windows had no duplicates/backwards stamps, including a light-preview RViz run. Long-term, reset and post-patch nonzero-motion regression are not verified. No VM binary is shipped."
+}

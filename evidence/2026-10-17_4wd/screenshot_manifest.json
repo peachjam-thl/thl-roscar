@@ -1,0 +1,42 @@
+[
+  {
+    "file": "01_URDF_Xacro四轮机器人模型结构.png",
+    "resolution": [
+      1012,
+      958
+    ],
+    "sha256": "e40186ba29064ff0277cb8086a1ccb1f367a06d47cb12bebc788adc3b6051ed5"
+  },
+  {
+    "file": "02_RViz机器人模型可视化.png",
+    "resolution": [
+      1072,
+      572
+    ],
+    "sha256": "893d5173bb8f685feb3eca2daeb5bb697492663bf55aea3fea44ce2747947ed1"
+  },
+  {
+    "file": "03_Gazebo仿真场景.png",
+    "resolution": [
+      997,
+      682
+    ],
+    "sha256": "a42541ec79933abdf88bb53e13d43825dc60aab88d06c84a71f9caae106861f2"
+  },
+  {
+    "file": "04_Gazebo机器人加载结果.png",
+    "resolution": [
+      997,
+      672
+    ],
+    "sha256": "80f6377f0319031535b7e24de8f9f1f9290488c64915203c7e47669db29599b1"
+  },
+  {
+    "file": "05_Gazebo机器人运行验证.png",
+    "resolution": [
+      738,
+      582
+    ],
+    "sha256": "74a42c2321363b9c351c29c0d3e624444102b84d061fc9b1d051de71aada1581"
+  }
+]

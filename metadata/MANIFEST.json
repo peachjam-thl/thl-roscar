@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-16T09:27:03.402899+00:00",
-  "date_china": "2026-10-16",
+  "generated_utc": "2026-10-17T13:57:46.995004+00:00",
+  "date_china": "2026-10-17",
   "manifest_excludes_itself": true,
   "files": [
     {
@@ -15,28 +15,83 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2777,
-      "sha256": "3ab4c93e88d5b8b45edcb5248d6cef7751e72ac95f1672252fac0802f54a951d"
+      "bytes": 3130,
+      "sha256": "05b8dc42955a3d835dd9b1c4f4937c1fb61f014f1f891296343ae7035014ad47"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1324,
-      "sha256": "2ccbcc9b117a3cf92bf09f91afacf67b5480c62ce2e2c6c8c84ed24532ca0e9e"
+      "bytes": 3066,
+      "sha256": "3456216ab411f3b9dcc5ae5fd3ac5c986134377effe35a04512de58db69e4f5c"
     },
     {
       "path": "README.md",
-      "bytes": 7519,
-      "sha256": "6776fccdfef2e29567c5c455f17c05622e70037a93f7a0f5f5f533cb2170667d"
+      "bytes": 5619,
+      "sha256": "1ba1ca1f35632817b43d1f6d34166002e101f1b6612f11f0cfb9dce966016558"
     },
     {
       "path": "RIGHTS_AND_PRIVACY.md",
-      "bytes": 1852,
-      "sha256": "1c020edba5b4529844811b3f046eae50d99659c3ddbf4855bf9b3c3bd2065e76"
+      "bytes": 2767,
+      "sha256": "c956bfaf383e62a654e063a257c01cf5e78f5d3f05b23e0b3fff2e7cc416fe3d"
     },
     {
       "path": "START_HERE.md",
-      "bytes": 3333,
-      "sha256": "e93586b33bbaf8cea1ea249f12e90462ee79521ddc7dc145ff211fc21f52f323"
+      "bytes": 2117,
+      "sha256": "bb2a39ec3611d4a2af0f4ac243fa2b73d158037ab5d92de642e6774a8df2a76d"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/20261017_机器人建模及仿真实践_公开脱敏提交包.zip",
+      "bytes": 3420152,
+      "sha256": "eb2a65c50726e7ffd0aa17c755bfa4f558f3eda7f57726ac4a4e21a472500dea"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_drive_step11c.zip",
+      "bytes": 8101,
+      "sha256": "a7d1783fe1a1ceff343df0864bfda621b499738ec290dd92edc352ed8a1fa2c6"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_forward_step11d.zip",
+      "bytes": 7145,
+      "sha256": "e427d49a8a28daa15c0ec62b5b372de652cf2f5741142e4a33834731949ce13e"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_friction_step11f.zip",
+      "bytes": 11517,
+      "sha256": "987d4151e689476a08786210aed5e451238493adc6e940dceff89daca888aa29"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_laser_step11i.zip",
+      "bytes": 7890,
+      "sha256": "1e0685d2b229a472a64d654d83a6a110bd0d2450b8d38353f8bf3a1323b973c8"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_model_step11a.zip",
+      "bytes": 8242,
+      "sha256": "1cf11665f5367a5bf19fa6f091a9fa8c34434d699532728711994e9f91c3f2f6"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_plugin_step11b.zip",
+      "bytes": 23425,
+      "sha256": "3474c2df07c65eceeb336d0b3db9dbe5ab8fabf7a69b7c56d3033eea30c73f4f"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_right_step11g.zip",
+      "bytes": 7060,
+      "sha256": "5f44358f118d7d9635a88644e718592cfd9fb7511b2c26fa1023e4efbf720f0b"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_tf_audit_step11h.zip",
+      "bytes": 7105,
+      "sha256": "4d2ce589eecd5181a6ab5d28cb6903f7d5f1e503948acb1d754393aa533e252d"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_tf_step11h.zip",
+      "bytes": 8920,
+      "sha256": "93d8aef2a8488b55c8d05d45a96dd90ea42ab296a085d80a9f8dc04f6bf66592"
+    },
+    {
+      "path": "archives/2026-10-17_4wd/Lesson14_4wd_turn_step11e.zip",
+      "bytes": 7019,
+      "sha256": "50c00ebe477cf66017c46ae230e303bec0ea2939a07180ce68a9f38a6a2cb717"
     },
     {
       "path": "archives/Lesson13_Gazebo_step4.zip",
@@ -64,14 +119,24 @@
       "sha256": "718eb0a59ae8bdfa2b2c9c033ba2d5bbdd9dffd324384294c041cd8e95365bda"
     },
     {
+      "path": "archives/Lesson14_stampfix_step10.zip",
+      "bytes": 24403,
+      "sha256": "21d260f6f4eb4d6b0255d9c28bf16e399553544db36980fab2637cb4ce3e2572"
+    },
+    {
+      "path": "archives/Lesson14_stampfix_switch_step10.zip",
+      "bytes": 7571,
+      "sha256": "64010ccd00c502419bc754e3e222cf8c0fe1c96ae081e0738730e4b56352d039"
+    },
+    {
       "path": "archives/Lesson14_tf_rviz_step8.zip",
       "bytes": 2276,
       "sha256": "af4941c6bd737f6af6a8ea086c91b2cda922958a1da4c8c40f8246d5b06d296d"
     },
     {
       "path": "archives/README.md",
-      "bytes": 1374,
-      "sha256": "0f3aff480a3a21e5cd873aa038c0e05938d24f36fb69a80499aa812d918668b6"
+      "bytes": 2451,
+      "sha256": "10707d82a961a04d5975455375be0d5de54d14c4fadc4066b5f4691840a9952a"
     },
     {
       "path": "catkin_ws/src/rcdp/CMakeLists.txt",
@@ -109,6 +174,81 @@
       "sha256": "6cf5a198d60282db23fe93c6b795a5bda2cc953bfeb9b2a6a6a397111de56e69"
     },
     {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11A.md",
+      "bytes": 4458,
+      "sha256": "c0627a77b22766093aa82f82982e81a333d81f55dbf78df51a7ae6e8a374747e"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11C.md",
+      "bytes": 5801,
+      "sha256": "48105918bf09a53c2c11ea016740f1f4178987c9ba68749f261526be5c9a1f2a"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11D.md",
+      "bytes": 5390,
+      "sha256": "4a5b76581e93a6b8f121171d4c83a38df89217be440d1087763b87b14980abce"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11E.md",
+      "bytes": 4554,
+      "sha256": "a380ed5f7960cdbcd8a8a17b4568df79539415163b17d3f668aac3efb2a0fd77"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11F.md",
+      "bytes": 5752,
+      "sha256": "7e9f9a1e2eee6846237b7965f747eaebb98a657078aebfaebce098e8d7c2dbf7"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11G.md",
+      "bytes": 4632,
+      "sha256": "8a23a1f22f41b2639e8ceadf97ee2d50807bb5ed35412a72e5ca33d242fe936a"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11H.md",
+      "bytes": 5917,
+      "sha256": "120dfecf9c174ada558bd12bc746cf390c66b07b514204d09f7b71f5f78e65a9"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11I.md",
+      "bytes": 4974,
+      "sha256": "de0e736e993e5ba2a35d929d8a48ea94a418bbf4f5ecebd0115a4b97c00a04da"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/FOUR_WHEEL_TF_AUDIT_STEP11H.md",
+      "bytes": 5206,
+      "sha256": "66702ca5e558dcfee9937a3384be33ab1faabd8ab33f00d0b4a1140252e3338d"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/docs/STAMPFIX_STEP10_SWITCH.md",
+      "bytes": 5662,
+      "sha256": "23e25947778e8798d0188e6655a06815d1a9e4a5424d4c6ceb9e0969e77fb044"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_4wd_drive_step11c.launch",
+      "bytes": 996,
+      "sha256": "e6e46462eaebcd0309b76e05b403c89cda7a3fc0bcfc6e5e288ae7df837adff8"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_4wd_friction_step11f.launch",
+      "bytes": 1142,
+      "sha256": "28249e784be722589ef18a88cab22628186c07bc0fb787063ed667472ee1d4a8"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_4wd_laser_step11i.launch",
+      "bytes": 1340,
+      "sha256": "0903273702a66f89677a57ed57ff376cbc4cd63d8c1833e3c074f59d586bd9cf"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_4wd_model_step11a.launch",
+      "bytes": 910,
+      "sha256": "54514fa0a9d23ba84b16208db0df7567580e0fe9b550c19667c37d106d32956e"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_4wd_tf_step11h.launch",
+      "bytes": 1492,
+      "sha256": "24db1147aafba50058d7352a82dbccabb7fdd43e1789fcf94d10dfd14e94d8c4"
+    },
+    {
       "path": "catkin_ws/src/rcdp/launch/myrobot_camera_step9.launch",
       "bytes": 1570,
       "sha256": "db4c968213c95cab8ee6b328ea7dff5de09a0e4ce99123a41757a1ebed8928ef"
@@ -127,6 +267,11 @@
       "path": "catkin_ws/src/rcdp/launch/myrobot_laser_step7.launch",
       "bytes": 815,
       "sha256": "b27c018b498022095867fef5a5b7373db3b8688e70623ab89de74fd05294a004"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/launch/myrobot_stampfix_step10.launch",
+      "bytes": 1564,
+      "sha256": "d3764cd0556eab3b4ec522192335ed6e1e66f89a1d2db38884156190ef502239"
     },
     {
       "path": "catkin_ws/src/rcdp/launch/myrobot_tf_step8.launch",
@@ -159,9 +304,64 @@
       "sha256": "0f7e6887be319cab0764d99f3f7feaec9479fb38d13b71dbeb23f66e07f4abb5"
     },
     {
+      "path": "catkin_ws/src/rcdp/scripts/check_4wd_drive_step11c.py",
+      "bytes": 8777,
+      "sha256": "d55a80a146be15ff4e20cbff7f251297b4899f3ecebb540c04e2027aaa1390a2"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/check_4wd_friction_step11f.py",
+      "bytes": 7237,
+      "sha256": "7b5ee9f284c603344116710638656055d5dc161850309a82ed571c25aea54831"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/check_4wd_laser_step11i.py",
+      "bytes": 9500,
+      "sha256": "0411933b69f8a95b7e5c1e6d9abee8269dcad06b3b84d634c9ba71d3c9745e68"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/check_4wd_model_step11a.py",
+      "bytes": 8259,
+      "sha256": "c109c79177e940b97cb6e190c736999f091859dabeb873ad6f2ba7029a3c75bb"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/check_4wd_tf_step11h.py",
+      "bytes": 11284,
+      "sha256": "010a156dfba8c33f108aa502a0ee6912dd14cfd6df97aecf65097081de34915f"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/check_stampfix_switch_step10.py",
+      "bytes": 5623,
+      "sha256": "2498e895440068015630a59054bb8ec6358e70b474c2b8fc21cb7f5a91c424af"
+    },
+    {
       "path": "catkin_ws/src/rcdp/scripts/cloud_preview_step9a.py",
       "bytes": 7703,
       "sha256": "c422fcfc58f51bb457c4910ce582096137bfad45c6d6889f3185ffa8c253f473"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/diagnose_4wd_tf_step11h.py",
+      "bytes": 13268,
+      "sha256": "cff0ab06fea384d2c4bcac11e7e7029ae9cea714c028dcb065aed6c77da91556"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/diagnose_tf_stamps_step10.py",
+      "bytes": 6752,
+      "sha256": "7fead018b2fe15f3f413a1bfa28665971c3d82d13df5b49cee103f1df23b0e02"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/test_4wd_forward_step11d.py",
+      "bytes": 10853,
+      "sha256": "c345329fca18b15fd4ea04d58d9412b796d9fb91df2329354f4bba75e531623f"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/test_4wd_right_step11g.py",
+      "bytes": 11980,
+      "sha256": "3dfca6a5824542462df14425cf2eba18963e787ad64a5f92241773db3d9fd2e2"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/scripts/test_4wd_turn_step11e.py",
+      "bytes": 11905,
+      "sha256": "59717d07af5d6c6cdac613f437a4ad8d6280186d191b18e753053e4c0a7bab57"
     },
     {
       "path": "catkin_ws/src/rcdp/scripts/test_forward_step6.py",
@@ -179,9 +379,34 @@
       "sha256": "10b4b5a4a1a4e3fd093a5bbc5ab31b200fd2ae38453f7c9393b98e5985b2c01b"
     },
     {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_base_step11a.xacro",
+      "bytes": 8003,
+      "sha256": "6f949506ac146fd7f8b0657e44bab30eed4f80fc87c58283e25c4075001fb106"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_drive_step11c.xacro",
+      "bytes": 1481,
+      "sha256": "2e3b940f4a95b3a174723afac4796b9f4aadffc990cd00cb2ed4b5029bc863ae"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_laser_step11i.xacro",
+      "bytes": 476,
+      "sha256": "35150fb2167e1e68c4cfe9d834ee4c611194599a109e2bcd6e0be14dca4d5861"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_tf_step11h.xacro",
+      "bytes": 938,
+      "sha256": "31ec875b4d28532280dc3ba73bd80fd06639e9e460b070924a6f4ea16b4ab3e5"
+    },
+    {
       "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_camera_step9.xacro",
       "bytes": 313,
       "sha256": "b4650f8c941ff35ac615ce0f81064e86140459e08cc446a5712b015df343b05d"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_drive_stampfix_step10.xacro",
+      "bytes": 1491,
+      "sha256": "67f5f3be20c4f14501d2584f5c00421edc3128ffaefd568cb5472cb2d8fd80bb"
     },
     {
       "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_drive_step6.xacro",
@@ -197,6 +422,11 @@
       "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_laser_step7.xacro",
       "bytes": 316,
       "sha256": "c4af8dccb9584b29d4f237be0f8c8fcb2edf8c0654db27b236e4900148335cc9"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_stampfix_step10.xacro",
+      "bytes": 914,
+      "sha256": "cdca356d60e80d9fe35bae0e54095995dea13f9bcd32876fbea36411b53ec07c"
     },
     {
       "path": "catkin_ws/src/rcdp/urdf/gazebo/myrobot_tf_step8.xacro",
@@ -234,9 +464,119 @@
       "sha256": "a2df3e429eee676d0a529b88ff383774ee5d3ea39443a641cdc48036fe1819c6"
     },
     {
+      "path": "catkin_ws/src/rcdp/worlds/lesson14_4wd_cone_model_step11f.world",
+      "bytes": 20919,
+      "sha256": "2daf5b3e22a547d6cbc005db65038d8fd5421fb3f4a1235084b06e0519892172"
+    },
+    {
+      "path": "catkin_ws/src/rcdp/worlds/lesson14_4wd_pyramid_model_step11f.world",
+      "bytes": 20922,
+      "sha256": "4032d121108e8c87876c4af9c8a78057ad24d4470b84018a26b51ab8239495ed"
+    },
+    {
       "path": "catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world",
       "bytes": 20805,
       "sha256": "ab704ef5ba19928c0edceb9a863a65027e1bff78a05110090679fe0bbf4d0857"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/CMakeLists.txt",
+      "bytes": 1319,
+      "sha256": "822df65678f2ce56d574fb091ebd820342def3c36e02b45dc27f4b687b19efa2"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/LICENSE",
+      "bytes": 1497,
+      "sha256": "8311d1a465df1940a956152246dc4c4c70913bf28cb6dea1acbf2502aa1fef65"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/README.md",
+      "bytes": 5040,
+      "sha256": "85975092df8e137c51aae1b7a08797cc5fcfb2279093a04e121cd8e37b5c75b1"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/UPSTREAM.json",
+      "bytes": 1758,
+      "sha256": "7f05afc369edbe9087718deeb8cda41d1b1db56b5e515dc099aaf50dacbdcc2e"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/include/rcdp_4wd_stampfix/gazebo_ros_skid_steer_stampfix.h",
+      "bytes": 4413,
+      "sha256": "48d4dab9bb9b1c3d301aef92ff11b28dbf7939f8b7772a3e8c8038475965fd25"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/package.xml",
+      "bytes": 734,
+      "sha256": "3ff9e6b8aa0b2471d524fa66b8275be9beca725fb4a936d4ec04cc59652be27c"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/src/gazebo_ros_skid_steer_stampfix.cpp",
+      "bytes": 20889,
+      "sha256": "2dccca31e44fd489538bd76d5760cb1713e28b320e694bba3d15c5c13a17066f"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/test/test_source_step11b.py",
+      "bytes": 9199,
+      "sha256": "8145e673098b405a042a68ebaad82e0d4e390dbc12d0ee473e4541435ceeb933"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.cpp",
+      "bytes": 19382,
+      "sha256": "23a667f211d0f235a48382f03198bc17ecfce655a194a5bff37b0c9302c673c6"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.h",
+      "bytes": 4266,
+      "sha256": "b3feeb7efd6af492194fa2a9a12163a4bd1a7736c2164e94acfc360a43fd29a7"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/CMakeLists.txt",
+      "bytes": 2248,
+      "sha256": "ee42a3071643d856dec8d93f97f4734490421bac8221803dfa1fcfdcabddc703"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/LICENSE",
+      "bytes": 1497,
+      "sha256": "8311d1a465df1940a956152246dc4c4c70913bf28cb6dea1acbf2502aa1fef65"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/README.md",
+      "bytes": 6131,
+      "sha256": "533dfa20dd9213c41588ca9d29b0468ac2ca5ea1fa07a404714245efd57e460e"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/UPSTREAM.json",
+      "bytes": 1917,
+      "sha256": "80da7aee440501317fac3c39d4bff8c91e8204e0945b817a6c15b595b0030c7b"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/include/rcdp_stampfix/gazebo_ros_diff_drive_stampfix.h",
+      "bytes": 4792,
+      "sha256": "e6eb1c3fc909e2a8bbbc663b5057ecc5be6102a6a03166bdd25f3509e663854d"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/package.xml",
+      "bytes": 865,
+      "sha256": "bfe2adabadc89fea7b511dd1cdcb9015865c4f4e0c71e220786662697fc7a715"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/src/gazebo_ros_diff_drive_stampfix.cpp",
+      "bytes": 18869,
+      "sha256": "68949148f40fd5d836804f784e94babe4803b02edf2123fa35bd11dc168f1b6c"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/test/test_source_delta.py",
+      "bytes": 4510,
+      "sha256": "b5cdeccac63ec3d62ccfacc7a4ceab26f4bb91bcff1ef9703ebffaf6220e265a"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/upstream/gazebo_ros_diff_drive.cpp",
+      "bytes": 18193,
+      "sha256": "8a5743caf5e0b67663d949069c30f8ff68d81baa5929bca4a06671d2eb42e725"
+    },
+    {
+      "path": "catkin_ws/src/rcdp_stampfix/upstream/gazebo_ros_diff_drive.h",
+      "bytes": 4730,
+      "sha256": "3e51349a136fa9c8c7f9afd16669042ca35e7afc84cfb0de59b5c62821e85712"
     },
     {
       "path": "context/COVERAGE_AND_LIMITS.md",
@@ -245,8 +585,8 @@
     },
     {
       "path": "context/CURRENT_STATE.md",
-      "bytes": 5710,
-      "sha256": "b7a7ba4214164f1bddd4712c2eadcc1daf6496dae26649f1a25e233bdb36c01e"
+      "bytes": 4303,
+      "sha256": "f57f05c43009219584b27a419edf1543327d1ae9c4fcf6a01a7c11a662b7d2b6"
     },
     {
       "path": "context/EARLIER_CONTEXT.md",
@@ -262,6 +602,11 @@
       "path": "context/USER_PREFERENCES.md",
       "bytes": 1198,
       "sha256": "9970495a18712ae40bf0ba937304b397ad1c6e8bd23d0a0f6033610c29fe434c"
+    },
+    {
+      "path": "context/history/CURRENT_STATE_STEP10_2026-10-16.md",
+      "bytes": 6841,
+      "sha256": "f5fde1a854aa92282e65b2ec9ba62ee24ae6d3f27c6927de272a0595be12be5d"
     },
     {
       "path": "courseware/Lesson1.pdf",
@@ -345,13 +690,13 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "bytes": 4556,
-      "sha256": "bb075b89b938e315e22b63cbe9b020062910f475ea2064fbb5587a2b528c59fe"
+      "bytes": 5844,
+      "sha256": "4b2226ef8cf4df0268b07aa952159bad7c0ecf22a70f7c4495173ec324e8365f"
     },
     {
       "path": "docs/EXPERIMENTS.md",
-      "bytes": 2987,
-      "sha256": "5e299a6d523f04daee41e54adfc53a56889e0a9eb10ff981c12c2cd4abd6e48c"
+      "bytes": 4737,
+      "sha256": "60256864fc5a6037d15bc7ca65c7d0fa0e4cca2730e3971c9c5487dc562702ff"
     },
     {
       "path": "docs/PRACTICE_LOG_2026-10-15_16.md",
@@ -359,19 +704,114 @@
       "sha256": "fdc7417d88f3011ed677c0fe3330c1fa685faffa87b151048e748ac2d0d29122"
     },
     {
+      "path": "docs/PRACTICE_LOG_2026-10-17.md",
+      "bytes": 25715,
+      "sha256": "551739ee812de7427a798ba6d086873b5b90463a9c34a07010ede473a67b9dc4"
+    },
+    {
       "path": "docs/PUBLIC_UPDATE_SCOPE.md",
-      "bytes": 3405,
-      "sha256": "bb247f75f3de2da207e1374a82195dbb3fd88b88ea48711ac4d4cbf675e0d90d"
+      "bytes": 4673,
+      "sha256": "ec69825a3801f63e020ac5c2dab1c366091fae0250f624c7dfb1b09890669a2c"
     },
     {
       "path": "docs/RESOURCES.md",
-      "bytes": 3012,
-      "sha256": "81c576e40846ce77f58f29bb35c5c41cc70abff4cbc82055b4026bdb1efb8fc3"
+      "bytes": 4134,
+      "sha256": "920d4ada14695031e22b8399c8b478bf674caa14ca1150c4fb874016a2e7e523"
     },
     {
       "path": "docs/RUNBOOK.md",
-      "bytes": 10260,
-      "sha256": "80c854a2901103025353c7b73efa4ef327693a5f214dea51c537146bf9166c4c"
+      "bytes": 4250,
+      "sha256": "ad14e0be81918ea57fd52d1c4438cc9e411bf6593508cd182a3ed46269a14e52"
+    },
+    {
+      "path": "docs/TIMESTAMP_FIX_STEP10.md",
+      "bytes": 6377,
+      "sha256": "ee3fbeae34484253d1b19bd9ca2e035ceccf22ed6770da0050ac0e9328ccab34"
+    },
+    {
+      "path": "docs/history/RUNBOOK_STEP10_2026-10-16.md",
+      "bytes": 11662,
+      "sha256": "34a8b282f1a3f72b19840f7b038d92d7076aea64d41d4bd409285e8a5b891914"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/README.md",
+      "bytes": 1788,
+      "sha256": "7c2a49a9e280cc3d5e2896dbf53d766541b3fad54c2e753a527bb4925a759795"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/conversation_excerpt.md",
+      "bytes": 1942,
+      "sha256": "24ea2c41dc5441ddce70e74d91d8a3a9d9039cae89c22e5350674f06f0921cfa"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/parsed_metrics.json",
+      "bytes": 36913,
+      "sha256": "bb3ab0c2df11e384347ed15eee930cafe11b4d5591946eb7167c9db19368c4b9"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/screenshot_manifest.json",
+      "bytes": 947,
+      "sha256": "899f9caabf4ffcba2692e7d6e81692e0db55762a03ed0f56a8263df67bacea1f"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/screenshots/01_URDF_Xacro四轮机器人模型结构.png",
+      "bytes": 279080,
+      "sha256": "e40186ba29064ff0277cb8086a1ccb1f367a06d47cb12bebc788adc3b6051ed5"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/screenshots/02_RViz机器人模型可视化.png",
+      "bytes": 120141,
+      "sha256": "893d5173bb8f685feb3eca2daeb5bb697492663bf55aea3fea44ce2747947ed1"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/screenshots/03_Gazebo仿真场景.png",
+      "bytes": 229761,
+      "sha256": "a42541ec79933abdf88bb53e13d43825dc60aab88d06c84a71f9caae106861f2"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/screenshots/04_Gazebo机器人加载结果.png",
+      "bytes": 317654,
+      "sha256": "80f6377f0319031535b7e24de8f9f1f9290488c64915203c7e47669db29599b1"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/screenshots/05_Gazebo机器人运行验证.png",
+      "bytes": 199020,
+      "sha256": "74a42c2321363b9c351c29c0d3e624444102b84d061fc9b1d051de71aada1581"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/A_forward.txt",
+      "bytes": 5570,
+      "sha256": "6cc8d35d4d48e96460f22ff420f033818eac1cbb2ea740e6150a6357fb6301f2"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/A_left_turn.txt",
+      "bytes": 6027,
+      "sha256": "ff60c33fbda1702e0c021a06319270d708b914d561531edcd83b923825725174"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/B_forward.txt",
+      "bytes": 5594,
+      "sha256": "6f2710211f2e514b2682dcce812c3f047a0b00a9f4a7b864d826b91dba0480d0"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/B_left_turn.txt",
+      "bytes": 6112,
+      "sha256": "7d35e9eda150ae1306c27576b5ff5d14074a4c68878c71355ac3a097ffa10768"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/B_right_turn.txt",
+      "bytes": 6237,
+      "sha256": "71b61a93933cfa0ac967cd050b15fac199f0ad6cd9a70bca68d55ef5dd7d81f1"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/H_full_tf_audit.txt",
+      "bytes": 5515,
+      "sha256": "36c2d3a8ccf5c8d8ffbbeebe4a3270d857b9b3b01e30e7628b8b7bd6991b031c"
+    },
+    {
+      "path": "evidence/2026-10-17_4wd/user_pasted_logs/I_full_tf_audit.txt",
+      "bytes": 5349,
+      "sha256": "f3246e04c65306c8193e39addea26f17374ed3a87afa27e882ae71dc94b84e5c"
     },
     {
       "path": "evidence/gazebo_model_user_screenshot_2026-10-14.png",
@@ -380,8 +820,23 @@
     },
     {
       "path": "evidence/logs/README.md",
-      "bytes": 4164,
-      "sha256": "4a88b874a5a87fe754bd82136e1e0c5f5112b5048c68893ca9b35a2cbd114aca"
+      "bytes": 4933,
+      "sha256": "c8c6e33c86f2788ab96acdfdf3466bff0ecb9b92cd08f5ed959d6469d97a48b3"
+    },
+    {
+      "path": "evidence/logs/step10_build_user_supplied.txt",
+      "bytes": 21421,
+      "sha256": "18c4c0f3e9fc5459109664cf11cf1bbeaad87cece37928d05b426a83cb5fbe38"
+    },
+    {
+      "path": "evidence/logs/step10_deployment_user_reported.txt",
+      "bytes": 3067,
+      "sha256": "7776193fad74d267ed21235e0725e4efbc003b515e36f5b5d95beb34d5a7c636"
+    },
+    {
+      "path": "evidence/logs/step10_ldd_tail_user_supplied.txt",
+      "bytes": 23138,
+      "sha256": "f98be69802334715f3346912612ac18fd528bdf09c4f03eac5b1b9bed51c5120"
     },
     {
       "path": "evidence/logs/step7_launch_user_supplied.txt",
@@ -547,6 +1002,26 @@
       "path": "evidence/step6/verification.json",
       "bytes": 2041,
       "sha256": "e13aabcaa4aa69dc1c1ea927d2d466f8cde10f2fe7c5ee191f7bbf0ac576e4e2"
+    },
+    {
+      "path": "evidence/timestamp_fix_step10/README.md",
+      "bytes": 1818,
+      "sha256": "b4407233cac7152f6f35d7aded8c5897dd33dd2fb04527c141ca2442084e5a69"
+    },
+    {
+      "path": "evidence/timestamp_fix_step10/after_no_rviz.json",
+      "bytes": 1297,
+      "sha256": "e4b9a23c37e6235f09e378397b722d503264a09b36dd6a74d84a1cb384ba6e1c"
+    },
+    {
+      "path": "evidence/timestamp_fix_step10/after_preview.json",
+      "bytes": 1297,
+      "sha256": "87992831fa014ea2e4ffab5e8c0804e8d246dd9f75299258dafbbe0cca57c3cd"
+    },
+    {
+      "path": "evidence/timestamp_fix_step10/before_fix.json",
+      "bytes": 2187,
+      "sha256": "57e2ae22c7dbb0129448ed483a8efc4e846b55116eba31bb86611b4e2b100e2c"
     },
     {
       "path": "history/ATTACHMENT_PATH_AUDIT.json",
@@ -759,9 +1234,19 @@
       "sha256": "d433c359dd0aba3e298ccda89e334d50219d02875de0d58d14ad2789b2da8147"
     },
     {
+      "path": "metadata/PROJECT_UPDATE_2026-10-17.json",
+      "bytes": 13548,
+      "sha256": "c19c14278a7468ae272eea57bb27779308f35761583738e9a6a85d172c55e5ec"
+    },
+    {
       "path": "metadata/PROJECT_VALIDATION_2026-10-16.json",
       "bytes": 1130,
       "sha256": "f93da55e77837ceedd743184b7cecf467e4508344a5c4c6cf4a36f33f26fa755"
+    },
+    {
+      "path": "metadata/PUBLICATION_CHECKS_2026-10-17.json",
+      "bytes": 742,
+      "sha256": "00f3c55f00e16fe4219e26871c004e0fbda76cf6c9393d4db316a976ba11b50e"
     },
     {
       "path": "metadata/RESOURCE_INDEX_2026-10-16.json",
@@ -770,8 +1255,8 @@
     },
     {
       "path": "metadata/SOURCE_PROVENANCE.json",
-      "bytes": 20709,
-      "sha256": "a3432c4c59c071baf5f4207fb5877e840cba68cf4c33f224cabef1ff0361a71a"
+      "bytes": 21307,
+      "sha256": "1e817498ad63a9d46d2d7c1f9559b5e5bcc6b3f2506f327b4db967adf16fbb77"
     },
     {
       "path": "reference/Lesson13_code_original.zip",
@@ -929,14 +1414,419 @@
       "sha256": "ad80d94cf2fd5e216e9ae592f54b555114ebaa92511fe3a7c6e3ca8813897452"
     },
     {
+      "path": "submissions/2026-10-17-public/01_实践报告/报告正文.md",
+      "bytes": 25615,
+      "sha256": "cf0a4a2323a7c0f3b79eba07290ebd1a850723b9b069ff5c40efb5eadb5ac4c4"
+    },
+    {
+      "path": "submissions/2026-10-17-public/01_实践报告/机器人建模及仿真场景搭建报告.docx",
+      "bytes": 1179237,
+      "sha256": "f752a510ee8c43b104a46073499dc8119b4128b334c71f7354b2f8cf54153061"
+    },
+    {
+      "path": "submissions/2026-10-17-public/01_实践报告/机器人建模及仿真场景搭建报告.pdf",
+      "bytes": 1018472,
+      "sha256": "98f9512927d1c79f0fd936ce9d289c932d7e2e33bb235be9971dcd9e100f2967"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/README.md",
+      "bytes": 6915,
+      "sha256": "dd9f98b6a133fd61b8f0068da88f5f5b8de0d7d7fad4b8dccc560f978ee61e4c"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/CMakeLists.txt",
+      "bytes": 333,
+      "sha256": "c8cf946515f5b92ccd6e5cf5375a11e1d3a3ee0586273baa1f0ceed6dc83c816"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz",
+      "bytes": 2218,
+      "sha256": "8d46492ddb6eb8738f03bdab237e6e5392d5268cf73b072eabe8247972420ceb"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11A.md",
+      "bytes": 4458,
+      "sha256": "c0627a77b22766093aa82f82982e81a333d81f55dbf78df51a7ae6e8a374747e"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11C.md",
+      "bytes": 5801,
+      "sha256": "48105918bf09a53c2c11ea016740f1f4178987c9ba68749f261526be5c9a1f2a"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11D.md",
+      "bytes": 5390,
+      "sha256": "4a5b76581e93a6b8f121171d4c83a38df89217be440d1087763b87b14980abce"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11E.md",
+      "bytes": 4554,
+      "sha256": "a380ed5f7960cdbcd8a8a17b4568df79539415163b17d3f668aac3efb2a0fd77"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11F.md",
+      "bytes": 5752,
+      "sha256": "7e9f9a1e2eee6846237b7965f747eaebb98a657078aebfaebce098e8d7c2dbf7"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11G.md",
+      "bytes": 4632,
+      "sha256": "8a23a1f22f41b2639e8ceadf97ee2d50807bb5ed35412a72e5ca33d242fe936a"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11H.md",
+      "bytes": 5917,
+      "sha256": "120dfecf9c174ada558bd12bc746cf390c66b07b514204d09f7b71f5f78e65a9"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11I.md",
+      "bytes": 4974,
+      "sha256": "de0e736e993e5ba2a35d929d8a48ea94a418bbf4f5ecebd0115a4b97c00a04da"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_TF_AUDIT_STEP11H.md",
+      "bytes": 5206,
+      "sha256": "66702ca5e558dcfee9937a3384be33ab1faabd8ab33f00d0b4a1140252e3338d"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/PACKAGING_CHANGES.md",
+      "bytes": 1241,
+      "sha256": "a839e1f29c1b0de00965dae24276a7972e54fd9b18457c3fe278401e21cb3712"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/original_metadata/CMakeLists.txt",
+      "bytes": 7146,
+      "sha256": "b20feaf929a628b444159ad51ebf3adf7de52bdf11b5ed6a0a93a96237b9177a"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/docs/original_metadata/package.xml",
+      "bytes": 3025,
+      "sha256": "0f7e6887be319cab0764d99f3f7feaec9479fb38d13b71dbeb23f66e07f4abb5"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_drive_step11c.launch",
+      "bytes": 996,
+      "sha256": "e6e46462eaebcd0309b76e05b403c89cda7a3fc0bcfc6e5e288ae7df837adff8"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_friction_step11f.launch",
+      "bytes": 1142,
+      "sha256": "28249e784be722589ef18a88cab22628186c07bc0fb787063ed667472ee1d4a8"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_laser_step11i.launch",
+      "bytes": 1340,
+      "sha256": "0903273702a66f89677a57ed57ff376cbc4cd63d8c1833e3c074f59d586bd9cf"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_model_step11a.launch",
+      "bytes": 910,
+      "sha256": "54514fa0a9d23ba84b16208db0df7567580e0fe9b550c19667c37d106d32956e"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_tf_step11h.launch",
+      "bytes": 1492,
+      "sha256": "24db1147aafba50058d7352a82dbccabb7fdd43e1789fcf94d10dfd14e94d8c4"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/launch/submission_4wd_laser.launch",
+      "bytes": 1335,
+      "sha256": "2ed9ab9591dcc8687851e14ecd7e1fcc921a0531fd17c340e0c9c2cb68a4c5f4"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/package.xml",
+      "bytes": 1007,
+      "sha256": "8b49b400ad7fd16bcb858895adfdbb86934d8d869846677d0ee7c42f962978f4"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_drive_step11c.py",
+      "bytes": 8777,
+      "sha256": "d55a80a146be15ff4e20cbff7f251297b4899f3ecebb540c04e2027aaa1390a2"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_friction_step11f.py",
+      "bytes": 7237,
+      "sha256": "7b5ee9f284c603344116710638656055d5dc161850309a82ed571c25aea54831"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_laser_step11i.py",
+      "bytes": 9500,
+      "sha256": "0411933b69f8a95b7e5c1e6d9abee8269dcad06b3b84d634c9ba71d3c9745e68"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_model_step11a.py",
+      "bytes": 8259,
+      "sha256": "c109c79177e940b97cb6e190c736999f091859dabeb873ad6f2ba7029a3c75bb"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_tf_step11h.py",
+      "bytes": 11284,
+      "sha256": "010a156dfba8c33f108aa502a0ee6912dd14cfd6df97aecf65097081de34915f"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/diagnose_4wd_tf_step11h.py",
+      "bytes": 13268,
+      "sha256": "cff0ab06fea384d2c4bcac11e7e7029ae9cea714c028dcb065aed6c77da91556"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/diagnose_tf_stamps_step10.py",
+      "bytes": 6752,
+      "sha256": "7fead018b2fe15f3f413a1bfa28665971c3d82d13df5b49cee103f1df23b0e02"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/submission_description.py",
+      "bytes": 1444,
+      "sha256": "b56246742a63a07564b212c0b491954720df4d746a1754d94dc07ef24f705a48"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/test_4wd_forward_step11d.py",
+      "bytes": 10853,
+      "sha256": "c345329fca18b15fd4ea04d58d9412b796d9fb91df2329354f4bba75e531623f"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/test_4wd_right_step11g.py",
+      "bytes": 11980,
+      "sha256": "3dfca6a5824542462df14425cf2eba18963e787ad64a5f92241773db3d9fd2e2"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/scripts/test_4wd_turn_step11e.py",
+      "bytes": 11905,
+      "sha256": "59717d07af5d6c6cdac613f437a4ad8d6280186d191b18e753053e4c0a7bab57"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro",
+      "bytes": 1382,
+      "sha256": "10b4b5a4a1a4e3fd093a5bbc5ab31b200fd2ae38453f7c9393b98e5985b2c01b"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_base_step11a.xacro",
+      "bytes": 8003,
+      "sha256": "6f949506ac146fd7f8b0657e44bab30eed4f80fc87c58283e25c4075001fb106"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_drive_step11c.xacro",
+      "bytes": 1481,
+      "sha256": "2e3b940f4a95b3a174723afac4796b9f4aadffc990cd00cb2ed4b5029bc863ae"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_laser_step11i.xacro",
+      "bytes": 476,
+      "sha256": "35150fb2167e1e68c4cfe9d834ee4c611194599a109e2bcd6e0be14dca4d5861"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_tf_step11h.xacro",
+      "bytes": 938,
+      "sha256": "31ec875b4d28532280dc3ba73bd80fd06639e9e460b070924a6f4ea16b4ab3e5"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_gazebo_step4.xacro",
+      "bytes": 9046,
+      "sha256": "99252280c93b4e84f1a17842f7569f654ccdade43c02dd2f4a1738b1fe98a534"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson13_flat_step4.world",
+      "bytes": 1886,
+      "sha256": "a2df3e429eee676d0a529b88ff383774ee5d3ea39443a641cdc48036fe1819c6"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson14_4wd_cone_model_step11f.world",
+      "bytes": 20919,
+      "sha256": "2daf5b3e22a547d6cbc005db65038d8fd5421fb3f4a1235084b06e0519892172"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson14_4wd_pyramid_model_step11f.world",
+      "bytes": 20922,
+      "sha256": "4032d121108e8c87876c4af9c8a78057ad24d4470b84018a26b51ab8239495ed"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world",
+      "bytes": 20805,
+      "sha256": "ab704ef5ba19928c0edceb9a863a65027e1bff78a05110090679fe0bbf4d0857"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/CMakeLists.txt",
+      "bytes": 1319,
+      "sha256": "822df65678f2ce56d574fb091ebd820342def3c36e02b45dc27f4b687b19efa2"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/LICENSE",
+      "bytes": 1497,
+      "sha256": "8311d1a465df1940a956152246dc4c4c70913bf28cb6dea1acbf2502aa1fef65"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/README.md",
+      "bytes": 5040,
+      "sha256": "85975092df8e137c51aae1b7a08797cc5fcfb2279093a04e121cd8e37b5c75b1"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/UPSTREAM.json",
+      "bytes": 1758,
+      "sha256": "7f05afc369edbe9087718deeb8cda41d1b1db56b5e515dc099aaf50dacbdcc2e"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/include/rcdp_4wd_stampfix/gazebo_ros_skid_steer_stampfix.h",
+      "bytes": 4413,
+      "sha256": "48d4dab9bb9b1c3d301aef92ff11b28dbf7939f8b7772a3e8c8038475965fd25"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/package.xml",
+      "bytes": 734,
+      "sha256": "3ff9e6b8aa0b2471d524fa66b8275be9beca725fb4a936d4ec04cc59652be27c"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/src/gazebo_ros_skid_steer_stampfix.cpp",
+      "bytes": 20889,
+      "sha256": "2dccca31e44fd489538bd76d5760cb1713e28b320e694bba3d15c5c13a17066f"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/test/test_source_step11b.py",
+      "bytes": 9199,
+      "sha256": "8145e673098b405a042a68ebaad82e0d4e390dbc12d0ee473e4541435ceeb933"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.cpp",
+      "bytes": 19382,
+      "sha256": "23a667f211d0f235a48382f03198bc17ecfce655a194a5bff37b0c9302c673c6"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.h",
+      "bytes": 4266,
+      "sha256": "b3feeb7efd6af492194fa2a9a12163a4bd1a7736c2164e94acfc360a43fd29a7"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/conversation_excerpt.md",
+      "bytes": 1942,
+      "sha256": "24ea2c41dc5441ddce70e74d91d8a3a9d9039cae89c22e5350674f06f0921cfa"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/parsed_metrics.json",
+      "bytes": 36913,
+      "sha256": "bb3ab0c2df11e384347ed15eee930cafe11b4d5591946eb7167c9db19368c4b9"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/screenshot_manifest.json",
+      "bytes": 947,
+      "sha256": "899f9caabf4ffcba2692e7d6e81692e0db55762a03ed0f56a8263df67bacea1f"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/A_forward.txt",
+      "bytes": 5570,
+      "sha256": "6cc8d35d4d48e96460f22ff420f033818eac1cbb2ea740e6150a6357fb6301f2"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/A_left_turn.txt",
+      "bytes": 6027,
+      "sha256": "ff60c33fbda1702e0c021a06319270d708b914d561531edcd83b923825725174"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/B_forward.txt",
+      "bytes": 5594,
+      "sha256": "6f2710211f2e514b2682dcce812c3f047a0b00a9f4a7b864d826b91dba0480d0"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/B_left_turn.txt",
+      "bytes": 6112,
+      "sha256": "7d35e9eda150ae1306c27576b5ff5d14074a4c68878c71355ac3a097ffa10768"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/B_right_turn.txt",
+      "bytes": 6237,
+      "sha256": "71b61a93933cfa0ac967cd050b15fac199f0ad6cd9a70bca68d55ef5dd7d81f1"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/H_full_tf_audit.txt",
+      "bytes": 5515,
+      "sha256": "36c2d3a8ccf5c8d8ffbbeebe4a3270d857b9b3b01e30e7628b8b7bd6991b031c"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/evidence/user_pasted_logs/I_full_tf_audit.txt",
+      "bytes": 5349,
+      "sha256": "f3246e04c65306c8193e39addea26f17374ed3a87afa27e882ae71dc94b84e5c"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/verification/current_4wd_expanded.urdf",
+      "bytes": 10952,
+      "sha256": "452be5a9961940d86184dcdfffb5ea3c86f383c07efe8a376756634323995abd"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/verification/final_delivery_checks.json",
+      "bytes": 1871,
+      "sha256": "ada000b557dd6fc43f33749a8c1c8d924ad14f9a70101611dc93563a121ffef4"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/verification/host_checks.json",
+      "bytes": 607,
+      "sha256": "55fd1e01ef436707f87ad5832a307c68aba2017efc9be1ffb15eeab6ec63a7cd"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/verification/plugin_source_tests.txt",
+      "bytes": 1389,
+      "sha256": "a4e16b18bfb577a265a98d979ae7276b83551d50e151552e45351fe8ab56db08"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/verification/public_copy_checks.json",
+      "bytes": 690,
+      "sha256": "a6179a75f8d812aa956e2bcf6914dafdbdf578cf47348c7821905052acdf616f"
+    },
+    {
+      "path": "submissions/2026-10-17-public/02_ROS工程代码/verification/source_manifest.json",
+      "bytes": 19361,
+      "sha256": "40b251717d2794722459d7a3551379fca1773d8a971825ef5111f189b06ad949"
+    },
+    {
+      "path": "submissions/2026-10-17-public/03_关键截图/01_URDF_Xacro四轮机器人模型结构.png",
+      "bytes": 279080,
+      "sha256": "e40186ba29064ff0277cb8086a1ccb1f367a06d47cb12bebc788adc3b6051ed5"
+    },
+    {
+      "path": "submissions/2026-10-17-public/03_关键截图/02_RViz机器人模型可视化.png",
+      "bytes": 120141,
+      "sha256": "893d5173bb8f685feb3eca2daeb5bb697492663bf55aea3fea44ce2747947ed1"
+    },
+    {
+      "path": "submissions/2026-10-17-public/03_关键截图/03_Gazebo仿真场景.png",
+      "bytes": 229761,
+      "sha256": "a42541ec79933abdf88bb53e13d43825dc60aab88d06c84a71f9caae106861f2"
+    },
+    {
+      "path": "submissions/2026-10-17-public/03_关键截图/04_Gazebo机器人加载结果.png",
+      "bytes": 317654,
+      "sha256": "80f6377f0319031535b7e24de8f9f1f9290488c64915203c7e47669db29599b1"
+    },
+    {
+      "path": "submissions/2026-10-17-public/03_关键截图/05_Gazebo机器人运行验证.png",
+      "bytes": 199020,
+      "sha256": "74a42c2321363b9c351c29c0d3e624444102b84d061fc9b1d051de71aada1581"
+    },
+    {
+      "path": "submissions/2026-10-17-public/04_演示视频/说明.md",
+      "bytes": 152,
+      "sha256": "81cd039a5684c69463ad94ba679bcf03a2aad5e40e878c8fd9a215e28f34285b"
+    },
+    {
+      "path": "submissions/2026-10-17-public/README.md",
+      "bytes": 1727,
+      "sha256": "c776a2ee90e3cab55a491c27d2a22c9a62ff6b3d28218d424a67913cd99af832"
+    },
+    {
+      "path": "submissions/2026-10-17-public/SHA256SUMS.txt",
+      "bytes": 10518,
+      "sha256": "87415c405e2ae77db1f1e258cb25417ea3111173155e7707ffca7673aebb4dec"
+    },
+    {
       "path": "tests/test_cloud_preview.py",
       "bytes": 7965,
       "sha256": "2d3da9000ad43cfe4bbf085a3c330882ed130fb9cf46a4e5b2cde61b3cab8e9f"
     },
     {
+      "path": "tests/test_tf_stamp_diagnostic.py",
+      "bytes": 3059,
+      "sha256": "4a7afa663b427b139b66e6442cc52a531da541706bdb21dcb5dcb7ed4f8f0d3a"
+    },
+    {
       "path": "tools/refresh_manifest.py",
-      "bytes": 4145,
-      "sha256": "605edf01e042f1f8e36d8e8c05185b0ce3db87ccf9d945e6bc5dcf55ddf77c87"
+      "bytes": 4768,
+      "sha256": "2ddf6a58cd827c5fc9aa9456fb530f2255ce75e253277809399844bd0c80678e"
     },
     {
       "path": "tools/verify_archive.py",

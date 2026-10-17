@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-17",
+  "xacro_expansion": "passed on host using local validation xacro",
+  "links": 10,
+  "joints": 9,
+  "plugins": 3,
+  "xml_files_parsed": 18,
+  "python38_syntax": "passed",
+  "plugin_source_unit_tests": 12,
+  "portable_wrapper_only_changes_library_filename": true,
+  "screenshots": 5,
+  "mp4_generated": false,
+  "native_ubuntu_clean_build_this_copy": false,
+  "gazebo_run_on_host": false,
+  "vm_source_directly_exported": false,
+  "evidence_scope": "Source copy from previously distributed stages; VM runtime is supported by user-pasted logs/screenshots, not a new native build."
+}

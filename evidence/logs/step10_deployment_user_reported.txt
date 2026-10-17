@@ -1,0 +1,49 @@
+来源：用户贴出的终端消息，按部署顺序整理。未提供准确消息 UTC；不补造时间。
+这是用户可见文字转录，不是直接采集的 VM 日志目录。
+
+=== 模型与依赖预检 ===
+thl@ubuntu:~/catkin_ws$ rosrun xacro xacro /home/thl/catkin_ws/src/rcdp/urdf/gazebo/myrobot_camera_step9.xacro -o /tmp/lesson14_step10_baseline.urdf
+thl@ubuntu:~/catkin_ws$ rosrun xacro xacro /home/thl/catkin_ws/src/rcdp/urdf/gazebo/myrobot_stampfix_step10.xacro -o /tmp/lesson14_stampfix_step10.urdf
+thl@ubuntu:~/catkin_ws$ python3 /home/thl/catkin_ws/src/rcdp/scripts/check_stampfix_switch_step10.py /tmp/lesson14_step10_baseline.urdf /tmp/lesson14_stampfix_step10.urdf
+{
+  "urdf_equal_except_drive_library": true,
+  "links": 11,
+  "joints": 10,
+  "moving_joints": 6,
+  "plugins": 4,
+  "diff_drive_plugin_count": 1,
+  "drive_update_rate_hz": "100",
+  "odom_tf": "odom -> root_link",
+  "new_library": "/home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so",
+  "dynamic_dependencies_resolved": true,
+  "plugin_sha256": "ad86bd0dc84e0b795ddc9d95e641a69ad59381e6ce4afed11ce9e1802623e10e",
+  "gazebo_started_or_modified": false,
+  "runtime_fix_verified": false
+}
+PRECHECK_OK: files/dependencies only; Gazebo has NOT been switched.
+
+=== 新仿真启动后的用户反馈 ===
+启动成功没有rviz
+thl@ubuntu:~/桌面$ rostopic info /cmd_vel
+Type: geometry_msgs/Twist
+Publishers: None
+Subscribers:
+ * /gazebo (http://ubuntu:36977/)
+
+thl@ubuntu:~/桌面$ pgrep -a -x gzserver
+91740 /bin/sh /opt/ros/noetic/lib/gazebo_ros/gzserver --verbose -e ode /home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world __name:=gazebo __log:=/home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/gazebo-1.log
+91801 gzserver --verbose -e ode /home/thl/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world -s /opt/ros/noetic/lib/libgazebo_ros_paths_plugin.so -s /opt/ros/noetic/lib/libgazebo_ros_api_plugin.so __name:=gazebo __log:=/home/thl/.ros/log/25fcbf24-c5eb-11f1-857d-83736d603601/gazebo-1.log
+
+=== 实际工作进程映射 ===
+thl@ubuntu:~/桌面$ grep -E 'lib(rcdp_diff_drive_stampfix|gazebo_ros_diff_drive)\.so' /proc/91801/maps
+7f59b02b1000-7f59b037b000 r--p 00000000 08:05 2104289                    /home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so
+7f59b037b000-7f59b03ec000 r-xp 000ca000 08:05 2104289                    /home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so
+7f59b03ec000-7f59b041b000 r--p 0013b000 08:05 2104289                    /home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so
+7f59b041b000-7f59b041e000 r--p 00169000 08:05 2104289                    /home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so
+7f59b041e000-7f59b0426000 rw-p 0016c000 08:05 2104289                    /home/thl/catkin_ws/devel/lib/librcdp_diff_drive_stampfix.so
+
+=== 第二轮完整诊断之后的用户视觉反馈 ===
+稳定 没出现
+
+三次完整诊断对象单独转录为 evidence/timestamp_fix_step10/*.json。
+上述 PID 和端口只代表当次现场，不能直接用于今后的进程操作。

@@ -1,0 +1,356 @@
+[
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_model_step11a/docs/FOUR_WHEEL_STEP11A.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11A.md",
+    "sha256": "c0627a77b22766093aa82f82982e81a333d81f55dbf78df51a7ae6e8a374747e",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_model_step11a/launch/myrobot_4wd_model_step11a.launch",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_model_step11a.launch",
+    "sha256": "54514fa0a9d23ba84b16208db0df7567580e0fe9b550c19667c37d106d32956e",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_model_step11a/scripts/check_4wd_model_step11a.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_model_step11a.py",
+    "sha256": "c109c79177e940b97cb6e190c736999f091859dabeb873ad6f2ba7029a3c75bb",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_model_step11a/urdf/gazebo/myrobot_4wd_base_step11a.xacro",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_base_step11a.xacro",
+    "sha256": "6f949506ac146fd7f8b0657e44bab30eed4f80fc87c58283e25c4075001fb106",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_drive_step11c/docs/FOUR_WHEEL_STEP11C.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11C.md",
+    "sha256": "48105918bf09a53c2c11ea016740f1f4178987c9ba68749f261526be5c9a1f2a",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_drive_step11c/launch/myrobot_4wd_drive_step11c.launch",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_drive_step11c.launch",
+    "sha256": "e6e46462eaebcd0309b76e05b403c89cda7a3fc0bcfc6e5e288ae7df837adff8",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_drive_step11c/scripts/check_4wd_drive_step11c.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_drive_step11c.py",
+    "sha256": "d55a80a146be15ff4e20cbff7f251297b4899f3ecebb540c04e2027aaa1390a2",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_drive_step11c/urdf/gazebo/myrobot_4wd_drive_step11c.xacro",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_drive_step11c.xacro",
+    "sha256": "2e3b940f4a95b3a174723afac4796b9f4aadffc990cd00cb2ed4b5029bc863ae",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_forward_step11d/docs/FOUR_WHEEL_STEP11D.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11D.md",
+    "sha256": "4a5b76581e93a6b8f121171d4c83a38df89217be440d1087763b87b14980abce",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_forward_step11d/scripts/test_4wd_forward_step11d.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/test_4wd_forward_step11d.py",
+    "sha256": "c345329fca18b15fd4ea04d58d9412b796d9fb91df2329354f4bba75e531623f",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_turn_step11e/docs/FOUR_WHEEL_STEP11E.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11E.md",
+    "sha256": "a380ed5f7960cdbcd8a8a17b4568df79539415163b17d3f668aac3efb2a0fd77",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_turn_step11e/scripts/test_4wd_turn_step11e.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/test_4wd_turn_step11e.py",
+    "sha256": "59717d07af5d6c6cdac613f437a4ad8d6280186d191b18e753053e4c0a7bab57",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_friction_step11f/docs/FOUR_WHEEL_STEP11F.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11F.md",
+    "sha256": "7e9f9a1e2eee6846237b7965f747eaebb98a657078aebfaebce098e8d7c2dbf7",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_friction_step11f/launch/myrobot_4wd_friction_step11f.launch",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_friction_step11f.launch",
+    "sha256": "28249e784be722589ef18a88cab22628186c07bc0fb787063ed667472ee1d4a8",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_friction_step11f/scripts/check_4wd_friction_step11f.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_friction_step11f.py",
+    "sha256": "7b5ee9f284c603344116710638656055d5dc161850309a82ed571c25aea54831",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_friction_step11f/worlds/lesson14_4wd_cone_model_step11f.world",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson14_4wd_cone_model_step11f.world",
+    "sha256": "2daf5b3e22a547d6cbc005db65038d8fd5421fb3f4a1235084b06e0519892172",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_friction_step11f/worlds/lesson14_4wd_pyramid_model_step11f.world",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson14_4wd_pyramid_model_step11f.world",
+    "sha256": "4032d121108e8c87876c4af9c8a78057ad24d4470b84018a26b51ab8239495ed",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_right_step11g/docs/FOUR_WHEEL_STEP11G.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11G.md",
+    "sha256": "8a23a1f22f41b2639e8ceadf97ee2d50807bb5ed35412a72e5ca33d242fe936a",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_right_step11g/scripts/test_4wd_right_step11g.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/test_4wd_right_step11g.py",
+    "sha256": "3dfca6a5824542462df14425cf2eba18963e787ad64a5f92241773db3d9fd2e2",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_tf_step11h/docs/FOUR_WHEEL_STEP11H.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11H.md",
+    "sha256": "120dfecf9c174ada558bd12bc746cf390c66b07b514204d09f7b71f5f78e65a9",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_tf_step11h/launch/myrobot_4wd_tf_step11h.launch",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_tf_step11h.launch",
+    "sha256": "24db1147aafba50058d7352a82dbccabb7fdd43e1789fcf94d10dfd14e94d8c4",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_tf_step11h/scripts/check_4wd_tf_step11h.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_tf_step11h.py",
+    "sha256": "010a156dfba8c33f108aa502a0ee6912dd14cfd6df97aecf65097081de34915f",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_tf_step11h/urdf/gazebo/myrobot_4wd_tf_step11h.xacro",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_tf_step11h.xacro",
+    "sha256": "31ec875b4d28532280dc3ba73bd80fd06639e9e460b070924a6f4ea16b4ab3e5",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_tf_audit_step11h/docs/FOUR_WHEEL_TF_AUDIT_STEP11H.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_TF_AUDIT_STEP11H.md",
+    "sha256": "66702ca5e558dcfee9937a3384be33ab1faabd8ab33f00d0b4a1140252e3338d",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_tf_audit_step11h/scripts/diagnose_4wd_tf_step11h.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/diagnose_4wd_tf_step11h.py",
+    "sha256": "cff0ab06fea384d2c4bcac11e7e7029ae9cea714c028dcb065aed6c77da91556",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_laser_step11i/docs/FOUR_WHEEL_STEP11I.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/FOUR_WHEEL_STEP11I.md",
+    "sha256": "de0e736e993e5ba2a35d929d8a48ea94a418bbf4f5ecebd0115a4b97c00a04da",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_laser_step11i/launch/myrobot_4wd_laser_step11i.launch",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/launch/myrobot_4wd_laser_step11i.launch",
+    "sha256": "0903273702a66f89677a57ed57ff376cbc4cd63d8c1833e3c074f59d586bd9cf",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_laser_step11i/scripts/check_4wd_laser_step11i.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/check_4wd_laser_step11i.py",
+    "sha256": "0411933b69f8a95b7e5c1e6d9abee8269dcad06b3b84d634c9ba71d3c9745e68",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_laser_step11i/urdf/gazebo/myrobot_4wd_laser_step11i.xacro",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_4wd_laser_step11i.xacro",
+    "sha256": "35150fb2167e1e68c4cfe9d834ee4c611194599a109e2bcd6e0be14dca4d5861",
+    "role": "tested stage source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/CMakeLists.txt",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/CMakeLists.txt",
+    "sha256": "822df65678f2ce56d574fb091ebd820342def3c36e02b45dc27f4b687b19efa2",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/include/rcdp_4wd_stampfix/gazebo_ros_skid_steer_stampfix.h",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/include/rcdp_4wd_stampfix/gazebo_ros_skid_steer_stampfix.h",
+    "sha256": "48d4dab9bb9b1c3d301aef92ff11b28dbf7939f8b7772a3e8c8038475965fd25",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/LICENSE",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/LICENSE",
+    "sha256": "8311d1a465df1940a956152246dc4c4c70913bf28cb6dea1acbf2502aa1fef65",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/package.xml",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/package.xml",
+    "sha256": "3ff9e6b8aa0b2471d524fa66b8275be9beca725fb4a936d4ec04cc59652be27c",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/README.md",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/README.md",
+    "sha256": "85975092df8e137c51aae1b7a08797cc5fcfb2279093a04e121cd8e37b5c75b1",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/src/gazebo_ros_skid_steer_stampfix.cpp",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/src/gazebo_ros_skid_steer_stampfix.cpp",
+    "sha256": "2dccca31e44fd489538bd76d5760cb1713e28b320e694bba3d15c5c13a17066f",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/test/test_source_step11b.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/test/test_source_step11b.py",
+    "sha256": "8145e673098b405a042a68ebaad82e0d4e390dbc12d0ee473e4541435ceeb933",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.cpp",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.cpp",
+    "sha256": "23a667f211d0f235a48382f03198bc17ecfce655a194a5bff37b0c9302c673c6",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.h",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/upstream/gazebo_ros_skid_steer_drive.h",
+    "sha256": "b3feeb7efd6af492194fa2a9a12163a4bd1a7736c2164e94acfc360a43fd29a7",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/Lesson14_4wd_plugin_step11b/rcdp_4wd_stampfix/UPSTREAM.json",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp_4wd_stampfix/UPSTREAM.json",
+    "sha256": "7f05afc369edbe9087718deeb8cda41d1b1db56b5e515dc099aaf50dacbdcc2e",
+    "role": "BSD derived plugin source"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/gazebo_sensor/lesson14_laser_step7.xacro",
+    "sha256": "10b4b5a4a1a4e3fd093a5bbc5ab31b200fd2ae38453f7c9393b98e5985b2c01b",
+    "role": "required prior dependency or diagnostic"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/urdf/gazebo/myrobot_gazebo_step4.xacro",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/urdf/gazebo/myrobot_gazebo_step4.xacro",
+    "sha256": "99252280c93b4e84f1a17842f7569f654ccdade43c02dd2f4a1738b1fe98a534",
+    "role": "required prior dependency or diagnostic"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/worlds/lesson13_flat_step4.world",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson13_flat_step4.world",
+    "sha256": "a2df3e429eee676d0a529b88ff383774ee5d3ea39443a641cdc48036fe1819c6",
+    "role": "required prior dependency or diagnostic"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/worlds/lesson14_box_house_step7.world",
+    "sha256": "ab704ef5ba19928c0edceb9a863a65027e1bff78a05110090679fe0bbf4d0857",
+    "role": "required prior dependency or diagnostic"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/config/lesson14_scan_step8.rviz",
+    "sha256": "8d46492ddb6eb8738f03bdab237e6e5392d5268cf73b072eabe8247972420ceb",
+    "role": "required prior dependency or diagnostic"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/scripts/diagnose_tf_stamps_step10.py",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/scripts/diagnose_tf_stamps_step10.py",
+    "sha256": "7fead018b2fe15f3f413a1bfa28665971c3d82d13df5b49cee103f1df23b0e02",
+    "role": "required prior dependency or diagnostic"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/CMakeLists.txt",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/original_metadata/CMakeLists.txt",
+    "sha256": "b20feaf929a628b444159ad51ebf3adf7de52bdf11b5ed6a0a93a96237b9177a",
+    "role": "unaltered prior metadata"
+  },
+  {
+    "source": "delivered_stage_sources/thl-roscar/catkin_ws/src/rcdp/package.xml",
+    "copy": "02_ROS工程代码/catkin_ws/src/rcdp/docs/original_metadata/package.xml",
+    "sha256": "0f7e6887be319cab0764d99f3f7feaec9479fb38d13b71dbeb23f66e07f4abb5",
+    "role": "unaltered prior metadata"
+  },
+  {
+    "source": "user_supplied_attachment/f0f72d42-08ce-4977-95b5-9eefe7e50069/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/A_forward.txt",
+    "sha256": "10f9c5b36c3c55c073a9d3b96500e44037fb6393877a81aab9a1f66c3173fec4",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/bf46159e-c0f7-444e-8045-85a8296e658f/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/A_left_turn.txt",
+    "sha256": "401e2349a915083d7399a183c5d445c1b0f44093173201a0a37ba7dec07b927b",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/64ceff9f-6602-4dd4-b93f-2f75d4f2bd6f/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/B_forward.txt",
+    "sha256": "19105141d293e2c528fc7010c55b0057bc4960ce1da59311d3470faf85acae75",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/ed4db503-739c-4249-aa44-1e9e7de88077/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/B_left_turn.txt",
+    "sha256": "7f3bfc7cfb997ae2b02963a8958d1c5506d95f90e0c25b0f55dbe5ba51ccfff8",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/6e0bd6e2-3f90-486f-9fc4-6faacbda3a75/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/B_right_turn.txt",
+    "sha256": "71ef8b606bc9f5219c2a24ae77d27c4aeacc87860258750188050a914a236110",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/018fc9be-3c65-48ec-8ae7-4335d244dab8/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/H_full_tf_audit.txt",
+    "sha256": "c976805dcc700d1fb1d5bf249fc990e17993d4f5e63e0cd1337493af973e8b20",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/036a4770-95ca-4374-acbe-731470f6765b/已粘贴的文本.txt",
+    "copy": "02_ROS工程代码/evidence/user_pasted_logs/I_full_tf_audit.txt",
+    "sha256": "5982292cc5e69716867ec29f95a4ce6d04e9dd62a0113d9bbea5c3d38204407e",
+    "role": "unaltered user-pasted terminal transcript; not direct VM file export"
+  },
+  {
+    "source": "user_supplied_attachment/Screenshots/01_URDF_Xacro四轮机器人模型结构.png",
+    "copy": "03_关键截图/01_URDF_Xacro四轮机器人模型结构.png",
+    "sha256": "e40186ba29064ff0277cb8086a1ccb1f367a06d47cb12bebc788adc3b6051ed5",
+    "role": "user supplied real four-wheel screenshot; no pixel editing"
+  },
+  {
+    "source": "user_supplied_attachment/Screenshots/.RViz 机器人模型可视化截图.png",
+    "copy": "03_关键截图/02_RViz机器人模型可视化.png",
+    "sha256": "893d5173bb8f685feb3eca2daeb5bb697492663bf55aea3fea44ce2747947ed1",
+    "role": "user supplied real four-wheel screenshot; no pixel editing"
+  },
+  {
+    "source": "user_supplied_attachment/Screenshots/Gazebo 仿真场景截图.png",
+    "copy": "03_关键截图/03_Gazebo仿真场景.png",
+    "sha256": "a42541ec79933abdf88bb53e13d43825dc60aab88d06c84a71f9caae106861f2",
+    "role": "user supplied real four-wheel screenshot; no pixel editing"
+  },
+  {
+    "source": "user_supplied_attachment/Screenshots/Gazebo 机器人模型加载结果截图.png",
+    "copy": "03_关键截图/04_Gazebo机器人加载结果.png",
+    "sha256": "80f6377f0319031535b7e24de8f9f1f9290488c64915203c7e47669db29599b1",
+    "role": "user supplied real four-wheel screenshot; no pixel editing"
+  },
+  {
+    "source": "user_supplied_attachment/Screenshots/Gazebo 机器人模型运行验证截图.png",
+    "copy": "03_关键截图/05_Gazebo机器人运行验证.png",
+    "sha256": "74a42c2321363b9c351c29c0d3e624444102b84d061fc9b1d051de71aada1581",
+    "role": "user supplied real four-wheel screenshot; no pixel editing"
+  }
+]
